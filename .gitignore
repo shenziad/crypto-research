@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.so
+*.tmp
+.venv/
+envs/
+**/toolchain/
+**/model.safetensors
+**/pytorch_model*.bin
+**/*cache*/

@@ -1,0 +1,8 @@
+{
+  "source_url": "https://github.com/wojzaremba/lstm/blob/76870253cfca069477f06b7056af87f98490b6eb/data/ptb.test.txt",
+  "commit": "76870253cfca069477f06b7056af87f98490b6eb",
+  "blob_sha1": "8079cdf342f8d103e5647e1160a8fe3b58a213d5",
+  "sha256": "dd65dff31e70846b2a6030a87482edcd5d199130cdcfa1f3dccbb033728deee0",
+  "bytes": 449945,
+  "scope": "Public preprocessed PTB test, independent of frozen WikiText2 calibration; sample language-model discrepancy evaluation only."
+}

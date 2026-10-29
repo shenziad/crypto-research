@@ -1,0 +1,83 @@
+{
+  "checks": [
+    {
+      "input_bits": 8,
+      "group_bits": 16,
+      "payload_dimension": 1,
+      "independent_serialized_keys_checked": 512,
+      "threshold_input_pairs": 65536,
+      "passed": true
+    },
+    {
+      "input_bits": 8,
+      "group_bits": 16,
+      "payload_dimension": 2,
+      "independent_serialized_keys_checked": 512,
+      "threshold_input_pairs": 65536,
+      "passed": true
+    },
+    {
+      "input_bits": 8,
+      "group_bits": 32,
+      "payload_dimension": 1,
+      "independent_serialized_keys_checked": 512,
+      "threshold_input_pairs": 65536,
+      "passed": true
+    },
+    {
+      "input_bits": 8,
+      "group_bits": 32,
+      "payload_dimension": 2,
+      "independent_serialized_keys_checked": 512,
+      "threshold_input_pairs": 65536,
+      "passed": true
+    },
+    {
+      "input_bits": 8,
+      "group_bits": 64,
+      "payload_dimension": 1,
+      "independent_serialized_keys_checked": 512,
+      "threshold_input_pairs": 65536,
+      "passed": true
+    },
+    {
+      "input_bits": 8,
+      "group_bits": 64,
+      "payload_dimension": 2,
+      "independent_serialized_keys_checked": 512,
+      "threshold_input_pairs": 65536,
+      "passed": true
+    },
+    {
+      "input_bits": 16,
+      "group_bits": 64,
+      "payload_dimension": 1,
+      "boundary_random_pairs": 16384,
+      "passed": true
+    },
+    {
+      "input_bits": 24,
+      "group_bits": 64,
+      "payload_dimension": 1,
+      "boundary_random_pairs": 16384,
+      "passed": true
+    },
+    {
+      "input_bits": 32,
+      "group_bits": 64,
+      "payload_dimension": 1,
+      "boundary_random_pairs": 16384,
+      "passed": true
+    },
+    {
+      "input_bits": 56,
+      "group_bits": 64,
+      "payload_dimension": 1,
+      "boundary_random_pairs": 16384,
+      "passed": true
+    }
+  ],
+  "native_sha256": "0585a47e6a13eb46371c43860262e3286324880a45511b3e9dc97a17b4e3233d",
+  "upstream_dcf_blob_sha": "e43f3d1753296ee80f3bd4c93388d272cbcfc0ce",
+  "limits": "Functional and independent AES-provider/key-algebra checks only; standard DCF construction, not security or constant-time validation."
+}

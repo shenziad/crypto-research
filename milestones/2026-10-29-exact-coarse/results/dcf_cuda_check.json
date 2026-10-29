@@ -1,0 +1,106 @@
+{
+  "aes_independent_cases": 1024,
+  "records": [
+    {
+      "bits": 6,
+      "dim": 1,
+      "keys": 128,
+      "queries_per_key": 5,
+      "global_and_query_coordinates": true,
+      "individual_parties_equal": true
+    },
+    {
+      "bits": 6,
+      "dim": 2,
+      "keys": 128,
+      "queries_per_key": 5,
+      "global_and_query_coordinates": true,
+      "individual_parties_equal": true
+    },
+    {
+      "bits": 6,
+      "dim": 4,
+      "keys": 128,
+      "queries_per_key": 5,
+      "global_and_query_coordinates": true,
+      "individual_parties_equal": true
+    },
+    {
+      "bits": 6,
+      "dim": 52,
+      "keys": 128,
+      "queries_per_key": 5,
+      "global_and_query_coordinates": true,
+      "individual_parties_equal": true
+    },
+    {
+      "bits": 32,
+      "dim": 1,
+      "keys": 128,
+      "queries_per_key": 5,
+      "global_and_query_coordinates": true,
+      "individual_parties_equal": true
+    },
+    {
+      "bits": 32,
+      "dim": 2,
+      "keys": 128,
+      "queries_per_key": 5,
+      "global_and_query_coordinates": true,
+      "individual_parties_equal": true
+    },
+    {
+      "bits": 32,
+      "dim": 4,
+      "keys": 128,
+      "queries_per_key": 5,
+      "global_and_query_coordinates": true,
+      "individual_parties_equal": true
+    },
+    {
+      "bits": 32,
+      "dim": 52,
+      "keys": 128,
+      "queries_per_key": 5,
+      "global_and_query_coordinates": true,
+      "individual_parties_equal": true
+    },
+    {
+      "bits": 63,
+      "dim": 1,
+      "keys": 128,
+      "queries_per_key": 5,
+      "global_and_query_coordinates": true,
+      "individual_parties_equal": true
+    },
+    {
+      "bits": 63,
+      "dim": 2,
+      "keys": 128,
+      "queries_per_key": 5,
+      "global_and_query_coordinates": true,
+      "individual_parties_equal": true
+    },
+    {
+      "bits": 63,
+      "dim": 4,
+      "keys": 128,
+      "queries_per_key": 5,
+      "global_and_query_coordinates": true,
+      "individual_parties_equal": true
+    },
+    {
+      "bits": 63,
+      "dim": 52,
+      "keys": 128,
+      "queries_per_key": 5,
+      "global_and_query_coordinates": true,
+      "individual_parties_equal": true
+    }
+  ],
+  "all_passed": true,
+  "hardware": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "source_sha256": "4c88cc579b90f3c53434c0981edf8ac1c0cda144e3fa4d26cbbcb62786394b46",
+  "native_sha256": "c5f2b85a7315551f9338cd30b8c59b3c8b0ad3c42838f78f3798efeaa0bc2afa",
+  "limits": "Functional AES/DCF share equality only; no security audit or original Sigma/FuseFSS GPU implementation comparison. Table-based device AES is a research backend."
+}

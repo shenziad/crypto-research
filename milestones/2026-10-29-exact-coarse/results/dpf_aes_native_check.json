@@ -1,0 +1,56 @@
+{
+  "checks": [
+    {
+      "group_bits": 64,
+      "payload_dimension": 1,
+      "key_serializations_against_python_and_independent_aes": 512,
+      "hidden_point_masked_input_pairs": 65536,
+      "distinct_public_table_rows_checked": 256,
+      "passed": true
+    },
+    {
+      "group_bits": 64,
+      "payload_dimension": 2,
+      "key_serializations_against_python_and_independent_aes": 512,
+      "hidden_point_masked_input_pairs": 65536,
+      "distinct_public_table_rows_checked": 256,
+      "passed": true
+    },
+    {
+      "group_bits": 32,
+      "payload_dimension": 1,
+      "key_serializations_against_python_and_independent_aes": 512,
+      "hidden_point_masked_input_pairs": 65536,
+      "distinct_public_table_rows_checked": 256,
+      "passed": true
+    },
+    {
+      "group_bits": 32,
+      "payload_dimension": 2,
+      "key_serializations_against_python_and_independent_aes": 512,
+      "hidden_point_masked_input_pairs": 65536,
+      "distinct_public_table_rows_checked": 256,
+      "passed": true
+    },
+    {
+      "group_bits": 16,
+      "payload_dimension": 1,
+      "key_serializations_against_python_and_independent_aes": 512,
+      "hidden_point_masked_input_pairs": 65536,
+      "distinct_public_table_rows_checked": 256,
+      "passed": true
+    },
+    {
+      "group_bits": 16,
+      "payload_dimension": 2,
+      "key_serializations_against_python_and_independent_aes": 512,
+      "hidden_point_masked_input_pairs": 65536,
+      "distinct_public_table_rows_checked": 256,
+      "passed": true
+    }
+  ],
+  "native_sha256": "0585a47e6a13eb46371c43860262e3286324880a45511b3e9dc97a17b4e3233d",
+  "compiler": "c++ Ubuntu 13.3.0, -O3 -std=c++17 -maes -msse2 -fPIC -shared",
+  "prg": "AES-128 keyed by seed, distinct 128-bit counter blocks 0/1/2 for tree and 3 for leaf; fresh OS128 roots",
+  "limits": "Functional/cross-provider evidence only; does not prove PRG security, concrete security losses or implementation isolation/constant-time behavior."
+}

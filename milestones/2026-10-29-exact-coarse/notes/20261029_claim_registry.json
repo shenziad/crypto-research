@@ -1,0 +1,113 @@
+{
+  "date": "2026-10-29",
+  "status": "active research; not publication-ready",
+  "scope": "Constructive local protocols only, no attack research",
+  "claims": [
+    {
+      "claim": "Public polynomial masked coefficients admit a shared mask-power basis over Z/(2^k), using no division",
+      "evidence": [
+        "notes/20261029_public_polynomial_basis_proof.md",
+        "results/public_polynomial_basis_check.json"
+      ],
+      "status": "Algebraic correctness and native checks; direct2021 public scalar-multiple compression plus standard module closure. Not an independent new primitive claim."
+    },
+    {
+      "claim": "Vector4 SwiGLU fusion reduces online bytes versus selector+Horner under matched full finite-block functionality",
+      "evidence": [
+        "results/qwen_public_spline_protocol_frontier.json",
+        "results/qwen_public_spline_protocol_frontier_spawn.json"
+      ],
+      "status": "Measured32.34% online reduction,7.75% larger full preprocessing arrays, same5 exchanges. Not universal time/material dominance"
+    },
+    {
+      "claim": "A weighted one-shot masked gate has a static semi-honest simulator under ideal DCF and fresh independent arithmetic sharing",
+      "evidence": [
+        "notes/20261029_standalone_gate_simulation.md"
+      ],
+      "status": "Explicit mathematical proof draft; fixed inputs and trusted dealer. Not adaptive/UC or implementation-security claim"
+    },
+    {
+      "claim": "Full finite-block security follows with typed rounding, clipping, matrix and output-sharing interfaces",
+      "evidence": [
+        "notes/20261029_finite_block_security_draft.md"
+      ],
+      "status": "Local module proofs and static composition draft. Output timing/conditioning details need formal review; not claimed complete"
+    },
+    {
+      "claim": "Numerical proxy quality transfers from frozen WikiText2 calibration to PTB",
+      "evidence": [
+        "results/qwen_public_spline_quality_f22_ptb32x256.json",
+        "data/ptb_test_manifest.json"
+      ],
+      "status": "8192 predicted positions,all24 finite gate/down layers,other operators floating point. Not lossless, full-corpus PPL or downstream quality"
+    },
+    {
+      "claim": "CUDA implements the same individual-party DCF shares as the independently checked CPU backend",
+      "evidence": [
+        "results/dcf_cuda_check.json",
+        "results/dcf_cuda_protocol_check.json"
+      ],
+      "status": "Independent AES and full-width modular arithmetic checks passed. Research table-based GPU backend, not audited upstream Sigma/FuseFSS performance"
+    },
+    {
+      "claim": "A full private FFN/LLM or a new CCF C+ cryptographic primitive has been obtained",
+      "evidence": [],
+      "status": "Not achieved. Upstream gate/up projection and private normalized encoding excluded; novelty still unresolved"
+    },
+    {
+      "claim": "CUDA runs the full finite B-round/clip/gate/private-down/final-shift block",
+      "evidence": [
+        "results/qwen_public_spline_protocol_frontier_spawn_cuda.json",
+        "results/qwen_public_spline_bandwidth_cuda.json"
+      ],
+      "status": "96+54 fresh-material spawned runs passed. Online H2D/D2H andsocket included; setup separate; upstreamFFN/LLM excluded."
+    },
+    {
+      "claim": "Public-dither compact25 classification preserves the fine polynomial body and equals anexpanded33 reference for the same public-randomized function",
+      "evidence": [
+        "notes/20261029_dithered_classifier_proof.md",
+        "results/dithered_spline_native_check.json",
+        "results/dithered_protocol_report.json"
+      ],
+      "status": "Algebraic correctness and324 CPU/CUDA full finite-block runs passed; publicrho explicitly part of ideal interface. No independent novelty claim."
+    },
+    {
+      "claim": "Selection-only coarsening maintains better numerical quality than also rounding polynomial input at b8",
+      "evidence": [
+        "results/dithered_protocol_report.json"
+      ],
+      "status": "Observed two corpora on one0.5B model. PTB NLL loss vs deterministic aligned reference remains measurable across two seeds. Not lossless or downstream generalization."
+    },
+    {
+      "claim": "One shared low8 correction plus independently masked coarse24 selection exactly evaluates aligned fine-body splines in5 full-block exchanges",
+      "evidence": [
+        "notes/20261029_exact_coarse_classifier.md",
+        "results/exact_coarse_spline_check.json",
+        "results/exact_coarse_cuda_check.json"
+      ],
+      "status": "8,388,608 toy pairs andtwo-model perpartyCPU/CUDA functional checks passed; initial fullblocks match deterministicGPUcaptures. StandardTR/FSS composition, notindependent primitive novelty."
+    },
+    {
+      "claim": "Exact coarse block admits a one-shot fixed-input joint-view simulator under simulatableDCF, trusteddealer andindependent arithmetic sharing",
+      "evidence": [
+        "notes/20261029_exact_coarse_joint_view.md"
+      ],
+      "status": "Explicit mathematical draft with finaloutput conditioning beforekeyhybrids. Simulator obtains idealoutput before emitting preprocessing; no offlineonlineadaptive/UC orimplementation-security claim."
+    },
+    {
+      "claim": "Exact shared-low classifier improves samefunction localcompute across twoQwen models, with explicittraffic/material tradeoff",
+      "evidence": [
+        "results/exact_coarse_comparison_report.json",
+        "notes/20261029_exact_coarse_closure.md"
+      ],
+      "status": "432 matched spawned CPU/CUDA finiteblock runs passed; CPU25.5\u201332.9%,GPU15.1\u201322.5% loweronline time versusdirect32 under thisbackend. NotupstreamSOTA orfullLLM claim."
+    }
+  ],
+  "retired_claims": [
+    "Sparse singleDCF public multi-interval identity as a new primitive: direct EUROCRYPT2021 prior",
+    "47%64-bit communication reduction as strongest comparison: superseded by mixed-width baselines",
+    "Local stochastic shifting as standard2PC secure truncation: replaced by faithful FSS",
+    "Fusion saves a full round versus overlapped Horner: false in the current5-exchange full block",
+    "More than50% material savings as a gain over strongest selector baseline: false; strongest baseline is smaller"
+  ]
+}

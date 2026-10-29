@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-10-29T15:12:48.075751+00:00",
+  "staged_cpu_build_passed": true,
+  "staged_smoke_passed": true,
+  "input_mask_pairs": 2048,
+  "layouts": [
+    "basis",
+    "weighted"
+  ],
+  "individual_party_raw_reference": true,
+  "compiler": "c++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "fresh_machine_install_verified": false,
+  "numerical_gpu_jobs": "continue independently onNEWSMY; excluded from completed milestone"
+}

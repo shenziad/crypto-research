@@ -1,0 +1,50 @@
+{
+  "assets": [
+    {
+      "path": "results/qwen_gate_ranges.json",
+      "bytes": 5965550,
+      "sha256": "fda6b4a1a11afbea8cc8dbadf551b68ed06a00eed308ea2b8eb0a4aa72a2b4e0"
+    },
+    {
+      "path": "results/qwen15_gate_ranges.json",
+      "bytes": 1590,
+      "sha256": "f1c4a2db1972378fc36610aa71379a01206e1a70ddee47f206ae8197e8e1524c"
+    },
+    {
+      "path": "results/qwen_public_spline_f22_alignedb8_capture.npz",
+      "bytes": 186871,
+      "sha256": "9c6e8e1ac51fb67ea5497f7f6ebb382e8743bb8b242ed8309886d4cd23646169"
+    },
+    {
+      "path": "results/qwen_public_spline_f22_alignedb8_outf8_capture.npz",
+      "bytes": 189833,
+      "sha256": "0633e10dc94c484be340f964983099e96222f4bcdb45b52daeea5e93d82d52c4"
+    },
+    {
+      "path": "results/qwen_public_spline_f22_alignedb8_ptb32x256_capture.npz",
+      "bytes": 188216,
+      "sha256": "d404e1ab2b65b5d8ded5ebbdcbd7c01655ee9cb18c22afc86535621a80c30ed9"
+    },
+    {
+      "path": "results/qwen_public_spline_f22_extended32_alignedb8_capture.npz",
+      "bytes": 188323,
+      "sha256": "95ba8f419433a54ba71de1dc559ae9245e899324ed53886051e743ca14fa9e9a"
+    },
+    {
+      "path": "results/qwen15_dither_quality_aligned_b8_s20261029_wiki4_capture.npz",
+      "bytes": 265333,
+      "sha256": "4340683df0bc931190e0c24dce2b457a099d7e77986576d69b18d515a202c212"
+    },
+    {
+      "path": "results/qwen_down_int12_selected.npz",
+      "bytes": 17716248,
+      "sha256": "300d8a83aedf52926a1c7ee1e76978eccc88604ad13d532371f6f8f16b257aa7"
+    },
+    {
+      "path": "results/qwen15_down_int12_selected.npz",
+      "bytes": 58241956,
+      "sha256": "b3107d684ab55323baf536b2ded7021a36b4ee7a97ab977033f17ac92fa0c97b"
+    }
+  ],
+  "scope": "Local reproduction prerequisites, intentionally notembedded in this source/result archive. Model/data pinned manifests provide originalsources."
+}

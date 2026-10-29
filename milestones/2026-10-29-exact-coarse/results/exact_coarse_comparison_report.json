@@ -1,0 +1,716 @@
+{
+  "costs": {
+    "qwen05": {
+      "cpu": {
+        "exact32": {
+          "basis": {
+            "rtt0_ms": {
+              "median": 80.929182,
+              "quartiles": [
+                79.296007,
+                81.748392
+              ],
+              "runs": 9
+            },
+            "rtt50_ms": {
+              "median": 331.351543,
+              "quartiles": [
+                330.343644,
+                332.669063
+              ],
+              "runs": 9
+            },
+            "online_bytes": 403456,
+            "key_array_bytes": 104984320,
+            "spline_key_array_bytes": 11051008,
+            "model_initialization_bytes": 69730304,
+            "online_exchanges": 5,
+            "dealer_ms_median": 202.53173950000001,
+            "model_initialization_ms_median": 313.356457
+          },
+          "weighted": {
+            "rtt0_ms": {
+              "median": 86.943101,
+              "quartiles": [
+                86.522395,
+                88.62455
+              ],
+              "runs": 9
+            },
+            "rtt50_ms": {
+              "median": 337.069023,
+              "quartiles": [
+                336.854729,
+                340.492427
+              ],
+              "runs": 9
+            },
+            "online_bytes": 325632,
+            "key_array_bytes": 110354176,
+            "spline_key_array_bytes": 16654336,
+            "model_initialization_bytes": 69730304,
+            "online_exchanges": 5,
+            "dealer_ms_median": 205.21061650000001,
+            "model_initialization_ms_median": 321.502024
+          }
+        },
+        "corrected24": {
+          "basis": {
+            "rtt0_ms": {
+              "median": 56.083749,
+              "quartiles": [
+                55.764236,
+                57.767153
+              ],
+              "runs": 9
+            },
+            "rtt50_ms": {
+              "median": 308.34525,
+              "quartiles": [
+                305.986607,
+                308.735669
+              ],
+              "runs": 9
+            },
+            "online_bytes": 442368,
+            "key_array_bytes": 104283904,
+            "spline_key_array_bytes": 10350592,
+            "model_initialization_bytes": 69730304,
+            "online_exchanges": 5,
+            "dealer_ms_median": 204.1312385,
+            "model_initialization_ms_median": 317.11177799999996
+          },
+          "weighted": {
+            "rtt0_ms": {
+              "median": 58.323916,
+              "quartiles": [
+                57.716533,
+                59.761335
+              ],
+              "runs": 9
+            },
+            "rtt50_ms": {
+              "median": 309.504062,
+              "quartiles": [
+                308.866363,
+                310.439985
+              ],
+              "runs": 9
+            },
+            "online_bytes": 364544,
+            "key_array_bytes": 108408576,
+            "spline_key_array_bytes": 14708736,
+            "model_initialization_bytes": 69730304,
+            "online_exchanges": 5,
+            "dealer_ms_median": 205.7904475,
+            "model_initialization_ms_median": 323.1582745
+          }
+        },
+        "compact25": {
+          "basis": {
+            "rtt0_ms": {
+              "median": 56.157537,
+              "quartiles": [
+                55.612119,
+                56.795729
+              ],
+              "runs": 9
+            },
+            "rtt50_ms": {
+              "median": 307.258933,
+              "quartiles": [
+                306.76274,
+                307.677138
+              ],
+              "runs": 9
+            },
+            "online_bytes": 403456,
+            "key_array_bytes": 102737152,
+            "spline_key_array_bytes": 8803840,
+            "model_initialization_bytes": 69730304,
+            "online_exchanges": 5,
+            "dealer_ms_median": 201.60763550000001,
+            "model_initialization_ms_median": 312.78352900000004
+          },
+          "weighted": {
+            "rtt0_ms": {
+              "median": 57.727249,
+              "quartiles": [
+                56.719853,
+                58.917366
+              ],
+              "runs": 9
+            },
+            "rtt50_ms": {
+              "median": 308.654232,
+              "quartiles": [
+                307.808112,
+                309.316066
+              ],
+              "runs": 9
+            },
+            "online_bytes": 325632,
+            "key_array_bytes": 107017472,
+            "spline_key_array_bytes": 13317632,
+            "model_initialization_bytes": 69730304,
+            "online_exchanges": 5,
+            "dealer_ms_median": 202.991423,
+            "model_initialization_ms_median": 314.6897745
+          }
+        }
+      },
+      "cuda": {
+        "exact32": {
+          "basis": {
+            "rtt0_ms": {
+              "median": 46.217542,
+              "quartiles": [
+                43.979594,
+                46.300034
+              ],
+              "runs": 9
+            },
+            "rtt50_ms": {
+              "median": 296.704753,
+              "quartiles": [
+                295.275541,
+                296.874276
+              ],
+              "runs": 9
+            },
+            "online_bytes": 403456,
+            "key_array_bytes": 104984320,
+            "spline_key_array_bytes": 11051008,
+            "model_initialization_bytes": 69730304,
+            "online_exchanges": 5,
+            "dealer_ms_median": 205.752241,
+            "model_initialization_ms_median": 997.128989,
+            "setup_upload_ms_median": 204.8421485
+          },
+          "weighted": {
+            "rtt0_ms": {
+              "median": 56.536185,
+              "quartiles": [
+                53.235218,
+                56.845914
+              ],
+              "runs": 9
+            },
+            "rtt50_ms": {
+              "median": 307.237192,
+              "quartiles": [
+                304.703994,
+                307.394244
+              ],
+              "runs": 9
+            },
+            "online_bytes": 325632,
+            "key_array_bytes": 110354176,
+            "spline_key_array_bytes": 16654336,
+            "model_initialization_bytes": 69730304,
+            "online_exchanges": 5,
+            "dealer_ms_median": 208.69624,
+            "model_initialization_ms_median": 998.6561435,
+            "setup_upload_ms_median": 213.6371795
+          }
+        },
+        "corrected24": {
+          "basis": {
+            "rtt0_ms": {
+              "median": 39.255735,
+              "quartiles": [
+                37.487025,
+                39.280783
+              ],
+              "runs": 9
+            },
+            "rtt50_ms": {
+              "median": 289.739278,
+              "quartiles": [
+                288.127322,
+                289.946887
+              ],
+              "runs": 9
+            },
+            "online_bytes": 442368,
+            "key_array_bytes": 104283904,
+            "spline_key_array_bytes": 10350592,
+            "model_initialization_bytes": 69730304,
+            "online_exchanges": 5,
+            "dealer_ms_median": 207.5541165,
+            "model_initialization_ms_median": 1009.899138,
+            "setup_upload_ms_median": 203.8893425
+          },
+          "weighted": {
+            "rtt0_ms": {
+              "median": 45.535238,
+              "quartiles": [
+                43.53124,
+                45.859392
+              ],
+              "runs": 9
+            },
+            "rtt50_ms": {
+              "median": 296.379005,
+              "quartiles": [
+                295.182526,
+                296.676064
+              ],
+              "runs": 9
+            },
+            "online_bytes": 364544,
+            "key_array_bytes": 108408576,
+            "spline_key_array_bytes": 14708736,
+            "model_initialization_bytes": 69730304,
+            "online_exchanges": 5,
+            "dealer_ms_median": 207.82502499999998,
+            "model_initialization_ms_median": 1000.383919,
+            "setup_upload_ms_median": 212.08679
+          }
+        },
+        "compact25": {
+          "basis": {
+            "rtt0_ms": {
+              "median": 39.399908,
+              "quartiles": [
+                37.677958,
+                39.675194
+              ],
+              "runs": 9
+            },
+            "rtt50_ms": {
+              "median": 290.296212,
+              "quartiles": [
+                289.33404,
+                291.0305
+              ],
+              "runs": 9
+            },
+            "online_bytes": 403456,
+            "key_array_bytes": 102737152,
+            "spline_key_array_bytes": 8803840,
+            "model_initialization_bytes": 69730304,
+            "online_exchanges": 5,
+            "dealer_ms_median": 206.0920435,
+            "model_initialization_ms_median": 995.5280290000001,
+            "setup_upload_ms_median": 203.894217
+          },
+          "weighted": {
+            "rtt0_ms": {
+              "median": 46.410756,
+              "quartiles": [
+                43.814197,
+                46.44833
+              ],
+              "runs": 9
+            },
+            "rtt50_ms": {
+              "median": 297.212933,
+              "quartiles": [
+                294.725238,
+                297.301373
+              ],
+              "runs": 9
+            },
+            "online_bytes": 325632,
+            "key_array_bytes": 107017472,
+            "spline_key_array_bytes": 13317632,
+            "model_initialization_bytes": 69730304,
+            "online_exchanges": 5,
+            "dealer_ms_median": 206.5617595,
+            "model_initialization_ms_median": 993.484665,
+            "setup_upload_ms_median": 213.281327
+          }
+        }
+      }
+    },
+    "qwen15": {
+      "cpu": {
+        "exact32": {
+          "basis": {
+            "rtt0_ms": {
+              "median": 157.456224,
+              "quartiles": [
+                157.135608,
+                158.742624
+              ],
+              "runs": 9
+            },
+            "rtt50_ms": {
+              "median": 408.287767,
+              "quartiles": [
+                407.391607,
+                409.142447
+              ],
+              "runs": 9
+            },
+            "online_bytes": 741376,
+            "key_array_bytes": 284417024,
+            "spline_key_array_bytes": 20357120,
+            "model_initialization_bytes": 220200960,
+            "online_exchanges": 5,
+            "dealer_ms_median": 584.264962,
+            "model_initialization_ms_median": 712.7039155
+          },
+          "weighted": {
+            "rtt0_ms": {
+              "median": 170.361842,
+              "quartiles": [
+                169.383318,
+                171.229053
+              ],
+              "runs": 9
+            },
+            "rtt50_ms": {
+              "median": 422.677778,
+              "quartiles": [
+                421.337812,
+                423.064767
+              ],
+              "runs": 9
+            },
+            "online_bytes": 598016,
+            "key_array_bytes": 294308864,
+            "spline_key_array_bytes": 30679040,
+            "model_initialization_bytes": 220200960,
+            "online_exchanges": 5,
+            "dealer_ms_median": 589.7554625,
+            "model_initialization_ms_median": 716.892098
+          }
+        },
+        "corrected24": {
+          "basis": {
+            "rtt0_ms": {
+              "median": 117.363156,
+              "quartiles": [
+                112.112894,
+                117.620806
+              ],
+              "runs": 9
+            },
+            "rtt50_ms": {
+              "median": 367.471491,
+              "quartiles": [
+                363.068798,
+                368.446953
+              ],
+              "runs": 9
+            },
+            "online_bytes": 813056,
+            "key_array_bytes": 283126784,
+            "spline_key_array_bytes": 19066880,
+            "model_initialization_bytes": 220200960,
+            "online_exchanges": 5,
+            "dealer_ms_median": 586.0497505000001,
+            "model_initialization_ms_median": 712.9388775
+          },
+          "weighted": {
+            "rtt0_ms": {
+              "median": 119.306095,
+              "quartiles": [
+                115.691514,
+                120.41759
+              ],
+              "runs": 9
+            },
+            "rtt50_ms": {
+              "median": 369.812095,
+              "quartiles": [
+                365.611468,
+                370.890303
+              ],
+              "runs": 9
+            },
+            "online_bytes": 669696,
+            "key_array_bytes": 290724864,
+            "spline_key_array_bytes": 27095040,
+            "model_initialization_bytes": 220200960,
+            "online_exchanges": 5,
+            "dealer_ms_median": 589.353978,
+            "model_initialization_ms_median": 720.072508
+          }
+        },
+        "compact25": {
+          "basis": {
+            "rtt0_ms": {
+              "median": 114.016773,
+              "quartiles": [
+                110.217537,
+                115.667478
+              ],
+              "runs": 9
+            },
+            "rtt50_ms": {
+              "median": 365.234969,
+              "quartiles": [
+                361.568335,
+                366.835495
+              ],
+              "runs": 9
+            },
+            "online_bytes": 741376,
+            "key_array_bytes": 280277504,
+            "spline_key_array_bytes": 16217600,
+            "model_initialization_bytes": 220200960,
+            "online_exchanges": 5,
+            "dealer_ms_median": 582.7124125,
+            "model_initialization_ms_median": 712.8396495
+          },
+          "weighted": {
+            "rtt0_ms": {
+              "median": 116.904381,
+              "quartiles": [
+                112.720861,
+                117.671088
+              ],
+              "runs": 9
+            },
+            "rtt50_ms": {
+              "median": 368.431711,
+              "quartiles": [
+                365.877639,
+                369.796143
+              ],
+              "runs": 9
+            },
+            "online_bytes": 598016,
+            "key_array_bytes": 288162304,
+            "spline_key_array_bytes": 24532480,
+            "model_initialization_bytes": 220200960,
+            "online_exchanges": 5,
+            "dealer_ms_median": 585.486586,
+            "model_initialization_ms_median": 720.9463915
+          }
+        }
+      },
+      "cuda": {
+        "exact32": {
+          "basis": {
+            "rtt0_ms": {
+              "median": 71.713019,
+              "quartiles": [
+                71.553664,
+                74.826336
+              ],
+              "runs": 9
+            },
+            "rtt50_ms": {
+              "median": 322.886991,
+              "quartiles": [
+                322.428796,
+                325.813842
+              ],
+              "runs": 9
+            },
+            "online_bytes": 741376,
+            "key_array_bytes": 284417024,
+            "spline_key_array_bytes": 20357120,
+            "model_initialization_bytes": 220200960,
+            "online_exchanges": 5,
+            "dealer_ms_median": 603.9257525,
+            "model_initialization_ms_median": 1421.2196285,
+            "setup_upload_ms_median": 285.0194545
+          },
+          "weighted": {
+            "rtt0_ms": {
+              "median": 91.111739,
+              "quartiles": [
+                90.547471,
+                95.435127
+              ],
+              "runs": 9
+            },
+            "rtt50_ms": {
+              "median": 341.514406,
+              "quartiles": [
+                341.296374,
+                345.579229
+              ],
+              "runs": 9
+            },
+            "online_bytes": 598016,
+            "key_array_bytes": 294308864,
+            "spline_key_array_bytes": 30679040,
+            "model_initialization_bytes": 220200960,
+            "online_exchanges": 5,
+            "dealer_ms_median": 607.0777885,
+            "model_initialization_ms_median": 1439.8818005,
+            "setup_upload_ms_median": 294.0626355
+          }
+        },
+        "corrected24": {
+          "basis": {
+            "rtt0_ms": {
+              "median": 59.062196,
+              "quartiles": [
+                59.011342,
+                61.329242
+              ],
+              "runs": 9
+            },
+            "rtt50_ms": {
+              "median": 311.010991,
+              "quartiles": [
+                310.330796,
+                312.176893
+              ],
+              "runs": 9
+            },
+            "online_bytes": 813056,
+            "key_array_bytes": 283126784,
+            "spline_key_array_bytes": 19066880,
+            "model_initialization_bytes": 220200960,
+            "online_exchanges": 5,
+            "dealer_ms_median": 608.213601,
+            "model_initialization_ms_median": 1437.135647,
+            "setup_upload_ms_median": 299.192314
+          },
+          "weighted": {
+            "rtt0_ms": {
+              "median": 70.648696,
+              "quartiles": [
+                70.29048,
+                74.206869
+              ],
+              "runs": 9
+            },
+            "rtt50_ms": {
+              "median": 321.580216,
+              "quartiles": [
+                321.416528,
+                324.697027
+              ],
+              "runs": 9
+            },
+            "online_bytes": 669696,
+            "key_array_bytes": 290724864,
+            "spline_key_array_bytes": 27095040,
+            "model_initialization_bytes": 220200960,
+            "online_exchanges": 5,
+            "dealer_ms_median": 608.690832,
+            "model_initialization_ms_median": 1441.9373675,
+            "setup_upload_ms_median": 291.12429199999997
+          }
+        },
+        "compact25": {
+          "basis": {
+            "rtt0_ms": {
+              "median": 60.440538,
+              "quartiles": [
+                60.252645,
+                62.795942
+              ],
+              "runs": 9
+            },
+            "rtt50_ms": {
+              "median": 311.13633,
+              "quartiles": [
+                310.777846,
+                312.811481
+              ],
+              "runs": 9
+            },
+            "online_bytes": 741376,
+            "key_array_bytes": 280277504,
+            "spline_key_array_bytes": 16217600,
+            "model_initialization_bytes": 220200960,
+            "online_exchanges": 5,
+            "dealer_ms_median": 602.189824,
+            "model_initialization_ms_median": 1412.8043830000001,
+            "setup_upload_ms_median": 281.7108605
+          },
+          "weighted": {
+            "rtt0_ms": {
+              "median": 72.3936,
+              "quartiles": [
+                72.265741,
+                75.434622
+              ],
+              "runs": 9
+            },
+            "rtt50_ms": {
+              "median": 323.526521,
+              "quartiles": [
+                323.114468,
+                326.209625
+              ],
+              "runs": 9
+            },
+            "online_bytes": 598016,
+            "key_array_bytes": 288162304,
+            "spline_key_array_bytes": 24532480,
+            "model_initialization_bytes": 220200960,
+            "online_exchanges": 5,
+            "dealer_ms_median": 606.044699,
+            "model_initialization_ms_median": 1433.7152795,
+            "setup_upload_ms_median": 311.7351025
+          }
+        }
+      }
+    }
+  },
+  "aligned_function_quality": {
+    "qwen05": {
+      "wiki32_aligned": {
+        "predicted_positions": 4096,
+        "windows": 32,
+        "mean_kl": 0.0013306469263625331,
+        "top1_agreement": 0.984130859375,
+        "mean_nll_delta": 8.810311555862427e-05
+      },
+      "ptb32_aligned": {
+        "predicted_positions": 8192,
+        "windows": 32,
+        "mean_kl": 0.0010160908605030272,
+        "top1_agreement": 0.982421875,
+        "mean_nll_delta": 0.0011754930019378662
+      }
+    },
+    "qwen15": {
+      "wiki4_aligned": {
+        "predicted_positions": 512,
+        "windows": 4,
+        "mean_kl": 0.001841020304709673,
+        "top1_agreement": 0.974609375,
+        "mean_nll_delta": -0.0036292672157287598
+      },
+      "wiki32_aligned": {
+        "predicted_positions": 4096,
+        "windows": 32,
+        "mean_kl": 0.0019544662354746833,
+        "top1_agreement": 0.9736328125,
+        "mean_nll_delta": -0.002854183316230774
+      },
+      "ptb4_aligned": {
+        "predicted_positions": 1024,
+        "windows": 4,
+        "mean_kl": 0.001805765030439943,
+        "top1_agreement": 0.9794921875,
+        "mean_nll_delta": -0.004572510719299316
+      },
+      "ptb32_aligned": {
+        "predicted_positions": 8192,
+        "windows": 32,
+        "mean_kl": 0.0017443214783270378,
+        "top1_agreement": 0.976318359375,
+        "mean_nll_delta": -0.00399336963891983
+      }
+    }
+  },
+  "verified_full_block_runs": 432,
+  "input_sha256": {
+    "qwen_exact_coarse_compare_qwen05_cpu.json": "9580b1613f32e6e466acda8e72d2e536cc1fea50d1867d397b0e35cb7221c1ea",
+    "qwen_exact_coarse_compare_qwen05_cuda.json": "0ff4f38fa0bd349c190d74c7c9f6364045a758d42c8a856dcbf8d41ccbf175af",
+    "qwen_public_spline_quality_f22_extended32_alignedb8.json": "ea408133069eb0c885c970ebb273bf1ba41a35e78d022e3ac4b601624b1f6a4f",
+    "qwen_public_spline_quality_f22_alignedb8_ptb32x256.json": "83ef24d990dc651cc7cd1f6e891ee6c36a2a2a4ef9e5086522d173250ac8a181",
+    "qwen_exact_coarse_compare_qwen15_cpu.json": "5f657224a6a2db8ac71a5c6019f1d528cdbf89c096723e96242147c96b7168b0",
+    "qwen_exact_coarse_compare_qwen15_cuda.json": "7b108aa9a59e3e5c406ababaca5e22bbc5ad9d5e1eed9f134349ab0a3a622f8f",
+    "qwen15_dither_quality_aligned_b8_s20261029_wiki4.json": "78fbd549821e400d33881d54bf29c3319cae834154c532009be5ad025cafd0b5",
+    "qwen15_dither_quality_aligned_b8_s20261029_wiki32.json": "94645f37221a07b816e6ab68496ca8d935bfafae746b74e20ce87ce061844c91",
+    "qwen15_dither_quality_aligned_b8_s20261029_ptb4.json": "ee5d227a48122decee465ec3998ceb5714a14748cd103eb8850f43185da75ce3",
+    "qwen15_dither_quality_aligned_b8_s20261029_ptb32.json": "eb68235a52ece8eee2c1f4c4f63e3c148ac21714af2a395b24e71d547277aaa5"
+  },
+  "exact_function": "Exact32 andcorrected24 evaluate identical aligned finite functions at identical fullprecision A. Corrected24 uses one8-bit carry correction andan independently masked24-bit classifier. Compact25 is randomized andmay introduce selectionerror.",
+  "interpretation": "Shorter classifier performance is achievable without randomized selection. Corrected24 adds8n bothparty bytes andretains5 exchanges forbasis/weighted. Approximation retains a material/traffic tradeoff, not a unique localcompute advantage.",
+  "limits": "Two public pinned Qwen models, finite gate/down blocks only. SameGPU sequentialpartysharing; no realWAN,dealertransport orupstreamSigma/FuseFSS/Grotto comparisons. Setup separate. Standard TR/FSS components, independent novelty andcomplete jointsecurity notestablished."
+}

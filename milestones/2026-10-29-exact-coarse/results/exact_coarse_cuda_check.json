@@ -1,0 +1,51 @@
+{
+  "records": [
+    {
+      "model": "qwen05",
+      "layer": 12,
+      "n": 4864,
+      "variant": "basis",
+      "classifier_bits": 24,
+      "body_bits": 63,
+      "individual_party_raw_equal": true,
+      "individual_party_low_equal": true,
+      "passed": true
+    },
+    {
+      "model": "qwen05",
+      "layer": 12,
+      "n": 4864,
+      "variant": "weighted",
+      "classifier_bits": 24,
+      "body_bits": 63,
+      "individual_party_raw_equal": true,
+      "individual_party_low_equal": true,
+      "passed": true
+    },
+    {
+      "model": "qwen15",
+      "layer": 14,
+      "n": 8960,
+      "variant": "basis",
+      "classifier_bits": 24,
+      "body_bits": 63,
+      "individual_party_raw_equal": true,
+      "individual_party_low_equal": true,
+      "passed": true
+    },
+    {
+      "model": "qwen15",
+      "layer": 14,
+      "n": 8960,
+      "variant": "weighted",
+      "classifier_bits": 24,
+      "body_bits": 63,
+      "individual_party_raw_equal": true,
+      "individual_party_low_equal": true,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "hardware": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "limits": "Exact serialized-key functional checks against CPU; no timing or newsecurity/novelty claim."
+}

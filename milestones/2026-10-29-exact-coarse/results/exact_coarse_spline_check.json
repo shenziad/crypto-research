@@ -1,0 +1,24 @@
+{
+  "records": [
+    {
+      "variant": "basis",
+      "pairs": 4194304,
+      "all_body_masks": true,
+      "all_independent_coarse_masks": true,
+      "all_signed6_inputs": true,
+      "discontinuous_polynomials": true,
+      "passed": true
+    },
+    {
+      "variant": "weighted",
+      "pairs": 4194304,
+      "all_body_masks": true,
+      "all_independent_coarse_masks": true,
+      "all_signed6_inputs": true,
+      "discontinuous_polynomials": true,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "limits": "Exact aligned function; noC0 smoothness needed. One2-bitlowDCF plus4-bitcoarseDCF,12-bitbody. Trusted local reference; no timing, complete security or novelty claim."
+}
