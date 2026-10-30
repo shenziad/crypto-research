@@ -1,0 +1,184 @@
+{
+  "all_passed": true,
+  "results": [
+    {
+      "wall_seconds": 0.7508732799979043,
+      "all_correct": true,
+      "rows": 16,
+      "prefix_values_checked": 16,
+      "products_checked": 32,
+      "final_token_matches": true,
+      "normalizer_bits": 92,
+      "name": "peak0_u0",
+      "parties": [
+        {
+          "role": 1,
+          "rows": 16,
+          "protocol_ms": 611.281,
+          "sent": 1268468,
+          "received": 671740
+        },
+        {
+          "role": 2,
+          "rows": 16,
+          "protocol_ms": 611.29,
+          "sent": 671740,
+          "received": 1268468
+        }
+      ],
+      "total_wire_bytes": 1940208
+    },
+    {
+      "wall_seconds": 0.7508087069982139,
+      "all_correct": true,
+      "rows": 16,
+      "prefix_values_checked": 16,
+      "products_checked": 32,
+      "final_token_matches": true,
+      "normalizer_bits": 92,
+      "name": "peaklast_umax",
+      "parties": [
+        {
+          "role": 1,
+          "rows": 16,
+          "protocol_ms": 597.379,
+          "sent": 1268468,
+          "received": 671740
+        },
+        {
+          "role": 2,
+          "rows": 16,
+          "protocol_ms": 597.127,
+          "sent": 671740,
+          "received": 1268468
+        }
+      ],
+      "total_wire_bytes": 1940208
+    },
+    {
+      "wall_seconds": 0.7509825570014073,
+      "all_correct": true,
+      "rows": 16,
+      "prefix_values_checked": 16,
+      "products_checked": 32,
+      "final_token_matches": true,
+      "normalizer_bits": 92,
+      "name": "uniform_half",
+      "parties": [
+        {
+          "role": 1,
+          "rows": 16,
+          "protocol_ms": 540.961,
+          "sent": 1268468,
+          "received": 671740
+        },
+        {
+          "role": 2,
+          "rows": 16,
+          "protocol_ms": 540.91,
+          "sent": 671740,
+          "received": 1268468
+        }
+      ],
+      "total_wire_bytes": 1940208
+    },
+    {
+      "wall_seconds": 0.7507638959978067,
+      "all_correct": true,
+      "rows": 16,
+      "prefix_values_checked": 16,
+      "products_checked": 32,
+      "final_token_matches": true,
+      "normalizer_bits": 92,
+      "name": "zero_support_interior",
+      "parties": [
+        {
+          "role": 1,
+          "rows": 16,
+          "protocol_ms": 547.876,
+          "sent": 1268468,
+          "received": 671740
+        },
+        {
+          "role": 2,
+          "rows": 16,
+          "protocol_ms": 547.926,
+          "sent": 671740,
+          "received": 1268468
+        }
+      ],
+      "total_wire_bytes": 1940208
+    },
+    {
+      "wall_seconds": 0.750832433001051,
+      "all_correct": true,
+      "rows": 16,
+      "prefix_values_checked": 16,
+      "products_checked": 32,
+      "final_token_matches": true,
+      "normalizer_bits": 91,
+      "name": "one_mass_at_zero",
+      "parties": [
+        {
+          "role": 1,
+          "rows": 16,
+          "protocol_ms": 539.394,
+          "sent": 1268468,
+          "received": 671740
+        },
+        {
+          "role": 2,
+          "rows": 16,
+          "protocol_ms": 539.27,
+          "sent": 671740,
+          "received": 1268468
+        }
+      ],
+      "total_wire_bytes": 1940208
+    },
+    {
+      "wall_seconds": 0.7507432130005327,
+      "all_correct": true,
+      "rows": 128,
+      "prefix_values_checked": 128,
+      "products_checked": 256,
+      "final_token_matches": true,
+      "normalizer_bits": 91,
+      "name": "random_q_exp",
+      "parties": [
+        {
+          "role": 1,
+          "rows": 128,
+          "protocol_ms": 580.735,
+          "sent": 1430500,
+          "received": 1075628
+        },
+        {
+          "role": 2,
+          "rows": 128,
+          "protocol_ms": 580.683,
+          "sent": 1075628,
+          "received": 1430500
+        }
+      ],
+      "total_wire_bytes": 2506128
+    }
+  ],
+  "input_sha256": {
+    "experiments/private_weighted_cdf93.h": "0eaeb1a0bfae657bfb0bc0cbcaf72747fd79bdbde2923524c2a72b78f1e2d6c6",
+    "experiments/private_weighted_cdf93_check.cpp": "33cef74de93067eb748b303bcd2c140b9572aa072422bbc368e3807018f66f80",
+    "experiments/run_private_weighted_cdf93_check.py": "a2d7e1f4b43ad7212bde197216b4f6e9288d5320e185215c17cd71313d4808c9",
+    "experiments/run_dense_adapter_linearot.py": "d34366a246670ba5775fefe0ed995e2c3506a575b2a77eaa07a7411a46d62718",
+    "experiments/run_fable_smallbatch_check.py": "e7ca72c566bd61a3564e3c28ff82d20b1ccb1fc77d45a3cb9c986ab519ebc0b2",
+    "toolchain/bounded-sampler/private_weighted_cdf93_check": "2007acbfab6e60c3007aa8e274a666cf682156f0093c871a95d79f40ce30ca38",
+    "toolchain/bounded-sampler/dense_cdf31_build_manifest.json": "dc1c73df24fe498e9f33bffe877f74cdc69e4fa1815a6307c82fc479b15aea0e",
+    "third_party/FABLE/extern/EzPC/SCI/src/Millionaire/millionaire_with_equality.h": "eb5c0213c1d63b1f2bb032f93bfdf611b2222701740e28d9737559f3164fe2ae"
+  },
+  "preregistration_sha256": "38b1940aea378c97662d0d6767bec23cc55366c35b823ad8272453eda0a84e1e",
+  "limits": "Actualtwo-party weightedCDF: clientprivateqinteger masses sum2^60, exp31values secretadditive33shares. ExistingOT64products withlow30/high31qparts, low63wraplift to93, localprefix, scalarGC secretfloor(U64*Z/2^64), 28+64bit lexicographicMSB andsecretXORfirstCDFcrossing. Onlyfinaltoken toclient. Fullq=2^60 endpoint, Z=2^91 endpoint, jointU=0/half/max andzeroweightintervals covered. No trustedhelper; parentaudits allproducts/prefix/R/flags/finaltoken afterbothpartiesexit. FunctionsamplelawTV<=N/2^64 relativefiniteweights, no fullhead/modelquality/implementationsecurity/novelty claim. Coincontrols are functionalfixtures, not distributionfrequencyevidence.",
+  "_publication": {
+    "derived_summary": true,
+    "original_local_result_sha256": "acda8ea477d6e312441a1db0ab30054baa75e400ccb6605d5c90e5dcbb923c80",
+    "omitted": "Per-file private audit hashes, logs, source-sha duplication. Raw shares, coins, fixture archives and token outputs are local only. Frozen original JSON is not rewritten."
+  }
+}

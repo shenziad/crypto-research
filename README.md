@@ -10,6 +10,7 @@
 | 2026-10-30 | [固定提案私有token采样筛选](milestones/2026-10-30-private-sampling-screen/README.md) | 1,024个留出位置、98,304个精确枚举组合；直接方案负结果，已收束 |
 | 2026-10-30 | [有界私有输出采样：有限算术与秘密接受组件](milestones/2026-10-30-bounded-sampling-components/README.md) | 13组真实两方GC验证、有限采样误差预算及私有读行后端；完整链路未接通 |
 | 2026-10-30 | [有界私有输出采样完整功能原型](milestones/2026-10-30-bounded-sampling-fullchain/README.md) | 12次完整两方运行、两种后端各4次交替复测；密集强基线/实际安全归约未完成 |
+| 2026-10-30 | [同一有限E31分布的完整密集/拒绝采样对照](milestones/2026-10-30-matched-exp31/README.md) | 四组交替复测全部通过；当前实现通信少38.56%、墙钟少41.10%；独立创新/实际安全归约未完成 |
 
 [实验汇总JSON](milestones/2026-10-29-exact-coarse/results/exact_coarse_comparison_report.json) · [受限证明草稿](milestones/2026-10-29-exact-coarse/notes/20261029_exact_coarse_joint_view.md) · [复现范围与CPU smoke](milestones/2026-10-29-exact-coarse/REPRODUCIBILITY.md)
 

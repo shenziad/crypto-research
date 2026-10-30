@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-10-30T11:26:03.992545+00:00",
+  "input_sha256": {
+    "experiments/public_tanh_ot_native_check.cpp": "65877eba4424f9f0e59d97e7415647028afe94fe1ce71f35857da64685f149f7",
+    "experiments/build_public_tanh_ot_native_check.py": "2ab37f3cb4d6410263166770ece305c6d571b358215815af41bc4addbc3ee66e",
+    "experiments/run_public_tanh_ot_native_check.py": "f4b6b833a435cd3c80d9d133b996568caf5cb0ad389489a0c0474babe90dc90b",
+    "experiments/public_tanh_ot_chunked.h": "1cd39447a359a957207c8be5b9e8a3a25bd4150c4f342723575c4622003fc206",
+    "experiments/public_tanh_ot.h": "bba470ab0b4d70144aa533ab280740941ea6418a3d377fddaf388cb2adb44f18",
+    "experiments/public_tanh_compact.h": "b1f2913baa15cfe40ec45d74fda276210909de3cbcc653da9db06d5678662436",
+    "experiments/run_dense_adapter_linearot.py": "d34366a246670ba5775fefe0ed995e2c3506a575b2a77eaa07a7411a46d62718",
+    "experiments/bounded_adapter_fixed16.py": "af21fbed747d7fa15cb1fdda8a479e1d1290b5879147bfbff1955557b3d55a26",
+    "experiments/run_fable_smallbatch_check.py": "e7ca72c566bd61a3564e3c28ff82d20b1ccb1fc77d45a3cb9c986ab519ebc0b2",
+    "toolchain/bounded-sampler/public_tanh_ot_native_check": "3a0032cd4809f8cc364d37a1ed99fe95403b85ff46ec17fd6ad00c3272f20e07",
+    "toolchain/bounded-sampler/pwl_ot_native_build_manifest.json": "db0e9d5ae2705cca08e49e44b480a2e94065fe57373ef695423cd480b5f10c71"
+  },
+  "domain": "Every signedinteger z=-4*65536-1 through4*65536+1 inclusive, plus4large saturation inputs within |z|<2^27; raw44=z*65536+alternating0/65535. Independentfreshadditive44inputshares.",
+  "limits": "Actual two-party public4096chunk OT-PWL, complete finiteinterpolationcore plus saturation/sign andsignedfloorboundary checks. Allinputs logicaltestcontrols, noonlinehelper; parent onlyreconstructs afterbothnativeprocessesexit. Not everypossible44bitinput orproof ofimplementationsecurity. ExistingSCIoperations, exactsamefrozenfinitefunction, no newprimitive/modelprecisionchange orCCFclaim."
+}

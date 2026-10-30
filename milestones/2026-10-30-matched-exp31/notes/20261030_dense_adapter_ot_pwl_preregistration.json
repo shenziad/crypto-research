@@ -1,0 +1,50 @@
+{
+  "created_utc": "2026-10-30T11:10:18.024896+00:00",
+  "input_sha256": {
+    "experiments/bounded_adapter_gc.cpp": "3c6b8d47b889540ebc610c04c55a4ed69f79f992af366a6017c49a4491e6b7c1",
+    "experiments/bounded_adapter_fixed16.py": "af21fbed747d7fa15cb1fdda8a479e1d1290b5879147bfbff1955557b3d55a26",
+    "experiments/run_bounded_adapter_gc.py": "7d0d4d7b7763364baca7fd35f62978f98ca7ebb5ac065003d55bea11fe20f613",
+    "experiments/run_fable_smallbatch_check.py": "e7ca72c566bd61a3564e3c28ff82d20b1ccb1fc77d45a3cb9c986ab519ebc0b2",
+    "experiments/finite_descending_bernoulli.py": "f088b4a51bda87d520cdd210f31ffb574ffb3f1566d07b479eb2e03e9e2cefb3",
+    "results/bounded_output_adapter_weights.npz": "e89c3c6ee3163676249973519bd5499b5513d1f561a2a108c89b03ddfde984eb",
+    "results/bounded_adapter_gc_inputs.npz": "bc7f39ffd8c0ae6dc410038a97dc323aa07fbc28c5e8e48117e9f0bba0b8f729",
+    "results/bounded_adapter_fixed16_certificate.json": "baf7409d64a7e52edd51072c082fcb92b9ea3e60c80a1261c15ac08057332ebe",
+    "third_party/FABLE/extern/EzPC/SCI/src/LinearOT/linear-ot.h": "b3da4aa9fa4e30228611add70eb5c87d4f11bb4657a3ba5a0c853639ef03e149",
+    "third_party/FABLE/extern/EzPC/SCI/src/LinearOT/linear-ot.cpp": "4364a6d291b9f7f305cb915cb6816217056a394eef28ef609aa3b4f997bc9e93",
+    "third_party/FABLE/extern/EzPC/SCI/src/BuildingBlocks/truncation.cpp": "886a0ea9d07199f80b3d881f41295f408378967580f0d76299f4a57550bc7b82",
+    "third_party/FABLE/extern/EzPC/SCI/src/utils/io_pack.h": "2371eed0f738e8cac0ec68e87bf5854ef865d252d51fc218488cde65956a16a5",
+    "third_party/FABLE/extern/EzPC/SCI/src/OT/ot_pack.h": "33b02d12c90aafb0df41454e876d31fd1f2c73101cdc2bc519d0bce21572dee3",
+    "third_party/FABLE/extern/EzPC/SCI/tests/test_ring_matmul.cpp": "e6fcdd4580c440abda65052fd4e05c52bcfbd5d8ffc81018b9d37d10579cd815",
+    "experiments/dense_adapter_ot_pwl.cpp": "5684a2250d25e10a2ddd964e32dab9746986cfa5d123bda429e0961996314013",
+    "experiments/public_tanh_ot.h": "bba470ab0b4d70144aa533ab280740941ea6418a3d377fddaf388cb2adb44f18",
+    "experiments/public_tanh_compact.h": "b1f2913baa15cfe40ec45d74fda276210909de3cbcc653da9db06d5678662436",
+    "experiments/build_dense_adapter_ot_pwl.py": "d1fdbd9c52715886a5c90567c666f8a027e97cefb0bc31e5e0e2ec8ba699d766",
+    "experiments/run_dense_adapter_ot_pwl.py": "b89db8b9ff978a69d15919ec0534bd0c4f929cc0cff5a99c76aead04947c707a",
+    "toolchain/bounded-sampler/dense_adapter_ot_pwl": "c14224631292d969576522d8e104da266bd505f7de5db25160a5af69d3e85447",
+    "toolchain/bounded-sampler/dense_ot_pwl_build_manifest.json": "581cd3db3d55e53824bb38710bd754490bcac80d8a65d7973ef2d0da35344b17",
+    "third_party/FABLE/extern/EzPC/SCI/src/BuildingBlocks/aux-protocols.cpp": "e8f185e766ee55456af614e95889051588694ac0088b3a16e0be0104e2a91ddf",
+    "third_party/FABLE/extern/EzPC/SCI/src/BuildingBlocks/value-extension.cpp": "ce875299e6f213807014e6bc38528b81f4aa1c6df50b4754ef93bcf53aa2405d"
+  },
+  "cases": [
+    "signed_pwl_knots99",
+    "near_domain_accumulators8",
+    "ptb_full50304",
+    "wiki_full50304"
+  ],
+  "fixed_contract": {
+    "Bx_input_bits": [
+      18,
+      23
+    ],
+    "Bx_product_bits": 41,
+    "A_t_input_bits": [
+      18,
+      26
+    ],
+    "A_t_product_bits": 44,
+    "accumulate": false,
+    "output": "additive44 denseF20delta shares"
+  },
+  "limits": "Actual existingSCI LinearOT withfreshOTPack setup andprivateowner matrix mode, noOTPackcopy/helper. Exact unaccumulated products thenlocalring sums, GCfloor16/additive26bridge, denseA products, exactsamePWLtanh andadditive44outputsharing. Ownharness/header assertionsenabled; pinnedcompiledlibraries unchanged. AllthreeIOPackchannel sends/receives, setup/OT/GC/masks included. Parent reconstructs onlyafterbothnativeprocessesexit. Two modelcaptures reused, nofreshquality/training/precisionsearch. This is a full50304sharedscore component baseline; no privateweightedCDF/Gumbel/finaltoken sampling orfull baseline/SOTA/newness/CCFclaim. One diagnosticrunpercase; no balancedperformanceconclusion. Allnonlinear OT/key/setup/conversion/lookup traffic counted; gate_count backendstandardOT means GC gatecountnotapplicable, notzerocrypto work. Fullprivateweighted sampling remainsincomplete.",
+  "variant": "ExistingSCI exactfloor/MSB/mux, two4bit LUTs,14x18unsignedproduct, exactfloor/extension/clamp/sign. Identicalfinite PWL, noGCpubliccoefficientdecoder or precisionchange."
+}

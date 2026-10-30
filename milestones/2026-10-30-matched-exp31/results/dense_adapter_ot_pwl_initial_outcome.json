@@ -1,0 +1,22 @@
+{
+  "recorded_utc": "2026-10-30T11:21:21.280760+00:00",
+  "status": "initial full50304OT-PWL timedout atregistered600seconds; processes confirmedterminal; not claimedpassed",
+  "small_cases": [
+    "signed_pwl_knots99 passed",
+    "near_domain_accumulators8 passed"
+  ],
+  "large_case": "ptb50304 raw_t/t/raw_zfiles exist; no delta/metrics; parent removed bothnativeprocesses at timeout",
+  "evidence": "Duringwait bothnativePIDs live, lowCPU andwaiting, nonemptyTCPsendqueue observed. Exactprimitive/rootcause notyetlocalized. Separatepublic4096coordinatechunk variant preregistered; originalfiles/binary/source preserved.",
+  "file_sha256": {
+    "experiments/public_tanh_ot.h": "bba470ab0b4d70144aa533ab280740941ea6418a3d377fddaf388cb2adb44f18",
+    "experiments/dense_adapter_ot_pwl.cpp": "5684a2250d25e10a2ddd964e32dab9746986cfa5d123bda429e0961996314013",
+    "experiments/run_dense_adapter_ot_pwl.py": "b89db8b9ff978a69d15919ec0534bd0c4f929cc0cff5a99c76aead04947c707a",
+    "notes/20261030_dense_adapter_ot_pwl_preregistration.json": "884cd497099c6b30ca865e459580e0515f8c113a5a5afe8ca940d8ba6881ffbb",
+    "results/dense_adapter_ot_pwl.log": "5186c6222a28ab94e444e78aafd0504e797930246530cc176b0527842a3650c2"
+  },
+  "_publication": {
+    "derived_summary": true,
+    "original_local_result_sha256": "03d734aeaa1ba5f2d70d074552f993aec1576e702a428f6eb6a8a41653718d0f",
+    "omitted": "Per-file private audit hashes, logs, source-sha duplication. Raw shares, coins, fixture archives and token outputs are local only. Frozen original JSON is not rewritten."
+  }
+}

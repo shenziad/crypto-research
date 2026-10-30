@@ -1,0 +1,13 @@
+{
+  "all_passed": true,
+  "actual_slope_remainder_cases": 262153,
+  "decoder_cases": 16,
+  "seconds": 0.5437271330010844,
+  "header_sha256": "b1f2913baa15cfe40ec45d74fda276210909de3cbcc653da9db06d5678662436",
+  "limits": "All16384remainders for16actualpublicslopes plus9genericmultiplierboundaries and16decoder values. Standardbitidentity, no precisionchange or newcrypto primitive. RealGC conformance still separate.",
+  "_publication": {
+    "derived_summary": true,
+    "original_local_result_sha256": "d664494255ff1eb22ff148cd6ee81a96e331d59cae313c326fa9b5b810906d80",
+    "omitted": "Per-file private audit hashes, logs, source-sha duplication. Raw shares, coins, fixture archives and token outputs are local only. Frozen original JSON is not rewritten."
+  }
+}

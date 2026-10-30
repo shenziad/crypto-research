@@ -1,0 +1,321 @@
+{
+  "all_passed": true,
+  "results": [
+    {
+      "wall_seconds": 0.7507705239986535,
+      "all_correct": true,
+      "rows": 99,
+      "shared_A_conversion_exact": true,
+      "all_scores_and_E31_exact": true,
+      "final_token_matches": true,
+      "failure": false,
+      "name": "signed_pwl_knots",
+      "total_wire_bytes": 3609607,
+      "parties": [
+        {
+          "role": 1,
+          "count": 99,
+          "protocol_ms": 663.737,
+          "sent": 1553665,
+          "received": 2055942,
+          "profile": "same_E31_private_rejection"
+        },
+        {
+          "role": 2,
+          "count": 99,
+          "protocol_ms": 663.758,
+          "sent": 2055942,
+          "received": 1553665,
+          "profile": "same_E31_private_rejection"
+        }
+      ]
+    },
+    {
+      "wall_seconds": 0.7507719960012764,
+      "all_correct": true,
+      "rows": 8,
+      "shared_A_conversion_exact": true,
+      "all_scores_and_E31_exact": true,
+      "final_token_matches": true,
+      "failure": false,
+      "name": "near_domain_accumulators",
+      "total_wire_bytes": 1820419,
+      "parties": [
+        {
+          "role": 1,
+          "count": 8,
+          "protocol_ms": 644.327,
+          "sent": 684527,
+          "received": 1135892,
+          "profile": "same_E31_private_rejection"
+        },
+        {
+          "role": 2,
+          "count": 8,
+          "protocol_ms": 644.108,
+          "sent": 1135892,
+          "received": 684527,
+          "profile": "same_E31_private_rejection"
+        }
+      ]
+    },
+    {
+      "wall_seconds": 0.7507607750012539,
+      "all_correct": true,
+      "rows": 201,
+      "shared_A_conversion_exact": true,
+      "all_scores_and_E31_exact": true,
+      "final_token_matches": true,
+      "failure": false,
+      "name": "ptb_201_shares",
+      "total_wire_bytes": 6237347,
+      "parties": [
+        {
+          "role": 1,
+          "count": 201,
+          "protocol_ms": 651.109,
+          "sent": 2789753,
+          "received": 3447594,
+          "profile": "same_E31_private_rejection"
+        },
+        {
+          "role": 2,
+          "count": 201,
+          "protocol_ms": 651.126,
+          "sent": 3447594,
+          "received": 2789753,
+          "profile": "same_E31_private_rejection"
+        }
+      ]
+    },
+    {
+      "wall_seconds": 0.7509486449998803,
+      "all_correct": true,
+      "rows": 201,
+      "shared_A_conversion_exact": true,
+      "all_scores_and_E31_exact": true,
+      "final_token_matches": true,
+      "failure": false,
+      "name": "wiki_201_shares",
+      "total_wire_bytes": 6237347,
+      "parties": [
+        {
+          "role": 1,
+          "count": 201,
+          "protocol_ms": 613.733,
+          "sent": 2789753,
+          "received": 3447594,
+          "profile": "same_E31_private_rejection"
+        },
+        {
+          "role": 2,
+          "count": 201,
+          "protocol_ms": 614.201,
+          "sent": 3447594,
+          "received": 2789753,
+          "profile": "same_E31_private_rejection"
+        }
+      ]
+    },
+    {
+      "wall_seconds": 0.7507909070009191,
+      "all_correct": true,
+      "rows": 201,
+      "shared_A_conversion_exact": true,
+      "all_scores_and_E31_exact": true,
+      "final_token_matches": true,
+      "failure": false,
+      "name": "early_201",
+      "total_wire_bytes": 6237347,
+      "parties": [
+        {
+          "role": 1,
+          "count": 201,
+          "protocol_ms": 630.353,
+          "sent": 2789753,
+          "received": 3447594,
+          "profile": "same_E31_private_rejection"
+        },
+        {
+          "role": 2,
+          "count": 201,
+          "protocol_ms": 630.513,
+          "sent": 3447594,
+          "received": 2789753,
+          "profile": "same_E31_private_rejection"
+        }
+      ]
+    },
+    {
+      "wall_seconds": 0.750856560000102,
+      "all_correct": true,
+      "rows": 201,
+      "shared_A_conversion_exact": true,
+      "all_scores_and_E31_exact": true,
+      "final_token_matches": true,
+      "failure": false,
+      "name": "late_201",
+      "total_wire_bytes": 6237347,
+      "parties": [
+        {
+          "role": 1,
+          "count": 201,
+          "protocol_ms": 645.168,
+          "sent": 2789753,
+          "received": 3447594,
+          "profile": "same_E31_private_rejection"
+        },
+        {
+          "role": 2,
+          "count": 201,
+          "protocol_ms": 645.146,
+          "sent": 3447594,
+          "received": 2789753,
+          "profile": "same_E31_private_rejection"
+        }
+      ]
+    },
+    {
+      "wall_seconds": 0.7507663489996048,
+      "all_correct": true,
+      "rows": 201,
+      "shared_A_conversion_exact": true,
+      "all_scores_and_E31_exact": true,
+      "final_token_matches": true,
+      "failure": true,
+      "name": "failure_201",
+      "total_wire_bytes": 6237347,
+      "parties": [
+        {
+          "role": 1,
+          "count": 201,
+          "protocol_ms": 735.059,
+          "sent": 2789753,
+          "received": 3447594,
+          "profile": "same_E31_private_rejection"
+        },
+        {
+          "role": 2,
+          "count": 201,
+          "protocol_ms": 735.163,
+          "sent": 3447594,
+          "received": 2789753,
+          "profile": "same_E31_private_rejection"
+        }
+      ]
+    },
+    {
+      "wall_seconds": 0.7506560030014953,
+      "all_correct": true,
+      "rows": 1,
+      "shared_A_conversion_exact": true,
+      "all_scores_and_E31_exact": true,
+      "final_token_matches": true,
+      "failure": false,
+      "name": "positive_endpoint",
+      "total_wire_bytes": 1714563,
+      "parties": [
+        {
+          "role": 1,
+          "count": 1,
+          "protocol_ms": 595.57,
+          "sent": 622281,
+          "received": 1092282,
+          "profile": "same_E31_private_rejection"
+        },
+        {
+          "role": 2,
+          "count": 1,
+          "protocol_ms": 595.409,
+          "sent": 1092282,
+          "received": 622281,
+          "profile": "same_E31_private_rejection"
+        }
+      ]
+    },
+    {
+      "wall_seconds": 0.7508185209990188,
+      "all_correct": true,
+      "rows": 1,
+      "shared_A_conversion_exact": true,
+      "all_scores_and_E31_exact": true,
+      "final_token_matches": true,
+      "failure": true,
+      "name": "negative_equal",
+      "total_wire_bytes": 1714563,
+      "parties": [
+        {
+          "role": 1,
+          "count": 1,
+          "protocol_ms": 585.594,
+          "sent": 622281,
+          "received": 1092282,
+          "profile": "same_E31_private_rejection"
+        },
+        {
+          "role": 2,
+          "count": 1,
+          "protocol_ms": 585.157,
+          "sent": 1092282,
+          "received": 622281,
+          "profile": "same_E31_private_rejection"
+        }
+      ]
+    },
+    {
+      "wall_seconds": 0.7508445300009043,
+      "all_correct": true,
+      "rows": 1,
+      "shared_A_conversion_exact": true,
+      "all_scores_and_E31_exact": true,
+      "final_token_matches": true,
+      "failure": false,
+      "name": "negative_before",
+      "total_wire_bytes": 1714563,
+      "parties": [
+        {
+          "role": 1,
+          "count": 1,
+          "protocol_ms": 597.907,
+          "sent": 622281,
+          "received": 1092282,
+          "profile": "same_E31_private_rejection"
+        },
+        {
+          "role": 2,
+          "count": 1,
+          "protocol_ms": 597.531,
+          "sent": 1092282,
+          "received": 622281,
+          "profile": "same_E31_private_rejection"
+        }
+      ]
+    }
+  ],
+  "input_sha256": {
+    "experiments/selected_adapter_exp31.cpp": "7fcff42edfd0ca98cb6e94933e36f3ce98764200f50fddb01426c2810ff8b714",
+    "experiments/build_selected_adapter_exp31.py": "cf0fb7965973bf7741b74af0b0d6a4623f32606bfee1560b510d5cc8f8e6d2f1",
+    "experiments/run_selected_adapter_exp31.py": "8fb491257cb172f1589a3a22d6cdeea021b7f7e19363b08d362ee296b32a13f2",
+    "experiments/bounded_adapter_gc.cpp": "3c6b8d47b889540ebc610c04c55a4ed69f79f992af366a6017c49a4491e6b7c1",
+    "experiments/bounded_adapter_fixed16.py": "af21fbed747d7fa15cb1fdda8a479e1d1290b5879147bfbff1955557b3d55a26",
+    "experiments/run_bounded_adapter_gc.py": "7d0d4d7b7763364baca7fd35f62978f98ca7ebb5ac065003d55bea11fe20f613",
+    "experiments/run_dense_adapter_linearot.py": "d34366a246670ba5775fefe0ed995e2c3506a575b2a77eaa07a7411a46d62718",
+    "experiments/run_dense_adapter_cdf31.py": "d209b7907d408ca5eb9e0f22eb9ab4909fd62e2b50d6a9abc3c31430f7b1828d",
+    "experiments/public_tanh_ot_chunked.h": "1cd39447a359a957207c8be5b9e8a3a25bd4150c4f342723575c4622003fc206",
+    "experiments/public_tanh_ot.h": "bba470ab0b4d70144aa533ab280740941ea6418a3d377fddaf388cb2adb44f18",
+    "experiments/public_tanh_compact.h": "b1f2913baa15cfe40ec45d74fda276210909de3cbcc653da9db06d5678662436",
+    "experiments/run_fable_smallbatch_check.py": "e7ca72c566bd61a3564e3c28ff82d20b1ccb1fc77d45a3cb9c986ab519ebc0b2",
+    "toolchain/bounded-sampler/selected_adapter_exp31": "1013556b17c0eb1b36dad993b32683b703147e9a6419550f6d24f17b920d47b2",
+    "toolchain/bounded-sampler/selected_exp31_build_manifest.json": "fe775ec48a2277ba00185e44294043061b9163aca7d5e4a6c234243b4d93ce71",
+    "results/sci_exp31_finite_certificate.json": "8a7d19e0b0e48803cf784cea459372eb7d663f673573cfbfe0bbed542057e1ce",
+    "results/bounded_output_adapter_weights.npz": "e89c3c6ee3163676249973519bd5499b5513d1f561a2a108c89b03ddfde984eb",
+    "results/bounded_adapter_gc_inputs.npz": "bc7f39ffd8c0ae6dc410038a97dc323aa07fbc28c5e8e48117e9f0bba0b8f729"
+  },
+  "preregistration_sha256": "7e23733f487b3dd353dabb16b9904226295c74fbfd070fb803c159a42a0b4caa",
+  "limits": "MatchedfiniteE31selected-head component: serverprivateB/clientprivatex, XOR18selectedA/indexinputs -> standardB2A18/localweighted sum -> exactsharedLinearOT products/floors/PWL/verifiedSCIExp31 -> exactjointU31Bernoulli -> fixedfirstsuccess clientonlytoken. Legacyhandoff38random44bit words retained; onlyfirstword low31bits used, others ignoredlocally. Inputshares/coins controlled forfunctionalbranches; noalias/rowlookup inthisunit; nohelper andparentauditonlyafterbothnativeprocessesexit. Onepairpercase, notperformancebenchmark/quality/newness/CCFclaim. SameE31law ascomplete denseCDF baseline; originalp44descendingprofile unchanged.",
+  "_publication": {
+    "derived_summary": true,
+    "original_local_result_sha256": "be53f555ac6fa6d00f023c4477be1591ce796615e1d39e1bb9fae9f33957f0b9",
+    "omitted": "Per-file private audit hashes, logs, source-sha duplication. Raw shares, coins, fixture archives and token outputs are local only. Frozen original JSON is not rewritten."
+  }
+}

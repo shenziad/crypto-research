@@ -1,0 +1,600 @@
+{
+  "all_passed": true,
+  "results": [
+    {
+      "wall_seconds": 0.7514450609996857,
+      "name": "signed_pwl_knots",
+      "rows": 99,
+      "all_correct": true,
+      "parties": [
+        {
+          "role": 1,
+          "rows": 99,
+          "nonlinear": true,
+          "setup_ms": 587.827,
+          "bx_ms": 4.62504,
+          "bridge_ms": 17.7053,
+          "az_ms": 3.79653,
+          "nonlinear_ms": 3.51067,
+          "protocol_ms": 617.464,
+          "setup_counters": [
+            150144,
+            12997,
+            0,
+            285933,
+            8832,
+            0
+          ],
+          "bx_counters": [
+            248160,
+            12997,
+            0,
+            380141,
+            9056,
+            0
+          ],
+          "bridge_counters": [
+            248160,
+            12997,
+            287888,
+            380141,
+            9056,
+            275469
+          ],
+          "az_counters": [
+            333290,
+            12997,
+            287888,
+            404717,
+            9074,
+            275469
+          ],
+          "end_counters": [
+            333290,
+            12997,
+            2595380,
+            404717,
+            9074,
+            284181
+          ]
+        },
+        {
+          "role": 2,
+          "rows": 99,
+          "nonlinear": true,
+          "setup_ms": 587.569,
+          "bx_ms": 4.61534,
+          "bridge_ms": 17.7042,
+          "az_ms": 3.79607,
+          "nonlinear_ms": 3.60215,
+          "protocol_ms": 617.287,
+          "setup_counters": [
+            285933,
+            8832,
+            0,
+            150144,
+            12997,
+            0
+          ],
+          "bx_counters": [
+            380141,
+            9056,
+            0,
+            248160,
+            12997,
+            0
+          ],
+          "bridge_counters": [
+            380141,
+            9056,
+            275469,
+            248160,
+            12997,
+            287888
+          ],
+          "az_counters": [
+            404717,
+            9074,
+            275469,
+            333290,
+            12997,
+            287888
+          ],
+          "end_counters": [
+            404717,
+            9074,
+            284181,
+            333290,
+            12997,
+            2595380
+          ]
+        }
+      ],
+      "stage_wire_bytes": {
+        "setup": 457906,
+        "Bx": 192448,
+        "floor_bridge": 563357,
+        "A_t": 109724,
+        "floor_tanh_share": 2316204
+      },
+      "total_wire_bytes": 3639639,
+      "max_party_protocol_ms": 617.464,
+      "shared_scores_exact": true,
+      "exact_intermediates_checked": 214,
+      "nonlinear_gates": {
+        "and_gates": 71973,
+        "halfgate_table_bytes": 2303136
+      },
+      "file_sha256": {
+        "results/dense_adapter_compact_runs/signed_pwl_knots/party1/delta_add44.bin": "a1e26d7360716f94206e39a520ab46487528db6bb06af044a2475f3232dc6268",
+        "results/dense_adapter_compact_runs/signed_pwl_knots/party1/metrics.json": "4a3e520d99c158f452df7ecd57e66799c3617f31d901964ad16bb80e79ab7747",
+        "results/dense_adapter_compact_runs/signed_pwl_knots/party1/nonlinear_gate_count.json": "ecea4c8ad5d24bfac5378c7dff5e44e7ff8d4f9e8a317538502be6a3eb3008e5",
+        "results/dense_adapter_compact_runs/signed_pwl_knots/party1/own_input.bin": "79cf3788731815ba118b44930e4ae5c125665397880d3a192a86b0ca70c3745b",
+        "results/dense_adapter_compact_runs/signed_pwl_knots/party1/raw_t_add41.bin": "98ee209e44dbc12fec29863b6dbcb3767a1b718b7f1c1fb030d7d38dd8e44301",
+        "results/dense_adapter_compact_runs/signed_pwl_knots/party1/raw_z_add44.bin": "180a9bcc5c94fe240d2f152a9e9dd263e5f22f019eeecc67b63ba828d1f04467",
+        "results/dense_adapter_compact_runs/signed_pwl_knots/party1/t_add26.bin": "9ec0ee31f2e9511751c01c143f2fcf81501af5033a861fdbc61114e33a4c6184",
+        "results/dense_adapter_compact_runs/signed_pwl_knots/party2/delta_add44.bin": "eb8a517fe212c6094359fd4776c51a434af59a9c9877a4bf9c55cd02b259c5e4",
+        "results/dense_adapter_compact_runs/signed_pwl_knots/party2/metrics.json": "9d3b18d26b2495dde6b039779596d6fbbde20ca6da2f1409551abbbf7c322b9f",
+        "results/dense_adapter_compact_runs/signed_pwl_knots/party2/nonlinear_gate_count.json": "ecea4c8ad5d24bfac5378c7dff5e44e7ff8d4f9e8a317538502be6a3eb3008e5",
+        "results/dense_adapter_compact_runs/signed_pwl_knots/party2/own_input.bin": "5f3d850f588a3a62cc90775d38487afd2a15aa0810f21f4586bd6c1a245c9480",
+        "results/dense_adapter_compact_runs/signed_pwl_knots/party2/raw_t_add41.bin": "1c50e172383a8252c8181fef826cdddd6eb2dd466cb8957b6cfd68506e3b0353",
+        "results/dense_adapter_compact_runs/signed_pwl_knots/party2/raw_z_add44.bin": "775de912f239fa944427252c39dc3c8b77dbbe693befe3a280481221e9df4eaf",
+        "results/dense_adapter_compact_runs/signed_pwl_knots/party2/t_add26.bin": "946cbefd116c1d78c68012a38347c353ae7b17239c6295d0f5fa45b14f47066d"
+      }
+    },
+    {
+      "wall_seconds": 0.7509153110004263,
+      "name": "near_domain_accumulators",
+      "rows": 8,
+      "all_correct": true,
+      "parties": [
+        {
+          "role": 1,
+          "rows": 8,
+          "nonlinear": true,
+          "setup_ms": 533.598,
+          "bx_ms": 4.55913,
+          "bridge_ms": 17.3627,
+          "az_ms": 3.59382,
+          "nonlinear_ms": 0.356791,
+          "protocol_ms": 559.47,
+          "setup_counters": [
+            150144,
+            12997,
+            0,
+            285933,
+            8832,
+            0
+          ],
+          "bx_counters": [
+            248160,
+            12997,
+            0,
+            380141,
+            9056,
+            0
+          ],
+          "bridge_counters": [
+            248160,
+            12997,
+            287888,
+            380141,
+            9056,
+            275469
+          ],
+          "az_counters": [
+            255386,
+            12997,
+            287888,
+            404717,
+            9074,
+            275469
+          ],
+          "end_counters": [
+            255386,
+            12997,
+            474352,
+            404717,
+            9074,
+            276173
+          ]
+        },
+        {
+          "role": 2,
+          "rows": 8,
+          "nonlinear": true,
+          "setup_ms": 533.428,
+          "bx_ms": 4.54945,
+          "bridge_ms": 17.3619,
+          "az_ms": 3.59278,
+          "nonlinear_ms": 0.39351,
+          "protocol_ms": 559.326,
+          "setup_counters": [
+            285933,
+            8832,
+            0,
+            150144,
+            12997,
+            0
+          ],
+          "bx_counters": [
+            380141,
+            9056,
+            0,
+            248160,
+            12997,
+            0
+          ],
+          "bridge_counters": [
+            380141,
+            9056,
+            275469,
+            248160,
+            12997,
+            287888
+          ],
+          "az_counters": [
+            404717,
+            9074,
+            275469,
+            255386,
+            12997,
+            287888
+          ],
+          "end_counters": [
+            404717,
+            9074,
+            276173,
+            255386,
+            12997,
+            474352
+          ]
+        }
+      ],
+      "stage_wire_bytes": {
+        "setup": 457906,
+        "Bx": 192448,
+        "floor_bridge": 563357,
+        "A_t": 31820,
+        "floor_tanh_share": 187168
+      },
+      "total_wire_bytes": 1432699,
+      "max_party_protocol_ms": 559.47,
+      "shared_scores_exact": true,
+      "exact_intermediates_checked": 32,
+      "nonlinear_gates": {
+        "and_gates": 5816,
+        "halfgate_table_bytes": 186112
+      },
+      "file_sha256": {
+        "results/dense_adapter_compact_runs/near_domain_accumulators/party1/delta_add44.bin": "a8e51f65ffb76911e150c71f3b026e900236a4944ce6994a71d9ba3a8b9f6fb3",
+        "results/dense_adapter_compact_runs/near_domain_accumulators/party1/metrics.json": "298f85b9662aac9b5e56fdac0dba4d46d137f8470c66a3c266d264b3fc29b004",
+        "results/dense_adapter_compact_runs/near_domain_accumulators/party1/nonlinear_gate_count.json": "555983d2e5665720920e318cb514384777e8dc9f541d35964ec38f2cf33ecf49",
+        "results/dense_adapter_compact_runs/near_domain_accumulators/party1/own_input.bin": "fdb722017dcabc8810b83b094b27dde48fdc75ed88dd9c8894f89ecca434bb74",
+        "results/dense_adapter_compact_runs/near_domain_accumulators/party1/raw_t_add41.bin": "e38dd037888ed987ac2d8fa7b23646c4e040a2a9a3d30a7dbbb080b78b8973fb",
+        "results/dense_adapter_compact_runs/near_domain_accumulators/party1/raw_z_add44.bin": "898ddb7ae0999dd596f04b420ca009d1541f59fb447b8f208e1ce88494bbbfbf",
+        "results/dense_adapter_compact_runs/near_domain_accumulators/party1/t_add26.bin": "79a1cad130e66978ab31b1db016a756ab4c4bfe009a3579e59ac85bac017cba3",
+        "results/dense_adapter_compact_runs/near_domain_accumulators/party2/delta_add44.bin": "997714f81b9b30b1507407f3996f0a37f20ca29ebaa0c4943b5ed2fd99210ce3",
+        "results/dense_adapter_compact_runs/near_domain_accumulators/party2/metrics.json": "32b4cef53e87eb0ec6421f3e0584eb34890750cd2f2dd3383c3cf7c2b3c41727",
+        "results/dense_adapter_compact_runs/near_domain_accumulators/party2/nonlinear_gate_count.json": "555983d2e5665720920e318cb514384777e8dc9f541d35964ec38f2cf33ecf49",
+        "results/dense_adapter_compact_runs/near_domain_accumulators/party2/own_input.bin": "2c4d878a35697b22c4ceaddc5cde2a33a3b49b0968f6113e08f9ee758d3c1683",
+        "results/dense_adapter_compact_runs/near_domain_accumulators/party2/raw_t_add41.bin": "0a4d372d9082121adb43fb83a4bce50772fa1e5561b1ba7e8f2e4a8f7edbbc25",
+        "results/dense_adapter_compact_runs/near_domain_accumulators/party2/raw_z_add44.bin": "97467ee95aa9b32adcd2e88fef656cccb76b7e350277242fbd9a0837c18ae3cb",
+        "results/dense_adapter_compact_runs/near_domain_accumulators/party2/t_add26.bin": "308dfdbd97e9e5cc558e0a43fdf0829efdce92240b802179c590eda4ac97acf3"
+      }
+    },
+    {
+      "wall_seconds": 2.7515839289990254,
+      "name": "ptb_full50304",
+      "rows": 50304,
+      "all_correct": true,
+      "parties": [
+        {
+          "role": 1,
+          "rows": 50304,
+          "nonlinear": true,
+          "setup_ms": 502.276,
+          "bx_ms": 4.52645,
+          "bridge_ms": 24.2138,
+          "az_ms": 155.192,
+          "nonlinear_ms": 1936.87,
+          "protocol_ms": 2623.08,
+          "setup_counters": [
+            150144,
+            12997,
+            0,
+            285933,
+            8832,
+            0
+          ],
+          "bx_counters": [
+            248160,
+            12997,
+            0,
+            380141,
+            9056,
+            0
+          ],
+          "bridge_counters": [
+            248160,
+            12997,
+            287888,
+            380141,
+            9056,
+            275469
+          ],
+          "az_counters": [
+            43258466,
+            12997,
+            287888,
+            404717,
+            9074,
+            275469
+          ],
+          "end_counters": [
+            43258466,
+            12997,
+            1243601552,
+            404717,
+            9074,
+            71316493
+          ]
+        },
+        {
+          "role": 2,
+          "rows": 50304,
+          "nonlinear": true,
+          "setup_ms": 504.704,
+          "bx_ms": 4.50678,
+          "bridge_ms": 24.2141,
+          "az_ms": 157.57,
+          "nonlinear_ms": 1945.26,
+          "protocol_ms": 2636.25,
+          "setup_counters": [
+            285933,
+            8832,
+            0,
+            150144,
+            12997,
+            0
+          ],
+          "bx_counters": [
+            380141,
+            9056,
+            0,
+            248160,
+            12997,
+            0
+          ],
+          "bridge_counters": [
+            380141,
+            9056,
+            275469,
+            248160,
+            12997,
+            287888
+          ],
+          "az_counters": [
+            404717,
+            9074,
+            275469,
+            43258466,
+            12997,
+            287888
+          ],
+          "end_counters": [
+            404717,
+            9074,
+            71316493,
+            43258466,
+            12997,
+            1243601552
+          ]
+        }
+      ],
+      "stage_wire_bytes": {
+        "setup": 457906,
+        "Bx": 192448,
+        "floor_bridge": 563357,
+        "A_t": 43034900,
+        "floor_tanh_share": 1314354688
+      },
+      "total_wire_bytes": 1358603299,
+      "max_party_protocol_ms": 2636.25,
+      "shared_scores_exact": true,
+      "exact_intermediates_checked": 100624,
+      "nonlinear_gates": {
+        "and_gates": 36571008,
+        "halfgate_table_bytes": 1170272256
+      },
+      "file_sha256": {
+        "results/dense_adapter_compact_runs/ptb_full50304/party1/delta_add44.bin": "446f66fd983ab504c00b4afd5956754a6bfed1f392da352b56448bd770e1801d",
+        "results/dense_adapter_compact_runs/ptb_full50304/party1/metrics.json": "e44f9c772d8200ec065d9d42201d074a702696e1aa251d9cb0f29fa1c48ed47f",
+        "results/dense_adapter_compact_runs/ptb_full50304/party1/nonlinear_gate_count.json": "343e9c271c229fb465c82eb651c8795c7734c42694507df015a83f6f830b9e47",
+        "results/dense_adapter_compact_runs/ptb_full50304/party1/own_input.bin": "86bbf7658d9ce2ec9fcca55ab823139f2d4ce326a4fb7e3aa8d937e675791975",
+        "results/dense_adapter_compact_runs/ptb_full50304/party1/raw_t_add41.bin": "31e9ccc1be19047ef5522acbc703db90cbe4b0bf347645639564997bad29816e",
+        "results/dense_adapter_compact_runs/ptb_full50304/party1/raw_z_add44.bin": "cb4ac8bfcbba7f218661ec61ead325fa5cf6e86534e1097629f53c7fb09b6548",
+        "results/dense_adapter_compact_runs/ptb_full50304/party1/t_add26.bin": "2f7aa9f05fe9c4187bf64d63232b6a8573e7149b6860f0aeb4cdb103cccd3283",
+        "results/dense_adapter_compact_runs/ptb_full50304/party2/delta_add44.bin": "e7622605f59d6de38fce94de2fab7b249a43d2e3b08c260bf8f65f02f50709cf",
+        "results/dense_adapter_compact_runs/ptb_full50304/party2/metrics.json": "20425a1590fbc9f9e5f1e5c17b0f2f02a04717d0de70859512071c22eeb275e4",
+        "results/dense_adapter_compact_runs/ptb_full50304/party2/nonlinear_gate_count.json": "343e9c271c229fb465c82eb651c8795c7734c42694507df015a83f6f830b9e47",
+        "results/dense_adapter_compact_runs/ptb_full50304/party2/own_input.bin": "38f3ccb948a06cf728bbaadcda862546bf3a8dbd0c865048c3c98e4bcaca2dea",
+        "results/dense_adapter_compact_runs/ptb_full50304/party2/raw_t_add41.bin": "af229dc1772943c29aae4d1be0e628534f313b22882265d3de13e18fea33e291",
+        "results/dense_adapter_compact_runs/ptb_full50304/party2/raw_z_add44.bin": "bb483ac6bc57f21173cec4e0b4590928f562c82c74f5777a833633b4a576e9ba",
+        "results/dense_adapter_compact_runs/ptb_full50304/party2/t_add26.bin": "fbd32fa53e1cb2d063eed9f1e41fb3849185101b6909780cad8880dce124c34c"
+      }
+    },
+    {
+      "wall_seconds": 2.7517103450009017,
+      "name": "wiki_full50304",
+      "rows": 50304,
+      "all_correct": true,
+      "parties": [
+        {
+          "role": 1,
+          "rows": 50304,
+          "nonlinear": true,
+          "setup_ms": 508.522,
+          "bx_ms": 4.56536,
+          "bridge_ms": 23.8391,
+          "az_ms": 155.807,
+          "nonlinear_ms": 1954.51,
+          "protocol_ms": 2647.25,
+          "setup_counters": [
+            150144,
+            12997,
+            0,
+            285933,
+            8832,
+            0
+          ],
+          "bx_counters": [
+            248160,
+            12997,
+            0,
+            380141,
+            9056,
+            0
+          ],
+          "bridge_counters": [
+            248160,
+            12997,
+            287888,
+            380141,
+            9056,
+            275469
+          ],
+          "az_counters": [
+            43258466,
+            12997,
+            287888,
+            404717,
+            9074,
+            275469
+          ],
+          "end_counters": [
+            43258466,
+            12997,
+            1243601552,
+            404717,
+            9074,
+            71316493
+          ]
+        },
+        {
+          "role": 2,
+          "rows": 50304,
+          "nonlinear": true,
+          "setup_ms": 508.784,
+          "bx_ms": 4.54767,
+          "bridge_ms": 23.8384,
+          "az_ms": 157.594,
+          "nonlinear_ms": 1963.72,
+          "protocol_ms": 2658.49,
+          "setup_counters": [
+            285933,
+            8832,
+            0,
+            150144,
+            12997,
+            0
+          ],
+          "bx_counters": [
+            380141,
+            9056,
+            0,
+            248160,
+            12997,
+            0
+          ],
+          "bridge_counters": [
+            380141,
+            9056,
+            275469,
+            248160,
+            12997,
+            287888
+          ],
+          "az_counters": [
+            404717,
+            9074,
+            275469,
+            43258466,
+            12997,
+            287888
+          ],
+          "end_counters": [
+            404717,
+            9074,
+            71316493,
+            43258466,
+            12997,
+            1243601552
+          ]
+        }
+      ],
+      "stage_wire_bytes": {
+        "setup": 457906,
+        "Bx": 192448,
+        "floor_bridge": 563357,
+        "A_t": 43034900,
+        "floor_tanh_share": 1314354688
+      },
+      "total_wire_bytes": 1358603299,
+      "max_party_protocol_ms": 2658.49,
+      "shared_scores_exact": true,
+      "exact_intermediates_checked": 100624,
+      "nonlinear_gates": {
+        "and_gates": 36571008,
+        "halfgate_table_bytes": 1170272256
+      },
+      "file_sha256": {
+        "results/dense_adapter_compact_runs/wiki_full50304/party1/delta_add44.bin": "76fb2276dc2a5d705b5484962689d80d8a2b9031bedcc1cddc337b9f07e40902",
+        "results/dense_adapter_compact_runs/wiki_full50304/party1/metrics.json": "93ea8b2355da36d75bfee552b46d70c1662eee59b920413ffb7f3e9a1a30c436",
+        "results/dense_adapter_compact_runs/wiki_full50304/party1/nonlinear_gate_count.json": "343e9c271c229fb465c82eb651c8795c7734c42694507df015a83f6f830b9e47",
+        "results/dense_adapter_compact_runs/wiki_full50304/party1/own_input.bin": "86bbf7658d9ce2ec9fcca55ab823139f2d4ce326a4fb7e3aa8d937e675791975",
+        "results/dense_adapter_compact_runs/wiki_full50304/party1/raw_t_add41.bin": "ba3731a5dbe360095bd5ea314f5c6c655ebc8d927b736c2352d3fc9e5be0dc5f",
+        "results/dense_adapter_compact_runs/wiki_full50304/party1/raw_z_add44.bin": "202a772d83dd3b20a425e1990bfec1195fa48da8bde509eccb8c43f8b83ae510",
+        "results/dense_adapter_compact_runs/wiki_full50304/party1/t_add26.bin": "737f69f0b0240d4f633246b2dd17ed75205977157182c4ecc4297b6c8e3fa9bb",
+        "results/dense_adapter_compact_runs/wiki_full50304/party2/delta_add44.bin": "08e4e59a019ad1578e1ec379f5dd0a88fdbf115adc7f07439daa2b3ac17186c7",
+        "results/dense_adapter_compact_runs/wiki_full50304/party2/metrics.json": "f528e672fa2d5b4100398287ef95cd052fcb997416699c18df11e37e0643e6fa",
+        "results/dense_adapter_compact_runs/wiki_full50304/party2/nonlinear_gate_count.json": "343e9c271c229fb465c82eb651c8795c7734c42694507df015a83f6f830b9e47",
+        "results/dense_adapter_compact_runs/wiki_full50304/party2/own_input.bin": "41119cbff6366cc2e87034cf5abe8c43d9ca7caec2fa30b9c966557ebc8075d3",
+        "results/dense_adapter_compact_runs/wiki_full50304/party2/raw_t_add41.bin": "c6ced00fcb3114820a302700589a5b0d47a6e76255b3e21d51075d003d5d014b",
+        "results/dense_adapter_compact_runs/wiki_full50304/party2/raw_z_add44.bin": "4673d5826739885676a2e0ebb38218972042784ef1a530acbd8a8e8fed74b764",
+        "results/dense_adapter_compact_runs/wiki_full50304/party2/t_add26.bin": "270f34c72ee3e008a4944e4740a4cc74c80faa7f674cba032b1d0c1d8e6214c4"
+      }
+    }
+  ],
+  "input_sha256": {
+    "experiments/bounded_adapter_gc.cpp": "3c6b8d47b889540ebc610c04c55a4ed69f79f992af366a6017c49a4491e6b7c1",
+    "experiments/bounded_adapter_fixed16.py": "af21fbed747d7fa15cb1fdda8a479e1d1290b5879147bfbff1955557b3d55a26",
+    "experiments/run_bounded_adapter_gc.py": "7d0d4d7b7763364baca7fd35f62978f98ca7ebb5ac065003d55bea11fe20f613",
+    "experiments/run_fable_smallbatch_check.py": "e7ca72c566bd61a3564e3c28ff82d20b1ccb1fc77d45a3cb9c986ab519ebc0b2",
+    "experiments/finite_descending_bernoulli.py": "f088b4a51bda87d520cdd210f31ffb574ffb3f1566d07b479eb2e03e9e2cefb3",
+    "results/bounded_output_adapter_weights.npz": "e89c3c6ee3163676249973519bd5499b5513d1f561a2a108c89b03ddfde984eb",
+    "results/bounded_adapter_gc_inputs.npz": "bc7f39ffd8c0ae6dc410038a97dc323aa07fbc28c5e8e48117e9f0bba0b8f729",
+    "results/bounded_adapter_fixed16_certificate.json": "baf7409d64a7e52edd51072c082fcb92b9ea3e60c80a1261c15ac08057332ebe",
+    "third_party/FABLE/extern/EzPC/SCI/src/LinearOT/linear-ot.h": "b3da4aa9fa4e30228611add70eb5c87d4f11bb4657a3ba5a0c853639ef03e149",
+    "third_party/FABLE/extern/EzPC/SCI/src/LinearOT/linear-ot.cpp": "4364a6d291b9f7f305cb915cb6816217056a394eef28ef609aa3b4f997bc9e93",
+    "third_party/FABLE/extern/EzPC/SCI/src/BuildingBlocks/truncation.cpp": "886a0ea9d07199f80b3d881f41295f408378967580f0d76299f4a57550bc7b82",
+    "third_party/FABLE/extern/EzPC/SCI/src/utils/io_pack.h": "2371eed0f738e8cac0ec68e87bf5854ef865d252d51fc218488cde65956a16a5",
+    "third_party/FABLE/extern/EzPC/SCI/src/OT/ot_pack.h": "33b02d12c90aafb0df41454e876d31fd1f2c73101cdc2bc519d0bce21572dee3",
+    "third_party/FABLE/extern/EzPC/SCI/tests/test_ring_matmul.cpp": "e6fcdd4580c440abda65052fd4e05c52bcfbd5d8ffc81018b9d37d10579cd815",
+    "experiments/dense_adapter_compact.cpp": "d4ebd7396823acf9a5d8ecac59dcd4e4e85815649c0710e8abec336f6ed4c9b6",
+    "experiments/build_dense_adapter_compact.py": "284bba8836b58a60a8b5df7f876a8eac308892fdaeb11e6843a00040ab496df4",
+    "experiments/run_dense_adapter_compact.py": "34e0632c84e771a4389062089f8ce3ef0ee4d92fbaf2169dbfdc9788d4c9c047",
+    "experiments/public_tanh_compact.h": "b1f2913baa15cfe40ec45d74fda276210909de3cbcc653da9db06d5678662436",
+    "experiments/public_tanh_compact_check.cpp": "51ce35d3fd406667eae3b834cab1df03902b7adf6e264d7dbc392009d67f6cbd",
+    "results/public_tanh_compact_check.json": "d664494255ff1eb22ff148cd6ee81a96e331d59cae313c326fa9b5b810906d80",
+    "toolchain/bounded-sampler/dense_adapter_compact": "46c96e9be7ab744a6439c1c52708c59beec6f15c6229aebf8438279f0d851dd1",
+    "toolchain/bounded-sampler/dense_compact_build_manifest.json": "7d7598a5e9d0c4d27acdf21a9a252526439b7f1a8dc71f4d3a577748ec5ee568"
+  },
+  "preregistration_sha256": "dce275c9cf3a0085712f14205f61013e3ba9510de439124a466c65d69791a72c",
+  "limits": "Actual existingSCI LinearOT withfreshOTPack setup andprivateowner matrix mode, noOTPackcopy/helper. Exact unaccumulated products thenlocalring sums, GCfloor16/additive26bridge, denseA products, exactsamePWLtanh andadditive44outputsharing. Ownharness/header assertionsenabled; pinnedcompiledlibraries unchanged. AllthreeIOPackchannel sends/receives, setup/OT/GC/masks included. Parent reconstructs onlyafterbothnativeprocessesexit. Two modelcaptures reused, nofreshquality/training/precisionsearch. This is a full50304sharedscore component baseline; no privateweightedCDF/Gumbel/finaltoken sampling orfull baseline/SOTA/newness/CCFclaim. One diagnosticrunpercase; no balancedperformanceconclusion. Standard Boolean circuit engineering only. Publicslope/remainder262153plaintextcases verified before measurements; both full50304modelcontexts must exactlymatchsameintegerreference. No independentnewness or optimizedfullsampler claim.",
+  "_publication": {
+    "derived_summary": true,
+    "original_local_result_sha256": "a81984b2aa22cbe88a5db02013a822f063316e0efab3c6086651eac38ea4588b",
+    "omitted": "Per-file private audit hashes, logs, source-sha duplication. Raw shares, coins, fixture archives and token outputs are local only. Frozen original JSON is not rewritten."
+  }
+}

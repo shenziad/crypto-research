@@ -1,0 +1,26 @@
+"""Build public4096 batching variant and actual upstream public-factor dump."""
+import hashlib
+import json
+from pathlib import Path
+import subprocess
+
+ROOT=Path(__file__).resolve().parents[1]
+
+
+def main():
+    old=json.loads((ROOT/'toolchain/bounded-sampler/dense_adapter_build_manifest.json').read_bytes())
+    result={}
+    for stem in ('dense_adapter_ot_chunked','sci_exp31_factor_dump'):
+        source=ROOT/'experiments'/(stem+'.cpp');binary=ROOT/'toolchain/bounded-sampler'/stem
+        assert not binary.exists()
+        command=[str(source) if word==str(ROOT/'experiments/dense_adapter_linearot.cpp') else
+            str(binary) if word==str(ROOT/'toolchain/bounded-sampler/dense_adapter_linearot') else word
+            for word in old['command']]
+        subprocess.run(command,cwd=old['cwd'],check=True)
+        result[stem]=dict(command=command,source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),
+            binary_sha256=hashlib.sha256(binary.read_bytes()).hexdigest())
+    (ROOT/'toolchain/bounded-sampler/dense_ot_chunked_build_manifest.json').write_text(json.dumps(result,indent=2)+'\n')
+    print(json.dumps({n:x['binary_sha256'] for n,x in result.items()}))
+
+
+if __name__=='__main__':main()

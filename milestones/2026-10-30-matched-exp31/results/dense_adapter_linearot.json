@@ -1,0 +1,597 @@
+{
+  "all_passed": true,
+  "results": [
+    {
+      "wall_seconds": 0.7514790749992244,
+      "name": "signed_pwl_knots",
+      "rows": 99,
+      "all_correct": true,
+      "parties": [
+        {
+          "role": 1,
+          "rows": 99,
+          "nonlinear": true,
+          "setup_ms": 585.673,
+          "bx_ms": 5.05573,
+          "bridge_ms": 20.8282,
+          "az_ms": 3.77495,
+          "nonlinear_ms": 8.15138,
+          "protocol_ms": 623.483,
+          "setup_counters": [
+            150144,
+            12997,
+            0,
+            285933,
+            8832,
+            0
+          ],
+          "bx_counters": [
+            248160,
+            12997,
+            0,
+            380141,
+            9056,
+            0
+          ],
+          "bridge_counters": [
+            248160,
+            12997,
+            287888,
+            380141,
+            9056,
+            275469
+          ],
+          "az_counters": [
+            333290,
+            12997,
+            287888,
+            404717,
+            9074,
+            275469
+          ],
+          "end_counters": [
+            333290,
+            12997,
+            6571220,
+            404717,
+            9074,
+            284181
+          ]
+        },
+        {
+          "role": 2,
+          "rows": 99,
+          "nonlinear": true,
+          "setup_ms": 585.323,
+          "bx_ms": 5.03424,
+          "bridge_ms": 20.8314,
+          "az_ms": 3.77526,
+          "nonlinear_ms": 8.23312,
+          "protocol_ms": 623.197,
+          "setup_counters": [
+            285933,
+            8832,
+            0,
+            150144,
+            12997,
+            0
+          ],
+          "bx_counters": [
+            380141,
+            9056,
+            0,
+            248160,
+            12997,
+            0
+          ],
+          "bridge_counters": [
+            380141,
+            9056,
+            275469,
+            248160,
+            12997,
+            287888
+          ],
+          "az_counters": [
+            404717,
+            9074,
+            275469,
+            333290,
+            12997,
+            287888
+          ],
+          "end_counters": [
+            404717,
+            9074,
+            284181,
+            333290,
+            12997,
+            6571220
+          ]
+        }
+      ],
+      "stage_wire_bytes": {
+        "setup": 457906,
+        "Bx": 192448,
+        "floor_bridge": 563357,
+        "A_t": 109724,
+        "floor_tanh_share": 6292044
+      },
+      "total_wire_bytes": 7615479,
+      "max_party_protocol_ms": 623.483,
+      "shared_scores_exact": true,
+      "exact_intermediates_checked": 214,
+      "nonlinear_gates": {
+        "and_gates": 196218,
+        "halfgate_table_bytes": 6278976
+      },
+      "file_sha256": {
+        "results/dense_adapter_linearot_runs/signed_pwl_knots/party1/delta_add44.bin": "d207e2d836608822ecf5207854ef0075dd1a59b2e7116e55280f8770a05d4b7e",
+        "results/dense_adapter_linearot_runs/signed_pwl_knots/party1/metrics.json": "fb2101b6624946c538f58c444c90a547235cd9dd34b167c2c4defaba46338090",
+        "results/dense_adapter_linearot_runs/signed_pwl_knots/party1/nonlinear_gate_count.json": "7a2a7d8f17178a1c8b1f93f1b00f42b068a106fc7b6232c43ce9d6a0754b7f56",
+        "results/dense_adapter_linearot_runs/signed_pwl_knots/party1/own_input.bin": "79cf3788731815ba118b44930e4ae5c125665397880d3a192a86b0ca70c3745b",
+        "results/dense_adapter_linearot_runs/signed_pwl_knots/party1/raw_t_add41.bin": "4268055a76ffd2279f02b7c2d6ebe9791b5485124af30207d92151cbc8443af2",
+        "results/dense_adapter_linearot_runs/signed_pwl_knots/party1/raw_z_add44.bin": "8815d340f7c01725fd477d4665264e3e728c2d784a589af4dc35eb0321ee2980",
+        "results/dense_adapter_linearot_runs/signed_pwl_knots/party1/t_add26.bin": "371b5ad699cd0de0d4957ba0eba259ead7baf7cc85e923231b95d00850e56c2b",
+        "results/dense_adapter_linearot_runs/signed_pwl_knots/party2/delta_add44.bin": "836b00e88121c8dcbd9746136c958da503b46b20a7c47615b776c35272015520",
+        "results/dense_adapter_linearot_runs/signed_pwl_knots/party2/metrics.json": "87a9e02dd9e24f229f3470dad31406383a8fe0dd69347dd24c0a571559184e8b",
+        "results/dense_adapter_linearot_runs/signed_pwl_knots/party2/nonlinear_gate_count.json": "7a2a7d8f17178a1c8b1f93f1b00f42b068a106fc7b6232c43ce9d6a0754b7f56",
+        "results/dense_adapter_linearot_runs/signed_pwl_knots/party2/own_input.bin": "5f3d850f588a3a62cc90775d38487afd2a15aa0810f21f4586bd6c1a245c9480",
+        "results/dense_adapter_linearot_runs/signed_pwl_knots/party2/raw_t_add41.bin": "616ae9342199a70a24929db04bb36274b4270baf81c24ecfa6b601dafc7d4609",
+        "results/dense_adapter_linearot_runs/signed_pwl_knots/party2/raw_z_add44.bin": "6952c30b58f96b93cb4765023c60a3aaef483df207ef76ed67c5ce1caa201744",
+        "results/dense_adapter_linearot_runs/signed_pwl_knots/party2/t_add26.bin": "d8a161819906508c198a0c743260e67df6539bf73f8aab53276c9d002a66a13e"
+      }
+    },
+    {
+      "wall_seconds": 0.7508689229980519,
+      "name": "near_domain_accumulators",
+      "rows": 8,
+      "all_correct": true,
+      "parties": [
+        {
+          "role": 1,
+          "rows": 8,
+          "nonlinear": true,
+          "setup_ms": 528.636,
+          "bx_ms": 4.56978,
+          "bridge_ms": 23.8549,
+          "az_ms": 3.60498,
+          "nonlinear_ms": 0.697703,
+          "protocol_ms": 561.364,
+          "setup_counters": [
+            150144,
+            12997,
+            0,
+            285933,
+            8832,
+            0
+          ],
+          "bx_counters": [
+            248160,
+            12997,
+            0,
+            380141,
+            9056,
+            0
+          ],
+          "bridge_counters": [
+            248160,
+            12997,
+            287888,
+            380141,
+            9056,
+            275469
+          ],
+          "az_counters": [
+            255386,
+            12997,
+            287888,
+            404717,
+            9074,
+            275469
+          ],
+          "end_counters": [
+            255386,
+            12997,
+            795632,
+            404717,
+            9074,
+            276173
+          ]
+        },
+        {
+          "role": 2,
+          "rows": 8,
+          "nonlinear": true,
+          "setup_ms": 528.289,
+          "bx_ms": 4.56025,
+          "bridge_ms": 23.8537,
+          "az_ms": 3.60652,
+          "nonlinear_ms": 0.732839,
+          "protocol_ms": 561.042,
+          "setup_counters": [
+            285933,
+            8832,
+            0,
+            150144,
+            12997,
+            0
+          ],
+          "bx_counters": [
+            380141,
+            9056,
+            0,
+            248160,
+            12997,
+            0
+          ],
+          "bridge_counters": [
+            380141,
+            9056,
+            275469,
+            248160,
+            12997,
+            287888
+          ],
+          "az_counters": [
+            404717,
+            9074,
+            275469,
+            255386,
+            12997,
+            287888
+          ],
+          "end_counters": [
+            404717,
+            9074,
+            276173,
+            255386,
+            12997,
+            795632
+          ]
+        }
+      ],
+      "stage_wire_bytes": {
+        "setup": 457906,
+        "Bx": 192448,
+        "floor_bridge": 563357,
+        "A_t": 31820,
+        "floor_tanh_share": 508448
+      },
+      "total_wire_bytes": 1753979,
+      "max_party_protocol_ms": 561.364,
+      "shared_scores_exact": true,
+      "exact_intermediates_checked": 32,
+      "nonlinear_gates": {
+        "and_gates": 15856,
+        "halfgate_table_bytes": 507392
+      },
+      "file_sha256": {
+        "results/dense_adapter_linearot_runs/near_domain_accumulators/party1/delta_add44.bin": "0227f49ea99e7d6e87aa0570617c72950bce11b9c52ad0377930878e9ec4b74b",
+        "results/dense_adapter_linearot_runs/near_domain_accumulators/party1/metrics.json": "d6c52f02563103ff7139f3b1835d69fddf9841c03a6aad7408cd980be1847f2b",
+        "results/dense_adapter_linearot_runs/near_domain_accumulators/party1/nonlinear_gate_count.json": "b7e274bf7fcdccfe610d607048f857b051f2594d9cad8abfac3c2892be2ead79",
+        "results/dense_adapter_linearot_runs/near_domain_accumulators/party1/own_input.bin": "fdb722017dcabc8810b83b094b27dde48fdc75ed88dd9c8894f89ecca434bb74",
+        "results/dense_adapter_linearot_runs/near_domain_accumulators/party1/raw_t_add41.bin": "fdc147c618f08143e2d5cb1d37e6e93815ac363f78745566ed694f60a4e633a5",
+        "results/dense_adapter_linearot_runs/near_domain_accumulators/party1/raw_z_add44.bin": "1ee21dbb7be1b856d8cbce4906f17cf12ac4d99de5ccc793ece06426292c11b9",
+        "results/dense_adapter_linearot_runs/near_domain_accumulators/party1/t_add26.bin": "afbf6eab676416cb765f2f3937c0d7b4fd1deefb61addf9fdbaaa245fb527448",
+        "results/dense_adapter_linearot_runs/near_domain_accumulators/party2/delta_add44.bin": "d3a42af072cc1572344bea88c84af547cf596a1b8cfb25559bc887fc5d0a9c5f",
+        "results/dense_adapter_linearot_runs/near_domain_accumulators/party2/metrics.json": "76fc763c3ee03cc61064bc6a96f73b736f71af88036e26080b3ea6151e8ebbea",
+        "results/dense_adapter_linearot_runs/near_domain_accumulators/party2/nonlinear_gate_count.json": "b7e274bf7fcdccfe610d607048f857b051f2594d9cad8abfac3c2892be2ead79",
+        "results/dense_adapter_linearot_runs/near_domain_accumulators/party2/own_input.bin": "2c4d878a35697b22c4ceaddc5cde2a33a3b49b0968f6113e08f9ee758d3c1683",
+        "results/dense_adapter_linearot_runs/near_domain_accumulators/party2/raw_t_add41.bin": "02eeba1a88eede661439af2a95c83bb8a9e33ca96c1c6e13961071691377c2c4",
+        "results/dense_adapter_linearot_runs/near_domain_accumulators/party2/raw_z_add44.bin": "1f1153d2f7b6be6d43fc69a38e77cb3e07657c69d8a045c1ed9209de397884ce",
+        "results/dense_adapter_linearot_runs/near_domain_accumulators/party2/t_add26.bin": "8b8f5779177e8d3a6b17be83632ad88835d58291acc2c9bf4496fc65d84e202b"
+      }
+    },
+    {
+      "wall_seconds": 5.002468996000971,
+      "name": "ptb_full50304",
+      "rows": 50304,
+      "all_correct": true,
+      "parties": [
+        {
+          "role": 1,
+          "rows": 50304,
+          "nonlinear": true,
+          "setup_ms": 505.899,
+          "bx_ms": 4.67843,
+          "bridge_ms": 18.698,
+          "az_ms": 165.521,
+          "nonlinear_ms": 4106.83,
+          "protocol_ms": 4801.62,
+          "setup_counters": [
+            150144,
+            12997,
+            0,
+            285933,
+            8832,
+            0
+          ],
+          "bx_counters": [
+            248160,
+            12997,
+            0,
+            380141,
+            9056,
+            0
+          ],
+          "bridge_counters": [
+            248160,
+            12997,
+            287888,
+            380141,
+            9056,
+            275469
+          ],
+          "az_counters": [
+            43258466,
+            12997,
+            287888,
+            404717,
+            9074,
+            275469
+          ],
+          "end_counters": [
+            43258466,
+            12997,
+            3263810192,
+            404717,
+            9074,
+            71316493
+          ]
+        },
+        {
+          "role": 2,
+          "rows": 50304,
+          "nonlinear": true,
+          "setup_ms": 507.847,
+          "bx_ms": 4.66925,
+          "bridge_ms": 18.6971,
+          "az_ms": 167.628,
+          "nonlinear_ms": 4118.13,
+          "protocol_ms": 4816.97,
+          "setup_counters": [
+            285933,
+            8832,
+            0,
+            150144,
+            12997,
+            0
+          ],
+          "bx_counters": [
+            380141,
+            9056,
+            0,
+            248160,
+            12997,
+            0
+          ],
+          "bridge_counters": [
+            380141,
+            9056,
+            275469,
+            248160,
+            12997,
+            287888
+          ],
+          "az_counters": [
+            404717,
+            9074,
+            275469,
+            43258466,
+            12997,
+            287888
+          ],
+          "end_counters": [
+            404717,
+            9074,
+            71316493,
+            43258466,
+            12997,
+            3263810192
+          ]
+        }
+      ],
+      "stage_wire_bytes": {
+        "setup": 457906,
+        "Bx": 192448,
+        "floor_bridge": 563357,
+        "A_t": 43034900,
+        "floor_tanh_share": 3334563328
+      },
+      "total_wire_bytes": 3378811939,
+      "max_party_protocol_ms": 4816.97,
+      "shared_scores_exact": true,
+      "exact_intermediates_checked": 100624,
+      "nonlinear_gates": {
+        "and_gates": 99702528,
+        "halfgate_table_bytes": 3190480896
+      },
+      "file_sha256": {
+        "results/dense_adapter_linearot_runs/ptb_full50304/party1/delta_add44.bin": "c422fdd082694989d1955252aedd18e51c528f2f50f63ec304f6d39fae26f03b",
+        "results/dense_adapter_linearot_runs/ptb_full50304/party1/metrics.json": "097449dda62af6b516b7c8cfe730cf1f7836214538648eb34da23aa5a9ea6fe2",
+        "results/dense_adapter_linearot_runs/ptb_full50304/party1/nonlinear_gate_count.json": "e46989577ee3d929a00815f8609a1ad3dbc8e82b7c5b15d9c6cd08c1b4682342",
+        "results/dense_adapter_linearot_runs/ptb_full50304/party1/own_input.bin": "86bbf7658d9ce2ec9fcca55ab823139f2d4ce326a4fb7e3aa8d937e675791975",
+        "results/dense_adapter_linearot_runs/ptb_full50304/party1/raw_t_add41.bin": "f59ee90e082c4e8063be216bca20fc7226e09ca19760d777a2c0f6ccccaee5e3",
+        "results/dense_adapter_linearot_runs/ptb_full50304/party1/raw_z_add44.bin": "e35378490abc0c7eea3d8b0b8f0f63655bce28c579b8ef50d3843e73055431f8",
+        "results/dense_adapter_linearot_runs/ptb_full50304/party1/t_add26.bin": "643adc9aa25adecf965480f290d9be3cd375d9aa2e06f74e553fc0eb5c805bea",
+        "results/dense_adapter_linearot_runs/ptb_full50304/party2/delta_add44.bin": "50958f5701f0070932d958f4e9259d4563cdf4b88ba1fdd13a383c60aeb46820",
+        "results/dense_adapter_linearot_runs/ptb_full50304/party2/metrics.json": "746126ad67e36463c9691939ba10ec0e50317447bcd529a5de34680e1db03412",
+        "results/dense_adapter_linearot_runs/ptb_full50304/party2/nonlinear_gate_count.json": "e46989577ee3d929a00815f8609a1ad3dbc8e82b7c5b15d9c6cd08c1b4682342",
+        "results/dense_adapter_linearot_runs/ptb_full50304/party2/own_input.bin": "38f3ccb948a06cf728bbaadcda862546bf3a8dbd0c865048c3c98e4bcaca2dea",
+        "results/dense_adapter_linearot_runs/ptb_full50304/party2/raw_t_add41.bin": "0208c7a15ea6ec039fb6c6b4024255c591c3950f5b41f63a7da0aacb6d3c99de",
+        "results/dense_adapter_linearot_runs/ptb_full50304/party2/raw_z_add44.bin": "8183da93fb65ce3f413282d88e39b7fc9d9508a26c06bf0490efa40fed6f200c",
+        "results/dense_adapter_linearot_runs/ptb_full50304/party2/t_add26.bin": "7498d560681a6506e70b8f8db790d3e5565cb6cda8690260795524571e35d651"
+      }
+    },
+    {
+      "wall_seconds": 5.002206840003055,
+      "name": "wiki_full50304",
+      "rows": 50304,
+      "all_correct": true,
+      "parties": [
+        {
+          "role": 1,
+          "rows": 50304,
+          "nonlinear": true,
+          "setup_ms": 521.769,
+          "bx_ms": 4.74284,
+          "bridge_ms": 24.3875,
+          "az_ms": 159.944,
+          "nonlinear_ms": 4151.01,
+          "protocol_ms": 4861.86,
+          "setup_counters": [
+            150144,
+            12997,
+            0,
+            285933,
+            8832,
+            0
+          ],
+          "bx_counters": [
+            248160,
+            12997,
+            0,
+            380141,
+            9056,
+            0
+          ],
+          "bridge_counters": [
+            248160,
+            12997,
+            287888,
+            380141,
+            9056,
+            275469
+          ],
+          "az_counters": [
+            43258466,
+            12997,
+            287888,
+            404717,
+            9074,
+            275469
+          ],
+          "end_counters": [
+            43258466,
+            12997,
+            3263810192,
+            404717,
+            9074,
+            71316493
+          ]
+        },
+        {
+          "role": 2,
+          "rows": 50304,
+          "nonlinear": true,
+          "setup_ms": 523.39,
+          "bx_ms": 4.72075,
+          "bridge_ms": 24.3916,
+          "az_ms": 162.115,
+          "nonlinear_ms": 4161.04,
+          "protocol_ms": 4875.65,
+          "setup_counters": [
+            285933,
+            8832,
+            0,
+            150144,
+            12997,
+            0
+          ],
+          "bx_counters": [
+            380141,
+            9056,
+            0,
+            248160,
+            12997,
+            0
+          ],
+          "bridge_counters": [
+            380141,
+            9056,
+            275469,
+            248160,
+            12997,
+            287888
+          ],
+          "az_counters": [
+            404717,
+            9074,
+            275469,
+            43258466,
+            12997,
+            287888
+          ],
+          "end_counters": [
+            404717,
+            9074,
+            71316493,
+            43258466,
+            12997,
+            3263810192
+          ]
+        }
+      ],
+      "stage_wire_bytes": {
+        "setup": 457906,
+        "Bx": 192448,
+        "floor_bridge": 563357,
+        "A_t": 43034900,
+        "floor_tanh_share": 3334563328
+      },
+      "total_wire_bytes": 3378811939,
+      "max_party_protocol_ms": 4875.65,
+      "shared_scores_exact": true,
+      "exact_intermediates_checked": 100624,
+      "nonlinear_gates": {
+        "and_gates": 99702528,
+        "halfgate_table_bytes": 3190480896
+      },
+      "file_sha256": {
+        "results/dense_adapter_linearot_runs/wiki_full50304/party1/delta_add44.bin": "a271d7076a2ea6764d02f4953246b82833f3dbc17ca2c033a951ee4b9c6a3768",
+        "results/dense_adapter_linearot_runs/wiki_full50304/party1/metrics.json": "365d26e33a8e3ac71c997d4e8742c28f21680d0a7acc7cb9610c412a63ddc953",
+        "results/dense_adapter_linearot_runs/wiki_full50304/party1/nonlinear_gate_count.json": "e46989577ee3d929a00815f8609a1ad3dbc8e82b7c5b15d9c6cd08c1b4682342",
+        "results/dense_adapter_linearot_runs/wiki_full50304/party1/own_input.bin": "86bbf7658d9ce2ec9fcca55ab823139f2d4ce326a4fb7e3aa8d937e675791975",
+        "results/dense_adapter_linearot_runs/wiki_full50304/party1/raw_t_add41.bin": "9b6de0787ee1d773b5db9cb43a303b9f129f81a3d30b80a2a642d58fcb98ff3a",
+        "results/dense_adapter_linearot_runs/wiki_full50304/party1/raw_z_add44.bin": "f957070288411cc5574cb84b00e171d693524356cefca83adf4258899b1015a5",
+        "results/dense_adapter_linearot_runs/wiki_full50304/party1/t_add26.bin": "b0aac4f3cb2d0936e865c6f52e8e36afc38ff6dd6031272673e9ce31aa59fcc7",
+        "results/dense_adapter_linearot_runs/wiki_full50304/party2/delta_add44.bin": "2fab510bfb90d45833ff9592382eca0ad77e86f859edc7280509b183f8d97e6e",
+        "results/dense_adapter_linearot_runs/wiki_full50304/party2/metrics.json": "207e86fdcdcf8665fd1e7e253b42e4d394df4cb93342e57c087705f9307af68e",
+        "results/dense_adapter_linearot_runs/wiki_full50304/party2/nonlinear_gate_count.json": "e46989577ee3d929a00815f8609a1ad3dbc8e82b7c5b15d9c6cd08c1b4682342",
+        "results/dense_adapter_linearot_runs/wiki_full50304/party2/own_input.bin": "41119cbff6366cc2e87034cf5abe8c43d9ca7caec2fa30b9c966557ebc8075d3",
+        "results/dense_adapter_linearot_runs/wiki_full50304/party2/raw_t_add41.bin": "b6e668f1b38e62ded498601724a78ddbb54e417e3fd59cde8008873d3edded92",
+        "results/dense_adapter_linearot_runs/wiki_full50304/party2/raw_z_add44.bin": "7f761ed007e58f60e03a3fd8946b4be4a3a13f7483e0abde44570b642472fd39",
+        "results/dense_adapter_linearot_runs/wiki_full50304/party2/t_add26.bin": "6cae38b4af09d7d2bf63de46a58d6897e3d061290df8f9dfc2f6483c063fae5c"
+      }
+    }
+  ],
+  "input_sha256": {
+    "experiments/dense_adapter_linearot.cpp": "91babe506101fd183eb270642f1f048d3b1bfe818862b05c2167c9bb3c710da8",
+    "experiments/build_dense_adapter_linearot.py": "832ce240977da68b2daccee2c4e87f52f6081a400011264cb6311663bdc4537b",
+    "experiments/run_dense_adapter_linearot.py": "d34366a246670ba5775fefe0ed995e2c3506a575b2a77eaa07a7411a46d62718",
+    "experiments/bounded_adapter_gc.cpp": "3c6b8d47b889540ebc610c04c55a4ed69f79f992af366a6017c49a4491e6b7c1",
+    "experiments/bounded_adapter_fixed16.py": "af21fbed747d7fa15cb1fdda8a479e1d1290b5879147bfbff1955557b3d55a26",
+    "experiments/run_bounded_adapter_gc.py": "7d0d4d7b7763364baca7fd35f62978f98ca7ebb5ac065003d55bea11fe20f613",
+    "experiments/run_fable_smallbatch_check.py": "e7ca72c566bd61a3564e3c28ff82d20b1ccb1fc77d45a3cb9c986ab519ebc0b2",
+    "experiments/finite_descending_bernoulli.py": "f088b4a51bda87d520cdd210f31ffb574ffb3f1566d07b479eb2e03e9e2cefb3",
+    "toolchain/bounded-sampler/dense_adapter_linearot": "c9c24f88ae6c7a8f78a36aebd9e947a065f730d97bfd6dbd19207207988ced76",
+    "toolchain/bounded-sampler/dense_adapter_build_manifest.json": "3895b7ba227fb44d36153f1b29a24e522e058196967e5970910a39997affe8c2",
+    "results/bounded_output_adapter_weights.npz": "e89c3c6ee3163676249973519bd5499b5513d1f561a2a108c89b03ddfde984eb",
+    "results/bounded_adapter_gc_inputs.npz": "bc7f39ffd8c0ae6dc410038a97dc323aa07fbc28c5e8e48117e9f0bba0b8f729",
+    "results/bounded_adapter_fixed16_certificate.json": "baf7409d64a7e52edd51072c082fcb92b9ea3e60c80a1261c15ac08057332ebe",
+    "third_party/FABLE/extern/EzPC/SCI/src/LinearOT/linear-ot.h": "b3da4aa9fa4e30228611add70eb5c87d4f11bb4657a3ba5a0c853639ef03e149",
+    "third_party/FABLE/extern/EzPC/SCI/src/LinearOT/linear-ot.cpp": "4364a6d291b9f7f305cb915cb6816217056a394eef28ef609aa3b4f997bc9e93",
+    "third_party/FABLE/extern/EzPC/SCI/src/BuildingBlocks/truncation.cpp": "886a0ea9d07199f80b3d881f41295f408378967580f0d76299f4a57550bc7b82",
+    "third_party/FABLE/extern/EzPC/SCI/src/utils/io_pack.h": "2371eed0f738e8cac0ec68e87bf5854ef865d252d51fc218488cde65956a16a5",
+    "third_party/FABLE/extern/EzPC/SCI/src/OT/ot_pack.h": "33b02d12c90aafb0df41454e876d31fd1f2c73101cdc2bc519d0bce21572dee3",
+    "third_party/FABLE/extern/EzPC/SCI/tests/test_ring_matmul.cpp": "e6fcdd4580c440abda65052fd4e05c52bcfbd5d8ffc81018b9d37d10579cd815"
+  },
+  "preregistration_sha256": "01c477b01d4da6204faa46e948146d0f552ea2c8ae42ca6410518f8bbcf788ff",
+  "limits": "Actual existingSCI LinearOT withfreshOTPack setup andprivateowner matrix mode, noOTPackcopy/helper. Exact unaccumulated products thenlocalring sums, GCfloor16/additive26bridge, denseA products, exactsamePWLtanh andadditive44outputsharing. Ownharness/header assertionsenabled; pinnedcompiledlibraries unchanged. AllthreeIOPackchannel sends/receives, setup/OT/GC/masks included. Parent reconstructs onlyafterbothnativeprocessesexit. Two modelcaptures reused, nofreshquality/training/precisionsearch. This is a full50304sharedscore component baseline; no privateweightedCDF/Gumbel/finaltoken sampling orfull baseline/SOTA/newness/CCFclaim. One diagnosticrunpercase; no balancedperformanceconclusion.",
+  "_publication": {
+    "derived_summary": true,
+    "original_local_result_sha256": "683efd98e2de3646826ee4ae393bfdedb236022e4d055d2dcca98232f3a4d9aa",
+    "omitted": "Per-file private audit hashes, logs, source-sha duplication. Raw shares, coins, fixture archives and token outputs are local only. Frozen original JSON is not rewritten."
+  }
+}

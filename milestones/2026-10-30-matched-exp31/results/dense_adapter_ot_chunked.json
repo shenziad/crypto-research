@@ -1,0 +1,602 @@
+{
+  "all_passed": true,
+  "results": [
+    {
+      "wall_seconds": 0.7515976409995346,
+      "name": "signed_pwl_knots",
+      "rows": 99,
+      "all_correct": true,
+      "parties": [
+        {
+          "role": 1,
+          "rows": 99,
+          "nonlinear": true,
+          "setup_ms": 568.076,
+          "bx_ms": 6.52038,
+          "bridge_ms": 23.8504,
+          "az_ms": 4.45289,
+          "nonlinear_ms": 32.8853,
+          "protocol_ms": 635.785,
+          "setup_counters": [
+            150144,
+            12997,
+            0,
+            285933,
+            8832,
+            0
+          ],
+          "bx_counters": [
+            248160,
+            12997,
+            0,
+            380141,
+            9056,
+            0
+          ],
+          "bridge_counters": [
+            248160,
+            12997,
+            287888,
+            380141,
+            9056,
+            275469
+          ],
+          "az_counters": [
+            333290,
+            12997,
+            287888,
+            404717,
+            9074,
+            275469
+          ],
+          "end_counters": [
+            384162,
+            58053,
+            287888,
+            830701,
+            17434,
+            275469
+          ]
+        },
+        {
+          "role": 2,
+          "rows": 99,
+          "nonlinear": true,
+          "setup_ms": 568.099,
+          "bx_ms": 6.49826,
+          "bridge_ms": 23.8554,
+          "az_ms": 4.45213,
+          "nonlinear_ms": 32.8818,
+          "protocol_ms": 635.786,
+          "setup_counters": [
+            285933,
+            8832,
+            0,
+            150144,
+            12997,
+            0
+          ],
+          "bx_counters": [
+            380141,
+            9056,
+            0,
+            248160,
+            12997,
+            0
+          ],
+          "bridge_counters": [
+            380141,
+            9056,
+            275469,
+            248160,
+            12997,
+            287888
+          ],
+          "az_counters": [
+            404717,
+            9074,
+            275469,
+            333290,
+            12997,
+            287888
+          ],
+          "end_counters": [
+            830701,
+            17434,
+            275469,
+            384162,
+            58053,
+            287888
+          ]
+        }
+      ],
+      "stage_wire_bytes": {
+        "setup": 457906,
+        "Bx": 192448,
+        "floor_bridge": 563357,
+        "A_t": 109724,
+        "floor_tanh_share": 530272
+      },
+      "total_wire_bytes": 1853707,
+      "max_party_protocol_ms": 635.786,
+      "shared_scores_exact": true,
+      "exact_intermediates_checked": 214,
+      "nonlinear_gates": {
+        "and_gates": null,
+        "backend": "standard_OT_PWL"
+      },
+      "file_sha256": {
+        "results/dense_adapter_ot_chunked_runs/signed_pwl_knots/party1/delta_add44.bin": "883e2c7a7a6e33d22100fb562a637aa6b788af21114325f782afdc7253040769",
+        "results/dense_adapter_ot_chunked_runs/signed_pwl_knots/party1/metrics.json": "e8404189116d77e9bee580ba61b2fb47197d87103659247a4ae04c937df71bd4",
+        "results/dense_adapter_ot_chunked_runs/signed_pwl_knots/party1/nonlinear_gate_count.json": "902cf8857e4556235cdde048a39c2aa8d322dddfaa1e04324236bcb0a47916ef",
+        "results/dense_adapter_ot_chunked_runs/signed_pwl_knots/party1/own_input.bin": "79cf3788731815ba118b44930e4ae5c125665397880d3a192a86b0ca70c3745b",
+        "results/dense_adapter_ot_chunked_runs/signed_pwl_knots/party1/raw_t_add41.bin": "643a9be763384879ca54bc7e1478a882af1344fa31e06cab102944fc9dc87045",
+        "results/dense_adapter_ot_chunked_runs/signed_pwl_knots/party1/raw_z_add44.bin": "94b688ff69ad447e85b6deb2c0387fb1d63db6922389123119877f284972d0e6",
+        "results/dense_adapter_ot_chunked_runs/signed_pwl_knots/party1/t_add26.bin": "af111d9c551ad0936fafa7e69de821065db95278e852cc32762956073bd60926",
+        "results/dense_adapter_ot_chunked_runs/signed_pwl_knots/party2/delta_add44.bin": "6a8a93784d23b250e0398d5151da3f1e7c741dd7e389bbda1b094ef7a58b7c6f",
+        "results/dense_adapter_ot_chunked_runs/signed_pwl_knots/party2/metrics.json": "8ba1823eda68b8d05ede0efd4577ed937ca1bf187506cb021b061d64e871e37c",
+        "results/dense_adapter_ot_chunked_runs/signed_pwl_knots/party2/nonlinear_gate_count.json": "902cf8857e4556235cdde048a39c2aa8d322dddfaa1e04324236bcb0a47916ef",
+        "results/dense_adapter_ot_chunked_runs/signed_pwl_knots/party2/own_input.bin": "5f3d850f588a3a62cc90775d38487afd2a15aa0810f21f4586bd6c1a245c9480",
+        "results/dense_adapter_ot_chunked_runs/signed_pwl_knots/party2/raw_t_add41.bin": "bc0df3d9d34c995a419421ddbb4b70797b6fcbde273586e5e2c63d6e6d5a9ca0",
+        "results/dense_adapter_ot_chunked_runs/signed_pwl_knots/party2/raw_z_add44.bin": "d6f775f1569b01524dae1fd900a8c78f3dee5d592e8f8f57f6702e7ccd7a0b56",
+        "results/dense_adapter_ot_chunked_runs/signed_pwl_knots/party2/t_add26.bin": "167911bdccf360ce53ad9e607e6fed8e0fb5532da31c8f5f943a4e352dbfdc27"
+      }
+    },
+    {
+      "wall_seconds": 0.7509163939976133,
+      "name": "near_domain_accumulators",
+      "rows": 8,
+      "all_correct": true,
+      "parties": [
+        {
+          "role": 1,
+          "rows": 8,
+          "nonlinear": true,
+          "setup_ms": 501.477,
+          "bx_ms": 4.51896,
+          "bridge_ms": 23.7922,
+          "az_ms": 3.64871,
+          "nonlinear_ms": 30.7125,
+          "protocol_ms": 564.149,
+          "setup_counters": [
+            150144,
+            12997,
+            0,
+            285933,
+            8832,
+            0
+          ],
+          "bx_counters": [
+            248160,
+            12997,
+            0,
+            380141,
+            9056,
+            0
+          ],
+          "bridge_counters": [
+            248160,
+            12997,
+            287888,
+            380141,
+            9056,
+            275469
+          ],
+          "az_counters": [
+            255386,
+            12997,
+            287888,
+            404717,
+            9074,
+            275469
+          ],
+          "end_counters": [
+            259382,
+            37573,
+            287888,
+            629997,
+            9750,
+            275469
+          ]
+        },
+        {
+          "role": 2,
+          "rows": 8,
+          "nonlinear": true,
+          "setup_ms": 501.323,
+          "bx_ms": 4.49671,
+          "bridge_ms": 23.7961,
+          "az_ms": 3.64954,
+          "nonlinear_ms": 30.7067,
+          "protocol_ms": 563.972,
+          "setup_counters": [
+            285933,
+            8832,
+            0,
+            150144,
+            12997,
+            0
+          ],
+          "bx_counters": [
+            380141,
+            9056,
+            0,
+            248160,
+            12997,
+            0
+          ],
+          "bridge_counters": [
+            380141,
+            9056,
+            275469,
+            248160,
+            12997,
+            287888
+          ],
+          "az_counters": [
+            404717,
+            9074,
+            275469,
+            255386,
+            12997,
+            287888
+          ],
+          "end_counters": [
+            629997,
+            9750,
+            275469,
+            259382,
+            37573,
+            287888
+          ]
+        }
+      ],
+      "stage_wire_bytes": {
+        "setup": 457906,
+        "Bx": 192448,
+        "floor_bridge": 563357,
+        "A_t": 31820,
+        "floor_tanh_share": 254528
+      },
+      "total_wire_bytes": 1500059,
+      "max_party_protocol_ms": 564.149,
+      "shared_scores_exact": true,
+      "exact_intermediates_checked": 32,
+      "nonlinear_gates": {
+        "and_gates": null,
+        "backend": "standard_OT_PWL"
+      },
+      "file_sha256": {
+        "results/dense_adapter_ot_chunked_runs/near_domain_accumulators/party1/delta_add44.bin": "2a37dcfc7003be1ee0cdd4c41ce6804e0efb047f503d5bbb886838d6aa0af33f",
+        "results/dense_adapter_ot_chunked_runs/near_domain_accumulators/party1/metrics.json": "67cbe49b992043eda6ce5ab33871891f722b1d1f2234ed50e3924d8a25008759",
+        "results/dense_adapter_ot_chunked_runs/near_domain_accumulators/party1/nonlinear_gate_count.json": "902cf8857e4556235cdde048a39c2aa8d322dddfaa1e04324236bcb0a47916ef",
+        "results/dense_adapter_ot_chunked_runs/near_domain_accumulators/party1/own_input.bin": "fdb722017dcabc8810b83b094b27dde48fdc75ed88dd9c8894f89ecca434bb74",
+        "results/dense_adapter_ot_chunked_runs/near_domain_accumulators/party1/raw_t_add41.bin": "f72118d3841934d05f48ed9564dd55af4598d61b4fa378d33ef1a6d2a83031f2",
+        "results/dense_adapter_ot_chunked_runs/near_domain_accumulators/party1/raw_z_add44.bin": "b01cdc2e9ff19dedb1a560da87b1ed0bc27755da11372fcf8029cb6950c0bc9a",
+        "results/dense_adapter_ot_chunked_runs/near_domain_accumulators/party1/t_add26.bin": "d9f51dc8c6b9322e30d52542eba65ba5581e7875b758f2e044fb1b85bf19427c",
+        "results/dense_adapter_ot_chunked_runs/near_domain_accumulators/party2/delta_add44.bin": "5738c1faedf199361e0320a51e3231dd2911a4aba3669c92987fa33f917dd23c",
+        "results/dense_adapter_ot_chunked_runs/near_domain_accumulators/party2/metrics.json": "bf128f5b3ce0d56847222bebc28f66d13e4e85296ac0d848c1b7c711d7757587",
+        "results/dense_adapter_ot_chunked_runs/near_domain_accumulators/party2/nonlinear_gate_count.json": "902cf8857e4556235cdde048a39c2aa8d322dddfaa1e04324236bcb0a47916ef",
+        "results/dense_adapter_ot_chunked_runs/near_domain_accumulators/party2/own_input.bin": "2c4d878a35697b22c4ceaddc5cde2a33a3b49b0968f6113e08f9ee758d3c1683",
+        "results/dense_adapter_ot_chunked_runs/near_domain_accumulators/party2/raw_t_add41.bin": "37fb2208a52b148dcfba3c2e3beffb378935ed3ac585fe4dde98c80c34e8f246",
+        "results/dense_adapter_ot_chunked_runs/near_domain_accumulators/party2/raw_z_add44.bin": "eb86bfb54f65e51a3d85eadf3c1abd01b270b6a2cbfe25ed7dffa66b62292aae",
+        "results/dense_adapter_ot_chunked_runs/near_domain_accumulators/party2/t_add26.bin": "f5fe4b46d8c270ec01508f8ebed9ec7cc5aee6610371c97fe41727d36309cfa7"
+      }
+    },
+    {
+      "wall_seconds": 2.2514160009995976,
+      "name": "ptb_full50304",
+      "rows": 50304,
+      "all_correct": true,
+      "parties": [
+        {
+          "role": 1,
+          "rows": 50304,
+          "nonlinear": true,
+          "setup_ms": 533.702,
+          "bx_ms": 4.4991,
+          "bridge_ms": 16.6106,
+          "az_ms": 151.399,
+          "nonlinear_ms": 1488.98,
+          "protocol_ms": 2195.2,
+          "setup_counters": [
+            150144,
+            12997,
+            0,
+            285933,
+            8832,
+            0
+          ],
+          "bx_counters": [
+            248160,
+            12997,
+            0,
+            380141,
+            9056,
+            0
+          ],
+          "bridge_counters": [
+            248160,
+            12997,
+            287888,
+            380141,
+            9056,
+            275469
+          ],
+          "az_counters": [
+            43258466,
+            12997,
+            287888,
+            404717,
+            9074,
+            275469
+          ],
+          "end_counters": [
+            68221826,
+            16888517,
+            287888,
+            184859885,
+            4209458,
+            275469
+          ]
+        },
+        {
+          "role": 2,
+          "rows": 50304,
+          "nonlinear": true,
+          "setup_ms": 533.903,
+          "bx_ms": 4.48921,
+          "bridge_ms": 16.6099,
+          "az_ms": 153.215,
+          "nonlinear_ms": 1487.08,
+          "protocol_ms": 2195.3,
+          "setup_counters": [
+            285933,
+            8832,
+            0,
+            150144,
+            12997,
+            0
+          ],
+          "bx_counters": [
+            380141,
+            9056,
+            0,
+            248160,
+            12997,
+            0
+          ],
+          "bridge_counters": [
+            380141,
+            9056,
+            275469,
+            248160,
+            12997,
+            287888
+          ],
+          "az_counters": [
+            404717,
+            9074,
+            275469,
+            43258466,
+            12997,
+            287888
+          ],
+          "end_counters": [
+            184859885,
+            4209458,
+            275469,
+            68221826,
+            16888517,
+            287888
+          ]
+        }
+      ],
+      "stage_wire_bytes": {
+        "setup": 457906,
+        "Bx": 192448,
+        "floor_bridge": 563357,
+        "A_t": 43034900,
+        "floor_tanh_share": 230494432
+      },
+      "total_wire_bytes": 274743043,
+      "max_party_protocol_ms": 2195.3,
+      "shared_scores_exact": true,
+      "exact_intermediates_checked": 100624,
+      "nonlinear_gates": {
+        "and_gates": null,
+        "backend": "standard_OT_PWL"
+      },
+      "file_sha256": {
+        "results/dense_adapter_ot_chunked_runs/ptb_full50304/party1/delta_add44.bin": "03df2bc9911a8fd944848769f35dfb0d257155c70fdeb98d1b7124b063bee50e",
+        "results/dense_adapter_ot_chunked_runs/ptb_full50304/party1/metrics.json": "f41bffcb794ec4b43f187f8f3b6db9cfd4987d6ac22c8662d7a14b465c1e68dd",
+        "results/dense_adapter_ot_chunked_runs/ptb_full50304/party1/nonlinear_gate_count.json": "902cf8857e4556235cdde048a39c2aa8d322dddfaa1e04324236bcb0a47916ef",
+        "results/dense_adapter_ot_chunked_runs/ptb_full50304/party1/own_input.bin": "86bbf7658d9ce2ec9fcca55ab823139f2d4ce326a4fb7e3aa8d937e675791975",
+        "results/dense_adapter_ot_chunked_runs/ptb_full50304/party1/raw_t_add41.bin": "3a3a2fdc5e1f277d14ca555d6b24d1bab7f309bd323359b3ea6137777feee879",
+        "results/dense_adapter_ot_chunked_runs/ptb_full50304/party1/raw_z_add44.bin": "b2a7867f47249d32150b6532eac10e3a4cf2d0cdf12670df9d7af41755952d10",
+        "results/dense_adapter_ot_chunked_runs/ptb_full50304/party1/t_add26.bin": "b37ec70706521a8cd1cdd7f5b8b611eac2c3707d2afb01e67dad3205564efddd",
+        "results/dense_adapter_ot_chunked_runs/ptb_full50304/party2/delta_add44.bin": "89ca64d6594b9f639183f45afca143c24713fe57c7c8580f9cbd5bab22dfcbeb",
+        "results/dense_adapter_ot_chunked_runs/ptb_full50304/party2/metrics.json": "c17a873e48989fd3c85812d6f50804e90e4f296846e922cae6548b39fb00e9b3",
+        "results/dense_adapter_ot_chunked_runs/ptb_full50304/party2/nonlinear_gate_count.json": "902cf8857e4556235cdde048a39c2aa8d322dddfaa1e04324236bcb0a47916ef",
+        "results/dense_adapter_ot_chunked_runs/ptb_full50304/party2/own_input.bin": "38f3ccb948a06cf728bbaadcda862546bf3a8dbd0c865048c3c98e4bcaca2dea",
+        "results/dense_adapter_ot_chunked_runs/ptb_full50304/party2/raw_t_add41.bin": "229aec521e4f57e7813d2f7deacd41436b5cdae6d13c2d274b3b3cd62e895a3c",
+        "results/dense_adapter_ot_chunked_runs/ptb_full50304/party2/raw_z_add44.bin": "1b5788a38d10c802fa49aad5841bb5deb95ca483fd489b8e3a86fc5f06fb9826",
+        "results/dense_adapter_ot_chunked_runs/ptb_full50304/party2/t_add26.bin": "a7479f407fc9c5df3fe51e097136386e8d7efc27fbfc74c44c8616c097526e27"
+      }
+    },
+    {
+      "wall_seconds": 2.251290610001888,
+      "name": "wiki_full50304",
+      "rows": 50304,
+      "all_correct": true,
+      "parties": [
+        {
+          "role": 1,
+          "rows": 50304,
+          "nonlinear": true,
+          "setup_ms": 502.215,
+          "bx_ms": 4.53387,
+          "bridge_ms": 23.7674,
+          "az_ms": 155.99,
+          "nonlinear_ms": 1469.21,
+          "protocol_ms": 2155.71,
+          "setup_counters": [
+            150144,
+            12997,
+            0,
+            285933,
+            8832,
+            0
+          ],
+          "bx_counters": [
+            248160,
+            12997,
+            0,
+            380141,
+            9056,
+            0
+          ],
+          "bridge_counters": [
+            248160,
+            12997,
+            287888,
+            380141,
+            9056,
+            275469
+          ],
+          "az_counters": [
+            43258466,
+            12997,
+            287888,
+            404717,
+            9074,
+            275469
+          ],
+          "end_counters": [
+            68221826,
+            16888517,
+            287888,
+            184859885,
+            4209458,
+            275469
+          ]
+        },
+        {
+          "role": 2,
+          "rows": 50304,
+          "nonlinear": true,
+          "setup_ms": 502.272,
+          "bx_ms": 4.52425,
+          "bridge_ms": 23.7665,
+          "az_ms": 157.78,
+          "nonlinear_ms": 1467.35,
+          "protocol_ms": 2155.7,
+          "setup_counters": [
+            285933,
+            8832,
+            0,
+            150144,
+            12997,
+            0
+          ],
+          "bx_counters": [
+            380141,
+            9056,
+            0,
+            248160,
+            12997,
+            0
+          ],
+          "bridge_counters": [
+            380141,
+            9056,
+            275469,
+            248160,
+            12997,
+            287888
+          ],
+          "az_counters": [
+            404717,
+            9074,
+            275469,
+            43258466,
+            12997,
+            287888
+          ],
+          "end_counters": [
+            184859885,
+            4209458,
+            275469,
+            68221826,
+            16888517,
+            287888
+          ]
+        }
+      ],
+      "stage_wire_bytes": {
+        "setup": 457906,
+        "Bx": 192448,
+        "floor_bridge": 563357,
+        "A_t": 43034900,
+        "floor_tanh_share": 230494432
+      },
+      "total_wire_bytes": 274743043,
+      "max_party_protocol_ms": 2155.71,
+      "shared_scores_exact": true,
+      "exact_intermediates_checked": 100624,
+      "nonlinear_gates": {
+        "and_gates": null,
+        "backend": "standard_OT_PWL"
+      },
+      "file_sha256": {
+        "results/dense_adapter_ot_chunked_runs/wiki_full50304/party1/delta_add44.bin": "99dea1ba20bb67e54c69e7b8679028d6dcedfacc6871850c559a33de3aabe2b5",
+        "results/dense_adapter_ot_chunked_runs/wiki_full50304/party1/metrics.json": "821ba369bc9543d0f9cb03f4603c60998603519d2d20bcaba367200ba1fe65b0",
+        "results/dense_adapter_ot_chunked_runs/wiki_full50304/party1/nonlinear_gate_count.json": "902cf8857e4556235cdde048a39c2aa8d322dddfaa1e04324236bcb0a47916ef",
+        "results/dense_adapter_ot_chunked_runs/wiki_full50304/party1/own_input.bin": "86bbf7658d9ce2ec9fcca55ab823139f2d4ce326a4fb7e3aa8d937e675791975",
+        "results/dense_adapter_ot_chunked_runs/wiki_full50304/party1/raw_t_add41.bin": "19b928c1f49e22d887976acb0e8aaadd73056bd6c0f116b0a38f3aacb46b0fbe",
+        "results/dense_adapter_ot_chunked_runs/wiki_full50304/party1/raw_z_add44.bin": "74529998692dbe88cb85aa13e35780af15abbbab9bcee4dce18e281057bb799c",
+        "results/dense_adapter_ot_chunked_runs/wiki_full50304/party1/t_add26.bin": "34b56ddbbe5d93c2e4ff057527834d62a746b166eddef5dc3ccb10a934b0065f",
+        "results/dense_adapter_ot_chunked_runs/wiki_full50304/party2/delta_add44.bin": "77b9cf1b2268c555908bd8c07c849f8ab65a1ee9adb69c213a834bbaf2c0783b",
+        "results/dense_adapter_ot_chunked_runs/wiki_full50304/party2/metrics.json": "7b701ff36f16ad7229e07d0c06137dc00f2e0c4a60569f798dfbd13c1c717d49",
+        "results/dense_adapter_ot_chunked_runs/wiki_full50304/party2/nonlinear_gate_count.json": "902cf8857e4556235cdde048a39c2aa8d322dddfaa1e04324236bcb0a47916ef",
+        "results/dense_adapter_ot_chunked_runs/wiki_full50304/party2/own_input.bin": "41119cbff6366cc2e87034cf5abe8c43d9ca7caec2fa30b9c966557ebc8075d3",
+        "results/dense_adapter_ot_chunked_runs/wiki_full50304/party2/raw_t_add41.bin": "f76298b3c11455873b0b7b30b01136c47b078aadb1deacd30395ee91887cf31e",
+        "results/dense_adapter_ot_chunked_runs/wiki_full50304/party2/raw_z_add44.bin": "3b986d055c122385af15b2365f25005f60969f1fa58a4cf6ceeba6d29ad6313c",
+        "results/dense_adapter_ot_chunked_runs/wiki_full50304/party2/t_add26.bin": "b27dc44a7f98fd3b4f0acac2a6aa7afaf19f47b6d23472169f084c5c20b61063"
+      }
+    }
+  ],
+  "input_sha256": {
+    "experiments/bounded_adapter_gc.cpp": "3c6b8d47b889540ebc610c04c55a4ed69f79f992af366a6017c49a4491e6b7c1",
+    "experiments/bounded_adapter_fixed16.py": "af21fbed747d7fa15cb1fdda8a479e1d1290b5879147bfbff1955557b3d55a26",
+    "experiments/run_bounded_adapter_gc.py": "7d0d4d7b7763364baca7fd35f62978f98ca7ebb5ac065003d55bea11fe20f613",
+    "experiments/run_fable_smallbatch_check.py": "e7ca72c566bd61a3564e3c28ff82d20b1ccb1fc77d45a3cb9c986ab519ebc0b2",
+    "experiments/finite_descending_bernoulli.py": "f088b4a51bda87d520cdd210f31ffb574ffb3f1566d07b479eb2e03e9e2cefb3",
+    "results/bounded_output_adapter_weights.npz": "e89c3c6ee3163676249973519bd5499b5513d1f561a2a108c89b03ddfde984eb",
+    "results/bounded_adapter_gc_inputs.npz": "bc7f39ffd8c0ae6dc410038a97dc323aa07fbc28c5e8e48117e9f0bba0b8f729",
+    "results/bounded_adapter_fixed16_certificate.json": "baf7409d64a7e52edd51072c082fcb92b9ea3e60c80a1261c15ac08057332ebe",
+    "third_party/FABLE/extern/EzPC/SCI/src/LinearOT/linear-ot.h": "b3da4aa9fa4e30228611add70eb5c87d4f11bb4657a3ba5a0c853639ef03e149",
+    "third_party/FABLE/extern/EzPC/SCI/src/LinearOT/linear-ot.cpp": "4364a6d291b9f7f305cb915cb6816217056a394eef28ef609aa3b4f997bc9e93",
+    "third_party/FABLE/extern/EzPC/SCI/src/BuildingBlocks/truncation.cpp": "886a0ea9d07199f80b3d881f41295f408378967580f0d76299f4a57550bc7b82",
+    "third_party/FABLE/extern/EzPC/SCI/src/utils/io_pack.h": "2371eed0f738e8cac0ec68e87bf5854ef865d252d51fc218488cde65956a16a5",
+    "third_party/FABLE/extern/EzPC/SCI/src/OT/ot_pack.h": "33b02d12c90aafb0df41454e876d31fd1f2c73101cdc2bc519d0bce21572dee3",
+    "third_party/FABLE/extern/EzPC/SCI/tests/test_ring_matmul.cpp": "e6fcdd4580c440abda65052fd4e05c52bcfbd5d8ffc81018b9d37d10579cd815",
+    "experiments/public_tanh_ot.h": "bba470ab0b4d70144aa533ab280740941ea6418a3d377fddaf388cb2adb44f18",
+    "experiments/public_tanh_compact.h": "b1f2913baa15cfe40ec45d74fda276210909de3cbcc653da9db06d5678662436",
+    "third_party/FABLE/extern/EzPC/SCI/src/BuildingBlocks/aux-protocols.cpp": "e8f185e766ee55456af614e95889051588694ac0088b3a16e0be0104e2a91ddf",
+    "third_party/FABLE/extern/EzPC/SCI/src/BuildingBlocks/value-extension.cpp": "ce875299e6f213807014e6bc38528b81f4aa1c6df50b4754ef93bcf53aa2405d",
+    "experiments/dense_adapter_ot_chunked.cpp": "69e9fbbf1c8b2b933934a645e3d4052683b2525a0a7c258937d02ab2a11189f5",
+    "experiments/build_dense_adapter_ot_chunked.py": "00a948e3e81b1ff05be9518e319e55ff7ead757a8d96ba72058060bc198c85f6",
+    "experiments/run_dense_adapter_ot_chunked.py": "7b7447c6a0884882b2f85c6e0ef2b6ce0f046791fb493914d5b4afb20cc4044c",
+    "experiments/public_tanh_ot_chunked.h": "1cd39447a359a957207c8be5b9e8a3a25bd4150c4f342723575c4622003fc206",
+    "toolchain/bounded-sampler/dense_adapter_ot_chunked": "f1934084cdb792818e7308bb3830633962eb5c11c0e6bfd10b86747b1490cdfa",
+    "toolchain/bounded-sampler/dense_ot_chunked_build_manifest.json": "2a9be8e93bdc54b93fdca8fb353e8b09e2a6d0b41f3c98ef330f2c778ddcd78a"
+  },
+  "preregistration_sha256": "3ac446442ef566343491f1bef2a8f1dbead97e65d2992b9e00baa9ec45ab2b28",
+  "limits": "Actual existingSCI LinearOT withfreshOTPack setup andprivateowner matrix mode, noOTPackcopy/helper. Exact unaccumulated products thenlocalring sums, GCfloor16/additive26bridge, denseA products, exactsamePWLtanh andadditive44outputsharing. Ownharness/header assertionsenabled; pinnedcompiledlibraries unchanged. AllthreeIOPackchannel sends/receives, setup/OT/GC/masks included. Parent reconstructs onlyafterbothnativeprocessesexit. Two modelcaptures reused, nofreshquality/training/precisionsearch. This is a full50304sharedscore component baseline; no privateweightedCDF/Gumbel/finaltoken sampling orfull baseline/SOTA/newness/CCFclaim. One diagnosticrunpercase; no balancedperformanceconclusion. Allnonlinear OT/key/setup/conversion/lookup traffic counted; gate_count backendstandardOT means GC gatecountnotapplicable, notzerocrypto work. Fullprivateweighted sampling remainsincomplete. Publicchunking only, not a newalgorithm; initialstalledfiles/source/binary/logremainintact. All50304outputs mustmatchsamefrozenintegerreference.",
+  "_publication": {
+    "derived_summary": true,
+    "original_local_result_sha256": "dcc4d79edce2a9bf4479efa19ed1006d70e82b9a835fa5a5861770b02bf6c415",
+    "omitted": "Per-file private audit hashes, logs, source-sha duplication. Raw shares, coins, fixture archives and token outputs are local only. Frozen original JSON is not rewritten."
+  }
+}

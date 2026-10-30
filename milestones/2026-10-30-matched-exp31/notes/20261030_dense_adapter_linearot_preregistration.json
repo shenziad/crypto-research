@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-10-30T10:58:34.961684+00:00",
+  "input_sha256": {
+    "experiments/dense_adapter_linearot.cpp": "91babe506101fd183eb270642f1f048d3b1bfe818862b05c2167c9bb3c710da8",
+    "experiments/build_dense_adapter_linearot.py": "832ce240977da68b2daccee2c4e87f52f6081a400011264cb6311663bdc4537b",
+    "experiments/run_dense_adapter_linearot.py": "d34366a246670ba5775fefe0ed995e2c3506a575b2a77eaa07a7411a46d62718",
+    "experiments/bounded_adapter_gc.cpp": "3c6b8d47b889540ebc610c04c55a4ed69f79f992af366a6017c49a4491e6b7c1",
+    "experiments/bounded_adapter_fixed16.py": "af21fbed747d7fa15cb1fdda8a479e1d1290b5879147bfbff1955557b3d55a26",
+    "experiments/run_bounded_adapter_gc.py": "7d0d4d7b7763364baca7fd35f62978f98ca7ebb5ac065003d55bea11fe20f613",
+    "experiments/run_fable_smallbatch_check.py": "e7ca72c566bd61a3564e3c28ff82d20b1ccb1fc77d45a3cb9c986ab519ebc0b2",
+    "experiments/finite_descending_bernoulli.py": "f088b4a51bda87d520cdd210f31ffb574ffb3f1566d07b479eb2e03e9e2cefb3",
+    "toolchain/bounded-sampler/dense_adapter_linearot": "c9c24f88ae6c7a8f78a36aebd9e947a065f730d97bfd6dbd19207207988ced76",
+    "toolchain/bounded-sampler/dense_adapter_build_manifest.json": "3895b7ba227fb44d36153f1b29a24e522e058196967e5970910a39997affe8c2",
+    "results/bounded_output_adapter_weights.npz": "e89c3c6ee3163676249973519bd5499b5513d1f561a2a108c89b03ddfde984eb",
+    "results/bounded_adapter_gc_inputs.npz": "bc7f39ffd8c0ae6dc410038a97dc323aa07fbc28c5e8e48117e9f0bba0b8f729",
+    "results/bounded_adapter_fixed16_certificate.json": "baf7409d64a7e52edd51072c082fcb92b9ea3e60c80a1261c15ac08057332ebe",
+    "third_party/FABLE/extern/EzPC/SCI/src/LinearOT/linear-ot.h": "b3da4aa9fa4e30228611add70eb5c87d4f11bb4657a3ba5a0c853639ef03e149",
+    "third_party/FABLE/extern/EzPC/SCI/src/LinearOT/linear-ot.cpp": "4364a6d291b9f7f305cb915cb6816217056a394eef28ef609aa3b4f997bc9e93",
+    "third_party/FABLE/extern/EzPC/SCI/src/BuildingBlocks/truncation.cpp": "886a0ea9d07199f80b3d881f41295f408378967580f0d76299f4a57550bc7b82",
+    "third_party/FABLE/extern/EzPC/SCI/src/utils/io_pack.h": "2371eed0f738e8cac0ec68e87bf5854ef865d252d51fc218488cde65956a16a5",
+    "third_party/FABLE/extern/EzPC/SCI/src/OT/ot_pack.h": "33b02d12c90aafb0df41454e876d31fd1f2c73101cdc2bc519d0bce21572dee3",
+    "third_party/FABLE/extern/EzPC/SCI/tests/test_ring_matmul.cpp": "e6fcdd4580c440abda65052fd4e05c52bcfbd5d8ffc81018b9d37d10579cd815"
+  },
+  "cases": [
+    "signed_pwl_knots99",
+    "near_domain_accumulators8",
+    "ptb_full50304",
+    "wiki_full50304"
+  ],
+  "fixed_contract": {
+    "Bx_input_bits": [
+      18,
+      23
+    ],
+    "Bx_product_bits": 41,
+    "A_t_input_bits": [
+      18,
+      26
+    ],
+    "A_t_product_bits": 44,
+    "accumulate": false,
+    "output": "additive44 denseF20delta shares"
+  },
+  "limits": "Actual existingSCI LinearOT withfreshOTPack setup andprivateowner matrix mode, noOTPackcopy/helper. Exact unaccumulated products thenlocalring sums, GCfloor16/additive26bridge, denseA products, exactsamePWLtanh andadditive44outputsharing. Ownharness/header assertionsenabled; pinnedcompiledlibraries unchanged. AllthreeIOPackchannel sends/receives, setup/OT/GC/masks included. Parent reconstructs onlyafterbothnativeprocessesexit. Two modelcaptures reused, nofreshquality/training/precisionsearch. This is a full50304sharedscore component baseline; no privateweightedCDF/Gumbel/finaltoken sampling orfull baseline/SOTA/newness/CCFclaim. One diagnosticrunpercase; no balancedperformanceconclusion."
+}

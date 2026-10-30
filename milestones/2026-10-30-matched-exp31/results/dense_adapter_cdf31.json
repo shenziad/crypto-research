@@ -1,0 +1,561 @@
+{
+  "all_passed": true,
+  "results": [
+    {
+      "wall_seconds": 0.7509217529986927,
+      "all_correct": true,
+      "rows": 99,
+      "prefix_values_checked": 99,
+      "products_checked": 198,
+      "final_token_matches": true,
+      "normalizer_bits": 91,
+      "name": "signed_pwl_knots",
+      "all_shared_scores_exact": true,
+      "all_exp31_values_exact": true,
+      "parties": [
+        {
+          "role": 1,
+          "rows": 99,
+          "nonlinear": true,
+          "setup_ms": 592.791,
+          "bx_ms": 6.19491,
+          "bridge_ms": 18.3613,
+          "az_ms": 4.23778,
+          "nonlinear_ms": 83.962,
+          "protocol_ms": 705.547,
+          "setup_counters": [
+            150144,
+            12997,
+            0,
+            285933,
+            8832,
+            0
+          ],
+          "bx_counters": [
+            248160,
+            12997,
+            0,
+            380141,
+            9056,
+            0
+          ],
+          "bridge_counters": [
+            248160,
+            12997,
+            287888,
+            380141,
+            9056,
+            275469
+          ],
+          "az_counters": [
+            333290,
+            12997,
+            287888,
+            404717,
+            9074,
+            275469
+          ],
+          "end_counters": [
+            724214,
+            295621,
+            1082639,
+            1563885,
+            109114,
+            275719
+          ]
+        },
+        {
+          "role": 2,
+          "rows": 99,
+          "nonlinear": true,
+          "setup_ms": 592.667,
+          "bx_ms": 6.1679,
+          "bridge_ms": 18.3595,
+          "az_ms": 4.23745,
+          "nonlinear_ms": 83.9662,
+          "protocol_ms": 705.398,
+          "setup_counters": [
+            285933,
+            8832,
+            0,
+            150144,
+            12997,
+            0
+          ],
+          "bx_counters": [
+            380141,
+            9056,
+            0,
+            248160,
+            12997,
+            0
+          ],
+          "bridge_counters": [
+            380141,
+            9056,
+            275469,
+            248160,
+            12997,
+            287888
+          ],
+          "az_counters": [
+            404717,
+            9074,
+            275469,
+            333290,
+            12997,
+            287888
+          ],
+          "end_counters": [
+            1563885,
+            109114,
+            275719,
+            724214,
+            295621,
+            1082639
+          ]
+        }
+      ],
+      "total_wire_bytes": 4051192,
+      "stage_wire_bytes": {
+        "setup": 457906,
+        "Bx": 192448,
+        "floor_bridge": 563357,
+        "A_t": 109724,
+        "PWL_exp_weighted_CDF_release": 2727757
+      },
+      "max_party_protocol_ms": 705.547,
+      "finite_alias": null
+    },
+    {
+      "wall_seconds": 0.7507528030000685,
+      "all_correct": true,
+      "rows": 8,
+      "prefix_values_checked": 8,
+      "products_checked": 16,
+      "final_token_matches": true,
+      "normalizer_bits": 91,
+      "name": "near_domain_accumulators",
+      "all_shared_scores_exact": true,
+      "all_exp31_values_exact": true,
+      "parties": [
+        {
+          "role": 1,
+          "rows": 8,
+          "nonlinear": true,
+          "setup_ms": 440.528,
+          "bx_ms": 4.56639,
+          "bridge_ms": 23.3599,
+          "az_ms": 3.6319,
+          "nonlinear_ms": 78.9887,
+          "protocol_ms": 551.075,
+          "setup_counters": [
+            150144,
+            12997,
+            0,
+            285933,
+            8832,
+            0
+          ],
+          "bx_counters": [
+            248160,
+            12997,
+            0,
+            380141,
+            9056,
+            0
+          ],
+          "bridge_counters": [
+            248160,
+            12997,
+            287888,
+            380141,
+            9056,
+            275469
+          ],
+          "az_counters": [
+            255386,
+            12997,
+            287888,
+            404717,
+            9074,
+            275469
+          ],
+          "end_counters": [
+            286658,
+            94917,
+            1082639,
+            883949,
+            17146,
+            275719
+          ]
+        },
+        {
+          "role": 2,
+          "rows": 8,
+          "nonlinear": true,
+          "setup_ms": 440.544,
+          "bx_ms": 4.55589,
+          "bridge_ms": 23.3591,
+          "az_ms": 3.63533,
+          "nonlinear_ms": 78.9905,
+          "protocol_ms": 551.084,
+          "setup_counters": [
+            285933,
+            8832,
+            0,
+            150144,
+            12997,
+            0
+          ],
+          "bx_counters": [
+            380141,
+            9056,
+            0,
+            248160,
+            12997,
+            0
+          ],
+          "bridge_counters": [
+            380141,
+            9056,
+            275469,
+            248160,
+            12997,
+            287888
+          ],
+          "az_counters": [
+            404717,
+            9074,
+            275469,
+            255386,
+            12997,
+            287888
+          ],
+          "end_counters": [
+            883949,
+            17146,
+            275719,
+            286658,
+            94917,
+            1082639
+          ]
+        }
+      ],
+      "total_wire_bytes": 2641028,
+      "stage_wire_bytes": {
+        "setup": 457906,
+        "Bx": 192448,
+        "floor_bridge": 563357,
+        "A_t": 31820,
+        "PWL_exp_weighted_CDF_release": 1395497
+      },
+      "max_party_protocol_ms": 551.084,
+      "finite_alias": null
+    },
+    {
+      "wall_seconds": 7.253136234998237,
+      "all_correct": true,
+      "rows": 50304,
+      "prefix_values_checked": 50304,
+      "products_checked": 100608,
+      "final_token_matches": true,
+      "normalizer_bits": 89,
+      "name": "ptb_full50304",
+      "all_shared_scores_exact": true,
+      "all_exp31_values_exact": true,
+      "parties": [
+        {
+          "role": 1,
+          "rows": 50304,
+          "nonlinear": true,
+          "setup_ms": 519.926,
+          "bx_ms": 5.60266,
+          "bridge_ms": 19.2907,
+          "az_ms": 154.279,
+          "nonlinear_ms": 6471.44,
+          "protocol_ms": 7170.54,
+          "setup_counters": [
+            150144,
+            12997,
+            0,
+            285933,
+            8832,
+            0
+          ],
+          "bx_counters": [
+            248160,
+            12997,
+            0,
+            380141,
+            9056,
+            0
+          ],
+          "bridge_counters": [
+            248160,
+            12997,
+            287888,
+            380141,
+            9056,
+            275469
+          ],
+          "az_counters": [
+            43258466,
+            12997,
+            287888,
+            404717,
+            9074,
+            275469
+          ],
+          "end_counters": [
+            239632706,
+            182825669,
+            1082639,
+            556076269,
+            50715506,
+            275719
+          ]
+        },
+        {
+          "role": 2,
+          "rows": 50304,
+          "nonlinear": true,
+          "setup_ms": 520.275,
+          "bx_ms": 5.57751,
+          "bridge_ms": 19.2934,
+          "az_ms": 156.171,
+          "nonlinear_ms": 6469.55,
+          "protocol_ms": 7170.87,
+          "setup_counters": [
+            285933,
+            8832,
+            0,
+            150144,
+            12997,
+            0
+          ],
+          "bx_counters": [
+            380141,
+            9056,
+            0,
+            248160,
+            12997,
+            0
+          ],
+          "bridge_counters": [
+            380141,
+            9056,
+            275469,
+            248160,
+            12997,
+            287888
+          ],
+          "az_counters": [
+            404717,
+            9074,
+            275469,
+            43258466,
+            12997,
+            287888
+          ],
+          "end_counters": [
+            556076269,
+            50715506,
+            275719,
+            239632706,
+            182825669,
+            1082639
+          ]
+        }
+      ],
+      "total_wire_bytes": 1030608508,
+      "stage_wire_bytes": {
+        "setup": 457906,
+        "Bx": 192448,
+        "floor_bridge": 563357,
+        "A_t": 43034900,
+        "PWL_exp_weighted_CDF_release": 986359897
+      },
+      "max_party_protocol_ms": 7170.87,
+      "finite_alias": {
+        "vocabulary": 50304,
+        "padded_size": 65536,
+        "precision": 44,
+        "threshold_bits": 45,
+        "integer_total_mass": 1152921504606846976,
+        "observed_TV_to_supplied_distribution": 6.176663896445787e-15,
+        "padded_mass": 0,
+        "zero_thresholds": 15232,
+        "full_thresholds": 1
+      }
+    },
+    {
+      "wall_seconds": 7.253278156000306,
+      "all_correct": true,
+      "rows": 50304,
+      "prefix_values_checked": 50304,
+      "products_checked": 100608,
+      "final_token_matches": true,
+      "normalizer_bits": 90,
+      "name": "wiki_full50304",
+      "all_shared_scores_exact": true,
+      "all_exp31_values_exact": true,
+      "parties": [
+        {
+          "role": 1,
+          "rows": 50304,
+          "nonlinear": true,
+          "setup_ms": 453.503,
+          "bx_ms": 5.1889,
+          "bridge_ms": 23.8598,
+          "az_ms": 155.042,
+          "nonlinear_ms": 6486.66,
+          "protocol_ms": 7124.26,
+          "setup_counters": [
+            150144,
+            12997,
+            0,
+            285933,
+            8832,
+            0
+          ],
+          "bx_counters": [
+            248160,
+            12997,
+            0,
+            380141,
+            9056,
+            0
+          ],
+          "bridge_counters": [
+            248160,
+            12997,
+            287888,
+            380141,
+            9056,
+            275469
+          ],
+          "az_counters": [
+            43258466,
+            12997,
+            287888,
+            404717,
+            9074,
+            275469
+          ],
+          "end_counters": [
+            239632706,
+            182825669,
+            1082639,
+            556076269,
+            50715506,
+            275719
+          ]
+        },
+        {
+          "role": 2,
+          "rows": 50304,
+          "nonlinear": true,
+          "setup_ms": 452.145,
+          "bx_ms": 5.17348,
+          "bridge_ms": 23.8639,
+          "az_ms": 156.872,
+          "nonlinear_ms": 6484.83,
+          "protocol_ms": 7122.89,
+          "setup_counters": [
+            285933,
+            8832,
+            0,
+            150144,
+            12997,
+            0
+          ],
+          "bx_counters": [
+            380141,
+            9056,
+            0,
+            248160,
+            12997,
+            0
+          ],
+          "bridge_counters": [
+            380141,
+            9056,
+            275469,
+            248160,
+            12997,
+            287888
+          ],
+          "az_counters": [
+            404717,
+            9074,
+            275469,
+            43258466,
+            12997,
+            287888
+          ],
+          "end_counters": [
+            556076269,
+            50715506,
+            275719,
+            239632706,
+            182825669,
+            1082639
+          ]
+        }
+      ],
+      "total_wire_bytes": 1030608508,
+      "stage_wire_bytes": {
+        "setup": 457906,
+        "Bx": 192448,
+        "floor_bridge": 563357,
+        "A_t": 43034900,
+        "PWL_exp_weighted_CDF_release": 986359897
+      },
+      "max_party_protocol_ms": 7124.26,
+      "finite_alias": {
+        "vocabulary": 50304,
+        "padded_size": 65536,
+        "precision": 44,
+        "threshold_bits": 45,
+        "integer_total_mass": 1152921504606846976,
+        "observed_TV_to_supplied_distribution": 6.5081851682135005e-15,
+        "padded_mass": 0,
+        "zero_thresholds": 15232,
+        "full_thresholds": 1
+      }
+    }
+  ],
+  "input_sha256": {
+    "experiments/dense_adapter_cdf31.cpp": "9dcc439a8c683b15ffb4f2058ac525b42185561dfa3b7d8941aa49845c095548",
+    "experiments/build_dense_adapter_cdf31.py": "21fa81c0ecc7b4a55022c2449cd412c88ef4c4e452942be985a66bb3dc935ab9",
+    "experiments/run_dense_adapter_cdf31.py": "d209b7907d408ca5eb9e0f22eb9ab4909fd62e2b50d6a9abc3c31430f7b1828d",
+    "experiments/private_weighted_cdf93.h": "0eaeb1a0bfae657bfb0bc0cbcaf72747fd79bdbde2923524c2a72b78f1e2d6c6",
+    "experiments/run_private_weighted_cdf93_check.py": "a2d7e1f4b43ad7212bde197216b4f6e9288d5320e185215c17cd71313d4808c9",
+    "experiments/public_tanh_ot_chunked.h": "1cd39447a359a957207c8be5b9e8a3a25bd4150c4f342723575c4622003fc206",
+    "experiments/public_tanh_ot.h": "bba470ab0b4d70144aa533ab280740941ea6418a3d377fddaf388cb2adb44f18",
+    "experiments/public_tanh_compact.h": "b1f2913baa15cfe40ec45d74fda276210909de3cbcc653da9db06d5678662436",
+    "experiments/bounded_adapter_gc.cpp": "3c6b8d47b889540ebc610c04c55a4ed69f79f992af366a6017c49a4491e6b7c1",
+    "experiments/bounded_adapter_fixed16.py": "af21fbed747d7fa15cb1fdda8a479e1d1290b5879147bfbff1955557b3d55a26",
+    "experiments/run_dense_adapter_linearot.py": "d34366a246670ba5775fefe0ed995e2c3506a575b2a77eaa07a7411a46d62718",
+    "experiments/run_bounded_adapter_gc.py": "7d0d4d7b7763364baca7fd35f62978f98ca7ebb5ac065003d55bea11fe20f613",
+    "experiments/finite_alias_table.py": "a4c1afcdb3f7759d7c20131a302c009e7107360a72f04bd666c5c89725ec2e3b",
+    "experiments/run_fable_smallbatch_check.py": "e7ca72c566bd61a3564e3c28ff82d20b1ccb1fc77d45a3cb9c986ab519ebc0b2",
+    "experiments/finite_descending_bernoulli.py": "f088b4a51bda87d520cdd210f31ffb574ffb3f1566d07b479eb2e03e9e2cefb3",
+    "toolchain/bounded-sampler/dense_adapter_cdf31": "d18b596d5dc35ed4f39121aa9804b03fd1f4369100d1463c06e733ada2c6e1bb",
+    "toolchain/bounded-sampler/dense_cdf31_build_manifest.json": "dc1c73df24fe498e9f33bffe877f74cdc69e4fa1815a6307c82fc479b15aea0e",
+    "results/private_weighted_cdf93_check.json": "acda8ea477d6e312441a1db0ab30054baa75e400ccb6605d5c90e5dcbb923c80",
+    "results/sci_exp31_finite_certificate.json": "8a7d19e0b0e48803cf784cea459372eb7d663f673573cfbfe0bbed542057e1ce",
+    "results/bounded_output_adapter_weights.npz": "e89c3c6ee3163676249973519bd5499b5513d1f561a2a108c89b03ddfde984eb",
+    "results/bounded_adapter_gc_inputs.npz": "bc7f39ffd8c0ae6dc410038a97dc323aa07fbc28c5e8e48117e9f0bba0b8f729",
+    "third_party/FABLE/extern/EzPC/SCI/src/Math/math-functions.cpp": "f847ed3cbd09b218fc57002c0eaaf142eb6a5c18fe3e2614148bd5d0d87bed2a",
+    "third_party/FABLE/extern/EzPC/SCI/src/Millionaire/millionaire_with_equality.h": "eb5c0213c1d63b1f2bb032f93bfdf611b2222701740e28d9737559f3164fe2ae"
+  },
+  "preregistration_sha256": "37e4cdf5580778d703ffa74047e1b7ac4e4dad06f5e52e73cfa3e861fb2de942",
+  "limits": "Complete dense restrictedprivatehead sampler: fresh existingSCI LinearOT Bx anddenseA, exactfloor/PWL, actualSCI exp31, privateknown-clientq products, ring93localprefix, scalarGC normalization and93bitlexicographicprivateCDF. Only finaltoken toclient, servernone. Parent verifies allintermediates/exp/products/prefix/R/flags/finaloutput onlyafterbothnativeprocessesexit. Reusedmodelcaptures andpublicboundarycontrols, notquality/generation/empiricaldistributiontest. Supplementaryfinite model q*E31(delta); modelTV<=1.72085e-8 vs idealqexp(delta) explicitlyadditional, whileCDFsamplingerror<=N/2^64<2^-40. Originalp44descendingprofile preserved; no same-function performanceclaim againstit until matchedE31rejection implemented. Allsetup/keys/3channels/GC/OT/conversions/output counted. One diagnosticpairpercase, nobalancedtiming/SOTA/newness/CCFclaim.",
+  "_publication": {
+    "derived_summary": true,
+    "original_local_result_sha256": "05e8c680ed1a408b595ed3ce7c2a83c356ac31bcca08448025a9171a75645618",
+    "omitted": "Per-file private audit hashes, logs, source-sha duplication. Raw shares, coins, fixture archives and token outputs are local only. Frozen original JSON is not rewritten."
+  }
+}

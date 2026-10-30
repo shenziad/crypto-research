@@ -1,0 +1,62 @@
+{
+  "all_passed": true,
+  "created_utc": "2026-10-30T12:05:58.013898+00:00",
+  "retrospective_audit": true,
+  "registered_file_hashes_checked": 921,
+  "score_only_native_pairs_replayed": 12,
+  "score_only_values_replayed": 302145,
+  "complete_dense_pairs_replayed": 8,
+  "complete_rejection_pairs_replayed": 6,
+  "selected_head_control_pairs_replayed": 10,
+  "exp_factors_recertified": 576,
+  "exp_score_points_rechecked": 2097153,
+  "summary": {
+    "dense": {
+      "observations": 4,
+      "median_total_wire_bytes": 1030608508.0,
+      "median_whole_pair_wall_ms": 7307.44978850089,
+      "median_participant_elapsed_ms": 7251.18
+    },
+    "rejection": {
+      "observations": 4,
+      "median_total_wire_bytes": 633235406.5,
+      "median_whole_pair_wall_ms": 4304.291412998282,
+      "median_participant_elapsed_ms": 4185.964775002503
+    }
+  },
+  "observed_reduction_percent": {
+    "median_total_wire_bytes": 38.55713381128035,
+    "median_whole_pair_wall_ms": 41.09721534082139
+  },
+  "metadata_errata": [
+    {
+      "file": "results/sci_exp31_finite_certificate.json",
+      "field": "profile.cdf_bits",
+      "historical_value": 92,
+      "implemented_value": 93,
+      "reason": "Preimplementation metadata; actual sampler uses93 bits for a signed-difference margin. The factor/error certificate is unchanged."
+    },
+    {
+      "file": "experiments/dense_adapter_cdf31.cpp",
+      "field": "opening comment",
+      "reason": "Copied score-only comment is stale; actual executable includes private E31 weighted CDF and client-only token release."
+    }
+  ],
+  "evidence_sha256": {
+    "results/dense_adapter_linearot.json": "683efd98e2de3646826ee4ae393bfdedb236022e4d055d2dcca98232f3a4d9aa",
+    "results/dense_adapter_compact.json": "a81984b2aa22cbe88a5db02013a822f063316e0efab3c6086651eac38ea4588b",
+    "results/dense_adapter_ot_chunked.json": "dcc4d79edce2a9bf4479efa19ed1006d70e82b9a835fa5a5861770b02bf6c415",
+    "results/public_tanh_ot_native_check.json": "a63f118043c148b853b4e24ddbfa41bcf01442c2406db6a3da233b749fb45354",
+    "results/private_weighted_cdf93_check.json": "acda8ea477d6e312441a1db0ab30054baa75e400ccb6605d5c90e5dcbb923c80",
+    "results/dense_adapter_cdf31.json": "05e8c680ed1a408b595ed3ce7c2a83c356ac31bcca08448025a9171a75645618",
+    "results/selected_adapter_exp31.json": "be53f555ac6fa6d00f023c4477be1591ce796615e1d39e1bb9fae9f33957f0b9",
+    "results/bounded_sampling_exp31.json": "88198ec05ce9c5f76c7f270741690336d44d19b8f0c26feb2d5359a2861c219e",
+    "results/matched_exp31_full_benchmark.json": "a043acb80730f5213f6dc1f24a1c6b0f09c83f5563d88bbf575bd1528af8c016"
+  },
+  "limits": "Saved-file replay after verified absence of native workers. Not an independent implementation, new quality experiment, statistical performance confidence interval, or security proof. E31 finite target is distinct from original p44 descending profile. All shares and audit coins remain local; no raw tokens or shares for public upload.",
+  "_publication": {
+    "derived_summary": true,
+    "original_local_result_sha256": "5b879162cfa4a563472fe6721b682aebcd64bc469cfbb9901b16e52dde7af805",
+    "omitted": "Per-file private audit hashes, logs, source-sha duplication. Raw shares, coins, fixture archives and token outputs are local only. Frozen original JSON is not rewritten."
+  }
+}

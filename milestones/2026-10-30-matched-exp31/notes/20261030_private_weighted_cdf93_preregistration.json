@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-10-30T11:36:22.528485+00:00",
+  "input_sha256": {
+    "experiments/private_weighted_cdf93.h": "0eaeb1a0bfae657bfb0bc0cbcaf72747fd79bdbde2923524c2a72b78f1e2d6c6",
+    "experiments/private_weighted_cdf93_check.cpp": "33cef74de93067eb748b303bcd2c140b9572aa072422bbc368e3807018f66f80",
+    "experiments/run_private_weighted_cdf93_check.py": "a2d7e1f4b43ad7212bde197216b4f6e9288d5320e185215c17cd71313d4808c9",
+    "experiments/run_dense_adapter_linearot.py": "d34366a246670ba5775fefe0ed995e2c3506a575b2a77eaa07a7411a46d62718",
+    "experiments/run_fable_smallbatch_check.py": "e7ca72c566bd61a3564e3c28ff82d20b1ccb1fc77d45a3cb9c986ab519ebc0b2",
+    "toolchain/bounded-sampler/private_weighted_cdf93_check": "2007acbfab6e60c3007aa8e274a666cf682156f0093c871a95d79f40ce30ca38",
+    "toolchain/bounded-sampler/dense_cdf31_build_manifest.json": "dc1c73df24fe498e9f33bffe877f74cdc69e4fa1815a6307c82fc479b15aea0e",
+    "third_party/FABLE/extern/EzPC/SCI/src/Millionaire/millionaire_with_equality.h": "eb5c0213c1d63b1f2bb032f93bfdf611b2222701740e28d9737559f3164fe2ae"
+  },
+  "cases": [
+    "peak0_u0",
+    "peaklast_umax",
+    "uniform_half",
+    "zero_support_interior",
+    "one_mass_at_zero",
+    "random_q_exp"
+  ],
+  "limits": "Actualtwo-party weightedCDF: clientprivateqinteger masses sum2^60, exp31values secretadditive33shares. ExistingOT64products withlow30/high31qparts, low63wraplift to93, localprefix, scalarGC secretfloor(U64*Z/2^64), 28+64bit lexicographicMSB andsecretXORfirstCDFcrossing. Onlyfinaltoken toclient. Fullq=2^60 endpoint, Z=2^91 endpoint, jointU=0/half/max andzeroweightintervals covered. No trustedhelper; parentaudits allproducts/prefix/R/flags/finaltoken afterbothpartiesexit. FunctionsamplelawTV<=N/2^64 relativefiniteweights, no fullhead/modelquality/implementationsecurity/novelty claim. Coincontrols are functionalfixtures, not distributionfrequencyevidence."
+}

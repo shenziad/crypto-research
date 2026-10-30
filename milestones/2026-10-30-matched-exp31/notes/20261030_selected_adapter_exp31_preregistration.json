@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-10-30T11:48:03.577139+00:00",
+  "input_sha256": {
+    "experiments/selected_adapter_exp31.cpp": "7fcff42edfd0ca98cb6e94933e36f3ce98764200f50fddb01426c2810ff8b714",
+    "experiments/build_selected_adapter_exp31.py": "cf0fb7965973bf7741b74af0b0d6a4623f32606bfee1560b510d5cc8f8e6d2f1",
+    "experiments/run_selected_adapter_exp31.py": "8fb491257cb172f1589a3a22d6cdeea021b7f7e19363b08d362ee296b32a13f2",
+    "experiments/bounded_adapter_gc.cpp": "3c6b8d47b889540ebc610c04c55a4ed69f79f992af366a6017c49a4491e6b7c1",
+    "experiments/bounded_adapter_fixed16.py": "af21fbed747d7fa15cb1fdda8a479e1d1290b5879147bfbff1955557b3d55a26",
+    "experiments/run_bounded_adapter_gc.py": "7d0d4d7b7763364baca7fd35f62978f98ca7ebb5ac065003d55bea11fe20f613",
+    "experiments/run_dense_adapter_linearot.py": "d34366a246670ba5775fefe0ed995e2c3506a575b2a77eaa07a7411a46d62718",
+    "experiments/run_dense_adapter_cdf31.py": "d209b7907d408ca5eb9e0f22eb9ab4909fd62e2b50d6a9abc3c31430f7b1828d",
+    "experiments/public_tanh_ot_chunked.h": "1cd39447a359a957207c8be5b9e8a3a25bd4150c4f342723575c4622003fc206",
+    "experiments/public_tanh_ot.h": "bba470ab0b4d70144aa533ab280740941ea6418a3d377fddaf388cb2adb44f18",
+    "experiments/public_tanh_compact.h": "b1f2913baa15cfe40ec45d74fda276210909de3cbcc653da9db06d5678662436",
+    "experiments/run_fable_smallbatch_check.py": "e7ca72c566bd61a3564e3c28ff82d20b1ccb1fc77d45a3cb9c986ab519ebc0b2",
+    "toolchain/bounded-sampler/selected_adapter_exp31": "1013556b17c0eb1b36dad993b32683b703147e9a6419550f6d24f17b920d47b2",
+    "toolchain/bounded-sampler/selected_exp31_build_manifest.json": "fe775ec48a2277ba00185e44294043061b9163aca7d5e4a6c234243b4d93ce71",
+    "results/sci_exp31_finite_certificate.json": "8a7d19e0b0e48803cf784cea459372eb7d663f673573cfbfe0bbed542057e1ce",
+    "results/bounded_output_adapter_weights.npz": "e89c3c6ee3163676249973519bd5499b5513d1f561a2a108c89b03ddfde984eb",
+    "results/bounded_adapter_gc_inputs.npz": "bc7f39ffd8c0ae6dc410038a97dc323aa07fbc28c5e8e48117e9f0bba0b8f729"
+  },
+  "cases": [
+    "PWLknots99",
+    "domainbounds8",
+    "ptb201",
+    "wiki201",
+    "early201",
+    "late201",
+    "failure201",
+    "positiveendpoint",
+    "negativeequal",
+    "negativebefore"
+  ],
+  "limits": "MatchedfiniteE31selected-head component: serverprivateB/clientprivatex, XOR18selectedA/indexinputs -> standardB2A18/localweighted sum -> exactsharedLinearOT products/floors/PWL/verifiedSCIExp31 -> exactjointU31Bernoulli -> fixedfirstsuccess clientonlytoken. Legacyhandoff38random44bit words retained; onlyfirstword low31bits used, others ignoredlocally. Inputshares/coins controlled forfunctionalbranches; noalias/rowlookup inthisunit; nohelper andparentauditonlyafterbothnativeprocessesexit. Onepairpercase, notperformancebenchmark/quality/newness/CCFclaim. SameE31law ascomplete denseCDF baseline; originalp44descendingprofile unchanged."
+}
