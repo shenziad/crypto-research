@@ -1,0 +1,19 @@
+{
+  "python": "3.12.3",
+  "packages": {
+    "torch": "2.8.0",
+    "transformers": "4.57.1",
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "safetensors": "0.8.0",
+    "tokenizers": "0.22.2"
+  },
+  "device": "CPU, float32 model, float64 softmax, torch threads1; not GPU performance",
+  "static_envelope_environment": {
+    "python": "3.12.3",
+    "packages": {
+      "numpy": "1.26.4",
+      "scipy": "1.11.4"
+    }
+  }
+}

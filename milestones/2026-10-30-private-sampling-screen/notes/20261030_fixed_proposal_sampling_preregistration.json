@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-10-30T00:21:25.929515+00:00",
+  "question": "Does query-independent rejection sampling even pass an optimistic cost screen for client-only token output?",
+  "source_sha256": "3f6724561ee0687fb2a61bb882bbf6bb9c88df28366e29aca5ae6e911349fe11",
+  "calibration_wiki_offsets": [
+    0,
+    512,
+    1024,
+    1536,
+    2048,
+    2560,
+    3072,
+    3584
+  ],
+  "heldout_wiki_offsets": [
+    65536,
+    66048,
+    66560,
+    67072,
+    67584,
+    68096,
+    68608,
+    69120
+  ],
+  "heldout_ptb_offsets": [
+    32768,
+    33280,
+    33792,
+    34304,
+    34816,
+    35328,
+    35840,
+    36352
+  ],
+  "uniform_mixture": 0.001,
+  "temperature": 1,
+  "position_window": 64,
+  "failure_budget": 9.094947017729282e-13,
+  "data_sha256": {
+    "wiki": "d790b833ef8cf03a90db7bf1271b7520b83c45ce07ba3c1a9699df81e239eca0",
+    "ptb": "dd65dff31e70846b2a6030a87482edcd5d199130cdcfa1f3dccbb033728deee0"
+  },
+  "decision": "No tuning: uniform, calibration mean and pointwise-max proposals fixed before heldout execution. If all calibrated envelopes fail or cost exceeds V, retire those direct candidates; oracle finite-set optimum is a lower bound only. Positive numeric screening requires a separate complete strict-private-output construction.",
+  "limits": "Numerical necessary filter only. Logits and normalizers supplied free; no MPC, private exp, hidden candidate row selection, secure random generation, first-success cost, timing or fullLLM benefit. Proposal candidates must be secret or have an explicit changed ideal functionality: public input-independent proposals correlate with final sampled token and cannot automatically be treated as free public randomness for a client-only-output sampler. Empirical calibration envelopes are not all-input certificates. Clipping changes the target law. Sample count fixed, acceptance flags and first-success index must not be revealed. Oracle context envelopes and heldout-minimax proposal are unavailable in a real protocol and are optimistic diagnostics. This is standard rejection sampling, not a novelty claim. Single tiny model; no large-model extrapolation."
+}

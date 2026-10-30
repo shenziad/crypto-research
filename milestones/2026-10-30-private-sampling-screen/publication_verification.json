@@ -1,0 +1,11 @@
+{
+  "checked_utc": "2026-10-30T00:34:29.563395+00:00",
+  "model_free_staged_recheck_passed": true,
+  "enumerated_trial_combinations": 98304,
+  "archived_algebra_JSON_byte_match": true,
+  "seven_local_asset_SHA256_checks_passed": true,
+  "source_preregistration_SHA256_verified": true,
+  "full_numerical_run_from_clean_clone_tested": false,
+  "HE_protocol_implemented": false,
+  "scope": "Closed necessary numerical filters, no new protocol/CCF claim; weights, selected tokens, corpus text, PDF and environments excluded."
+}

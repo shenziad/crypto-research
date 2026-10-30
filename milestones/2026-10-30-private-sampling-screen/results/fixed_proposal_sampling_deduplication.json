@@ -1,0 +1,24 @@
+{
+  "analysis": {
+    "uniform": {
+      "common_envelope_on_observed_heldouts": 49896.63174358966,
+      "K": 1383415,
+      "expected_unique_candidates": 50303.99999994273,
+      "fraction_vocabulary": 0.9999999999988616
+    },
+    "calibration_mean": {
+      "common_envelope_on_observed_heldouts": 3584183.99800825,
+      "K": 99374668,
+      "expected_unique_candidates": 50284.72801947901,
+      "fraction_vocabulary": 0.9996168897002029
+    },
+    "calibration_minimax": {
+      "common_envelope_on_observed_heldouts": 4458828.925345312,
+      "K": 123624975,
+      "expected_unique_candidates": 50273.98540594136,
+      "fraction_vocabulary": 0.9994033358369386
+    }
+  },
+  "parent_sha256": "67111e57b1618f08bbddeca43a631eaa751711edc44af6d4eb6e3884d90b1f6b",
+  "formula": "E distinct candidates=sum_i[1-(1-q_i)^K] for independent proposals; finite observed-set envelope only. Deduplicating head projections does not remove secret sampling/selection costs; those are not implemented."
+}

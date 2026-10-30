@@ -1,818 +1,798 @@
 {
-  "created_utc": "2026-10-29T15:11:08.320279+00:00",
-  "milestone": "2026-10-29-exact-coarse",
+  "format_version": 2,
+  "updated_utc": "2026-10-30T00:34:30.090779+00:00",
+  "milestones": [
+    "2026-10-29-exact-coarse",
+    "2026-10-30-private-sampling-screen"
+  ],
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 112,
-      "sha256": "cf32bcbe3f4d612f4971c3abf0b988018b694c68ed62f39ee71aaa3a9947a474",
-      "origin": "publication packaging / refreshed completed-result summary"
+      "bytes": 191,
+      "sha256": "5f5cee0a5b1652d9888f7e2172311029d56eaf528f9cfc2a2d8cf2f72ae27cd1"
     },
     {
       "path": "NOTICE.md",
       "bytes": 552,
-      "sha256": "a8a367b91752c76103f130e4b26ae28fb1cf307d90ccfb15fb113a25cef4532c",
-      "origin": "publication packaging / refreshed completed-result summary"
+      "sha256": "a8a367b91752c76103f130e4b26ae28fb1cf307d90ccfb15fb113a25cef4532c"
     },
     {
       "path": "README.md",
-      "bytes": 1607,
-      "sha256": "9261f6ed64c516c5ead23e471c0d88e23306602d02ece289d1d1996de3f778fb",
-      "origin": "publication packaging / refreshed completed-result summary"
+      "bytes": 2139,
+      "sha256": "90ce3707c8e0550e5836ca8e51e0f486c5342d78a55dde6d039bf71c74e554fc"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/REPRODUCIBILITY.md",
       "bytes": 2618,
-      "sha256": "acbba1910fb064609e035758d126bc0bae8adf1bead67aeeb99a9c308f783762",
-      "origin": "publication packaging / refreshed completed-result summary"
+      "sha256": "acbba1910fb064609e035758d126bc0bae8adf1bead67aeeb99a9c308f783762"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/data/manifest.json",
       "bytes": 248,
-      "sha256": "2401da390c62c7ba08100d86fb5c69c3cb174342926723a75ed63f6d9e755cd2",
-      "origin": "data/manifest.json"
+      "sha256": "2401da390c62c7ba08100d86fb5c69c3cb174342926723a75ed63f6d9e755cd2"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/data/ptb_test_manifest.json",
       "bytes": 475,
-      "sha256": "175e12280ffdf495f3f762c6865407f8f0b869cc6376903e254ebb6348bab392",
-      "origin": "data/ptb_test_manifest.json"
+      "sha256": "175e12280ffdf495f3f762c6865407f8f0b869cc6376903e254ebb6348bab392"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/checkpoint_gated_faithful.py",
       "bytes": 8783,
-      "sha256": "69e57babdc02b5a07d5fc3b7d0fc0112bfdfcd9d3dae8f1db83f20e34d92a364",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/checkpoint_gated_faithful.py"
+      "sha256": "69e57babdc02b5a07d5fc3b7d0fc0112bfdfcd9d3dae8f1db83f20e34d92a364"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dcf_aes_native.py",
       "bytes": 1654,
-      "sha256": "9694e1da72ddb0331becf5ee47fbde3e644beed933c207084d8682d2e70c40a5",
-      "origin": "sources/checkpoints/20261029_exact_coarse_out0_sources/experiments/dcf_aes_native.py"
+      "sha256": "9694e1da72ddb0331becf5ee47fbde3e644beed933c207084d8682d2e70c40a5"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dcf_aes_native_check.py",
       "bytes": 4684,
-      "sha256": "43d6e821f3480c8d63e1202585844dc183dd32a35b7a9f682d53c4b6cbe3f2a0",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/dcf_aes_native_check.py"
+      "sha256": "43d6e821f3480c8d63e1202585844dc183dd32a35b7a9f682d53c4b6cbe3f2a0"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dcf_cuda.cu",
       "bytes": 5263,
-      "sha256": "4c88cc579b90f3c53434c0981edf8ac1c0cda144e3fa4d26cbbcb62786394b46",
-      "origin": "sources/checkpoints/20261029_exact_coarse_out0_sources/experiments/dcf_cuda.cu"
+      "sha256": "4c88cc579b90f3c53434c0981edf8ac1c0cda144e3fa4d26cbbcb62786394b46"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dcf_cuda.py",
       "bytes": 3898,
-      "sha256": "7a8b8082b87a42d91d85df70735b25fa8a3f0cccb7bdc98ae4447328d9e76939",
-      "origin": "sources/checkpoints/20261029_exact_coarse_out0_sources/experiments/dcf_cuda.py"
+      "sha256": "7a8b8082b87a42d91d85df70735b25fa8a3f0cccb7bdc98ae4447328d9e76939"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dcf_cuda_aes_reference.py",
       "bytes": 1151,
-      "sha256": "7b8a1fd4f9082c44dd34e70271bd64e48f5015a5e005ce3c5b17ffed5cdf726d",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/dcf_cuda_aes_reference.py"
+      "sha256": "7b8a1fd4f9082c44dd34e70271bd64e48f5015a5e005ce3c5b17ffed5cdf726d"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dcf_cuda_check.py",
       "bytes": 2927,
-      "sha256": "ab9634854eed6203de48c3f7c23bdcc4532d3a60edb59132cf483cac614888e0",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/dcf_cuda_check.py"
+      "sha256": "ab9634854eed6203de48c3f7c23bdcc4532d3a60edb59132cf483cac614888e0"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dcf_cuda_protocol.cu",
       "bytes": 3019,
-      "sha256": "25702ffd0d7044a8b5f046074a849e98f924dccd4eaac9f25960bedc9d08fa02",
-      "origin": "sources/checkpoints/20261029_exact_coarse_out0_sources/experiments/dcf_cuda_protocol.cu"
+      "sha256": "25702ffd0d7044a8b5f046074a849e98f924dccd4eaac9f25960bedc9d08fa02"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dcf_cuda_protocol_check.py",
       "bytes": 2531,
-      "sha256": "e5651a39a591f7643916e5538c0e7e9c10794d81689e96f1e9cfa4fa297e42e5",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/dcf_cuda_protocol_check.py"
+      "sha256": "e5651a39a591f7643916e5538c0e7e9c10794d81689e96f1e9cfa4fa297e42e5"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dcf_dither_native.cpp",
       "bytes": 1589,
-      "sha256": "1eef6f8593f11e2104d728f86c701a455fcc27b13563b84becb668afd3bb6b1d",
-      "origin": "sources/checkpoints/20261029_exact_coarse_out0_sources/experiments/dcf_dither_native.cpp"
+      "sha256": "1eef6f8593f11e2104d728f86c701a455fcc27b13563b84becb668afd3bb6b1d"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dcf_public_range.py",
       "bytes": 1381,
-      "sha256": "bf372b08309c315930940488a3125d4f0920407cfe5ef02c4bac0d3a87ed54ec",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/dcf_public_range.py"
+      "sha256": "bf372b08309c315930940488a3125d4f0920407cfe5ef02c4bac0d3a87ed54ec"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dcf_public_range_check.py",
       "bytes": 2854,
-      "sha256": "e022491e1b5dbe1f45f937001f966907b5741475494c425f86ad1a17bf2700c9",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/dcf_public_range_check.py"
+      "sha256": "e022491e1b5dbe1f45f937001f966907b5741475494c425f86ad1a17bf2700c9"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dcf_selector_native.cpp",
       "bytes": 3552,
-      "sha256": "3c388862a9848d81b97c592d85ff35c383378deeb798b08e555e94e8e1bc23bc",
-      "origin": "sources/checkpoints/20261029_exact_coarse_out0_sources/experiments/dcf_selector_native.cpp"
+      "sha256": "3c388862a9848d81b97c592d85ff35c383378deeb798b08e555e94e8e1bc23bc"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dcf_sparse_native.cpp",
       "bytes": 2950,
-      "sha256": "cf5d6f39cd19d670a3860ce13c5933edac51dbbfc23beeb6211dabe29f3bde15",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/dcf_sparse_native.cpp"
+      "sha256": "cf5d6f39cd19d670a3860ce13c5933edac51dbbfc23beeb6211dabe29f3bde15"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dcf_sparse_native.py",
       "bytes": 2011,
-      "sha256": "7cd020596b22e4d21d43e4dad1dcb34b95763dd1ea3a357fee896bc220623729",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/dcf_sparse_native.py"
+      "sha256": "7cd020596b22e4d21d43e4dad1dcb34b95763dd1ea3a357fee896bc220623729"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dcf_sparse_native_check.py",
       "bytes": 4274,
-      "sha256": "943429c1c5d805d4601b44b3b12e544e2cf95e960476983e45968c0871d4a6a6",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/dcf_sparse_native_check.py"
+      "sha256": "943429c1c5d805d4601b44b3b12e544e2cf95e960476983e45968c0871d4a6a6"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dcf_spline_native.cpp",
       "bytes": 4550,
-      "sha256": "5fdb10beb27319d3dc989fdb3141136be39b2be31ac2967be003684acf3285d5",
-      "origin": "sources/checkpoints/20261029_exact_coarse_out0_sources/experiments/dcf_spline_native.cpp"
+      "sha256": "5fdb10beb27319d3dc989fdb3141136be39b2be31ac2967be003684acf3285d5"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dcf_wide_native.cpp",
       "bytes": 13850,
-      "sha256": "d877964226e1cfd74b1e48e7ee3509974aa7483f87bb9e5f9980cf1a8e7477f6",
-      "origin": "sources/checkpoints/20261029_exact_coarse_out0_sources/experiments/dcf_wide_native.cpp"
+      "sha256": "d877964226e1cfd74b1e48e7ee3509974aa7483f87bb9e5f9980cf1a8e7477f6"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dcf_wide_native.py",
       "bytes": 2752,
-      "sha256": "0c0853c9284716fcd09b6c117f5480e037571cb51421c0b8d7d925d6453b381d",
-      "origin": "sources/checkpoints/20261029_exact_coarse_out0_sources/experiments/dcf_wide_native.py"
+      "sha256": "0c0853c9284716fcd09b6c117f5480e037571cb51421c0b8d7d925d6453b381d"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dcf_wide_native_check.py",
       "bytes": 5294,
-      "sha256": "856d12d7a8384dc530f18c2d9aed989fb550a4bc58d4a52e57e1ffeb491dadb4",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/dcf_wide_native_check.py"
+      "sha256": "856d12d7a8384dc530f18c2d9aed989fb550a4bc58d4a52e57e1ffeb491dadb4"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dithered_classifier_reference_check.py",
       "bytes": 3019,
-      "sha256": "90bd5deebaf848c8d59c4200092c29d682f33ff1389058bf7d916b4da4c535bd",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/dithered_classifier_reference_check.py"
+      "sha256": "90bd5deebaf848c8d59c4200092c29d682f33ff1389058bf7d916b4da4c535bd"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dithered_contraction_moments.py",
       "bytes": 3687,
-      "sha256": "4998a761608ac18f9042279a2d19f8500e1c5285c6dbbbba37cae28226a1cc66",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/dithered_contraction_moments.py"
+      "sha256": "4998a761608ac18f9042279a2d19f8500e1c5285c6dbbbba37cae28226a1cc66"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dithered_protocol_report.py",
       "bytes": 6532,
-      "sha256": "d7c18a6b3d5ebd506c52291f92bb3c86cb3c41b963468a78d0daa444faf7e371",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/dithered_protocol_report.py"
+      "sha256": "d7c18a6b3d5ebd506c52291f92bb3c86cb3c41b963468a78d0daa444faf7e371"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dithered_silu.py",
       "bytes": 3280,
-      "sha256": "2db48459a6ea605b323ea3ce04ee70161689383f641e0bc0ff307313c356a079",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/dithered_silu.py"
+      "sha256": "2db48459a6ea605b323ea3ce04ee70161689383f641e0bc0ff307313c356a079"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dithered_silu_certificate.py",
       "bytes": 2283,
-      "sha256": "4cbea1c1e3ca8ea3eceae6aa6f93362696710d4cd9f46660370be72a70a76ef7",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/dithered_silu_certificate.py"
+      "sha256": "4cbea1c1e3ca8ea3eceae6aa6f93362696710d4cd9f46660370be72a70a76ef7"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dithered_spline_fss.py",
       "bytes": 5544,
-      "sha256": "62da79bd860516039745e96115a98db212f98e04662304668a70aed589c0a386",
-      "origin": "sources/checkpoints/20261029_exact_coarse_out0_sources/experiments/dithered_spline_fss.py"
+      "sha256": "62da79bd860516039745e96115a98db212f98e04662304668a70aed589c0a386"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dithered_spline_native_check.py",
       "bytes": 6060,
-      "sha256": "75212364d800cace908ba2233d435d091698fc00fa85c49538417b55205a7bec",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/dithered_spline_native_check.py"
+      "sha256": "75212364d800cace908ba2233d435d091698fc00fa85c49538417b55205a7bec"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dpf_aes_native.cpp",
       "bytes": 12927,
-      "sha256": "6f77a06ef7363ad8d98d2c97cedfd0c2fcd044611d8a668e60e55105ac233d8d",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/dpf_aes_native.cpp"
+      "sha256": "6f77a06ef7363ad8d98d2c97cedfd0c2fcd044611d8a668e60e55105ac233d8d"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dpf_aes_native.py",
       "bytes": 1956,
-      "sha256": "608a1899fb028a544a343d0bf25cf037ad2a016f36d18bcf435b2d8d1f87c8e8",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/dpf_aes_native.py"
+      "sha256": "608a1899fb028a544a343d0bf25cf037ad2a016f36d18bcf435b2d8d1f87c8e8"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dpf_aes_native_check.py",
       "bytes": 3792,
-      "sha256": "f1a357a17218a13874b4b1c51a2716c3031f27e67c2d4afc1d1c7ea497413215",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/dpf_aes_native_check.py"
+      "sha256": "f1a357a17218a13874b4b1c51a2716c3031f27e67c2d4afc1d1c7ea497413215"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/dpf_reference.py",
       "bytes": 4092,
-      "sha256": "0b7930c36de97783d74e89f262a2a15d16b7ac58b28e3792c4a5cb72de1f88ac",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/dpf_reference.py"
+      "sha256": "0b7930c36de97783d74e89f262a2a15d16b7ac58b28e3792c4a5cb72de1f88ac"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/exact_coarse_comparison_report.py",
       "bytes": 6052,
-      "sha256": "434a7db86005e01628638142a4876e52e3d761f8853bd70b8e99e1388ad9e22e",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/exact_coarse_comparison_report.py"
+      "sha256": "434a7db86005e01628638142a4876e52e3d761f8853bd70b8e99e1388ad9e22e"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/exact_coarse_contraction_protocol.py",
       "bytes": 8755,
-      "sha256": "0154f24cb4c6e4d11efb5dc40d66c8bdb4f8fdf21c48c23397d3428464a7809e",
-      "origin": "sources/checkpoints/20261029_exact_coarse_out0_sources/experiments/exact_coarse_contraction_protocol.py"
+      "sha256": "0154f24cb4c6e4d11efb5dc40d66c8bdb4f8fdf21c48c23397d3428464a7809e"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/exact_coarse_cuda.py",
       "bytes": 588,
-      "sha256": "07260bab76296af936b000e67412ae658900475078dfb2b8e736e1c3da3043f7",
-      "origin": "sources/checkpoints/20261029_exact_coarse_out0_sources/experiments/exact_coarse_cuda.py"
+      "sha256": "07260bab76296af936b000e67412ae658900475078dfb2b8e736e1c3da3043f7"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/exact_coarse_cuda_check.py",
       "bytes": 3164,
-      "sha256": "7d91dcba4418a35110f1b92c49bde6942ddd25084dc570c2fccbdb9b1635a461",
-      "origin": "sources/checkpoints/20261029_exact_coarse_out0_sources/experiments/exact_coarse_cuda_check.py"
+      "sha256": "7d91dcba4418a35110f1b92c49bde6942ddd25084dc570c2fccbdb9b1635a461"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/exact_coarse_cuda_protocol.py",
       "bytes": 5554,
-      "sha256": "256ecf087bbe85c70ece49b2b751ce76b50846a4ba763988f6122bfefa77bdb4",
-      "origin": "sources/checkpoints/20261029_exact_coarse_out0_sources/experiments/exact_coarse_cuda_protocol.py"
+      "sha256": "256ecf087bbe85c70ece49b2b751ce76b50846a4ba763988f6122bfefa77bdb4"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/exact_coarse_spline.py",
       "bytes": 4469,
-      "sha256": "a756b6f2d6ef152134e499db53e7e02f90c371daa443874dccc9f2b16b64959a",
-      "origin": "sources/checkpoints/20261029_exact_coarse_out0_sources/experiments/exact_coarse_spline.py"
+      "sha256": "a756b6f2d6ef152134e499db53e7e02f90c371daa443874dccc9f2b16b64959a"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/exact_coarse_spline_check.py",
       "bytes": 3169,
-      "sha256": "2aa4c88827a86c357e0441a4367df654a4a6b4713d3cbaac4760940eeb6b4a74",
-      "origin": "sources/checkpoints/20261029_exact_coarse_out0_sources/experiments/exact_coarse_spline_check.py"
+      "sha256": "2aa4c88827a86c357e0441a4367df654a4a6b4713d3cbaac4760940eeb6b4a74"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/faithful_shift_check.py",
       "bytes": 1567,
-      "sha256": "8334599fc00cdd8cf3205f60f5237134995018584988429fa43cb1db7cacc301",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/faithful_shift_check.py"
+      "sha256": "8334599fc00cdd8cf3205f60f5237134995018584988429fa43cb1db7cacc301"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/fetch_qwen15_model.py",
       "bytes": 2367,
-      "sha256": "2b34ff6334c584cc21010233553c8a97f209081ea8c2d14514144b9fd0b20587",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/fetch_qwen15_model.py"
+      "sha256": "2b34ff6334c584cc21010233553c8a97f209081ea8c2d14514144b9fd0b20587"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/fetch_qwen_gate_model.py",
       "bytes": 2249,
-      "sha256": "708230e76f662d1311b2591c564bb55b1b65d284e3a8e87d248993b547059b82",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/fetch_qwen_gate_model.py"
+      "sha256": "708230e76f662d1311b2591c564bb55b1b65d284e3a8e87d248993b547059b82"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/fused_gated_lut.py",
       "bytes": 14634,
-      "sha256": "1abcfdd48e97fe9faef81c337db57603b6529cee24f1616255edf53681297dd5",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/fused_gated_lut.py"
+      "sha256": "1abcfdd48e97fe9faef81c337db57603b6529cee24f1616255edf53681297dd5"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/gated_contraction_gpu_bridge.py",
       "bytes": 2342,
-      "sha256": "8b887f986829cc011bfd2ddd4583c2636c43d7178c00ca1972687ad2d971cced",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/gated_contraction_gpu_bridge.py"
+      "sha256": "8b887f986829cc011bfd2ddd4583c2636c43d7178c00ca1972687ad2d971cced"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/gated_contraction_protocol.py",
       "bytes": 12384,
-      "sha256": "08aadbdddfdd72ce94fe39e10fc2a64d7c4d0931196adaa22c4085ec189c357a",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/gated_contraction_protocol.py"
+      "sha256": "08aadbdddfdd72ce94fe39e10fc2a64d7c4d0931196adaa22c4085ec189c357a"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/gated_input_quantizer.py",
       "bytes": 5254,
-      "sha256": "9f96800cd4260b961dfc05a9cd0cf1b2cce6184334b611aaefb86b819eaaa8b2",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/gated_input_quantizer.py"
+      "sha256": "9f96800cd4260b961dfc05a9cd0cf1b2cce6184334b611aaefb86b819eaaa8b2"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/gated_input_quantizer_check.py",
       "bytes": 4013,
-      "sha256": "198b759cf42ca0ec1e041474fd9d2937d1c509b37d5be17217551e200ff720dc",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/gated_input_quantizer_check.py"
+      "sha256": "198b759cf42ca0ec1e041474fd9d2937d1c509b37d5be17217551e200ff720dc"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/gated_lut_strong_baselines.py",
       "bytes": 15358,
-      "sha256": "27f14c9c65eda89dbf09acf715f21d025e7c2114b9abbb5dc30716247b165ad7",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/gated_lut_strong_baselines.py"
+      "sha256": "27f14c9c65eda89dbf09acf715f21d025e7c2114b9abbb5dc30716247b165ad7"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/gated_wide_clamp_identity_check.py",
       "bytes": 1340,
-      "sha256": "81c59d5f194be67a236eb5a5c01efad90e743241d9183925f741027544e85029",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/gated_wide_clamp_identity_check.py"
+      "sha256": "81c59d5f194be67a236eb5a5c01efad90e743241d9183925f741027544e85029"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/joint_swiglu_norm_screen.py",
       "bytes": 6315,
-      "sha256": "fbaafb85d0dd989ed53d56ca0a7c8aa183ca592b9b89188d1b3dc8a44914d0fd",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/joint_swiglu_norm_screen.py"
+      "sha256": "fbaafb85d0dd989ed53d56ca0a7c8aa183ca592b9b89188d1b3dc8a44914d0fd"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/projective_norm_probe.py",
       "bytes": 7596,
-      "sha256": "2b9b7a6637d1480e18625a8d85e51829d2d35d2e612a4d97c45dea264c03df1b",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/projective_norm_probe.py"
+      "sha256": "2b9b7a6637d1480e18625a8d85e51829d2d35d2e612a4d97c45dea264c03df1b"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/public_polynomial_basis.py",
       "bytes": 3531,
-      "sha256": "20604795e03795038e39602588ccf1bdb09dcaaea7fec041ec1d019dd1131cae",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/public_polynomial_basis.py"
+      "sha256": "20604795e03795038e39602588ccf1bdb09dcaaea7fec041ec1d019dd1131cae"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/public_polynomial_basis_check.py",
       "bytes": 2231,
-      "sha256": "060c5fd427d4dda2cebc946bd3359402d120203feb83956f0021b23331fc275d",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/public_polynomial_basis_check.py"
+      "sha256": "060c5fd427d4dda2cebc946bd3359402d120203feb83956f0021b23331fc275d"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/public_silu_spline.py",
       "bytes": 2895,
-      "sha256": "8339318774bf210c765cbfd750c86f467f12c21c3723b2eda3a89891c30cf3d0",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/public_silu_spline.py"
+      "sha256": "8339318774bf210c765cbfd750c86f467f12c21c3723b2eda3a89891c30cf3d0"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/public_silu_spline_check.py",
       "bytes": 2576,
-      "sha256": "a79a499dad3240aa448948192dc5521bc6d929c05a997af227c3111c29c453f1",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/public_silu_spline_check.py"
+      "sha256": "a79a499dad3240aa448948192dc5521bc6d929c05a997af227c3111c29c453f1"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/public_spline_coefficient_basis.py",
       "bytes": 4792,
-      "sha256": "25c4d696bd8a87ce37300316e52e6c399d8a39e6ddcf5079bf5dac1787c73c90",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/public_spline_coefficient_basis.py"
+      "sha256": "25c4d696bd8a87ce37300316e52e6c399d8a39e6ddcf5079bf5dac1787c73c90"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/public_spline_contraction_protocol.py",
       "bytes": 12327,
-      "sha256": "77b028ba2dd135e29ba2fffa1bc73dbba8cf1d6c4d068f02d5d0c524dcac035b",
-      "origin": "sources/checkpoints/20261029_exact_coarse_out0_sources/experiments/public_spline_contraction_protocol.py"
+      "sha256": "77b028ba2dd135e29ba2fffa1bc73dbba8cf1d6c4d068f02d5d0c524dcac035b"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/public_spline_cuda.py",
       "bytes": 3644,
-      "sha256": "7f44c05a246f8dae8b7bd6b080489603051b8eb64deb4c30b8feb0d8a2af3492",
-      "origin": "sources/checkpoints/20261029_exact_coarse_out0_sources/experiments/public_spline_cuda.py"
+      "sha256": "7f44c05a246f8dae8b7bd6b080489603051b8eb64deb4c30b8feb0d8a2af3492"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/public_spline_cuda_benchmark.py",
       "bytes": 6293,
-      "sha256": "eb55f131f2bd572510ac1ff064a2bf5d629b2460cfaf8685626dd7ce64a11235",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/public_spline_cuda_benchmark.py"
+      "sha256": "eb55f131f2bd572510ac1ff064a2bf5d629b2460cfaf8685626dd7ce64a11235"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/public_spline_cuda_protocol.py",
       "bytes": 6527,
-      "sha256": "c73b2f6a7ebfb85a3cd309ad6fb55ea2ebf901904dfb27727ed9fe3afe448935",
-      "origin": "sources/checkpoints/20261029_exact_coarse_out0_sources/experiments/public_spline_cuda_protocol.py"
+      "sha256": "c73b2f6a7ebfb85a3cd309ad6fb55ea2ebf901904dfb27727ed9fe3afe448935"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/public_spline_frontier_report.py",
       "bytes": 5079,
-      "sha256": "5da02506b4c67758953e4e22636cbeed83b298152dd113bddaaaaf4034aa1e07",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/public_spline_frontier_report.py"
+      "sha256": "5da02506b4c67758953e4e22636cbeed83b298152dd113bddaaaaf4034aa1e07"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/public_spline_fss.py",
       "bytes": 3139,
-      "sha256": "c42d1b01c6a93b4c7e82d8e6fca6a8888435596fa5a53f6482b692233fa4bb50",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/public_spline_fss.py"
+      "sha256": "c42d1b01c6a93b4c7e82d8e6fca6a8888435596fa5a53f6482b692233fa4bb50"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/public_spline_fss_check.py",
       "bytes": 4514,
-      "sha256": "a8b9ed22d57a5525da5b70dd0563868c18076fe2b994e28d85161c2e3ee30d6b",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/public_spline_fss_check.py"
+      "sha256": "a8b9ed22d57a5525da5b70dd0563868c18076fe2b994e28d85161c2e3ee30d6b"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/public_spline_gpu_frontier_report.py",
       "bytes": 4804,
-      "sha256": "d02ff9ca3c3823b0bac84cd43a8e9cca94163e17a2fec6a83a6df0ab61f51e98",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/public_spline_gpu_frontier_report.py"
+      "sha256": "d02ff9ca3c3823b0bac84cd43a8e9cca94163e17a2fec6a83a6df0ab61f51e98"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/public_spline_matched_benchmark.py",
       "bytes": 3986,
-      "sha256": "e60596864e1bada9c9218fa8d6d841300e3dbf8ff80f0d8786a7e7fcc04c0618",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/public_spline_matched_benchmark.py"
+      "sha256": "e60596864e1bada9c9218fa8d6d841300e3dbf8ff80f0d8786a7e7fcc04c0618"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/public_spline_selector.py",
       "bytes": 3939,
-      "sha256": "7c7a530680764dd281fc988ab0ea40cad0246567772ff422a4c556768ad2e4c4",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/public_spline_selector.py"
+      "sha256": "7c7a530680764dd281fc988ab0ea40cad0246567772ff422a4c556768ad2e4c4"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/public_spline_selector_check.py",
       "bytes": 3223,
-      "sha256": "8173f4811cfe57cd0e00fc5bd7c42d40d36e5942965903de0a52b59bfc774065",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/public_spline_selector_check.py"
+      "sha256": "8173f4811cfe57cd0e00fc5bd7c42d40d36e5942965903de0a52b59bfc774065"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/qwen15_dither_quality.py",
       "bytes": 10081,
-      "sha256": "cc7a0a69b9d9dbcb15d5b7fcb3498fb0c0d43ffc4cb9b9f7e6fc9730112f740b",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/qwen15_dither_quality.py"
+      "sha256": "cc7a0a69b9d9dbcb15d5b7fcb3498fb0c0d43ffc4cb9b9f7e6fc9730112f740b"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/qwen15_dithered_protocol.py",
       "bytes": 2926,
-      "sha256": "ee8a64e02791b1a29fbd9a8931a2301172d8e12c160f3d70dc984dc25ca1baff",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/qwen15_dithered_protocol.py"
+      "sha256": "ee8a64e02791b1a29fbd9a8931a2301172d8e12c160f3d70dc984dc25ca1baff"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/qwen_dithered_protocol.py",
       "bytes": 3420,
-      "sha256": "dfa38c57423a3efa8ad83656dc115bc59adf846c0434ba18f564e21292c595c9",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/qwen_dithered_protocol.py"
+      "sha256": "dfa38c57423a3efa8ad83656dc115bc59adf846c0434ba18f564e21292c595c9"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/qwen_exact_coarse_compare.py",
       "bytes": 3650,
-      "sha256": "918dae11bd4d9945da5c6bdc2a49348aba118e9f78dc4f69943f30d930dcd487",
-      "origin": "sources/checkpoints/20261029_exact_coarse_out0_sources/experiments/qwen_exact_coarse_compare.py"
+      "sha256": "918dae11bd4d9945da5c6bdc2a49348aba118e9f78dc4f69943f30d930dcd487"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/qwen_gate_integer_certificate.py",
       "bytes": 2747,
-      "sha256": "be33a2b6f9930dd855bb5e1174e4015e28eff560a6cb4ddcf575b89bf69d6b62",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/qwen_gate_integer_certificate.py"
+      "sha256": "be33a2b6f9930dd855bb5e1174e4015e28eff560a6cb4ddcf575b89bf69d6b62"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/qwen_gated_contraction_protocol.py",
       "bytes": 2659,
-      "sha256": "ea9cdc27ac88189cb1c4102eef6540bc7a3197bebc458ec614815aaffa7ae784",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/qwen_gated_contraction_protocol.py"
+      "sha256": "ea9cdc27ac88189cb1c4102eef6540bc7a3197bebc458ec614815aaffa7ae784"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/qwen_gated_quality.py",
       "bytes": 7726,
-      "sha256": "23a1b4802dd5c3081ee8232b6c73256127072aa0682acab6b54e1f3a8a3a58d6",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/qwen_gated_quality.py"
+      "sha256": "23a1b4802dd5c3081ee8232b6c73256127072aa0682acab6b54e1f3a8a3a58d6"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/qwen_gated_quality_faithful.py",
       "bytes": 11080,
-      "sha256": "826ff7264f27fa42f6f6155863fda8cbbb0f574357cdb58ed228b3c46d5166ee",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/qwen_gated_quality_faithful.py"
+      "sha256": "826ff7264f27fa42f6f6155863fda8cbbb0f574357cdb58ed228b3c46d5166ee"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/qwen_gated_strong_protocol.py",
       "bytes": 3015,
-      "sha256": "b388d93f667523b0aa083419120beb16877fe7035067685b301ed0650b55ef6d",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/qwen_gated_strong_protocol.py"
+      "sha256": "b388d93f667523b0aa083419120beb16877fe7035067685b301ed0650b55ef6d"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/qwen_norm_projection_bounds.py",
       "bytes": 4347,
-      "sha256": "b16421bf7457815dfea61f32955b371bb7c208f0826e39db798a0f93830582aa",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/qwen_norm_projection_bounds.py"
+      "sha256": "b16421bf7457815dfea61f32955b371bb7c208f0826e39db798a0f93830582aa"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/qwen_public_spline_bandwidth.py",
       "bytes": 2559,
-      "sha256": "d0e603654e34a3cc3f5bd1691b6170f23779408f64687026658bb70ba44c6a52",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/qwen_public_spline_bandwidth.py"
+      "sha256": "d0e603654e34a3cc3f5bd1691b6170f23779408f64687026658bb70ba44c6a52"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/qwen_public_spline_cuda_first_checks.py",
       "bytes": 1096,
-      "sha256": "c2aef2a1251f9ee8350483ad4e4d10584f32151a03f9017a7ebaa6f4bb914701",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/qwen_public_spline_cuda_first_checks.py"
+      "sha256": "c2aef2a1251f9ee8350483ad4e4d10584f32151a03f9017a7ebaa6f4bb914701"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/qwen_public_spline_protocol.py",
       "bytes": 4506,
-      "sha256": "6eb25db53a6645d2eb163639c0590c77002ab08b293628e16ac627f25d94089b",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/qwen_public_spline_protocol.py"
+      "sha256": "6eb25db53a6645d2eb163639c0590c77002ab08b293628e16ac627f25d94089b"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/qwen_public_spline_quality.py",
       "bytes": 10727,
-      "sha256": "bc8723225b1e8ccc517b3514e5e70675bb63febe9ef579e8f5a011bfe417545d",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/qwen_public_spline_quality.py"
+      "sha256": "bc8723225b1e8ccc517b3514e5e70675bb63febe9ef579e8f5a011bfe417545d"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/reproduce_dithered_protocol.sh",
       "bytes": 2454,
-      "sha256": "1d4245db3095428000212d231f0592dc9c09d3c73541b0927431f37abb576144",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/reproduce_dithered_protocol.sh"
+      "sha256": "1d4245db3095428000212d231f0592dc9c09d3c73541b0927431f37abb576144"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/reproduce_exact_coarse.sh",
       "bytes": 1781,
-      "sha256": "8d41d9342d9da6da3e70aadbab4a1c5e106aa65e9ab7a7bb339e7ea16e298e9d",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/reproduce_exact_coarse.sh"
+      "sha256": "8d41d9342d9da6da3e70aadbab4a1c5e106aa65e9ab7a7bb339e7ea16e298e9d"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/reproduce_public_spline.sh",
       "bytes": 2888,
-      "sha256": "40aaa66a8e3852d9e208c5f12bdad0bcdb2bfd0b2e3d077c8a456244c1800707",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/reproduce_public_spline.sh"
+      "sha256": "40aaa66a8e3852d9e208c5f12bdad0bcdb2bfd0b2e3d077c8a456244c1800707"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/sparse_cyclic_fss_check.py",
       "bytes": 2768,
-      "sha256": "d575478a596f6e92428dc66e1e3c631488913365215404300acc7e1ceac5454d",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/sparse_cyclic_fss_check.py"
+      "sha256": "d575478a596f6e92428dc66e1e3c631488913365215404300acc7e1ceac5454d"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/experiments/weighted_swiglu_norm_screen.py",
       "bytes": 5326,
-      "sha256": "8a3ba679ee64ff3fb94303b64d82224056f1fd2278d7199cafc772ca47178871",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/experiments/weighted_swiglu_norm_screen.py"
+      "sha256": "8a3ba679ee64ff3fb94303b64d82224056f1fd2278d7199cafc772ca47178871"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/external_asset_manifest.json",
       "bytes": 1852,
-      "sha256": "f8644c9e09574733dfe661a627760e1bb014d0b7ba00d3191e494f3f0a4ca9b7",
-      "origin": "publication packaging / refreshed completed-result summary"
+      "sha256": "f8644c9e09574733dfe661a627760e1bb014d0b7ba00d3191e494f3f0a4ca9b7"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/models/Qwen2.5-0.5B/config.json",
       "bytes": 681,
-      "sha256": "479dcf0c5286339e41ad3992cd08ae88a467c4187587936248e2b7c96283484b",
-      "origin": "models/Qwen2.5-0.5B/config.json"
+      "sha256": "479dcf0c5286339e41ad3992cd08ae88a467c4187587936248e2b7c96283484b"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/models/Qwen2.5-0.5B/manifest.json",
       "bytes": 1408,
-      "sha256": "9f9029b6a811038e9c3d0d78ee882da282c7c5ff68b647e6053fddaba724437c",
-      "origin": "models/Qwen2.5-0.5B/manifest.json"
+      "sha256": "9f9029b6a811038e9c3d0d78ee882da282c7c5ff68b647e6053fddaba724437c"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/models/Qwen2.5-1.5B/config.json",
       "bytes": 684,
-      "sha256": "0e8c8aa86468aba09c9d32157ff4bc2301c7e6c50e4398960425b2ea71e66f77",
-      "origin": "models/Qwen2.5-1.5B/config.json"
+      "sha256": "0e8c8aa86468aba09c9d32157ff4bc2301c7e6c50e4398960425b2ea71e66f77"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/models/Qwen2.5-1.5B/manifest.json",
       "bytes": 1409,
-      "sha256": "609c030001874426e62c9f0e0aaf775f32e344f993b4c20ad4a7eee69d5118d2",
-      "origin": "models/Qwen2.5-1.5B/manifest.json"
+      "sha256": "609c030001874426e62c9f0e0aaf775f32e344f993b4c20ad4a7eee69d5118d2"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/notes/20261029_claim_registry.json",
       "bytes": 6231,
-      "sha256": "ddc47b1ec3c5648c1f773221380cf54a6fc343239aa4cc276ce018df609fe915",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/notes/20261029_claim_registry.json"
+      "sha256": "ddc47b1ec3c5648c1f773221380cf54a6fc343239aa4cc276ce018df609fe915"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/notes/20261029_dithered_classifier_design.md",
       "bytes": 2985,
-      "sha256": "c962d8c25f72d0b207fce96cf0b8784b23fa1dcd7f4c66aeac5715a396705168",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/notes/20261029_dithered_classifier_design.md"
+      "sha256": "c962d8c25f72d0b207fce96cf0b8784b23fa1dcd7f4c66aeac5715a396705168"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/notes/20261029_dithered_classifier_proof.md",
       "bytes": 5879,
-      "sha256": "76913c5f3cdfca4f3126be7711ecbc44c9dde9dc4c4338a8fdecf8cd58706a24",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/notes/20261029_dithered_classifier_proof.md"
+      "sha256": "76913c5f3cdfca4f3126be7711ecbc44c9dde9dc4c4338a8fdecf8cd58706a24"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/notes/20261029_dithered_error_propagation.md",
       "bytes": 2528,
-      "sha256": "38fbc0da00e6ab9aa997ddff13e151933c26e74694571e0eca636a1f49fcf7e8",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/notes/20261029_dithered_error_propagation.md"
+      "sha256": "38fbc0da00e6ab9aa997ddff13e151933c26e74694571e0eca636a1f49fcf7e8"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/notes/20261029_dithered_prior_audit.md",
       "bytes": 4264,
-      "sha256": "82dfec71bed675bf920c0b800ea4fca44a3cc34e6bc0048f4bb24536df29f058",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/notes/20261029_dithered_prior_audit.md"
+      "sha256": "82dfec71bed675bf920c0b800ea4fca44a3cc34e6bc0048f4bb24536df29f058"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/notes/20261029_dithered_protocol_closure.md",
       "bytes": 4744,
-      "sha256": "b05a2d1998e495755dc55d239f0fa97629bc673c033b67e6689c05855fc7b3b4",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/notes/20261029_dithered_protocol_closure.md"
+      "sha256": "b05a2d1998e495755dc55d239f0fa97629bc673c033b67e6689c05855fc7b3b4"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/notes/20261029_exact_coarse_classifier.md",
       "bytes": 5127,
-      "sha256": "eaf2dff1cd8c0b4d5f9a3e1b3609f0d505b1d53adb3e6289c4739fa892263c46",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/notes/20261029_exact_coarse_classifier.md"
+      "sha256": "eaf2dff1cd8c0b4d5f9a3e1b3609f0d505b1d53adb3e6289c4739fa892263c46"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/notes/20261029_exact_coarse_closure.md",
       "bytes": 5452,
-      "sha256": "443aba7b2335757d5bfdc463b41ee92988c455a5545c7aeece536862e85bd52a",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/notes/20261029_exact_coarse_closure.md"
+      "sha256": "443aba7b2335757d5bfdc463b41ee92988c455a5545c7aeece536862e85bd52a"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/notes/20261029_exact_coarse_joint_view.md",
       "bytes": 6329,
-      "sha256": "06864658b49ceca026638c4b6bc9452f2bba9eef780a7211e8ec0c68947dc886",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/notes/20261029_exact_coarse_joint_view.md"
+      "sha256": "06864658b49ceca026638c4b6bc9452f2bba9eef780a7211e8ec0c68947dc886"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/notes/20261029_finite_block_security_draft.md",
       "bytes": 7138,
-      "sha256": "29aad7d3ef30e7b9f52e3617dcdb01c29a1e9ef6376281ceef814804df3d59d5",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/notes/20261029_finite_block_security_draft.md"
+      "sha256": "29aad7d3ef30e7b9f52e3617dcdb01c29a1e9ef6376281ceef814804df3d59d5"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/notes/20261029_gated_contraction.md",
       "bytes": 10823,
-      "sha256": "be878df4479d6be1e428eeb320687b1df3260ae7a65d3e1d61390dadb30581ff",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/notes/20261029_gated_contraction.md"
+      "sha256": "be878df4479d6be1e428eeb320687b1df3260ae7a65d3e1d61390dadb30581ff"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/notes/20261029_gated_strong_faithful.md",
       "bytes": 12888,
-      "sha256": "e91094ca7f7c0a3e1cdb572392d452075a8b85c1e8473fe3f8b5fdc5e1ab4d5b",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/notes/20261029_gated_strong_faithful.md"
+      "sha256": "e91094ca7f7c0a3e1cdb572392d452075a8b85c1e8473fe3f8b5fdc5e1ab4d5b"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/notes/20261029_precision_side_screens.md",
       "bytes": 2612,
-      "sha256": "ed188bb1cca1f65c7674007cc5b1ab46cb1403f05e24d71e26be81261c0bef90",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/notes/20261029_precision_side_screens.md"
+      "sha256": "ed188bb1cca1f65c7674007cc5b1ab46cb1403f05e24d71e26be81261c0bef90"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/notes/20261029_projective_norm_screen.md",
       "bytes": 2751,
-      "sha256": "4f4dfbf064122a5d61b8c16ba535cf495c56156dfd6467e922a9133dda6313d7",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/notes/20261029_projective_norm_screen.md"
+      "sha256": "4f4dfbf064122a5d61b8c16ba535cf495c56156dfd6467e922a9133dda6313d7"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/notes/20261029_public_polynomial_basis_proof.md",
       "bytes": 6126,
-      "sha256": "a89514f7d336de57a39199acddb8858ff93cc663d2f1b909648e7e0e35fdede6",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/notes/20261029_public_polynomial_basis_proof.md"
+      "sha256": "a89514f7d336de57a39199acddb8858ff93cc663d2f1b909648e7e0e35fdede6"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/notes/20261029_public_spline_basis.md",
       "bytes": 4908,
-      "sha256": "1652e950410171b483bb87c1e75865967f0ccab78b38f67a3ea521da4edf8569",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/notes/20261029_public_spline_basis.md"
+      "sha256": "1652e950410171b483bb87c1e75865967f0ccab78b38f67a3ea521da4edf8569"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/notes/20261029_public_spline_frontier.md",
       "bytes": 7022,
-      "sha256": "1e48104f89088eeb0cfb9db96168c4508a00de37dde26fd17718799675214931",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/notes/20261029_public_spline_frontier.md"
+      "sha256": "1e48104f89088eeb0cfb9db96168c4508a00de37dde26fd17718799675214931"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/notes/20261029_public_spline_gpu_closure.md",
       "bytes": 5530,
-      "sha256": "a0df42901e8f33b7f82a23af68ac74c8eb9d16129d792a6737b89a9c6f301569",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/notes/20261029_public_spline_gpu_closure.md"
+      "sha256": "a0df42901e8f33b7f82a23af68ac74c8eb9d16129d792a6737b89a9c6f301569"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/notes/20261029_standalone_gate_simulation.md",
       "bytes": 5511,
-      "sha256": "065dd9d50f9e610511b34b0e81c33cccd4062d4bae8ebfb875a2895d98689c52",
-      "origin": "sources/checkpoints/20261029_gated_faithful_v8/notes/20261029_standalone_gate_simulation.md"
+      "sha256": "065dd9d50f9e610511b34b0e81c33cccd4062d4bae8ebfb875a2895d98689c52"
+    },
+    {
+      "path": "milestones/2026-10-29-exact-coarse/publication_manifest_at_initial_commit.json",
+      "bytes": 41394,
+      "sha256": "1c832f4ef47cbc97e8006e3e3254455599bd23ea4e3f1e0d97cddc98a735db25"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/publication_verification.json",
       "bytes": 438,
-      "sha256": "65cccd9612b15d598607bd9c7bf97be6154615c9a59d429c98f8e74a04b856f7",
-      "origin": "publication verification"
+      "sha256": "65cccd9612b15d598607bd9c7bf97be6154615c9a59d429c98f8e74a04b856f7"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/results/dcf_aes_native_check.json",
       "bytes": 2122,
-      "sha256": "31c3a1962ef83e0fc229190569d87f1e69687e4478cd6ed5019e3f4fcd5e3fab",
-      "origin": "results/dcf_aes_native_check.json"
+      "sha256": "31c3a1962ef83e0fc229190569d87f1e69687e4478cd6ed5019e3f4fcd5e3fab"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/results/dcf_cuda_check.json",
       "bytes": 2602,
-      "sha256": "49966a996f9c291ce83417cf9bbcf98921984afb75a81ac5466edf253790c25a",
-      "origin": "results/dcf_cuda_check.json"
+      "sha256": "49966a996f9c291ce83417cf9bbcf98921984afb75a81ac5466edf253790c25a"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/results/dcf_cuda_protocol_check.json",
       "bytes": 1312,
-      "sha256": "9596f5f3c2afd54914a9314aa36ce7b1dde9065000b0a9760e6fa07d7c170cf0",
-      "origin": "results/dcf_cuda_protocol_check.json"
+      "sha256": "9596f5f3c2afd54914a9314aa36ce7b1dde9065000b0a9760e6fa07d7c170cf0"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/results/dpf_aes_native_check.json",
       "bytes": 1982,
-      "sha256": "822ee89bd115fd4a216cc50571c17be326417bbe06d7c344555234f315ba442a",
-      "origin": "results/dpf_aes_native_check.json"
+      "sha256": "822ee89bd115fd4a216cc50571c17be326417bbe06d7c344555234f315ba442a"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/results/exact_coarse_comparison_report.json",
       "bytes": 22809,
-      "sha256": "3a7bf670c7527ad06d49591e6e67ca52be896d98630d15255c836f0e6a27f350",
-      "origin": "results/exact_coarse_comparison_report.json"
+      "sha256": "3a7bf670c7527ad06d49591e6e67ca52be896d98630d15255c836f0e6a27f350"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/results/exact_coarse_cuda_check.json",
       "bytes": 1237,
-      "sha256": "e835b1109331c55ea5ec25d9a56410bd191ee6dbf08f75f5a67f11d7e3738aa7",
-      "origin": "results/exact_coarse_cuda_check.json"
+      "sha256": "e835b1109331c55ea5ec25d9a56410bd191ee6dbf08f75f5a67f11d7e3738aa7"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/results/exact_coarse_spline_check.json",
       "bytes": 694,
-      "sha256": "e9b267ea9c03b4f9aa882d062cb566237579bf52f6000b39cd3afc4a2cf00d54",
-      "origin": "results/exact_coarse_spline_check.json"
+      "sha256": "e9b267ea9c03b4f9aa882d062cb566237579bf52f6000b39cd3afc4a2cf00d54"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/results/qwen15_dither_quality_aligned_b8_s20261029_ptb32.json",
       "bytes": 384779,
-      "sha256": "eb68235a52ece8eee2c1f4c4f63e3c148ac21714af2a395b24e71d547277aaa5",
-      "origin": "results/qwen15_dither_quality_aligned_b8_s20261029_ptb32.json"
+      "sha256": "eb68235a52ece8eee2c1f4c4f63e3c148ac21714af2a395b24e71d547277aaa5"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/results/qwen15_dither_quality_aligned_b8_s20261029_ptb4.json",
       "bytes": 266182,
-      "sha256": "ee5d227a48122decee465ec3998ceb5714a14748cd103eb8850f43185da75ce3",
-      "origin": "results/qwen15_dither_quality_aligned_b8_s20261029_ptb4.json"
+      "sha256": "ee5d227a48122decee465ec3998ceb5714a14748cd103eb8850f43185da75ce3"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/results/qwen15_dither_quality_aligned_b8_s20261029_wiki32.json",
       "bytes": 384793,
-      "sha256": "94645f37221a07b816e6ab68496ca8d935bfafae746b74e20ce87ce061844c91",
-      "origin": "results/qwen15_dither_quality_aligned_b8_s20261029_wiki32.json"
+      "sha256": "94645f37221a07b816e6ab68496ca8d935bfafae746b74e20ce87ce061844c91"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/results/qwen15_dither_quality_aligned_b8_s20261029_wiki4.json",
       "bytes": 266185,
-      "sha256": "78fbd549821e400d33881d54bf29c3319cae834154c532009be5ad025cafd0b5",
-      "origin": "results/qwen15_dither_quality_aligned_b8_s20261029_wiki4.json"
+      "sha256": "78fbd549821e400d33881d54bf29c3319cae834154c532009be5ad025cafd0b5"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/results/qwen_exact_coarse_compare_qwen05_cpu.json",
       "bytes": 206358,
-      "sha256": "9580b1613f32e6e466acda8e72d2e536cc1fea50d1867d397b0e35cb7221c1ea",
-      "origin": "results/qwen_exact_coarse_compare_qwen05_cpu.json"
+      "sha256": "9580b1613f32e6e466acda8e72d2e536cc1fea50d1867d397b0e35cb7221c1ea"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/results/qwen_exact_coarse_compare_qwen05_cuda.json",
       "bytes": 240830,
-      "sha256": "0ff4f38fa0bd349c190d74c7c9f6364045a758d42c8a856dcbf8d41ccbf175af",
-      "origin": "results/qwen_exact_coarse_compare_qwen05_cuda.json"
+      "sha256": "0ff4f38fa0bd349c190d74c7c9f6364045a758d42c8a856dcbf8d41ccbf175af"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/results/qwen_exact_coarse_compare_qwen15_cpu.json",
       "bytes": 207220,
-      "sha256": "5f657224a6a2db8ac71a5c6019f1d528cdbf89c096723e96242147c96b7168b0",
-      "origin": "results/qwen_exact_coarse_compare_qwen15_cpu.json"
+      "sha256": "5f657224a6a2db8ac71a5c6019f1d528cdbf89c096723e96242147c96b7168b0"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/results/qwen_exact_coarse_compare_qwen15_cuda.json",
       "bytes": 241460,
-      "sha256": "7b108aa9a59e3e5c406ababaca5e22bbc5ad9d5e1eed9f134349ab0a3a622f8f",
-      "origin": "results/qwen_exact_coarse_compare_qwen15_cuda.json"
+      "sha256": "7b108aa9a59e3e5c406ababaca5e22bbc5ad9d5e1eed9f134349ab0a3a622f8f"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/results/qwen_public_spline_quality_f22_alignedb8_ptb32x256.json",
       "bytes": 426914,
-      "sha256": "83ef24d990dc651cc7cd1f6e891ee6c36a2a2a4ef9e5086522d173250ac8a181",
-      "origin": "results/qwen_public_spline_quality_f22_alignedb8_ptb32x256.json"
+      "sha256": "83ef24d990dc651cc7cd1f6e891ee6c36a2a2a4ef9e5086522d173250ac8a181"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/results/qwen_public_spline_quality_f22_extended32_alignedb8.json",
       "bytes": 425558,
-      "sha256": "ea408133069eb0c885c970ebb273bf1ba41a35e78d022e3ac4b601624b1f6a4f",
-      "origin": "results/qwen_public_spline_quality_f22_extended32_alignedb8.json"
+      "sha256": "ea408133069eb0c885c970ebb273bf1ba41a35e78d022e3ac4b601624b1f6a4f"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/scripts/build_cpu.sh",
       "bytes": 493,
-      "sha256": "97aa14ef041a2ca0084aab198b92be9af185d59c099e8cc2f78935229e734cad",
-      "origin": "publication packaging / refreshed completed-result summary"
+      "sha256": "97aa14ef041a2ca0084aab198b92be9af185d59c099e8cc2f78935229e734cad"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/scripts/smoke_exact_coarse.py",
       "bytes": 1770,
-      "sha256": "457c06aefc5b0cf32bc13a3f15c52b7fa928d6ec1f1d6ecd5053fac3fa859d10",
-      "origin": "publication packaging / refreshed completed-result summary"
+      "sha256": "457c06aefc5b0cf32bc13a3f15c52b7fa928d6ec1f1d6ecd5053fac3fa859d10"
+    },
+    {
+      "path": "milestones/2026-10-30-private-sampling-screen/README.md",
+      "bytes": 3483,
+      "sha256": "89b862d56150faeb72b1f3f24f2b6140c1c6423785dd6798b83a4b270c5b849c"
+    },
+    {
+      "path": "milestones/2026-10-30-private-sampling-screen/data/manifest.json",
+      "bytes": 248,
+      "sha256": "2401da390c62c7ba08100d86fb5c69c3cb174342926723a75ed63f6d9e755cd2"
+    },
+    {
+      "path": "milestones/2026-10-30-private-sampling-screen/data/ptb_test_manifest.json",
+      "bytes": 475,
+      "sha256": "175e12280ffdf495f3f762c6865407f8f0b869cc6376903e254ebb6348bab392"
+    },
+    {
+      "path": "milestones/2026-10-30-private-sampling-screen/environment.json",
+      "bytes": 423,
+      "sha256": "84e70836dc458ebbc50e24cc61fce6b55ca71304115f200d5747825df75a82e8"
+    },
+    {
+      "path": "milestones/2026-10-30-private-sampling-screen/experiments/fixed_proposal_sampling_algebra_check.py",
+      "bytes": 2116,
+      "sha256": "662d85fcdb8601b036b4638114b745e9ff6b881ca2b7d8c569f4c28a1d5e5326"
+    },
+    {
+      "path": "milestones/2026-10-30-private-sampling-screen/experiments/fixed_proposal_sampling_deduplication.py",
+      "bytes": 1712,
+      "sha256": "511998ba619b17cd7095f4ab3f9afd368e7cfa7e2e2f562d339766acaf0a0e2e"
+    },
+    {
+      "path": "milestones/2026-10-30-private-sampling-screen/experiments/fixed_proposal_sampling_screen.py",
+      "bytes": 7916,
+      "sha256": "3f6724561ee0687fb2a61bb882bbf6bb9c88df28366e29aca5ae6e911349fe11"
+    },
+    {
+      "path": "milestones/2026-10-30-private-sampling-screen/experiments/layernorm_rejection_envelope.py",
+      "bytes": 3366,
+      "sha256": "26bca96c98df7cd8460f125f06d4293ea40a2df54d629e9aa8ab3ebb1f34ad00"
+    },
+    {
+      "path": "milestones/2026-10-30-private-sampling-screen/models/Pythia-14M/download_manifest.json",
+      "bytes": 1554,
+      "sha256": "fd83a9b693f1dac6262f0c51bfe757db01e3085a44887430f9873d366f462884"
+    },
+    {
+      "path": "milestones/2026-10-30-private-sampling-screen/notes/20261030_fixed_proposal_sampling_analysis.md",
+      "bytes": 9676,
+      "sha256": "8c1e14d1151527d3547b9afafc3ccb40327ef23394508281a1fbf45ceed57eac"
+    },
+    {
+      "path": "milestones/2026-10-30-private-sampling-screen/notes/20261030_fixed_proposal_sampling_preregistration.json",
+      "bytes": 2126,
+      "sha256": "e6ccb61419c4a050c2a93890d4cdc2ee256a9eff8a9c8ebd214277846fa9d8b3"
+    },
+    {
+      "path": "milestones/2026-10-30-private-sampling-screen/notes/hyperion_primary_manifest.json",
+      "bytes": 162,
+      "sha256": "3dbecb2dcb85cc30ea203e8e1e37feb2f8181c34994524e039b60e12af75504c"
+    },
+    {
+      "path": "milestones/2026-10-30-private-sampling-screen/publication_verification.json",
+      "bytes": 524,
+      "sha256": "d42e0105bb76d93a36c2e7324bca882fe1f7649d422d83aa5369a4657d74978d"
+    },
+    {
+      "path": "milestones/2026-10-30-private-sampling-screen/results/fixed_proposal_sampling_algebra_check.json",
+      "bytes": 1238,
+      "sha256": "85720702d2adfd60624c7861cf5ecd7affe4005d9e8844b411267dd9b2df9ee4"
+    },
+    {
+      "path": "milestones/2026-10-30-private-sampling-screen/results/fixed_proposal_sampling_deduplication.json",
+      "bytes": 995,
+      "sha256": "9d342515f899b8514510da937dc8bee106a35ffcf353b8a4ecb5b53465152ecd"
+    },
+    {
+      "path": "milestones/2026-10-30-private-sampling-screen/results/fixed_proposal_sampling_screen.json",
+      "bytes": 435105,
+      "sha256": "67111e57b1618f08bbddeca43a631eaa751711edc44af6d4eb6e3884d90b1f6b"
+    },
+    {
+      "path": "milestones/2026-10-30-private-sampling-screen/results/layernorm_rejection_envelope.json",
+      "bytes": 1163,
+      "sha256": "28a249f3643f55eddb278016593276180efbdbc54d53ec9b3eb541d342f4714a"
+    },
+    {
+      "path": "milestones/2026-10-30-private-sampling-screen/scripts/prepare_assets.py",
+      "bytes": 1597,
+      "sha256": "afcb4e89619cd56703df533f08713c9b2ae59f2134ea61baa5e4cda510248f91"
+    },
+    {
+      "path": "milestones/2026-10-30-private-sampling-screen/scripts/recheck_algebra.py",
+      "bytes": 964,
+      "sha256": "583f1675cc53944cc6a052224c995939863aa85f5694019649e3dfa1d2414d2d"
     }
   ],
-  "excluded": "Modelweights/environments/corpusbody/thirdpartypdf/unfinishedexperiments",
-  "verified_blocks": 432
+  "excluded": [
+    "weights",
+    "corpus text",
+    "selected corpus tokens",
+    "derived input NPZ",
+    "third-party PDFs",
+    "environments",
+    "native build binaries"
+  ],
+  "historical_manifest": {
+    "path": "milestones/2026-10-29-exact-coarse/publication_manifest_at_initial_commit.json",
+    "valid_at_commit": "660ac725110ed37a3dd4df3c915424fd6e0e4c1f"
+  }
 }

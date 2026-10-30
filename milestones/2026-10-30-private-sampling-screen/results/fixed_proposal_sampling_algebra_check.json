@@ -1,0 +1,59 @@
+{
+  "all_passed": true,
+  "exhaustive_triples": 98304,
+  "results": [
+    {
+      "bound": 1,
+      "exhaustive_trials": 32768,
+      "exact_output_law": [
+        "21/64",
+        "21/64",
+        "21/64",
+        "1/64"
+      ],
+      "exact_conditional_target": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "exact_clipping_tv": "1/6",
+      "all_equal": true
+    },
+    {
+      "bound": 2,
+      "exhaustive_trials": 32768,
+      "exact_output_law": [
+        "7/16",
+        "7/32",
+        "7/32",
+        "1/8"
+      ],
+      "exact_conditional_target": [
+        "1/2",
+        "1/4",
+        "1/4"
+      ],
+      "exact_clipping_tv": "0",
+      "all_equal": true
+    },
+    {
+      "bound": 4,
+      "exhaustive_trials": 32768,
+      "exact_output_law": [
+        "37/128",
+        "37/256",
+        "37/256",
+        "27/64"
+      ],
+      "exact_conditional_target": [
+        "1/2",
+        "1/4",
+        "1/4"
+      ],
+      "exact_clipping_tv": "0",
+      "all_equal": true
+    }
+  ],
+  "source_sha256": "662d85fcdb8601b036b4638114b745e9ff6b881ca2b7d8c569f4c28a1d5e5326",
+  "limits": "Independent finite rational enumeration checks probability algebra only; not a crypto implementation or security proof."
+}

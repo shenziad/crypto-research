@@ -1,0 +1,17 @@
+{
+  "model": "EleutherAI/pythia-14m",
+  "revision": "cf967c0a9a04383db6f7b1108d86b2962634b4ac",
+  "vocabulary": 50304,
+  "width": 128,
+  "model_sha256": "116a02532db461f91386a5b20f942ff2c8d4de7341e21b55caafc3d7b25f49a1",
+  "source_sha256": "26bca96c98df7cd8460f125f06d4293ea40a2df54d629e9aa8ab3ebb1f34ad00",
+  "row_bound_min": 10.829887631452204,
+  "row_bound_median": 35.667855738174566,
+  "row_bound_max": 104.15704065433657,
+  "log_total_envelope": 104.15705574348013,
+  "feasible_zero_u_log_normalizer": 11.280128166521312,
+  "feasible_zero_u_log_expected_trials": 92.87692757695882,
+  "feasible_zero_u_log10_expected_trials": 40.33593714280117,
+  "necessary_log10_K_for_delta_2neg40": 40.33593714280077,
+  "limits": "Canonical mean-row-centered, rowwise LayerNorm Cauchy envelope only; not a lower bound for all samplers or all envelopes. Real arithmetic domain, float64 diagnostic evaluation without directed rounding. Zero normalized coordinate is a legitimate domain-cost example, not a natural-corpus frequency claim. No crypto, timing, input recovery or attack experiment. A positive empirical proposal cannot replace a certified all-input envelope."
+}

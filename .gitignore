@@ -8,3 +8,7 @@ envs/
 **/model.safetensors
 **/pytorch_model*.bin
 **/*cache*/
+**/local-runs/
+**/data/wikitext2_test.txt
+**/data/ptb_test.txt
+**/*_inputs.npz
