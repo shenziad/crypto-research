@@ -1,0 +1,57 @@
+{
+  "files": {
+    "README.md": {
+      "sha256": "81d2b311c317bc5996132ebd79cf241ac6f0009e4dc69e1bbaa64055090407bc",
+      "bytes": 1770
+    },
+    "RESEARCH_SCOPE.md": {
+      "sha256": "751cf97283bc939fa4adf38580497026e0e5bcaf3b0d46ea02f1ce83e330d0ac",
+      "bytes": 3434
+    },
+    "experiments/build_qwen_selected_exp31.py": {
+      "sha256": "3e5457dba296ab0b980e30459df14b8c82009ca0c75988599f0d4ff5b6edf716",
+      "bytes": 1021
+    },
+    "experiments/qwen_bounded_fixed16.py": {
+      "sha256": "93043a28a5794628ddd03baf3c8876327e6572b7edb0694456c10e1d2302400e",
+      "bytes": 1279
+    },
+    "experiments/qwen_fixed16_quality.py": {
+      "sha256": "647c9429162b9db7ee5e28b832fb915f663f38d77809baf0f8943b8bf0361786",
+      "bytes": 6009
+    },
+    "experiments/qwen_selected_exp31.cpp": {
+      "sha256": "e2dce25eb5216df906c75016cc8ea2fd832447a28baefd2daacf34409b92fe55",
+      "bytes": 6330
+    },
+    "experiments/run_qwen_selected_exp31.py": {
+      "sha256": "515f44842a56cfc393efd3d3464ba79dc172405e28e6aa402c02c4584bf206b9",
+      "bytes": 6598
+    },
+    "notes/20261030_qwen_finite_stage_outcome.md": {
+      "sha256": "21d8aa9e06ab6fcf859cd414a4f13030421a5b966dc57fdb462c474a75483fb9",
+      "bytes": 3660
+    },
+    "notes/20261030_qwen_fixed16_quality_preregistration.json": {
+      "sha256": "5567359085bfed125574e8bd0630f875448897abef87e564c04c3ca23ccc6bf2",
+      "bytes": 3393
+    },
+    "notes/20261030_qwen_selected_exp31_preregistration.json": {
+      "sha256": "dec94a846e5d53b716bfc03c3a3c8336ee1b8cf519e0ffe25cc0a271890b1ab0",
+      "bytes": 2860
+    },
+    "results/qwen_finite_stage_audit.json": {
+      "sha256": "6d28404db63cbd73038611933d1fb2198d490269c3862c737d05f11a1dfc4cec",
+      "bytes": 944
+    },
+    "results/qwen_fixed16_quality.json": {
+      "sha256": "103ca2ff68ad03bab84e8773b77424c5a80cacd10f1639726b7dbd7f35e932d6",
+      "bytes": 56043
+    },
+    "results/qwen_selected_exp31.json": {
+      "sha256": "4cbea7ad191f0f5cac981f1d6b83780c0c893da558b9499cb24c54d84effd16e",
+      "bytes": 11082
+    }
+  },
+  "scope": "completed bounded finite implementation stage; fullQwensampler notyet"
+}

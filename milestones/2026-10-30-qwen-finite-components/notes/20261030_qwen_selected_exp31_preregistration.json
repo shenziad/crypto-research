@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-10-30T15:50:40.761005+00:00",
+  "stage_budget_started_utc": "2026-10-30T15:49:22.211905+00:00",
+  "input_sha256": {
+    "experiments/qwen_selected_exp31.cpp": "e2dce25eb5216df906c75016cc8ea2fd832447a28baefd2daacf34409b92fe55",
+    "experiments/run_qwen_selected_exp31.py": "515f44842a56cfc393efd3d3464ba79dc172405e28e6aa402c02c4584bf206b9",
+    "experiments/qwen_bounded_fixed16.py": "93043a28a5794628ddd03baf3c8876327e6572b7edb0694456c10e1d2302400e",
+    "experiments/bounded_adapter_fixed16.py": "af21fbed747d7fa15cb1fdda8a479e1d1290b5879147bfbff1955557b3d55a26",
+    "experiments/run_selected_adapter_exp31.py": "8fb491257cb172f1589a3a22d6cdeea021b7f7e19363b08d362ee296b32a13f2",
+    "experiments/run_dense_adapter_cdf31.py": "d209b7907d408ca5eb9e0f22eb9ab4909fd62e2b50d6a9abc3c31430f7b1828d",
+    "experiments/run_dense_adapter_linearot.py": "d34366a246670ba5775fefe0ed995e2c3506a575b2a77eaa07a7411a46d62718",
+    "experiments/run_fable_smallbatch_check.py": "e7ca72c566bd61a3564e3c28ff82d20b1ccb1fc77d45a3cb9c986ab519ebc0b2",
+    "experiments/public_tanh_ot.h": "bba470ab0b4d70144aa533ab280740941ea6418a3d377fddaf388cb2adb44f18",
+    "experiments/public_tanh_ot_chunked.h": "1cd39447a359a957207c8be5b9e8a3a25bd4150c4f342723575c4622003fc206",
+    "experiments/bounded_adapter_gc.cpp": "3c6b8d47b889540ebc610c04c55a4ed69f79f992af366a6017c49a4491e6b7c1",
+    "toolchain/bounded-sampler/qwen_selected_exp31": "380d96a376c05ad97a313a38889a13f3d81578ecfdbc451a2fd1ebc47a074c4d",
+    "results/bounded_adapter_qwen_transfer_weights.npz": "45a25759dd41c0c634d9b67ca438173b01ec2cf741b01125f6031a38a3ab7efe",
+    "results/bounded_adapter_qwen_frozen_captures.npz": "7259d4a612ccb78cc89897eab8a1997bb709a2cdcce3428d8d1db565f9ae0f34",
+    "results/qwen_bounded_head_range_certificate.json": "3e888e78a81c3b52c9a4521a77b4c28b03cb863d3fb5696a039afc7cada3afef",
+    "results/sci_exp31_finite_certificate.json": "8a7d19e0b0e48803cf784cea459372eb7d663f673573cfbfe0bbed542057e1ce"
+  },
+  "cases": [
+    "ptb_test_201",
+    "wiki_test_201",
+    "early_201",
+    "late_201",
+    "failure_201",
+    "positive_x52",
+    "negative_x52",
+    "positive_endpoint",
+    "negative_equal",
+    "negative_before"
+  ],
+  "limits": "Ten actualnative2party arithmeticcomponent tests, after-exit-only parentverification. Offlinefixtures generateXORArow/indexshares, notprivateLUT/fullsampler. Qwen896/151936, signedx23, index18/output32/failure262144. Same frozenF16/F20/verifiedE31, no retuning/precisionsearch. Boundarycoordinates+/-52 exerciseold22bitdecodefailure; token151935 exerciseshighindexbits; equality rejection andfirst/last/no success. FreshOTPack perpair/all3IOPackchannels counted. Budgetremaining fromqualitypreregistration1800seconds forbothquality+nativephase; pairtimeout<=180seconds. No wholeQwen speed/newprimitive/actualsecurity/CCFclaim."
+}

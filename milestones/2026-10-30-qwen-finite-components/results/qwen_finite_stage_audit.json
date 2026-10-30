@@ -1,0 +1,18 @@
+{
+  "all_passed": true,
+  "quality_positions": 8192,
+  "native_pairs_replayed": 10,
+  "native_selected_rows_checked": 1010,
+  "registered_files_verified": 201,
+  "implementation_stage_wall_upper_seconds": 87.24709630012512,
+  "budget_seconds": 1800,
+  "original_validation_gate_unchanged": true,
+  "quality_result_sha256": "103ca2ff68ad03bab84e8773b77424c5a80cacd10f1639726b7dbd7f35e932d6",
+  "native_result_sha256": "0db5ce5bfcf14d66057c09bf4d0fc6a227521142539fb1defa10665ffd4cc0ed",
+  "limits": "Retrospective saved-file replay; no independent security proof or fullprivateQwen sampler. Budget upper includes preprocessing/build gaps since quality preregistration, not only device time.",
+  "_publication": {
+    "derived_summary": true,
+    "original_local_result_sha256": "b0883aa03b6710314e3b9e6cb8d2545015a126ef79ad71cda2c91fd1dd0597bb",
+    "omitted": "Raw audit file hashes/log paths; shares, coins and token outputs stay local."
+  }
+}
