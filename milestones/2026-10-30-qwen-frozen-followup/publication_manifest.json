@@ -1,0 +1,45 @@
+{
+  "files": {
+    "README.md": {
+      "sha256": "f5f444684e8ddcf34a356d567af34e9940ff9ddcd79adb84052de395fb5f58a5",
+      "bytes": 1808
+    },
+    "experiments/bounded_adapter_fixed16.py": {
+      "sha256": "af21fbed747d7fa15cb1fdda8a479e1d1290b5879147bfbff1955557b3d55a26",
+      "bytes": 2126
+    },
+    "experiments/bounded_adapter_qwen_frozen_holdout.py": {
+      "sha256": "acf1cfb34db15a4ca054c13021c1fa7242aeb9ea9f6c75b4cf580ea0f56184e1",
+      "bytes": 6623
+    },
+    "experiments/qwen_bounded_head_range_certificate.py": {
+      "sha256": "5e6acd6955320e88d7b0e6eac95f031472527b0fcfd290909b359616c2e18c72",
+      "bytes": 5836
+    },
+    "notes/20261030_positive_signal_decision_correction.md": {
+      "sha256": "d0d56f4b9db0cf4c15be00d6e1e44bbfec5d82f7997768b51292126d5df7ee47",
+      "bytes": 1533
+    },
+    "notes/20261030_qwen_frozen_holdout_outcome.md": {
+      "sha256": "49b9892f1d9984019ec1eb2f7a1c51f209a696d186540b9d39d0bef6de166e8a",
+      "bytes": 3505
+    },
+    "notes/20261030_qwen_frozen_holdout_preregistration.json": {
+      "sha256": "1aed4a864bdb6a643bb9945b228717e4aa56981d675a22875d8093d3c275d468",
+      "bytes": 3673
+    },
+    "results/bounded_adapter_qwen_frozen_holdout.json": {
+      "sha256": "2ac2c1ad8c442f5bd6ad9c79106206df9afa3de9b85c8ba7df01de723092b6b5",
+      "bytes": 39898
+    },
+    "results/qwen_bounded_head_range_certificate.json": {
+      "sha256": "3e888e78a81c3b52c9a4521a77b4c28b03cb863d3fb5696a039afc7cada3afef",
+      "bytes": 3518
+    },
+    "results/qwen_frozen_holdout_audit.json": {
+      "sha256": "b287bbc7d0fef40b72100fc4cee7cc2c2a41b5f35f4d467e788aa1b9cc57ac12",
+      "bytes": 428
+    }
+  },
+  "scope": "positive frozen-weight follow-up; historical50percent miss unchanged; no raw captures/weights"
+}

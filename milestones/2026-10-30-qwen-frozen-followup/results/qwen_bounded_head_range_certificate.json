@@ -1,0 +1,103 @@
+{
+  "all_passed": true,
+  "domain": {
+    "hidden": 896,
+    "vocab": 151936,
+    "rank": 8,
+    "input_l2_cap": 52,
+    "coefficient_abs_cap": 0.5,
+    "B_row_l2_cap": {
+      "numerator": 9,
+      "denominator": 4,
+      "value": 2.25
+    },
+    "A_row_l1_cap": {
+      "numerator": 3,
+      "denominator": 2,
+      "value": 1.5
+    }
+  },
+  "public_norm_caps_are_additional_interface_parameters": true,
+  "norm_caps_disclose_coarse_bounds": true,
+  "real_ideal_RMSNorm_l2_upper": {
+    "numerator": 174325760,
+    "denominator": 3408929,
+    "value": 51.137984980033316
+  },
+  "observed_float_A_row_l1_certified_upper": {
+    "numerator": 532543279040371105258285,
+    "denominator": 402975273204875765219328,
+    "value": 1.3215284273028385
+  },
+  "observed_float_B_row_squared_l2_certified_upper": {
+    "numerator": 23702601642622391473498759152485,
+    "denominator": 5070602400911909925570188673024,
+    "value": 4.674513946973964
+  },
+  "integer_range_bounds": {
+    "max_abs_input_integer": 3407873,
+    "max_abs_t_accumulator": 502513385472,
+    "max_abs_t_integer": 7667747,
+    "max_abs_z_accumulator": 753770201088,
+    "max_abs_z_integer": 11501622
+  },
+  "signed_bits_sufficient": {
+    "max_abs_input_integer": 23,
+    "max_abs_t_accumulator": 41,
+    "max_abs_t_integer": 25,
+    "max_abs_z_accumulator": 44,
+    "max_abs_z_integer": 28
+  },
+  "error_bounds": {
+    "t_infinity": {
+      "numerator": 3259,
+      "denominator": 262144,
+      "value": 0.012432098388671875
+    },
+    "z_infinity": {
+      "numerator": 13529,
+      "denominator": 524288,
+      "value": 0.025804519653320312
+    },
+    "pwl": {
+      "numerator": 315467,
+      "denominator": 52428800,
+      "value": 0.0060170555114746095
+    },
+    "total_delta_uniform": {
+      "numerator": 1668367,
+      "denominator": 52428800,
+      "value": 0.03182157516479492
+    },
+    "NLL_change_uniform": {
+      "numerator": 1668367,
+      "denominator": 26214400,
+      "value": 0.06364315032958984
+    }
+  },
+  "fractions": {
+    "input_weights": 16,
+    "score": 20
+  },
+  "full_sampler_requirements": {
+    "alias_padded_rows": 262144,
+    "secret_index_bits": 18,
+    "alias_precision": 44,
+    "q_integer_total_bits": 62,
+    "E31_output_bits": 33,
+    "max_normalizer_power": 93,
+    "signed_CDF_bits": 95,
+    "joint_CDF_uniform_bits": 64,
+    "dense_CDF_TV_bound": {
+      "numerator": 1187,
+      "denominator": 144115188075855872,
+      "value": 8.23646706393788e-15
+    },
+    "fixed_rejection_trials": 201
+  },
+  "weights_sha256": "45a25759dd41c0c634d9b67ca438173b01ec2cf741b01125f6031a38a3ab7efe",
+  "model_sha256": "88c142557820ccad55bb59756bfcfcf891de9cc6202816bd346445188a0ed342",
+  "unchanged_PWL_certificate_sha256": "baf7409d64a7e52edd51072c082fcb92b9ea3e60c80a1261c15ac08057332ebe",
+  "source_sha256": "5e6acd6955320e88d7b0e6eac95f031472527b0fcfd290909b359616c2e18c72",
+  "limits": "Conditional analytical correctness/range only. Public inputL2/BrowL2/ArowL1 caps must be explicit in ideal functionality; they are not secret statistics newly released by a protocol. Exact stored-float norms checked with conservative gamma_n arithmetic. Ideal real RMSNorm bound does not prove all floating CUDA executions; sampled inputs checked separately. SameF16/F20, no training/precision search. Currentnative128/50304 implementation has NOT been ported: xdecode needs23bits, indices/output need18bits, p44 qmass total62bits/CDF95. No full Qwen private performance, joint security, malicious input verification orCCFclaim."
+}

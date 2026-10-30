@@ -1,0 +1,11 @@
+{
+  "all_passed": true,
+  "records": 64,
+  "positions": 8192,
+  "frozen_weights_verified": true,
+  "original_gate_failure_preserved": true,
+  "all_summaries_and_bootstrap_recomputed": true,
+  "results_sha256": "2ac2c1ad8c442f5bd6ad9c79106206df9afa3de9b85c8ba7df01de723092b6b5",
+  "preregistration_sha256": "1aed4a864bdb6a643bb9945b228717e4aa56981d675a22875d8093d3c275d468",
+  "created_utc": "2026-10-30T15:45:46.267350+00:00"
+}
