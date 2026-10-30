@@ -1,0 +1,61 @@
+{
+  "variants": {
+    "64": {
+      "patch_sha256": "b03fb08b8ed9403935d2b479e38d968ec8b609f9838c84888d4b0498a0a57870",
+      "native_binary_sha256": "8086ccdee5d10935ffdfc7da454702892693338acd2d950384799dcb1f8971cf",
+      "source_harness_sha256": "8e7cbc82885ceb668057ecf1feba2c2595fccfa1de02162a56de976a6327a81f",
+      "configure": [
+        "envs/fable-build/bin/cmake",
+        "-S",
+        "third_party/FABLE-qwen18-64",
+        "-B",
+        "third_party/FABLE-qwen18-64/build",
+        "-DCMAKE_CXX_COMPILER=/usr/bin/g++",
+        "-DCMAKE_C_COMPILER=/usr/bin/gcc",
+        "-DFMT_DIR=/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/envs/fable-build/lib/cmake/fmt",
+        "-DlibOTe_DIR=/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/toolchain/fable-prefix/lib/cmake/libOTe",
+        "-DLUT_INPUT_SIZE=18",
+        "-DLUT_MAX_LOG_SIZE=18",
+        "-DLUT_OUTPUT_SIZE=64"
+      ],
+      "build": [
+        "envs/fable-build/bin/cmake",
+        "--build",
+        "third_party/FABLE-qwen18-64/build",
+        "--target",
+        "private_row_harness",
+        "--parallel",
+        "4"
+      ]
+    },
+    "144": {
+      "patch_sha256": "b03fb08b8ed9403935d2b479e38d968ec8b609f9838c84888d4b0498a0a57870",
+      "native_binary_sha256": "b95cca312db95a648314c1a430548ec4ac1022ef1114e63f0c6b8058741d6095",
+      "source_harness_sha256": "8e7cbc82885ceb668057ecf1feba2c2595fccfa1de02162a56de976a6327a81f",
+      "configure": [
+        "envs/fable-build/bin/cmake",
+        "-S",
+        "third_party/FABLE-qwen18-144",
+        "-B",
+        "third_party/FABLE-qwen18-144/build",
+        "-DCMAKE_CXX_COMPILER=/usr/bin/g++",
+        "-DCMAKE_C_COMPILER=/usr/bin/gcc",
+        "-DFMT_DIR=/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/envs/fable-build/lib/cmake/fmt",
+        "-DlibOTe_DIR=/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/toolchain/fable-prefix/lib/cmake/libOTe",
+        "-DLUT_INPUT_SIZE=18",
+        "-DLUT_MAX_LOG_SIZE=18",
+        "-DLUT_OUTPUT_SIZE=144"
+      ],
+      "build": [
+        "envs/fable-build/bin/cmake",
+        "--build",
+        "third_party/FABLE-qwen18-144/build",
+        "--target",
+        "private_row_harness",
+        "--parallel",
+        "4"
+      ]
+    }
+  },
+  "limits": "Applypreviousqwen18layerfirst; separatecopies/sharedread-onlyuseEzPC. CoreFABLEsourcesbyteidentical; onlypublicoutputwidth/genericownharnesschanged. No clean-clone installer oractualwholeimplementationsecurityclaim."
+}

@@ -1,0 +1,96 @@
+{
+  "all_analytical_checks_passed": true,
+  "current_backend_certified": false,
+  "candidate_parameters": {
+    "unique_ids_max": 262399,
+    "buckets": 2048,
+    "load_cap": 600,
+    "query_count": 256,
+    "choices": 3,
+    "position_slots": 4096,
+    "AES_domains": 2
+  },
+  "capacity_directed_certificate": {
+    "max_table_entries": 262399,
+    "buckets": 2048,
+    "replicas": 3,
+    "ideal_mean_load": "384.37353515625",
+    "overflow_threshold": 595,
+    "load_capacity": 594,
+    "log_union_bound_upper": "-41.73213006088339817128190428955497793890319863028566430897938122259866811109787",
+    "log_budget_margin_upper": "-0.143299227286679606247977002064383854373190568670349061738580652995050792916186",
+    "failure_budget": "2^-60",
+    "assumption": "Ideal independent uniform hash placements; no standalone concrete std::hash/OPRF/cuckoo insertion failure theorem."
+  },
+  "query_Hall_bound": {
+    "decimal_upper": "6.09469919623181691341354932165113162680798918434059855397415E-20",
+    "strict_upper_power2_negative": 63,
+    "numerator_sha256": "bf132c0256d2b45b40d69b01ebbf29204cfd50907b9d057c4c0c741a0913c287",
+    "denominator_sha256": "0f8094b2776d8cb45a4a164214595280cc98951743ce5c59ede10d8d0740385e",
+    "numerator_bits": 7663,
+    "denominator_bits": 7727
+  },
+  "legacy960_worstload_Hall_upper": {
+    "decimal_upper": "2.71829430089152299324941346238482461473984616112292367972368E-8",
+    "strict_upper_power2_negative": 25,
+    "numerator_sha256": "914bce935d8566cedbdc73bfcbaca3be4e3de058b718c0df3cae8928d39f5e18",
+    "denominator_sha256": "864c9073564f474f25e0b1c539958c28544d20a46b1f05e59448785f177e0b87",
+    "numerator_bits": 16208,
+    "denominator_bits": 16233
+  },
+  "candidate4096_worstload_Hall_upper": {
+    "decimal_upper": "7.38392823868842109220687451190636091437120078379937056492160E-18",
+    "strict_upper_power2_negative": 56,
+    "numerator_sha256": "51a360e23f6cfb3415ff29209c56c3194a59815bafc42e1d60037c091c73e54b",
+    "denominator_sha256": "3be29f673faca60ec014753c52611cbffaee780ace4cb79155aea837a1e7eb18",
+    "numerator_bits": 19917,
+    "denominator_bits": 19974
+  },
+  "mapping_TV_bound": {
+    "decimal_upper": "5.95664327634548213316158201246473623438927324695937610271602E-23",
+    "strict_upper_power2_negative": 73,
+    "numerator_sha256": "f63276cfc895a39995d29ddcaf0857b1fd974cd2142e066d847c962c24ba6d67",
+    "denominator_sha256": "5ed87d3d9168cd5a6f00240b5acd3467d78171e408bc25450ec78905881d3281",
+    "numerator_bits": 43,
+    "denominator_bits": 117
+  },
+  "PRP_switching_bound": {
+    "decimal_upper": "4.04682173951713444151528384039581287871162206191872223753513E-28",
+    "strict_upper_power2_negative": 90,
+    "numerator_sha256": "332472ea4d983095bd83af59e542c18576b722b543eed9958f7af803dacae044",
+    "denominator_sha256": "f0d278eacbee4eeac1f3cc75d5efda8dc5dff129bed3da9ad3b0e11fc64ae910",
+    "numerator_bits": 38,
+    "denominator_bits": 129
+  },
+  "candidate_per_lookup_statistical_bound": {
+    "decimal_upper": "8.31229653547658843732001730579047863118183085624640835041424E-18",
+    "strict_upper_power2_negative": 56,
+    "numerator_sha256": "854ee7f661692f4ae201d6ab661b42b7138df283a4e1cdb847583bfd916c121d",
+    "denominator_sha256": "39887edcdaa6c53af70ada9fa098b359ffac79a2b8196f95d731221fe82a3b2c",
+    "numerator_bits": 22048,
+    "denominator_bits": 22104
+  },
+  "candidate_two_lookup_statistical_bound": {
+    "decimal_upper": "1.66245930709531768746400346115809572623636617124928167008285E-17",
+    "strict_upper_power2_negative": 55,
+    "numerator_sha256": "854ee7f661692f4ae201d6ab661b42b7138df283a4e1cdb847583bfd916c121d",
+    "denominator_sha256": "e57fd08da80e98b5777504990884e0df693c86d0b63ff8ee6b2e4dc876a5a65d",
+    "numerator_bits": 22048,
+    "denominator_bits": 22103
+  },
+  "formula": "Hall(n,m)=sum(s=4..n) C(n,s) C(m,s-1) (C(s-1,3)/C(m,3))^s. Serverunion<=B*Hall(loadcap,M) conditionaloncapand independent bucket/position tags.",
+  "mandatory_changes": [
+    "Independent domain-separated AES tags and explicit balanced triple maps; currentstdhashdoesnotqualify.",
+    "Complete augmenting-path matching on clientandserver; current500-step randomwalknotcovered.",
+    "Publicpositionslots4096 and actualPIR layout, BFV correctness/noiseflood analysis beforeclaimingfullbackendsecurity.",
+    "Verifydedup producesdistinctvalidids independentoffreshkey; retainfreshshared-outputpadsandalljointcomposition obligations."
+  ],
+  "source_sha256": "e3851c5348a61a610d881ca2a067bb9dfceaa0b1b05956ee14b76933bd326f13",
+  "capacity_source_sha256": "290f676d3f79ae6f7cc89b22351cf236e7b5c41d7d09d5604023f17510613022",
+  "limits": "Pureconstruction/correctnessprobabilityanalysis, no attacks orfailuresearch. A larger worstload upperbound forlegacy960 is not a lowerbound or observed failure rate. Candidate isnotimplemented/certified/currentperformance result. Requiresideal independent tags plus AESPRP advantage; totals excludeBFV/garbling/OT/composition errors. Uniformmaps areconditionedonvaliduniqueinputids/freshkey; no adversarial adaptivekeyclaim. No newhashing theorem/primitive/CCFclaim.",
+  "_publication": {
+    "derived_summary": true,
+    "original_local_result_sha256": "3d5b8927845de96edf77bf747293069f6d6ea1a35638b34294f86122e14be867",
+    "omitted": "Individual private audit-file hashes/logs. Raw shares, coins, tables, fixtures, token outputs and native binaries stay on NEWSMY."
+  }
+}

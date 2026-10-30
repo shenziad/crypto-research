@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-10-30T16:27:36.910502+00:00",
+  "input_sha256": {
+    "experiments/run_qwen_exactpacking_controls.py": "b1ba1f98accbceebadff666c7157f3afdd1bd91a29f17d99f01128b24529cd7d",
+    "experiments/qwen_exact_row_codec.py": "1f3ecb31ab38f03febe7ef4129b119003be42eae48bb6ad7abad4b1d57ff94d7",
+    "experiments/qwen_exactpacking_budget.py": "87f2257e4e8fd5dd03c66cae6355666d61cad6c9d9577490952e9d2fdf7147ee",
+    "experiments/fable_private_row_qwen_packed.cpp": "8e7cbc82885ceb668057ecf1feba2c2595fccfa1de02162a56de976a6327a81f",
+    "third_party/FABLE-qwen18-64/build/bin/private_row_harness": "8086ccdee5d10935ffdfc7da454702892693338acd2d950384799dcb1f8971cf",
+    "third_party/FABLE-qwen18-144/build/bin/private_row_harness": "b95cca312db95a648314c1a430548ec4ac1022ef1114e63f0c6b8058741d6095",
+    "toolchain/bounded-sampler/qwen_alias_batch": "4581d89068618068a9b726c7c6125c2e7fabb603a69aa4651735adfe63ee2538",
+    "results/qwen_exact_row_codec_check.json": "aec60bf6c4228664e8a71637bf8c5835a672d3090d48d480f7e823a1c80c4efa",
+    "sources/fable_qwen_packed_build/source_manifest.json": "6dcc15b599c573fee4caaeabe4aae67fc918d3dd605c71715a4212d1c04429fb"
+  },
+  "limits": "Two actualprivateLUTcontrols64/144bits,256rows each, high18bitindices/duplicates/fixedpadding andallbitpatternoutputs. One existingaliasfinishGC boundarypair201proposals:cut0/1/2^44-1/2^44, Uzero/previous/equal/max, highindices. CodecXORlinearity checked, allrowsharesfresh, parentreadsonlyafterexit. No model/precision/securityparameterchange; fieldwidth/keysecurity distinct. GenericLUT/aliasfunctions tested, notfullquality orwholecost/securityclaim. Three nativepairs reservedin50pair/60minstage."
+}

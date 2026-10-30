@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-10-30T16:30:21.538058+00:00",
+  "input_sha256": {
+    "experiments/qwen_packed_sampling_worker.py": "814d620678c469722bae335079aefd286d01a66d06014a15b5223256d09f63ef",
+    "experiments/run_qwen_packed_sampling.py": "9d72f8e4a2ab9935c05ce9c015b84f60aab30e538d7166284285f2031179f134",
+    "experiments/qwen_exact_row_codec.py": "1f3ecb31ab38f03febe7ef4129b119003be42eae48bb6ad7abad4b1d57ff94d7",
+    "experiments/qwen_exactpacking_budget.py": "87f2257e4e8fd5dd03c66cae6355666d61cad6c9d9577490952e9d2fdf7147ee",
+    "experiments/finite_alias_table.py": "a4c1afcdb3f7759d7c20131a302c009e7107360a72f04bd666c5c89725ec2e3b",
+    "experiments/run_qwen_selected_exp31.py": "515f44842a56cfc393efd3d3464ba79dc172405e28e6aa402c02c4584bf206b9",
+    "experiments/run_dense_adapter_cdf31.py": "d209b7907d408ca5eb9e0f22eb9ab4909fd62e2b50d6a9abc3c31430f7b1828d",
+    "third_party/FABLE-qwen18-64/build/bin/private_row_harness": "8086ccdee5d10935ffdfc7da454702892693338acd2d950384799dcb1f8971cf",
+    "third_party/FABLE-qwen18-144/build/bin/private_row_harness": "b95cca312db95a648314c1a430548ec4ac1022ef1114e63f0c6b8058741d6095",
+    "toolchain/bounded-sampler/qwen_alias_batch": "4581d89068618068a9b726c7c6125c2e7fabb603a69aa4651735adfe63ee2538",
+    "toolchain/bounded-sampler/qwen_selected_exp31": "380d96a376c05ad97a313a38889a13f3d81578ecfdbc451a2fd1ebc47a074c4d",
+    "results/qwen_exactpacking_controls.json": "6bd9267ed8ef69d1c18d2c416f561aaed02d7ffabc5fe73bb67a4f0b01b20937",
+    "results/bounded_adapter_qwen_transfer_weights.npz": "45a25759dd41c0c634d9b67ca438173b01ec2cf741b01125f6031a38a3ab7efe",
+    "results/bounded_adapter_qwen_frozen_captures.npz": "7259d4a612ccb78cc89897eab8a1997bb709a2cdcce3428d8d1db565f9ae0f34",
+    "results/sci_exp31_finite_certificate.json": "8a7d19e0b0e48803cf784cea459372eb7d663f673573cfbfe0bbed542057e1ce"
+  },
+  "corpora": [
+    "ptb_test",
+    "wiki_test"
+  ],
+  "limits": "Two actualcompleteprivateQwen896/151936 finiteE31chains withalias64/Arow144exactfieldpacking. SameF16weights/scoreprecision/p44/K201/privateindices/clientonlytoken. BinariescryptoHE/noiseflood/thread/bucketcaps unchangedexceptpublicrowwidth. Alias64sharezeroextendedlocally tolegacy32bytehandoff; A144shareunpackedlocally to8low18bitwords; parentauditsconversionhomomorphism, signedrowreconstruction andallforwarding/score/E31/tokenafterexit. Noonlineparenthelper. Fresh4nativepairs percorpus/8totalreserved, fixed256querypadding. Diagnostics notbalancedperf ornewprimitive/security/CCFclaim. Preservebothrealcorpusresultsregardlessdirection; noretuning."
+}

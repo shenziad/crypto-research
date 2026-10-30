@@ -1,0 +1,49 @@
+{
+  "created_utc": "2026-10-30T16:32:55.342771+00:00",
+  "input_sha256": {
+    "experiments/qwen_packed_threeway_benchmark.py": "7b72187f6a878b0e3c14e1abaabb7e0dce980a326a78df7881005ee3ae197993",
+    "experiments/qwen_exactpacking_budget.py": "87f2257e4e8fd5dd03c66cae6355666d61cad6c9d9577490952e9d2fdf7147ee",
+    "experiments/qwen_packed_sampling_worker.py": "814d620678c469722bae335079aefd286d01a66d06014a15b5223256d09f63ef",
+    "experiments/run_qwen_packed_sampling.py": "9d72f8e4a2ab9935c05ce9c015b84f60aab30e538d7166284285f2031179f134",
+    "experiments/qwen_exact_row_codec.py": "1f3ecb31ab38f03febe7ef4129b119003be42eae48bb6ad7abad4b1d57ff94d7",
+    "experiments/qwen_sampling_exp31_worker.py": "8a96e9552ec1f451d000908e4c4dc28dadd39277cccf3d507175493bbe52123f",
+    "experiments/run_qwen_sampling_exp31.py": "3cf10423422142b600c71149399c02d9cfd3522cd90d266952fa1a9a53924de9",
+    "experiments/run_qwen_selected_exp31.py": "515f44842a56cfc393efd3d3464ba79dc172405e28e6aa402c02c4584bf206b9",
+    "experiments/run_private_weighted_cdf95_check.py": "f3539a462419d38bf2f8679105cd2b7bd38508b63bc52504f7e05c0f313239ba",
+    "experiments/finite_alias_table.py": "a4c1afcdb3f7759d7c20131a302c009e7107360a72f04bd666c5c89725ec2e3b",
+    "experiments/run_dense_adapter_linearot.py": "d34366a246670ba5775fefe0ed995e2c3506a575b2a77eaa07a7411a46d62718",
+    "third_party/FABLE-qwen18/build/bin/private_row_harness": "ceaf0120c9213056b664ee84eefe51231c91ee65ec3287433fa99ae150c101b8",
+    "third_party/FABLE-qwen18-64/build/bin/private_row_harness": "8086ccdee5d10935ffdfc7da454702892693338acd2d950384799dcb1f8971cf",
+    "third_party/FABLE-qwen18-144/build/bin/private_row_harness": "b95cca312db95a648314c1a430548ec4ac1022ef1114e63f0c6b8058741d6095",
+    "toolchain/bounded-sampler/qwen_dense_cdf31": "995405538c8107ccb3976a3f8be54bf5519494effd885ff24b0e95440b00547a",
+    "toolchain/bounded-sampler/qwen_alias_batch": "4581d89068618068a9b726c7c6125c2e7fabb603a69aa4651735adfe63ee2538",
+    "toolchain/bounded-sampler/qwen_selected_exp31": "380d96a376c05ad97a313a38889a13f3d81578ecfdbc451a2fd1ebc47a074c4d",
+    "results/qwen_packed_sampling.json": "517779850b11eedc47bd155a02157718410a29170889fe05543a3c7ecd9c8303",
+    "results/qwen_sampling_exp31_runs/ptb_test/client_initial.npz": "3b7b0dfada413a4a9d968059a1a92f5dadea309318584a690e296921eca0c741",
+    "results/qwen_sampling_exp31_runs/ptb_test/server_initial.npz": "aac181739c21f3c6f8af42fb4460c367f24da3dcff75710d975a69f9d330d074",
+    "results/sci_exp31_finite_certificate.json": "8a7d19e0b0e48803cf784cea459372eb7d663f673573cfbfe0bbed542057e1ce"
+  },
+  "orders": [
+    [
+      "dense",
+      "wide",
+      "packed"
+    ],
+    [
+      "wide",
+      "packed",
+      "dense"
+    ],
+    [
+      "packed",
+      "dense",
+      "wide"
+    ],
+    [
+      "packed",
+      "wide",
+      "dense"
+    ]
+  ],
+  "limits": "Four prespecifiedmixed-orderblocks of3completeQwen paths: optimizeddenseCDF95, oldwide256FABLErejection, exactalias64/Arow144rejection. Four observations perpath;3wayordersnotperfectpositionbalanced, noconfidence/significanceclaim. SamefrozenPTB x/q/A/B, F16/PWL/E31/p44/K201, identicalqmass2^62/E31target. No rank/precision/model changes. Freshcrypto/OScoins eachrun. Primarywholepairwall includesprocesslaunch/inputload/workerlocalprep; same100mspoll. Participanttimersdiagnostic only; backbone/fixturepreparationexcluded; densemasses precompiled, rejectionstillpayslocalalias/tableprep; packedalso payscodecinsideworker. Allsetup/LUT/channels/transfer/outputwirebytes counted, noTCPheaders. FABLE4threads, SCIstandard<=2threadOT, noaffinity/WAN/globalSOTAclaim. Parentonlypollsprocessesuntilbothend, fullsaved-fileaudit afterward. Benchmark36nativepairs +previous11controls/conformance=47 within50pair/60mincap, nootherresearchjobs concurrent. Standardexactencodingusesexistingbackendwidthsupport, notnewprimitive/quantization. Wholeimplementationsecurity andCCFcontribution remainunproved."
+}

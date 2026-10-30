@@ -1,0 +1,54 @@
+{
+  "all_passed": true,
+  "retrospective": true,
+  "created_utc": "2026-10-30T16:36:44.265957+00:00",
+  "summary": {
+    "dense": {
+      "observations": 4,
+      "median_total_wire_bytes": 3504947076.0,
+      "median_whole_pair_wall_ms": 24071.873976000006,
+      "median_participant_elapsed_ms": 23948.9
+    },
+    "wide": {
+      "observations": 4,
+      "median_total_wire_bytes": 1806419191.5,
+      "median_whole_pair_wall_ms": 11761.629686000106,
+      "median_participant_elapsed_ms": 11658.989676000147
+    },
+    "packed": {
+      "observations": 4,
+      "median_total_wire_bytes": 976779523.5,
+      "median_whole_pair_wall_ms": 8408.278457499819,
+      "median_participant_elapsed_ms": 8261.991330500223
+    }
+  },
+  "reduction_percent": {
+    "packed_vs_wide": {
+      "median_total_wire_bytes": 45.927305904621754,
+      "median_whole_pair_wall_ms": 28.51094038857378
+    },
+    "packed_vs_dense": {
+      "median_total_wire_bytes": 72.1314044885738,
+      "median_whole_pair_wall_ms": 65.07011267222906
+    },
+    "wide_vs_dense": {
+      "median_total_wire_bytes": 48.46087109647416,
+      "median_whole_pair_wall_ms": 51.139534471945915
+    }
+  },
+  "registered_files_verified": 731,
+  "complete_benchmark_runs_replayed": 12,
+  "benchmark_native_pairs": 36,
+  "conformance_native_pairs": 11,
+  "benchmark_stage_wall_upper_seconds": 665.1788358688354,
+  "benchmark_stage_max_wall_seconds": 3600,
+  "result_sha256": "3488b6a2e6bfc87befe862554e779e1d0ef5593e42d7e3541db8ee34c3ca13c9",
+  "preregistration_sha256": "d96d7569eb86bd49d8a0a827a36a878e40f9123cfd5305114cddbe8571cb3f86",
+  "source_sha256": "19196cec765da749591491d43d5957e7e324ec201d1c86483ae85b541e5dcef0",
+  "limits": "After-exit reconstruction and file/counter consistency; not independent implementation or security proof. Four observations perpath/onePTBcontext, fixed3wayorders notperfectpositionbalanced, no uncertainty interval, WAN orglobalSOTA claim. Exactpackingnofunction/modelchange; existingbackendwidthsupportnotnewprimitive. Separate model/alias/crypto failures remain. Conformance has2corpora, benchmark reusesone. Participant timings diagnostic; primarywhole-pair includesasymmetric workerlocalprep describedinregistration.",
+  "_publication": {
+    "derived_summary": true,
+    "original_local_result_sha256": "366daa1b763a394b07ddeeb1c923f96043e52833351eb213abc5f091734c5c68",
+    "omitted": "Individual private audit-file hashes/logs. Raw shares, coins, tables, fixtures, token outputs and native binaries stay on NEWSMY."
+  }
+}

@@ -1,0 +1,11 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -41,7 +41,7 @@
+ add_subdirectory(test)
+ 
+ # Local same-function private-row harness; upstream crypto algorithms unchanged.
+-add_executable(private_row_harness ${PROJECT_SOURCE_DIR}/../../experiments/fable_private_row_qwen18.cpp)
++add_executable(private_row_harness ${PROJECT_SOURCE_DIR}/../../experiments/fable_private_row_qwen_packed.cpp)
+ target_link_libraries(private_row_harness fable-GC)
+ 
+ target_compile_definitions(private_row_harness PRIVATE LUT_INPUT_SIZE=${LUT_INPUT_SIZE} LUT_OUTPUT_SIZE=${LUT_OUTPUT_SIZE} LUT_MAX_LOG_SIZE=${LUT_MAX_LOG_SIZE})

@@ -15,6 +15,7 @@
 | 2026-10-30 | [Qwen冻结权重留出跟进与决策修正](milestones/2026-10-30-qwen-frozen-followup/README.md) | 两语料8192位置均改善：PTB−0.1221/Wiki−0.00626nat；继续完善质量/完整协议，旧筛选结果保留 |
 | 2026-10-30 | [Qwen有限质量与原生18位选中行组件](milestones/2026-10-30-qwen-finite-components/README.md) | 8192位置保留收益、10组原生两方测试通过；完整查表/CDF95仍待连接 |
 | 2026-10-31 | [Qwen完整私有head：同分布全链路对照](milestones/2026-10-31-qwen-fullchain/README.md) | 两语料功能核验＋四组交替复测；当前实现通信少48.46%、墙钟少50.91%；贡献与联合安全继续完善 |
+| 2026-10-31 | [Qwen精确字段编码与完整三路径对照](milestones/2026-10-31-qwen-exact-packing/README.md) | 同一有限函数；当前编码路径较密集通信少72.13%、墙钟少65.07%；安全候选界尚待实现 |
 
 [实验汇总JSON](milestones/2026-10-29-exact-coarse/results/exact_coarse_comparison_report.json) · [受限证明草稿](milestones/2026-10-29-exact-coarse/notes/20261029_exact_coarse_joint_view.md) · [复现范围与CPU smoke](milestones/2026-10-29-exact-coarse/REPRODUCIBILITY.md)
 

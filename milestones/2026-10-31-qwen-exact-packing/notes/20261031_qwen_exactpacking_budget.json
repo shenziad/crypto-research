@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-10-30T16:24:48.751443+00:00",
+  "maximum_wall_seconds": 3600,
+  "maximum_native_two_party_pairs": 50,
+  "planned_pairs": {
+    "LUT64_control": 1,
+    "LUT144_control": 1,
+    "alias_finish_boundaries": 1,
+    "packed_complete2corpora": 8,
+    "four_threeway_blocks": 36
+  },
+  "planned_total": 47,
+  "reserve": 3,
+  "purpose": "Exactfixedfieldpacking only, samefrozenweights/F16/F20/p44/E31/K201 andclientonlyoutput. Codecproof/control thenfullconformance thenpresetthreeway completebenchmark. Originalpositivewidestagepreserved. Everyactualnativepair includingpipeline4subpairs counts; failedlaunchedpairs count.",
+  "decision": "A targetmiss isnotautomaticcorefalsification; retainpositiveevidence, explainphenomenon/contributiongap peruserpolicy. No precision/rank/bound/LR/seed search."
+}

@@ -1,0 +1,98 @@
+{
+  "native_pairs_reserved": 47,
+  "events": [
+    {
+      "label": "control:LUT64",
+      "pairs": 1,
+      "reserved_utc": "2026-10-30T16:27:37.039702+00:00"
+    },
+    {
+      "label": "control:LUT144",
+      "pairs": 1,
+      "reserved_utc": "2026-10-30T16:27:40.301484+00:00"
+    },
+    {
+      "label": "control:alias_boundaries",
+      "pairs": 1,
+      "reserved_utc": "2026-10-30T16:27:44.308629+00:00"
+    },
+    {
+      "label": "complete_rejection:ptb_test",
+      "pairs": 4,
+      "reserved_utc": "2026-10-30T16:30:22.324994+00:00"
+    },
+    {
+      "label": "complete_rejection:wiki_test",
+      "pairs": 4,
+      "reserved_utc": "2026-10-30T16:30:31.062497+00:00"
+    },
+    {
+      "label": "balanced:0_dense",
+      "pairs": 1,
+      "reserved_utc": "2026-10-30T16:32:55.863566+00:00"
+    },
+    {
+      "label": "balanced:0_wide",
+      "pairs": 4,
+      "reserved_utc": "2026-10-30T16:33:19.564199+00:00"
+    },
+    {
+      "label": "balanced:0_packed",
+      "pairs": 4,
+      "reserved_utc": "2026-10-30T16:33:31.225293+00:00"
+    },
+    {
+      "label": "balanced:1_wide",
+      "pairs": 4,
+      "reserved_utc": "2026-10-30T16:33:39.481319+00:00"
+    },
+    {
+      "label": "balanced:1_packed",
+      "pairs": 4,
+      "reserved_utc": "2026-10-30T16:33:51.143718+00:00"
+    },
+    {
+      "label": "balanced:1_dense",
+      "pairs": 1,
+      "reserved_utc": "2026-10-30T16:33:59.599408+00:00"
+    },
+    {
+      "label": "balanced:2_packed",
+      "pairs": 4,
+      "reserved_utc": "2026-10-30T16:34:23.996905+00:00"
+    },
+    {
+      "label": "balanced:2_dense",
+      "pairs": 1,
+      "reserved_utc": "2026-10-30T16:34:32.453674+00:00"
+    },
+    {
+      "label": "balanced:2_wide",
+      "pairs": 4,
+      "reserved_utc": "2026-10-30T16:34:56.751356+00:00"
+    },
+    {
+      "label": "balanced:3_packed",
+      "pairs": 4,
+      "reserved_utc": "2026-10-30T16:35:08.714690+00:00"
+    },
+    {
+      "label": "balanced:3_wide",
+      "pairs": 4,
+      "reserved_utc": "2026-10-30T16:35:17.270107+00:00"
+    },
+    {
+      "label": "balanced:3_dense",
+      "pairs": 1,
+      "reserved_utc": "2026-10-30T16:35:29.534241+00:00"
+    }
+  ],
+  "stage_closed": true,
+  "actual_native_pairs": 47,
+  "completion_wall_upper_seconds": 665.1788358688354,
+  "_publication": {
+    "derived_summary": true,
+    "original_local_result_sha256": "a784d47080cb7f5bd5c390e5121e870e81d634c24cd0d79945a001fcd8f67bab",
+    "omitted": "Individual private audit-file hashes/logs. Raw shares, coins, tables, fixtures, token outputs and native binaries stay on NEWSMY."
+  }
+}

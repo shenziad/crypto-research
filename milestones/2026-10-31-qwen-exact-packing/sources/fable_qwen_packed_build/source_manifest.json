@@ -1,0 +1,17 @@
+{
+  "base": "SeparatecopiesofpinnedFABLE-qwen18; unchangedBatchPIR/src/headers/HEparameters/buckets2048/cap600. Onlypublicoutputwidth andgenericownharness differ. EzPCsharedread-onlyuse;independentbuildtrees.",
+  "widths_bits": [
+    64,
+    144
+  ],
+  "rows": 262144,
+  "query_bits": 18,
+  "batch": 256,
+  "threads": 4,
+  "arithmetic": "SameF16/PWL/E31/K201; exactfieldpackingonly, notquantizationchange.",
+  "harness_sha256": "8e7cbc82885ceb668057ecf1feba2c2595fccfa1de02162a56de976a6327a81f",
+  "CMake_sha256": {
+    "64": "dad05a073f7b16f66cc5ece175d8fece216b7fce52c0d237c93e95463ccab13f",
+    "144": "dad05a073f7b16f66cc5ece175d8fece216b7fce52c0d237c93e95463ccab13f"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "all_passed": true,
+  "coefficient_patterns_checked": 2097152,
+  "packed_rows_checked": 262144,
+  "arbitrary_bitstring_rows_checked": 131072,
+  "XOR_homomorphism_rows_checked": 131072,
+  "lemma": "Inputbit(j,k) maps tooutputbit18j+k, uniquein[0,144); fixedbijection/XORlinear. Signedvalues onlyuseexistinglow18twoscomplementpatterns.",
+  "source_sha256": "1f3ecb31ab38f03febe7ef4129b119003be42eae48bb6ad7abad4b1d57ff94d7",
+  "limits": "Purecodec invariants, no privateprotocol orsecurity/performanceclaim. FixedF16 andsigned18 exactlyunchanged.",
+  "_publication": {
+    "derived_summary": true,
+    "original_local_result_sha256": "aec60bf6c4228664e8a71637bf8c5835a672d3090d48d480f7e823a1c80c4efa",
+    "omitted": "Individual private audit-file hashes/logs. Raw shares, coins, tables, fixtures, token outputs and native binaries stay on NEWSMY."
+  }
+}
