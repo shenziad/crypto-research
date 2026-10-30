@@ -1,0 +1,18 @@
+{
+  "retrieved_utc": "2026-10-30T16:13:21.450146+00:00",
+  "files": [
+    {
+      "file": "sources/primary_prior_20261031/SPRINT_PoPETs2026_0008.pdf",
+      "url": "https://petsymposium.org/popets/2026/popets-2026-0008.pdf",
+      "bytes": 881379,
+      "sha256": "f534730efb1abe8c21169a074a270360675a9d04f2d3428b8bb0c457756e81fd"
+    },
+    {
+      "file": "sources/primary_prior_20261031/GenLM_control_reference.html",
+      "url": "https://genlm.org/genlm-control/reference/genlm/control/__init__/",
+      "bytes": 1367144,
+      "sha256": "ca456cb77d24a2348d4e10f29432e1ee726e877deb00cdc490cea0900dd069ad"
+    }
+  ],
+  "scope": "Primaryreferencesreadforscope/novelty; no sourcePDF/HTML republished, no upstreamperformance reproduction claim."
+}

@@ -1,0 +1,53 @@
+{
+  "native_pairs_reserved": 20,
+  "events": [
+    {
+      "label": "balanced:0_dense",
+      "pairs": 1,
+      "reserved_utc": "2026-10-30T16:06:14.992208+00:00"
+    },
+    {
+      "label": "balanced:0_rejection",
+      "pairs": 4,
+      "reserved_utc": "2026-10-30T16:06:39.092260+00:00"
+    },
+    {
+      "label": "balanced:1_rejection",
+      "pairs": 4,
+      "reserved_utc": "2026-10-30T16:06:50.956149+00:00"
+    },
+    {
+      "label": "balanced:1_dense",
+      "pairs": 1,
+      "reserved_utc": "2026-10-30T16:07:02.818467+00:00"
+    },
+    {
+      "label": "balanced:2_dense",
+      "pairs": 1,
+      "reserved_utc": "2026-10-30T16:07:27.724289+00:00"
+    },
+    {
+      "label": "balanced:2_rejection",
+      "pairs": 4,
+      "reserved_utc": "2026-10-30T16:07:52.526310+00:00"
+    },
+    {
+      "label": "balanced:3_rejection",
+      "pairs": 4,
+      "reserved_utc": "2026-10-30T16:08:04.891038+00:00"
+    },
+    {
+      "label": "balanced:3_dense",
+      "pairs": 1,
+      "reserved_utc": "2026-10-30T16:08:22.564514+00:00"
+    }
+  ],
+  "stage_closed": true,
+  "actual_native_pairs": 20,
+  "completion_wall_upper_seconds": 157.4532961845398,
+  "_publication": {
+    "derived_summary": true,
+    "original_local_result_sha256": "392995cc76eb99a6f65cc80d0fe93a21881ed918c66b21c1e71dfb17546e823a",
+    "omitted": "Per-file private audit hashes/logs. Raw shares, coins, fixtures, tables and token outputs remain on NEWSMY."
+  }
+}

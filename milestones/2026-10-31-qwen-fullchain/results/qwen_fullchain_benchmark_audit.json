@@ -1,0 +1,38 @@
+{
+  "all_passed": true,
+  "retrospective": true,
+  "created_utc": "2026-10-30T16:11:12.777732+00:00",
+  "summary": {
+    "dense": {
+      "observations": 4,
+      "median_total_wire_bytes": 3504947076.0,
+      "median_whole_pair_wall_ms": 24572.310768500072,
+      "median_participant_elapsed_ms": 24460.9
+    },
+    "rejection": {
+      "observations": 4,
+      "median_total_wire_bytes": 1806418740.5,
+      "median_whole_pair_wall_ms": 12061.632045499664,
+      "median_participant_elapsed_ms": 11951.12127949983
+    }
+  },
+  "reduction_percent": {
+    "median_total_wire_bytes": 48.460883964000836,
+    "median_whole_pair_wall_ms": 50.91372496817921
+  },
+  "registered_files_verified": 687,
+  "complete_benchmark_runs_replayed": 8,
+  "benchmark_native_pairs": 20,
+  "conformance_native_pairs": 18,
+  "benchmark_stage_wall_upper_seconds": 157.4532961845398,
+  "benchmark_stage_max_wall_seconds": 1800,
+  "result_sha256": "da01d2468ef11669f3435c5a989c00e3c800fdfff01d7b29c500f6ed33029dd6",
+  "preregistration_sha256": "5d4793a08d890bf2c71e570fe126139eb5d6832c34a5742cd62cf8d6d2b62f90",
+  "source_sha256": "10cccc48e2fea7ba56a80d91f11a781431b46bd0f41fc50813179db4a84bdf2e",
+  "limits": "After-exit reconstruction and file/counter consistency; not independent implementation or security proof. Four observations perpath/onePTBcontext, no uncertainty interval, WAN orglobalSOTA claim. Separate model/alias/crypto failures remain. Conformance has2corpora, benchmark reusesone. Participant timings diagnostic; primarywhole-pair includesasymmetric workerlocalprep describedinregistration.",
+  "_publication": {
+    "derived_summary": true,
+    "original_local_result_sha256": "a900d93f7f0d9d72910a516e1a5552fb0203479907edc2918689eb47f7f71c66",
+    "omitted": "Per-file private audit hashes/logs. Raw shares, coins, fixtures, tables and token outputs remain on NEWSMY."
+  }
+}

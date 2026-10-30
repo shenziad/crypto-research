@@ -1,0 +1,33 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -41,7 +41,7 @@
+ add_subdirectory(test)
+ 
+ # Local same-function private-row harness; upstream crypto algorithms unchanged.
+-add_executable(private_row_harness ${PROJECT_SOURCE_DIR}/../../experiments/fable_private_row_harness.cpp)
++add_executable(private_row_harness ${PROJECT_SOURCE_DIR}/../../experiments/fable_private_row_qwen18.cpp)
+ target_link_libraries(private_row_harness fable-GC)
+ 
+ target_compile_definitions(private_row_harness PRIVATE LUT_INPUT_SIZE=${LUT_INPUT_SIZE} LUT_OUTPUT_SIZE=${LUT_OUTPUT_SIZE} LUT_MAX_LOG_SIZE=${LUT_MAX_LOG_SIZE})
+--- a/extern/BatchPIR/header/database_constants.h
++++ b/extern/BatchPIR/header/database_constants.h
+@@ -29,6 +29,8 @@
+         switch (LUT_MAX_LOG_SIZE) {
+             case 16:
+                 return 583; // ideal-hash global overflow tail below2^-54, N<=65791,B=512
++            case 18:
++                return 600; // idealhash capacity certificate recorded separately
+             case 20:
+                 return 556;
+             case 24:
+--- a/extern/BatchPIR/src/batchpirparams.cpp
++++ b/extern/BatchPIR/src/batchpirparams.cpp
+@@ -64,7 +64,7 @@
+ }
+ 
+ size_t BatchPirParams::get_num_buckets() {
+-    return 512; // fixed small-batch bucket count, sixteen packed subslots
++    return 2048; // fixed Qwen18 batch bucket count, four packed subslots
+ }
+ 
+ size_t BatchPirParams::get_bucket_size() {

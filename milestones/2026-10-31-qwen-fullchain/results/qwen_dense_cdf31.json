@@ -1,0 +1,300 @@
+{
+  "all_passed": true,
+  "results": [
+    {
+      "wall_seconds": 24.26014964900014,
+      "all_correct": true,
+      "rows": 151936,
+      "prefix_values_checked": 151936,
+      "products_checked": 303872,
+      "final_token_matches": true,
+      "normalizer_bits": 92,
+      "name": "ptb_test",
+      "all_shared_scores_exact": true,
+      "all_exp31_values_exact": true,
+      "parties": [
+        {
+          "role": 1,
+          "rows": 151936,
+          "nonlinear": true,
+          "setup_ms": 560.966,
+          "bx_ms": 9.8949,
+          "bridge_ms": 23.1719,
+          "az_ms": 411.083,
+          "nonlinear_ms": 23035,
+          "protocol_ms": 24040.1,
+          "setup_counters": [
+            150144,
+            12997,
+            0,
+            285933,
+            8832,
+            0
+          ],
+          "bx_counters": [
+            836256,
+            12997,
+            0,
+            1105133,
+            10400,
+            0
+          ],
+          "bridge_counters": [
+            836256,
+            12997,
+            287888,
+            1105133,
+            10400,
+            275469
+          ],
+          "az_counters": [
+            130741922,
+            12997,
+            287888,
+            1133805,
+            10418,
+            275469
+          ],
+          "end_counters": [
+            752729922,
+            641376965,
+            1102995,
+            1940270317,
+            169191154,
+            275723
+          ]
+        },
+        {
+          "role": 2,
+          "rows": 151936,
+          "nonlinear": true,
+          "setup_ms": 550.439,
+          "bx_ms": 9.89165,
+          "bridge_ms": 23.1581,
+          "az_ms": 419.633,
+          "nonlinear_ms": 23026.5,
+          "protocol_ms": 24029.6,
+          "setup_counters": [
+            285933,
+            8832,
+            0,
+            150144,
+            12997,
+            0
+          ],
+          "bx_counters": [
+            1105133,
+            10400,
+            0,
+            836256,
+            12997,
+            0
+          ],
+          "bridge_counters": [
+            1105133,
+            10400,
+            275469,
+            836256,
+            12997,
+            287888
+          ],
+          "az_counters": [
+            1133805,
+            10418,
+            275469,
+            130741922,
+            12997,
+            287888
+          ],
+          "end_counters": [
+            1940270317,
+            169191154,
+            275723,
+            752729922,
+            641376965,
+            1102995
+          ]
+        }
+      ],
+      "total_wire_bytes": 3504947076,
+      "stage_wire_bytes": {
+        "setup": 457906,
+        "Bx": 1506880,
+        "floor_bridge": 563357,
+        "A_t": 129934356,
+        "PWL_exp_weighted_CDF_release": 3372484577
+      },
+      "max_party_protocol_ms": 24040.1,
+      "finite_alias": {
+        "vocabulary": 151936,
+        "padded_size": 262144,
+        "precision": 44,
+        "threshold_bits": 45,
+        "integer_total_mass": 4611686018427387904,
+        "observed_TV_to_supplied_distribution": 7.52933628993665e-15,
+        "padded_mass": 0,
+        "zero_thresholds": 110208,
+        "full_thresholds": 1
+      }
+    },
+    {
+      "wall_seconds": 25.5111079039998,
+      "all_correct": true,
+      "rows": 151936,
+      "prefix_values_checked": 151936,
+      "products_checked": 303872,
+      "final_token_matches": true,
+      "normalizer_bits": 91,
+      "name": "wiki_test",
+      "all_shared_scores_exact": true,
+      "all_exp31_values_exact": true,
+      "parties": [
+        {
+          "role": 1,
+          "rows": 151936,
+          "nonlinear": true,
+          "setup_ms": 604.141,
+          "bx_ms": 9.86182,
+          "bridge_ms": 18.4764,
+          "az_ms": 405.797,
+          "nonlinear_ms": 24291.9,
+          "protocol_ms": 25330.1,
+          "setup_counters": [
+            150144,
+            12997,
+            0,
+            285933,
+            8832,
+            0
+          ],
+          "bx_counters": [
+            836256,
+            12997,
+            0,
+            1105133,
+            10400,
+            0
+          ],
+          "bridge_counters": [
+            836256,
+            12997,
+            287888,
+            1105133,
+            10400,
+            275469
+          ],
+          "az_counters": [
+            130741922,
+            12997,
+            287888,
+            1133805,
+            10418,
+            275469
+          ],
+          "end_counters": [
+            752729922,
+            641376965,
+            1102995,
+            1940270317,
+            169191154,
+            275723
+          ]
+        },
+        {
+          "role": 2,
+          "rows": 151936,
+          "nonlinear": true,
+          "setup_ms": 596.827,
+          "bx_ms": 9.86285,
+          "bridge_ms": 18.4579,
+          "az_ms": 413.854,
+          "nonlinear_ms": 24283.8,
+          "protocol_ms": 25322.8,
+          "setup_counters": [
+            285933,
+            8832,
+            0,
+            150144,
+            12997,
+            0
+          ],
+          "bx_counters": [
+            1105133,
+            10400,
+            0,
+            836256,
+            12997,
+            0
+          ],
+          "bridge_counters": [
+            1105133,
+            10400,
+            275469,
+            836256,
+            12997,
+            287888
+          ],
+          "az_counters": [
+            1133805,
+            10418,
+            275469,
+            130741922,
+            12997,
+            287888
+          ],
+          "end_counters": [
+            1940270317,
+            169191154,
+            275723,
+            752729922,
+            641376965,
+            1102995
+          ]
+        }
+      ],
+      "total_wire_bytes": 3504947076,
+      "stage_wire_bytes": {
+        "setup": 457906,
+        "Bx": 1506880,
+        "floor_bridge": 563357,
+        "A_t": 129934356,
+        "PWL_exp_weighted_CDF_release": 3372484577
+      },
+      "max_party_protocol_ms": 25330.1,
+      "finite_alias": {
+        "vocabulary": 151936,
+        "padded_size": 262144,
+        "precision": 44,
+        "threshold_bits": 45,
+        "integer_total_mass": 4611686018427387904,
+        "observed_TV_to_supplied_distribution": 5.6209955448840205e-15,
+        "padded_mass": 0,
+        "zero_thresholds": 110208,
+        "full_thresholds": 1
+      }
+    }
+  ],
+  "input_sha256": {
+    "experiments/run_qwen_dense_cdf31.py": "6a0ca5920d224122e9a543f184d43b14e19e3514d23878c0207935e5d5bf0ec8",
+    "experiments/qwen_dense_cdf31.cpp": "ee67851c0b6feb6628b2eafe904c4191dd013f1b41975d7d43bbaa323b099d96",
+    "experiments/private_weighted_cdf95.h": "2e370ed45fd40755e1124d9cfc01d484909787c3ba0e11942a5afacc60796b03",
+    "experiments/run_private_weighted_cdf95_check.py": "f3539a462419d38bf2f8679105cd2b7bd38508b63bc52504f7e05c0f313239ba",
+    "experiments/qwen_bounded_fixed16.py": "93043a28a5794628ddd03baf3c8876327e6572b7edb0694456c10e1d2302400e",
+    "experiments/finite_alias_table.py": "a4c1afcdb3f7759d7c20131a302c009e7107360a72f04bd666c5c89725ec2e3b",
+    "experiments/run_dense_adapter_linearot.py": "d34366a246670ba5775fefe0ed995e2c3506a575b2a77eaa07a7411a46d62718",
+    "experiments/qwen_stage_budget.py": "d021479184e9b26d8b8de4762f4d9c2aafe8bef3cf2508e99cf2d0361a6ebba7",
+    "toolchain/bounded-sampler/qwen_dense_cdf31": "995405538c8107ccb3976a3f8be54bf5519494effd885ff24b0e95440b00547a",
+    "results/private_weighted_cdf95_check.json": "fb328903598be306912c36bbd6b60529683b225a1c2ad8b04d57152ef9bd580d",
+    "results/bounded_adapter_qwen_transfer_weights.npz": "45a25759dd41c0c634d9b67ca438173b01ec2cf741b01125f6031a38a3ab7efe",
+    "results/bounded_adapter_qwen_frozen_captures.npz": "7259d4a612ccb78cc89897eab8a1997bb709a2cdcce3428d8d1db565f9ae0f34",
+    "results/qwen_bounded_head_range_certificate.json": "3e888e78a81c3b52c9a4521a77b4c28b03cb863d3fb5696a039afc7cada3afef",
+    "results/sci_exp31_finite_certificate.json": "8a7d19e0b0e48803cf784cea459372eb7d663f673573cfbfe0bbed542057e1ce"
+  },
+  "preregistration_sha256": "0440108bb2bffbfbf62748ba244f993f5f6eab9d7e4c0fbfd6ac55b377186e34",
+  "limits": "Two actualcompleteQwen densehead pairs, realPTB/Wiki fixedcaptures,151936scores, sameF16/PWL/E31, privatep44mass2^62, CDF95/clientonly32bittoken. Auditalllinear/floor/PWL/E31/products/prefix/R/sign/token afterbothexit; countallthreechannels. Nohelperduringonlineexecution, nooldprofileq*exp(cdelta)silent replacement. Initialconformancecostdiagnostics only, notbalancedtiming/globalSOTA/security/CCFclaim. Modelpublicbackbone/capturepreparationexcluded; budgetledgeronepair percorpus.",
+  "_publication": {
+    "derived_summary": true,
+    "original_local_result_sha256": "378882e63635eaab47b16031bd99d828c20cc79ea6709a54b5a405cec85146cb",
+    "omitted": "Per-file private audit hashes/logs. Raw shares, coins, fixtures, tables and token outputs remain on NEWSMY."
+  }
+}

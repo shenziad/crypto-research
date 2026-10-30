@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-10-30T16:00:42.743367+00:00",
+  "input_sha256": {
+    "experiments/run_qwen_dense_cdf31.py": "6a0ca5920d224122e9a543f184d43b14e19e3514d23878c0207935e5d5bf0ec8",
+    "experiments/qwen_dense_cdf31.cpp": "ee67851c0b6feb6628b2eafe904c4191dd013f1b41975d7d43bbaa323b099d96",
+    "experiments/private_weighted_cdf95.h": "2e370ed45fd40755e1124d9cfc01d484909787c3ba0e11942a5afacc60796b03",
+    "experiments/run_private_weighted_cdf95_check.py": "f3539a462419d38bf2f8679105cd2b7bd38508b63bc52504f7e05c0f313239ba",
+    "experiments/qwen_bounded_fixed16.py": "93043a28a5794628ddd03baf3c8876327e6572b7edb0694456c10e1d2302400e",
+    "experiments/finite_alias_table.py": "a4c1afcdb3f7759d7c20131a302c009e7107360a72f04bd666c5c89725ec2e3b",
+    "experiments/run_dense_adapter_linearot.py": "d34366a246670ba5775fefe0ed995e2c3506a575b2a77eaa07a7411a46d62718",
+    "experiments/qwen_stage_budget.py": "d021479184e9b26d8b8de4762f4d9c2aafe8bef3cf2508e99cf2d0361a6ebba7",
+    "toolchain/bounded-sampler/qwen_dense_cdf31": "995405538c8107ccb3976a3f8be54bf5519494effd885ff24b0e95440b00547a",
+    "results/private_weighted_cdf95_check.json": "fb328903598be306912c36bbd6b60529683b225a1c2ad8b04d57152ef9bd580d",
+    "results/bounded_adapter_qwen_transfer_weights.npz": "45a25759dd41c0c634d9b67ca438173b01ec2cf741b01125f6031a38a3ab7efe",
+    "results/bounded_adapter_qwen_frozen_captures.npz": "7259d4a612ccb78cc89897eab8a1997bb709a2cdcce3428d8d1db565f9ae0f34",
+    "results/qwen_bounded_head_range_certificate.json": "3e888e78a81c3b52c9a4521a77b4c28b03cb863d3fb5696a039afc7cada3afef",
+    "results/sci_exp31_finite_certificate.json": "8a7d19e0b0e48803cf784cea459372eb7d663f673573cfbfe0bbed542057e1ce"
+  },
+  "limits": "Two actualcompleteQwen densehead pairs, realPTB/Wiki fixedcaptures,151936scores, sameF16/PWL/E31, privatep44mass2^62, CDF95/clientonly32bittoken. Auditalllinear/floor/PWL/E31/products/prefix/R/sign/token afterbothexit; countallthreechannels. Nohelperduringonlineexecution, nooldprofileq*exp(cdelta)silent replacement. Initialconformancecostdiagnostics only, notbalancedtiming/globalSOTA/security/CCFclaim. Modelpublicbackbone/capturepreparationexcluded; budgetledgeronepair percorpus."
+}

@@ -1,0 +1,38 @@
+{
+  "all_passed": true,
+  "same_target_cells": [
+    {
+      "corpus": "ptb_test",
+      "same_qmass_sha256": "de2017840b8a69c20baddc203b34a0dee0094433e8faa0e4b2ca1e5bf45725f1",
+      "same_E31_vector_sha256": "562ff587d3c278b378280a626ef9359abe0267ff9d0ba5aa94458d498e238c64",
+      "complete_dense_and_rejection_replay": true
+    },
+    {
+      "corpus": "wiki_test",
+      "same_qmass_sha256": "3692bdfcf010bd9662e1a143ea172e0dfb0d172e035f2141c2f53690d2078ee0",
+      "same_E31_vector_sha256": "ce22076a224b758ce8004e57b4666b308dc1fec4c66092c6efb952e5f19fbfb8",
+      "complete_dense_and_rejection_replay": true
+    }
+  ],
+  "registered_files_verified": 342,
+  "native_pairs": 18,
+  "budget_max_native_pairs": 20,
+  "stage_wall_upper_seconds": 396.0264859199524,
+  "budget_max_wall_seconds": 2700,
+  "complete_dense_runs": 2,
+  "complete_rejection_runs": 2,
+  "FABLE18_control_pairs": 2,
+  "CDF95_control_pairs": 6,
+  "source_results_sha256": {
+    "private_weighted_cdf95_check": "fb328903598be306912c36bbd6b60529683b225a1c2ad8b04d57152ef9bd580d",
+    "qwen_dense_cdf31": "378882e63635eaab47b16031bd99d828c20cc79ea6709a54b5a405cec85146cb",
+    "fable_qwen18_check": "a1531a886e0e20a6a06f0c12cfec85b9aea8ef663d57ac735ba5ad1c8ccb75bb",
+    "qwen_sampling_exp31": "32c090f75f19206ab9eb61efeab63b6cdacc738ec3d5d8af90b95704b5e8af21"
+  },
+  "limits": "Post-exit conformance replay and hashes, not independently established implementationsecurity. DenseCDF95 target andsecretalias/rejection target qmass*E31 matched ineachcorpus. Initialtimingsmayreflectconcurrentfunctionaljobs; no balancedperformance conclusion.",
+  "_publication": {
+    "derived_summary": true,
+    "original_local_result_sha256": "f04c93ac9b866fc8f69400246210e3bc459a33752a35362fe9bb506b4f162ac6",
+    "omitted": "Per-file private audit hashes/logs. Raw shares, coins, fixtures, tables and token outputs remain on NEWSMY."
+  }
+}

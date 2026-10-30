@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-10-30T15:59:05.985312+00:00",
+  "input_sha256": {
+    "experiments/private_weighted_cdf95.h": "2e370ed45fd40755e1124d9cfc01d484909787c3ba0e11942a5afacc60796b03",
+    "experiments/private_weighted_cdf95_check.cpp": "daa299204f8508fab9e073b860a0538b13694b8a8ca6e2a58c14f1b671bd389e",
+    "experiments/run_private_weighted_cdf95_check.py": "f3539a462419d38bf2f8679105cd2b7bd38508b63bc52504f7e05c0f313239ba",
+    "experiments/qwen_stage_budget.py": "d021479184e9b26d8b8de4762f4d9c2aafe8bef3cf2508e99cf2d0361a6ebba7",
+    "toolchain/bounded-sampler/private_weighted_cdf95_check": "5d7a5619f566525cfd1e2533bc593290d45686b3a812b943d25e3f7b7105c00c"
+  },
+  "limits": "Six actualprivateweightedCDF95 controlpairs; masssum2^62, E31<=2^31,3limb products63/63/36, jointU64/159bitGCthreshold, strict95bitsign andclient-only32bittoken. IncludesendpointZ=2^93,lastindex151935,Umax,zero-support exactthreshold,one-unitmass,andmixedalllimbs. Allsourcesfrozenbeforeexecution; nofloatingapproximation tobigintweightedreference; budgetledgercountsallnativepairs. No completehead/wholeQwen speed orsecurityclaim."
+}

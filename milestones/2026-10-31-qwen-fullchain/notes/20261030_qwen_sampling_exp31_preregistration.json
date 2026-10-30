@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-10-30T16:03:10.809498+00:00",
+  "input_sha256": {
+    "experiments/qwen_sampling_exp31_worker.py": "8a96e9552ec1f451d000908e4c4dc28dadd39277cccf3d507175493bbe52123f",
+    "experiments/run_qwen_sampling_exp31.py": "3cf10423422142b600c71149399c02d9cfd3522cd90d266952fa1a9a53924de9",
+    "experiments/qwen_alias_batch.cpp": "d5e7d7bd4855a52d661ab62dd3bc17838f4f823af49cc0a9a1bf2fff5a063275",
+    "experiments/qwen_selected_exp31.cpp": "e2dce25eb5216df906c75016cc8ea2fd832447a28baefd2daacf34409b92fe55",
+    "experiments/run_qwen_selected_exp31.py": "515f44842a56cfc393efd3d3464ba79dc172405e28e6aa402c02c4584bf206b9",
+    "experiments/qwen_bounded_fixed16.py": "93043a28a5794628ddd03baf3c8876327e6572b7edb0694456c10e1d2302400e",
+    "experiments/finite_alias_table.py": "a4c1afcdb3f7759d7c20131a302c009e7107360a72f04bd666c5c89725ec2e3b",
+    "experiments/qwen_stage_budget.py": "d021479184e9b26d8b8de4762f4d9c2aafe8bef3cf2508e99cf2d0361a6ebba7",
+    "experiments/run_dense_adapter_cdf31.py": "d209b7907d408ca5eb9e0f22eb9ab4909fd62e2b50d6a9abc3c31430f7b1828d",
+    "experiments/run_fable_smallbatch_check.py": "e7ca72c566bd61a3564e3c28ff82d20b1ccb1fc77d45a3cb9c986ab519ebc0b2",
+    "toolchain/bounded-sampler/qwen_selected_exp31": "380d96a376c05ad97a313a38889a13f3d81578ecfdbc451a2fd1ebc47a074c4d",
+    "toolchain/bounded-sampler/qwen_alias_batch": "4581d89068618068a9b726c7c6125c2e7fabb603a69aa4651735adfe63ee2538",
+    "third_party/FABLE-qwen18/build/bin/private_row_harness": "ceaf0120c9213056b664ee84eefe51231c91ee65ec3287433fa99ae150c101b8",
+    "results/fable_qwen18_check.json": "a1531a886e0e20a6a06f0c12cfec85b9aea8ef663d57ac735ba5ad1c8ccb75bb",
+    "results/qwen_selected_exp31.json": "0db5ce5bfcf14d66057c09bf4d0fc6a227521142539fb1defa10665ffd4cc0ed",
+    "results/bounded_adapter_qwen_transfer_weights.npz": "45a25759dd41c0c634d9b67ca438173b01ec2cf741b01125f6031a38a3ab7efe",
+    "results/bounded_adapter_qwen_frozen_captures.npz": "7259d4a612ccb78cc89897eab8a1997bb709a2cdcce3428d8d1db565f9ae0f34",
+    "results/qwen_bounded_head_range_certificate.json": "3e888e78a81c3b52c9a4521a77b4c28b03cb863d3fb5696a039afc7cada3afef",
+    "results/sci_exp31_finite_certificate.json": "8a7d19e0b0e48803cf784cea459372eb7d663f673573cfbfe0bbed542057e1ce"
+  },
+  "corpora": [
+    "ptb_test",
+    "wiki_test"
+  ],
+  "limits": "Two completeQwen896/151936 client-only finiteE31privatehead runs. FixedK201 shared18bitproposals viaFABLE18clientprivatep44alias; rolesreverse forserverprivateintegerArow; ownsharesforwardedtoactualQwenselectedhead; jointU31secretfirstsuccess. Samefrozenqmass2^62/E31ascompletedense. No onlineparenthelper/reconstruction; postexitreplayeveryalias,row,shareforwarding,Bx/t/z/PWL/E31/token. Allnativecomponentandtransportbytescounted. Budgetledger4nativepairs percompletecorpus/8total; 180seconds/native,600/topworkerpair,45minstagecap. Initialconformancecostonly, notbalancedtiming orfullprivatebackbone/security/CCFclaim. FABLEidealhashcapacity andconcretefailuregapexplicit; no attacks orparametersearch."
+}

@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-10-30T16:06:14.457535+00:00",
+  "input_sha256": {
+    "experiments/qwen_matched_exp31_benchmark.py": "d775b9b952c430b0411cab261ef5e516d876ca3371c1be83acd2a2c97a0a2d6a",
+    "experiments/qwen_benchmark_budget.py": "9d707d4b1f86c2274bcb21e274d1db876e60f261ac698ea9e2f0dd5aa645eca5",
+    "experiments/qwen_sampling_exp31_worker.py": "8a96e9552ec1f451d000908e4c4dc28dadd39277cccf3d507175493bbe52123f",
+    "experiments/run_qwen_sampling_exp31.py": "3cf10423422142b600c71149399c02d9cfd3522cd90d266952fa1a9a53924de9",
+    "experiments/qwen_dense_cdf31.cpp": "ee67851c0b6feb6628b2eafe904c4191dd013f1b41975d7d43bbaa323b099d96",
+    "experiments/qwen_selected_exp31.cpp": "e2dce25eb5216df906c75016cc8ea2fd832447a28baefd2daacf34409b92fe55",
+    "experiments/private_weighted_cdf95.h": "2e370ed45fd40755e1124d9cfc01d484909787c3ba0e11942a5afacc60796b03",
+    "experiments/qwen_alias_batch.cpp": "d5e7d7bd4855a52d661ab62dd3bc17838f4f823af49cc0a9a1bf2fff5a063275",
+    "experiments/run_private_weighted_cdf95_check.py": "f3539a462419d38bf2f8679105cd2b7bd38508b63bc52504f7e05c0f313239ba",
+    "experiments/finite_alias_table.py": "a4c1afcdb3f7759d7c20131a302c009e7107360a72f04bd666c5c89725ec2e3b",
+    "experiments/run_dense_adapter_linearot.py": "d34366a246670ba5775fefe0ed995e2c3506a575b2a77eaa07a7411a46d62718",
+    "experiments/run_dense_adapter_cdf31.py": "d209b7907d408ca5eb9e0f22eb9ab4909fd62e2b50d6a9abc3c31430f7b1828d",
+    "experiments/run_qwen_selected_exp31.py": "515f44842a56cfc393efd3d3464ba79dc172405e28e6aa402c02c4584bf206b9",
+    "toolchain/bounded-sampler/qwen_dense_cdf31": "995405538c8107ccb3976a3f8be54bf5519494effd885ff24b0e95440b00547a",
+    "toolchain/bounded-sampler/qwen_selected_exp31": "380d96a376c05ad97a313a38889a13f3d81578ecfdbc451a2fd1ebc47a074c4d",
+    "toolchain/bounded-sampler/qwen_alias_batch": "4581d89068618068a9b726c7c6125c2e7fabb603a69aa4651735adfe63ee2538",
+    "third_party/FABLE-qwen18/build/bin/private_row_harness": "ceaf0120c9213056b664ee84eefe51231c91ee65ec3287433fa99ae150c101b8",
+    "results/qwen_fullchain_conformance_audit.json": "f04c93ac9b866fc8f69400246210e3bc459a33752a35362fe9bb506b4f162ac6",
+    "results/qwen_sampling_exp31_runs/ptb_test/client_initial.npz": "3b7b0dfada413a4a9d968059a1a92f5dadea309318584a690e296921eca0c741",
+    "results/qwen_sampling_exp31_runs/ptb_test/server_initial.npz": "aac181739c21f3c6f8af42fb4460c367f24da3dcff75710d975a69f9d330d074",
+    "results/sci_exp31_finite_certificate.json": "8a7d19e0b0e48803cf784cea459372eb7d663f673573cfbfe0bbed542057e1ce"
+  },
+  "orders": [
+    [
+      "dense",
+      "rejection"
+    ],
+    [
+      "rejection",
+      "dense"
+    ],
+    [
+      "dense",
+      "rejection"
+    ],
+    [
+      "rejection",
+      "dense"
+    ]
+  ],
+  "limits": "Four alternating pairedruns ofcompleteQwen896/151936 denseCDF95 andFABLE18selectedrejection, identicalfrozenPTB x/q/A/B, samep44aliasmass2^62 andverifiedE31vector. Bothclientonlytoken, rejectionpossiblefailure262144<2.042e-13; denseCDF TV<=151936/2^64<8.237e-15 relativefiniteqE31. SeparateE31modelTV1.721e-8/F16PWLmodelerror. Freshkeys/OScoins everyrun; allsetup/LUT/OT/masks/channels/nativeoutputbytes counted, noTCPheaders. Parentonlypollsprocessesuntilbothend, thenauditsallintermediates/forwarding/token. Primarylatencywholepairwall withsame100mspoll, includesprocesslaunch/load/workerprep. Participanttimersdiffer(loaderexcludedfordensenative,includedforrejectionworker), diagnostic only. Publicbackbone and encodedinitialfixturepreparationexcluded; rejectionstillpaysalias/tableprep locally, densemassesprovidedprecompiled. FABLE4threads, standardSCI<=2threadOT, samehost noaffinity/WAN. Initialfixturesreused, notnewquality orfullprivatebackbone. Pinnedimplementations, notgloballyoptimaldense/SOTA; noindependentprimitive/jointsecurity/CCFclaim. Separatebenchmarkbudget20nativepairs/30min; nootherresearchjobsconcurrent duringmeasurement."
+}

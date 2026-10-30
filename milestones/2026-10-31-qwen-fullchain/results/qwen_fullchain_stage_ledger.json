@@ -1,0 +1,73 @@
+{
+  "native_pairs_reserved": 18,
+  "events": [
+    {
+      "label": "CDF95:peak0_u0",
+      "pairs": 1,
+      "reserved_utc": "2026-10-30T15:59:06.122183+00:00"
+    },
+    {
+      "label": "CDF95:peaklast_umax",
+      "pairs": 1,
+      "reserved_utc": "2026-10-30T15:59:06.985428+00:00"
+    },
+    {
+      "label": "CDF95:uniform_half",
+      "pairs": 1,
+      "reserved_utc": "2026-10-30T15:59:17.745065+00:00"
+    },
+    {
+      "label": "CDF95:zero_support_interior",
+      "pairs": 1,
+      "reserved_utc": "2026-10-30T15:59:18.497747+00:00"
+    },
+    {
+      "label": "CDF95:one_mass_at_zero",
+      "pairs": 1,
+      "reserved_utc": "2026-10-30T15:59:19.250262+00:00"
+    },
+    {
+      "label": "CDF95:random_q_exp",
+      "pairs": 1,
+      "reserved_utc": "2026-10-30T15:59:20.002972+00:00"
+    },
+    {
+      "label": "complete_dense:ptb_test",
+      "pairs": 1,
+      "reserved_utc": "2026-10-30T16:00:43.213420+00:00"
+    },
+    {
+      "label": "complete_dense:wiki_test",
+      "pairs": 1,
+      "reserved_utc": "2026-10-30T16:01:07.979502+00:00"
+    },
+    {
+      "label": "FABLE18:fullrange_high_indices",
+      "pairs": 1,
+      "reserved_utc": "2026-10-30T16:01:33.017387+00:00"
+    },
+    {
+      "label": "FABLE18:duplicates_and_padding",
+      "pairs": 1,
+      "reserved_utc": "2026-10-30T16:01:39.291449+00:00"
+    },
+    {
+      "label": "complete_rejection:ptb_test",
+      "pairs": 4,
+      "reserved_utc": "2026-10-30T16:03:11.590394+00:00"
+    },
+    {
+      "label": "complete_rejection:wiki_test",
+      "pairs": 4,
+      "reserved_utc": "2026-10-30T16:03:24.368682+00:00"
+    }
+  ],
+  "stage_closed": true,
+  "actual_native_pairs": 18,
+  "completion_wall_upper_seconds": 396.0264859199524,
+  "_publication": {
+    "derived_summary": true,
+    "original_local_result_sha256": "adca6e97af181958f582e108bc3051d0fc658d3e9ea7d1f4e30578aa43c7c4b9",
+    "omitted": "Per-file private audit hashes/logs. Raw shares, coins, fixtures, tables and token outputs remain on NEWSMY."
+  }
+}

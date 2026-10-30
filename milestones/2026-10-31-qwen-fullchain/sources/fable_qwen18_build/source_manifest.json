@@ -1,0 +1,35 @@
+{
+  "base": "FABLE-smallbatch pinned patched source; separate variant, shared read-only EzPC dependency",
+  "source_paths": [
+    "CMakeLists.txt",
+    "extern/BatchPIR/src/batchpirparams.cpp",
+    "extern/BatchPIR/header/database_constants.h"
+  ],
+  "public_parameters": {
+    "LUT_INPUT_SIZE": 18,
+    "LUT_MAX_LOG_SIZE": 18,
+    "LUT_OUTPUT_SIZE": 256,
+    "buckets": 2048,
+    "load_capacity": 600,
+    "threads": 4,
+    "FHE_parameter_change": "uses existing upstreamcase18, same20bitplain/45,45,50coeff/noiseflood69 ascase16"
+  },
+  "ideal_hash_capacity": {
+    "max_table_entries": 262399,
+    "buckets": 2048,
+    "replicas": 3,
+    "ideal_mean_load": "384.37353515625",
+    "overflow_threshold": 595,
+    "load_capacity": 594,
+    "log_union_bound_upper": "-41.73213006088339817128190428955497793890319863028566430897938122259866811109787",
+    "log_budget_margin_upper": "-0.143299227286679606247977002064383854373190568670349061738580652995050792916186",
+    "failure_budget": "2^-60",
+    "assumption": "Ideal independent uniform hash placements; no standalone concrete std::hash/OPRF/cuckoo insertion failure theorem."
+  },
+  "actual_concrete_std_hash_cuckoo_failure_bound": "not proved",
+  "source_sha256": {
+    "CMakeLists.txt": "541fd0836fa8148ad069e6d96bf02091ee5d35951aca2940311ba2ca7d720dc0",
+    "extern/BatchPIR/src/batchpirparams.cpp": "dd96db9148aea3521e80028a6e55f449536c6bde6d1ae065cd8a369b00af3ff2",
+    "extern/BatchPIR/header/database_constants.h": "d12cb32bc607f05c89998c4a58bdf990678366909e004b9e8134a2818eb578b9"
+  }
+}

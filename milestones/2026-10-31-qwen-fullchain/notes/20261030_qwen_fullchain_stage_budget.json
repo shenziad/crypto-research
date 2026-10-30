@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-10-30T15:57:00.651252+00:00",
+  "maximum_wall_seconds": 2700,
+  "maximum_native_two_party_pairs": 20,
+  "planned_pairs": {
+    "CDF95_controls": 6,
+    "complete_dense_conformance": 2,
+    "FABLE18_private_rows": 2,
+    "complete_rejection_conformance_native_subpairs": 8
+  },
+  "planned_total": 18,
+  "reserve": 2,
+  "counting": "Every actual native pair counts, including4 per complete rejection:aliasLUT,aliasfinish,rowLUT,selectedhead. Failed launched pairs count. No balanced performance reruns in this conformance stage.",
+  "purpose": "Connect actualQwen896/151936 client-only finiteE31 sampler paths; compare only functional diagnostic costs until separate balanced benchmark. Same frozen weights/F16/F20/p44/no tuning.",
+  "caps": "Preserve original50percentmiss and positive followup; do not retire solelyonGate. Budgetexhaustion meansincomplete stage, notcorefalsification. AllassetsNEWSMY."
+}

@@ -1,0 +1,33 @@
+{
+  "base": "Applypinnedfable_backend_build andfable_smallbatch_build then thispatch toseparate copy;sharedEzPCsource read-onlyuse/newbuilddir. Notfreshinstaller.",
+  "commands": [
+    [
+      "envs/fable-build/bin/cmake",
+      "-S",
+      "third_party/FABLE-qwen18",
+      "-B",
+      "third_party/FABLE-qwen18/build",
+      "-DCMAKE_CXX_COMPILER=/usr/bin/g++",
+      "-DCMAKE_C_COMPILER=/usr/bin/gcc",
+      "-DFMT_DIR=/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/envs/fable-build/lib/cmake/fmt",
+      "-DlibOTe_DIR=/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/toolchain/fable-prefix/lib/cmake/libOTe",
+      "-DLUT_INPUT_SIZE=18",
+      "-DLUT_MAX_LOG_SIZE=18",
+      "-DLUT_OUTPUT_SIZE=256"
+    ],
+    [
+      "envs/fable-build/bin/cmake",
+      "--build",
+      "third_party/FABLE-qwen18/build",
+      "--target",
+      "private_row_harness",
+      "--parallel",
+      "4"
+    ]
+  ],
+  "patch_sha256": "b6c8505d351717d70e6d9a61f60c20dd81d41d11eeb571d88250b3f4c2b0e4c8",
+  "native_binary_sha256": "ceaf0120c9213056b664ee84eefe51231c91ee65ec3287433fa99ae150c101b8",
+  "own_harness_sha256": "eb3087d3b5bffbe266069d2944054f79622ad0d32789c4a5aa6e43f8d8fa1e7b",
+  "shared_EzPC": "third_party/FABLE-smallbatch/extern/EzPC",
+  "limits": "Originalfrozenbinariespreserved; publicbucket/widthconfiguration changed butupstream18bitHE/noisefloodparameters reused. No concretehash/cuckoo/jointimplementationsecurityproof."
+}

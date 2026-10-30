@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-10-30T16:01:32.798286+00:00",
+  "input_sha256": {
+    "experiments/run_fable_qwen18_check.py": "5b3a773bfd7b33f5867b0dc01f966c7118f6fe34451f745d02163dbbd32b76ab",
+    "experiments/fable_private_row_qwen18.cpp": "eb3087d3b5bffbe266069d2944054f79622ad0d32789c4a5aa6e43f8d8fa1e7b",
+    "experiments/qwen_stage_budget.py": "d021479184e9b26d8b8de4762f4d9c2aafe8bef3cf2508e99cf2d0361a6ebba7",
+    "experiments/run_fable_smallbatch_check.py": "e7ca72c566bd61a3564e3c28ff82d20b1ccb1fc77d45a3cb9c986ab519ebc0b2",
+    "third_party/FABLE-qwen18/CMakeLists.txt": "541fd0836fa8148ad069e6d96bf02091ee5d35951aca2940311ba2ca7d720dc0",
+    "third_party/FABLE-qwen18/extern/BatchPIR/header/database_constants.h": "d12cb32bc607f05c89998c4a58bdf990678366909e004b9e8134a2818eb578b9",
+    "third_party/FABLE-qwen18/extern/BatchPIR/header/utils.h": "da499d63bf5352195cb13617fdf8b17f49efe3a250cca98d584ac6b92ca73743",
+    "third_party/FABLE-qwen18/extern/BatchPIR/src/batchpirparams.cpp": "dd96db9148aea3521e80028a6e55f449536c6bde6d1ae065cd8a369b00af3ff2",
+    "third_party/FABLE-qwen18/extern/BatchPIR/src/batchpirclient.cpp": "4de1f5307fc769cfcd45d48ebd808e88cb908aaaf8bfa9339cf3e65838dbd180",
+    "third_party/FABLE-qwen18/extern/BatchPIR/src/batchpirserver.cpp": "155d63f1fdb22acb2aaba08e263706959d4e6fd36847435a91dc3fc0d49e7b9e",
+    "third_party/FABLE-qwen18/src/GC/lookup.cpp": "d81d4de14b60b5391ceb7a163b5a64427c01781793f02a98e06f87fe639aa9ba",
+    "third_party/FABLE-qwen18/build/bin/private_row_harness": "ceaf0120c9213056b664ee84eefe51231c91ee65ec3287433fa99ae150c101b8",
+    "sources/fable_qwen18_build/source_manifest.json": "1473d41ee5d9baf5b28ce0d1c4d3c2e1f52ca261f886560af17ee6738ff7070b"
+  },
+  "public_config": {
+    "input_bits": 18,
+    "rows": 262144,
+    "output_bits": 256,
+    "batch": 256,
+    "buckets": 2048,
+    "capacity": 600,
+    "threads": 4,
+    "OPRF": "AES128"
+  },
+  "limits": "Two actualprivateXORindex->private256bitrow sharing controls, no intermediary reveal/onlinehelper. Fulltable2^18 rows, highindices,duplicates,padding. CopiedpinnedFABLE-smallbatch algorithms; upstream18bitHEcase same20bitplain/45,45,50coeff/noiseflood69, no securityparameterweakening. Fixedpublic2048buckets/cap600; idealindependenthashoverflow upper<2^-60 fromseparatecertificate, notconcrete std::hash/cuckoo securityproof. Everyunselectedsubslot zero check inheritedfrompinnedclient. Diagnosticcostonly, mayrunconcurrentlywithdensefunctionalchecks; notbalancedperformanceorCCFclaim. Budgetledgercounts2nativepairs."
+}

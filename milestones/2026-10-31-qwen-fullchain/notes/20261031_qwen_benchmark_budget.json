@@ -1,0 +1,7 @@
+{
+  "created_utc": "2026-10-30T16:06:14.430395+00:00",
+  "maximum_wall_seconds": 1800,
+  "maximum_native_two_party_pairs": 20,
+  "planned": "Four alternating paired comparisons:4dense nativepairs +4rejection logicalruns each4nativepairs =20. No control/retry executions. Functionalstage18pairs alreadyclosed separately.",
+  "purpose": "Balanced complete-path performance verification afterconformance; no parameter/model/precision changes."
+}
