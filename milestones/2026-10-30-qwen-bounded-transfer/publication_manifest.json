@@ -1,0 +1,25 @@
+{
+  "files": {
+    "README.md": {
+      "sha256": "9f8409fd74da94b610b1682167fafa9b4e635517f8b2f9310c14cd7fe1993ee7",
+      "bytes": 1021
+    },
+    "experiments/bounded_output_adapter_qwen_transfer.py": {
+      "sha256": "040190cd93c05f5a59fa61ffe6c6266e9579dd731ac326837ea3fa3559956320",
+      "bytes": 9031
+    },
+    "notes/20261030_bounded_adapter_qwen_transfer_outcome.md": {
+      "sha256": "39897feb1a57100c920350187e042665535218847bdde555abff07a62b4e5106",
+      "bytes": 3376
+    },
+    "notes/20261030_bounded_adapter_qwen_transfer_preregistration.json": {
+      "sha256": "0b2c6b3d6eaf107eafe249a7574695d093636d0603c2fc2fe826e8e03c91fe4d",
+      "bytes": 4783
+    },
+    "results/bounded_adapter_qwen_transfer.json": {
+      "sha256": "cf94b77f99901c1d8c4655adfed200f25f9a5f49596345615471935499929a57",
+      "bytes": 18611
+    }
+  },
+  "scope": "Fixed transfer closure; raw own weights/logs local only"
+}
