@@ -1,0 +1,9 @@
+{
+  "source_sha256": {
+    "third_party/FABLE/extern/EzPC/SCI/src/LinearOT/linear-ot.h": "b3da4aa9fa4e30228611add70eb5c87d4f11bb4657a3ba5a0c853639ef03e149",
+    "third_party/FABLE/extern/EzPC/SCI/src/LinearOT/linear-ot.cpp": "4364a6d291b9f7f305cb915cb6816217056a394eef28ef609aa3b4f997bc9e93",
+    "third_party/FABLE/extern/EzPC/SCI/src/BuildingBlocks/truncation.cpp": "886a0ea9d07199f80b3d881f41295f408378967580f0d76299f4a57550bc7b82",
+    "third_party/FABLE/extern/EzPC/SCI/tests/test_ring_matmul.cpp": "e6fcdd4580c440abda65052fd4e05c52bcfbd5d8ffc81018b9d37d10579cd815"
+  },
+  "status": "sourcecontractaudited; noactualdenseheadbaselineyet"
+}

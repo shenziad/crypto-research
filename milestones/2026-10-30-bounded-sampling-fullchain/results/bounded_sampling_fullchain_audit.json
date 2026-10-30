@@ -1,0 +1,27 @@
+{
+  "all_passed": true,
+  "complete_chain_pairs": 12,
+  "secret_proposals_verified": 2412,
+  "integer_A_rows_verified": 3072,
+  "alias_rows_verified": 1536,
+  "unselected_plaintext_slots_checked_zero": 6220800,
+  "max_observed_bucket_load": 456,
+  "pinned_input_hash_checks": 53,
+  "transcript_file_hash_checks": 390,
+  "inputs": [
+    {
+      "path": "results/bounded_sampling_pipeline.json",
+      "sha256": "38c5f7b607edb2f7dea371619ed20542c3e5fb0a29730f8b366ebe3d4728856d"
+    },
+    {
+      "path": "results/bounded_sampling_batched.json",
+      "sha256": "5f87b8b8ecfba0792cb9debb4c5a48ee424e57b6486cdcfd847b992b53fb67b4"
+    },
+    {
+      "path": "results/bounded_sampling_fullchain_benchmark.json",
+      "sha256": "613e2c6e8f6932194d59d55bef765c026fabfcf500e088102d5481ed28562e6a"
+    }
+  ],
+  "source_sha256": "0ad4093f4f195f1bf888bea8e0c89d1dcdf8a493fe5cfe5a321e2c51864a287d",
+  "limits": "Replays stored full-chain functional audits and checks allnativezero assertions and rawfile hashes. Does not prove implementation security, concretehash/cuckoofailure, freshquality, optimizeddensebaseline superiority or independentnovelty."
+}

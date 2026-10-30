@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-10-30T10:32:57.650639+00:00",
+  "input_sha256": {
+    "experiments/bounded_sampling_fullchain_benchmark.py": "4fe0648394bdb3b54ad51fa32a482fbd7fed827980fe05efb6a28e7fdd57e90a",
+    "experiments/run_bounded_sampling_pipeline.py": "f1b45865e64f280623bfaf54fcadace1a59d4d4b55d0296566ec32ea25c871fc",
+    "experiments/run_bounded_sampling_batched.py": "a2bbf9d753f531bab262001e86444cb05e2d485fcf74f1ff2ba5a6e9f4f9f373",
+    "experiments/bounded_sampling_pipeline_worker.py": "bb5f3f82325b6be2b851d2370effc1790a892d07a7bc7bb8c32c28e6b244ba3c",
+    "experiments/bounded_sampling_batched_worker.py": "3556158f148ad4dbe89ba37029db973b186cfe540b1ed60567d54028070225d8",
+    "experiments/bounded_alias_batch.cpp": "70487d3c4b59a5b4aefcb4a9e91b54c146f49ac4245f928b54eb5cefa4bcf609",
+    "experiments/bounded_adapter_gc.cpp": "3c6b8d47b889540ebc610c04c55a4ed69f79f992af366a6017c49a4491e6b7c1",
+    "experiments/finite_alias_table.py": "a4c1afcdb3f7759d7c20131a302c009e7107360a72f04bd666c5c89725ec2e3b",
+    "experiments/ristretto_ot.py": "deb38828d65c0660052b3df8be17e8c2335df010366e4ebee845ef932a404ba2",
+    "experiments/alias_small_yao.py": "73c08ca40c7d16c81424c874227dcf9ed3cc28c95543c1fad90928e35abfb667",
+    "experiments/bounded_adapter_fixed16.py": "af21fbed747d7fa15cb1fdda8a479e1d1290b5879147bfbff1955557b3d55a26",
+    "experiments/finite_descending_bernoulli.py": "f088b4a51bda87d520cdd210f31ffb574ffb3f1566d07b479eb2e03e9e2cefb3",
+    "experiments/run_fable_smallbatch_check.py": "e7ca72c566bd61a3564e3c28ff82d20b1ccb1fc77d45a3cb9c986ab519ebc0b2",
+    "toolchain/bounded-sampler/bounded_alias_batch": "7231a6ddc7ff3d28785389c6a622beaf3a3fb89c98b2bacccad553bf273b6a98",
+    "toolchain/bounded-sampler/bounded_adapter_gc": "cef52d580b6fba533ad187496597c2d302e6383fdac837a39e7d2198ba2c2936",
+    "third_party/FABLE-smallbatch/build/bin/private_row_harness": "5ea8915c0148294d3069a7f25f5d18c16b61e02c5328f108b1284c30d9aee68f",
+    "results/bounded_sampling_pipeline_runs/ptb/client_initial.npz": "e2fb63c911dcbdf5e4a4513f6376dc48d50554e06843d69a5d8e201444248371",
+    "results/bounded_sampling_pipeline_runs/ptb/server_initial.npz": "dec5237a792752d67a76641dfe8e45ded267371ac577e2eba86892a65e417e2c"
+  },
+  "orders": [
+    [
+      "sequential",
+      "batched"
+    ],
+    [
+      "batched",
+      "sequential"
+    ],
+    [
+      "sequential",
+      "batched"
+    ],
+    [
+      "batched",
+      "sequential"
+    ]
+  ],
+  "limits": "Four alternating paired runs of both complete privatehead chains on the same frozen PTB x/q and integerA/B inputs. Fresh party-local OScoins and crypto on every run. Every run after-exit exact index/row/shareforwarding/bigint/finaltoken audit; no parent intermediate helper. Count all three stages communication inclsetup/key/table/masks/GC/output; report wholeprocesswall and maxworker elapsed separately;100ms parentpoll precision. LocalCPU, publicbackbone/capture/inputpreparation excluded. Existing PythonOT/Yao versus existing FABLE+SCI batchedalias backend; different implementation languages/crypto assumptions, same restricted idealfinitefunction. This is not an algorithmicSOTA/fullprivatemodel speedup or independentcryptographic contribution, and is not a comparison against strong optimizeddensehead/sampling baseline."
+}

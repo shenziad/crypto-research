@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-10-30T10:23:33.036248+00:00",
+  "input_sha256": {
+    "experiments/bounded_sampling_pipeline_worker.py": "bb5f3f82325b6be2b851d2370effc1790a892d07a7bc7bb8c32c28e6b244ba3c",
+    "experiments/run_bounded_sampling_pipeline.py": "f1b45865e64f280623bfaf54fcadace1a59d4d4b55d0296566ec32ea25c871fc",
+    "experiments/ristretto_ot.py": "deb38828d65c0660052b3df8be17e8c2335df010366e4ebee845ef932a404ba2",
+    "experiments/alias_small_yao.py": "73c08ca40c7d16c81424c874227dcf9ed3cc28c95543c1fad90928e35abfb667",
+    "experiments/finite_alias_table.py": "a4c1afcdb3f7759d7c20131a302c009e7107360a72f04bd666c5c89725ec2e3b",
+    "experiments/bounded_adapter_fixed16.py": "af21fbed747d7fa15cb1fdda8a479e1d1290b5879147bfbff1955557b3d55a26",
+    "experiments/finite_descending_bernoulli.py": "f088b4a51bda87d520cdd210f31ffb574ffb3f1566d07b479eb2e03e9e2cefb3",
+    "experiments/run_fable_smallbatch_check.py": "e7ca72c566bd61a3564e3c28ff82d20b1ccb1fc77d45a3cb9c986ab519ebc0b2",
+    "experiments/bounded_adapter_gc.cpp": "3c6b8d47b889540ebc610c04c55a4ed69f79f992af366a6017c49a4491e6b7c1",
+    "toolchain/bounded-sampler/bounded_adapter_gc": "cef52d580b6fba533ad187496597c2d302e6383fdac837a39e7d2198ba2c2936",
+    "third_party/FABLE-smallbatch/build/bin/private_row_harness": "5ea8915c0148294d3069a7f25f5d18c16b61e02c5328f108b1284c30d9aee68f",
+    "results/bounded_output_adapter_weights.npz": "e89c3c6ee3163676249973519bd5499b5513d1f561a2a108c89b03ddfde984eb",
+    "results/bounded_adapter_gc_inputs.npz": "bc7f39ffd8c0ae6dc410038a97dc323aa07fbc28c5e8e48117e9f0bba0b8f729",
+    "results/bounded_adapter_fixed16_certificate.json": "baf7409d64a7e52edd51072c082fcb92b9ea3e60c80a1261c15ac08057332ebe",
+    "results/finite_descending_bernoulli_check.json": "8739c90b71cc0b67eb8f1cc718d29b2f0f2ba732ca7c6cd8930ad982dc4d71b4",
+    "notes/20261030_fable_smallbatch_preregistration.json": "4a433211ab534c97ad28fea13609f01902f3bd6bb99c4203645568bb22782378",
+    "notes/20261030_bounded_adapter_gc_preregistration_v2.json": "8febd74dd4cd81c7c750b75fac5c9b535b7c91d70544149805b4cf7b658438de"
+  },
+  "corpora": [
+    "ptb",
+    "wiki"
+  ],
+  "fixed_profile": {
+    "vocabulary": 50304,
+    "padded_vocabulary": 65536,
+    "precision": 44,
+    "proposals": 201,
+    "row_batch": 256,
+    "rank": 8,
+    "output_fraction": 20,
+    "factory_draws": 19
+  },
+  "limits": "Complete private-head chain from two reused public-backbone x/q captures. Two logical parties generate independent OS coins, run actual oblivious alias201times, FABLE512 shared-index integerA row256queries with55publicdummies, then existing privateGC Bx/Arow/floor/tanh/accept/firstsuccess. Only client gets finaltoken/failure; server output empty. Parent only polls process handles until both workers/nativechildren terminate, then performs exact private-coin/index/row/shareforwarding/bigint/finaloutput checks. Initial input preparation/modelcapture excluded; wholepair wall includes process startup and allworker prep/transfers; stagewire counts include setup/key/table/mask/GC/output and application frames, notTCPheaders. One conformance run percorpus, notbalancedtiming or distributionfrequencyexperiment. Logicalparty separation on same user account, not OS isolation. Exact samplingerror bound conditionalfiniteq/delta excludesalias q diagnostic/scoreapprox/hash-cuckoofailure/computationalsecurity. No full-private-backbone, malicious/adaptive/UC proof, optimizedbaseline superiority, independentnovelty or CCFclaim."
+}

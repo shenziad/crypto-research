@@ -1,0 +1,39 @@
+{
+  "created_utc": "2026-10-30T10:30:45.608701+00:00",
+  "input_sha256": {
+    "experiments/bounded_sampling_batched_worker.py": "3556158f148ad4dbe89ba37029db973b186cfe540b1ed60567d54028070225d8",
+    "experiments/run_bounded_sampling_batched.py": "a2bbf9d753f531bab262001e86444cb05e2d485fcf74f1ff2ba5a6e9f4f9f373",
+    "experiments/bounded_alias_batch.cpp": "70487d3c4b59a5b4aefcb4a9e91b54c146f49ac4245f928b54eb5cefa4bcf609",
+    "experiments/build_bounded_alias_batch.py": "1734ea3cebde1c124283acf5e37158a335a9679269deeb7ceed5ab6c1d6e1eca",
+    "experiments/bounded_sampling_pipeline_worker.py": "bb5f3f82325b6be2b851d2370effc1790a892d07a7bc7bb8c32c28e6b244ba3c",
+    "experiments/finite_alias_table.py": "a4c1afcdb3f7759d7c20131a302c009e7107360a72f04bd666c5c89725ec2e3b",
+    "experiments/bounded_adapter_fixed16.py": "af21fbed747d7fa15cb1fdda8a479e1d1290b5879147bfbff1955557b3d55a26",
+    "experiments/finite_descending_bernoulli.py": "f088b4a51bda87d520cdd210f31ffb574ffb3f1566d07b479eb2e03e9e2cefb3",
+    "experiments/run_fable_smallbatch_check.py": "e7ca72c566bd61a3564e3c28ff82d20b1ccb1fc77d45a3cb9c986ab519ebc0b2",
+    "experiments/bounded_adapter_gc.cpp": "3c6b8d47b889540ebc610c04c55a4ed69f79f992af366a6017c49a4491e6b7c1",
+    "toolchain/bounded-sampler/bounded_adapter_gc": "cef52d580b6fba533ad187496597c2d302e6383fdac837a39e7d2198ba2c2936",
+    "toolchain/bounded-sampler/bounded_alias_batch": "7231a6ddc7ff3d28785389c6a622beaf3a3fb89c98b2bacccad553bf273b6a98",
+    "toolchain/bounded-sampler/alias_batch_build_manifest.json": "b8621af14522e0a5acb2b46a28f8991e1516b2c6c04987f5476efc8867cb4985",
+    "third_party/FABLE-smallbatch/build/bin/private_row_harness": "5ea8915c0148294d3069a7f25f5d18c16b61e02c5328f108b1284c30d9aee68f",
+    "results/bounded_output_adapter_weights.npz": "e89c3c6ee3163676249973519bd5499b5513d1f561a2a108c89b03ddfde984eb",
+    "results/bounded_adapter_gc_inputs.npz": "bc7f39ffd8c0ae6dc410038a97dc323aa07fbc28c5e8e48117e9f0bba0b8f729",
+    "results/bounded_adapter_fixed16_certificate.json": "baf7409d64a7e52edd51072c082fcb92b9ea3e60c80a1261c15ac08057332ebe",
+    "results/finite_descending_bernoulli_check.json": "8739c90b71cc0b67eb8f1cc718d29b2f0f2ba732ca7c6cd8930ad982dc4d71b4"
+  },
+  "corpora": [
+    "ptb",
+    "wiki"
+  ],
+  "fixed_profile": {
+    "vocabulary": 50304,
+    "padded_vocabulary": 65536,
+    "precision": 44,
+    "proposals": 201,
+    "row_batch": 256,
+    "rank": 8,
+    "output_fraction": 20,
+    "factory_draws": 19,
+    "alias_backend": "existingFABLE512wide256"
+  },
+  "limits": "Same finite privatehead functionality as initial fullchain; replace201sequentialOTalias calls with one existing FABLE512 wide256 alias-table lookup and fixed aliasfinish GC. Joint independent privateuniform column/U shares, client-owned threshold/alternate table, server-owned integerA table, own-share-only transfer; onlyfinaltoken/failure toclient. Parent polls untilbothpartiesexit thenaudits allprivatecoins/256aliasrows/256Arows/forwarding/bigint/finaltoken. Reuse unchanged wide256 LUT even though aliasneeds61bits; no noise/securityparameter reduction andno newprimitiveclaim. One functionalpair percorpus, not balancedtiming or SOTAcomparison. Wholepair wall includes localprocess/prep/transfers, excludes publicbackbone/inputfixturepreparation. Allprotocolbytes counted inclsetup/keys/tables/masks/outputs, noTCPheaders. Conditional finiteq/delta samplingerrorbound excludesmodelapprox/hash-cuckoofailure/implementationsecurity. No full-privatebackbone, active/adaptive/UC orCCFclaim."
+}

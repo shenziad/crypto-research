@@ -1,10 +1,11 @@
 {
   "format_version": 2,
-  "updated_utc": "2026-10-30T07:05:30.790164+00:00",
+  "updated_utc": "2026-10-30T10:46:52.668270+00:00",
   "milestones": [
     "2026-10-29-exact-coarse",
     "2026-10-30-private-sampling-screen",
-    "2026-10-30-bounded-sampling-components"
+    "2026-10-30-bounded-sampling-components",
+    "2026-10-30-bounded-sampling-fullchain"
   ],
   "files": [
     {
@@ -19,8 +20,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2380,
-      "sha256": "25df3d1f7ae772726e8e9e19964d90d8b49cb2cfa6d1521ab655f3716fd942c1"
+      "bytes": 2608,
+      "sha256": "1bb0ba171a972e5963d9c7efbeee5a7d2e640d9287c9a0edb1000a3a29b2ed0d"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/REPRODUCIBILITY.md",
@@ -1016,6 +1017,171 @@
       "path": "milestones/2026-10-30-bounded-sampling-components/sources/fable_smallbatch_build/smallbatch_over_patched_baseline.patch",
       "bytes": 7582,
       "sha256": "5747b309bc375225c12a9f2cc4e2a4d37a9bb21b985027697ceed099970e99e1"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/README.md",
+      "bytes": 3208,
+      "sha256": "18cfb57e86297eed03ff743c94b95ad70f8816c1e530f6bad1f94701b4b2f261"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/RESEARCH_SCOPE.md",
+      "bytes": 2031,
+      "sha256": "4eea9c0edb73798d70db2e4a4397f2d69d629ce60fd631dab8e500b7b3a03eb2"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/artifact_manifest.json",
+      "bytes": 5866,
+      "sha256": "bf1ad423ec2190c365a474253e9f43e691d514e98434160c959d93ebfb60fe93"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/experiments/alias_small_yao.py",
+      "bytes": 5125,
+      "sha256": "73c08ca40c7d16c81424c874227dcf9ed3cc28c95543c1fad90928e35abfb667"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/experiments/bounded_adapter_fixed16.py",
+      "bytes": 2126,
+      "sha256": "af21fbed747d7fa15cb1fdda8a479e1d1290b5879147bfbff1955557b3d55a26"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/experiments/bounded_adapter_gc.cpp",
+      "bytes": 8942,
+      "sha256": "3c6b8d47b889540ebc610c04c55a4ed69f79f992af366a6017c49a4491e6b7c1"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/experiments/bounded_alias_batch.cpp",
+      "bytes": 3989,
+      "sha256": "70487d3c4b59a5b4aefcb4a9e91b54c146f49ac4245f928b54eb5cefa4bcf609"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/experiments/bounded_sampling_batched_worker.py",
+      "bytes": 6278,
+      "sha256": "3556158f148ad4dbe89ba37029db973b186cfe540b1ed60567d54028070225d8"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/experiments/bounded_sampling_fullchain_audit.py",
+      "bytes": 3884,
+      "sha256": "0ad4093f4f195f1bf888bea8e0c89d1dcdf8a493fe5cfe5a321e2c51864a287d"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/experiments/bounded_sampling_fullchain_benchmark.py",
+      "bytes": 4160,
+      "sha256": "4fe0648394bdb3b54ad51fa32a482fbd7fed827980fe05efb6a28e7fdd57e90a"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/experiments/bounded_sampling_pipeline_worker.py",
+      "bytes": 5951,
+      "sha256": "bb5f3f82325b6be2b851d2370effc1790a892d07a7bc7bb8c32c28e6b244ba3c"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/experiments/build_bounded_alias_batch.py",
+      "bytes": 1250,
+      "sha256": "1734ea3cebde1c124283acf5e37158a335a9679269deeb7ceed5ab6c1d6e1eca"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/experiments/fable_private_row_harness.cpp",
+      "bytes": 6171,
+      "sha256": "ed3e3fdc49feb58e74db18e554648057bcb7a821115b718f41c27de36598c590"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/experiments/finite_alias_table.py",
+      "bytes": 1965,
+      "sha256": "a4c1afcdb3f7759d7c20131a302c009e7107360a72f04bd666c5c89725ec2e3b"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/experiments/finite_descending_bernoulli.py",
+      "bytes": 1484,
+      "sha256": "f088b4a51bda87d520cdd210f31ffb574ffb3f1566d07b479eb2e03e9e2cefb3"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/experiments/ristretto_ot.py",
+      "bytes": 6729,
+      "sha256": "deb38828d65c0660052b3df8be17e8c2335df010366e4ebee845ef932a404ba2"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/experiments/run_bounded_sampling_batched.py",
+      "bytes": 9010,
+      "sha256": "a2bbf9d753f531bab262001e86444cb05e2d485fcf74f1ff2ba5a6e9f4f9f373"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/experiments/run_bounded_sampling_pipeline.py",
+      "bytes": 7645,
+      "sha256": "f1b45865e64f280623bfaf54fcadace1a59d4d4b55d0296566ec32ea25c871fc"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/experiments/run_fable_smallbatch_check.py",
+      "bytes": 6574,
+      "sha256": "e7ca72c566bd61a3564e3c28ff82d20b1ccb1fc77d45a3cb9c986ab519ebc0b2"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/notes/20261030_bounded_sampling_batched_preregistration.json",
+      "bytes": 3537,
+      "sha256": "06c5e7714e8076a33b34cea838d0cd6281f88412f5eb297acb4336e36486f784"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/notes/20261030_bounded_sampling_fullchain_benchmark_preregistration.json",
+      "bytes": 3288,
+      "sha256": "7bcebcfe14aeff4692e3f6b4caaebe5fa2dacb3e6fd176c665f54f2f424553d5"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/notes/20261030_bounded_sampling_fullchain_outcome.md",
+      "bytes": 5520,
+      "sha256": "84379454fee6681520782f9bfa56320a5a6607aa34458a94c610fe4a4ffdd7e1"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/notes/20261030_bounded_sampling_hybrid_proof.md",
+      "bytes": 7486,
+      "sha256": "5d842fa2dac5187b48dc09797c5b8dd61029a7021992749a0ca6e0f2a40dbd48"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/notes/20261030_bounded_sampling_pipeline_preregistration.json",
+      "bytes": 3490,
+      "sha256": "8e8e5505f7ebf521515719b30a7fdc62de43c084172ef67a6093094661810c37"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/notes/20261030_dense_head_baseline_contract.md",
+      "bytes": 2492,
+      "sha256": "1939078e239aa61bf764261fb81370d99ec358a3db6fb460d5cf25fe43f04f0d"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/results/bounded_sampling_batched.json",
+      "bytes": 29900,
+      "sha256": "5f87b8b8ecfba0792cb9debb4c5a48ee424e57b6486cdcfd847b992b53fb67b4"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/results/bounded_sampling_fullchain_audit.json",
+      "bytes": 1145,
+      "sha256": "0e449b94d36a0c3383b0fb246b3f0f9316276eca12dd93bb1e4b6736a0d69652"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/results/bounded_sampling_fullchain_benchmark.json",
+      "bytes": 95728,
+      "sha256": "613e2c6e8f6932194d59d55bef765c026fabfcf500e088102d5481ed28562e6a"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/results/bounded_sampling_pipeline.json",
+      "bytes": 20155,
+      "sha256": "38c5f7b607edb2f7dea371619ed20542c3e5fb0a29730f8b366ebe3d4728856d"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/sources/dense_head_baseline_source_audit.json",
+      "bytes": 644,
+      "sha256": "05d267c509ed6b7ad38e194678f37e5971d32c0646e0f7b8d3c625e1b5fe9813"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/sources/primary_html_audit_20261030/linshengliu_thesis_manifest.json",
+      "bytes": 211,
+      "sha256": "1505ca5a6daf4589a5f8c8ddd6fd3daba9d6f00f1e30e51e59af53651961a67b"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/toolchain/bounded-sampler/adapter_build_manifest.json",
+      "bytes": 4049,
+      "sha256": "d1d78bb2d99e17a0bf9024e8c25821ffc00393ca7655052c2dc0ca5da5d0ce43"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-fullchain/toolchain/bounded-sampler/alias_batch_build_manifest.json",
+      "bytes": 4018,
+      "sha256": "b8621af14522e0a5acb2b46a28f8991e1516b2c6c04987f5476efc8867cb4985"
     },
     {
       "path": "milestones/2026-10-30-private-sampling-screen/README.md",
