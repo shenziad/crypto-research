@@ -1,0 +1,72 @@
+{
+  "created_utc": "2026-10-30T01:04:59.618354+00:00",
+  "source_sha256": "167081a6e210e3bbc26c81f138fc8b469d338eafb2ad0b12af3a6a972fc80d1a",
+  "pilot_sha256": "44086398a0396da4016e57b1dfe2d0464eb52426826922918e5147d5ad91b77e",
+  "weights_sha256": "e89c3c6ee3163676249973519bd5499b5513d1f561a2a108c89b03ddfde984eb",
+  "corpora": {
+    "ptb": {
+      "file": "ptb_test.txt",
+      "sha256": "dd65dff31e70846b2a6030a87482edcd5d199130cdcfa1f3dccbb033728deee0",
+      "offsets": [
+        0,
+        1024,
+        2048,
+        3072,
+        4096,
+        5120,
+        6144,
+        7168,
+        8192,
+        9216,
+        10240,
+        11264,
+        12288,
+        13312,
+        14336,
+        15360,
+        16384,
+        17408,
+        18432,
+        19456,
+        20480,
+        21504,
+        22528,
+        23552,
+        24576,
+        25600,
+        26624,
+        27648,
+        28672,
+        29696,
+        30720,
+        31744
+      ],
+      "length": 257
+    },
+    "wiki": {
+      "file": "wikitext2_test.txt",
+      "sha256": "d790b833ef8cf03a90db7bf1271b7520b83c45ce07ba3c1a9699df81e239eca0",
+      "offsets": [
+        196608,
+        197120,
+        197632,
+        198144,
+        198656,
+        199168,
+        199680,
+        200192,
+        200704,
+        201216,
+        201728,
+        202240,
+        202752,
+        203264,
+        203776,
+        204288
+      ],
+      "length": 129
+    }
+  },
+  "selection": "Frozen final64step adapters from firstpilot only. No retraining, retuning or test checkpointselection. PTB testprimary; Wiki explicitlyout-of-domain sinceadaptertrainedonlyPTB.",
+  "limits": "Numerical followup of deliberately bounded residual output adapter. Common publicbackbone, not full-private-LLM inference. Sampling bound analytic but no actual private sampler; fixedK191, realtanh andFP32head notfiniteMPC. Quality gain fromdomainadaptation, not a newcryptoalgorithm; variable observedacceptance or distinctcounts mustnotbeused toexpose adaptiveprotocolschedule. Testsresetcontext, notfullcorpusPPL. No independentSOTA/newness/CCFclaim."
+}

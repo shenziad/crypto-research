@@ -1,0 +1,416 @@
+{
+  "all_passed": true,
+  "results": [
+    {
+      "wall_seconds": 0.25054605200057267,
+      "logs": [
+        {
+          "path": "results/bounded_adapter_gc_runs/signed_pwl_knots/party1.log",
+          "sha256": "24a342cd4de8469c30fc65575f3dd312211d055533154681411a91778b518ee8"
+        },
+        {
+          "path": "results/bounded_adapter_gc_runs/signed_pwl_knots/party2.log",
+          "sha256": "01e184c5c749d8221b2f1c839097e4eba0e5ecefb907bb209b1e6c986c9fbfab"
+        }
+      ],
+      "exact_intermediate_values_checked": 206,
+      "name": "signed_pwl_knots",
+      "mode": "shares",
+      "count": 99,
+      "all_correct": true,
+      "parties": [
+        {
+          "role": 1,
+          "count": 99,
+          "mode": "shares",
+          "and_gates_before_release": 3702407,
+          "upstream_hash_key_counter_delta": 7404816,
+          "halfgate_table_bytes_before_release": 118477024,
+          "setup_ms": 2.0059,
+          "input_ms": 30.8367,
+          "compute_ms": 151.563,
+          "release_ms": 0.352764,
+          "protocol_ms": 184.759,
+          "sent": 121734368,
+          "received": 3420869,
+          "io_direction_changes": 5
+        },
+        {
+          "role": 2,
+          "count": 99,
+          "mode": "shares",
+          "and_gates_before_release": 3702407,
+          "upstream_hash_key_counter_delta": 7404816,
+          "halfgate_table_bytes_before_release": 118477024,
+          "setup_ms": 13.3738,
+          "input_ms": 19.6755,
+          "compute_ms": 151.383,
+          "release_ms": 0.485735,
+          "protocol_ms": 184.918,
+          "sent": 3420869,
+          "received": 121734368,
+          "io_direction_changes": 5
+        }
+      ],
+      "total_wire_bytes": 125155237,
+      "max_party_protocol_ms": 184.918,
+      "input_share_sha256": [
+        "6ec2ccc22144cc324620915705a65979dbfdd9d738f5b100d43e51155e6aa354",
+        "8cbbc79986089a921d15ca6b744906ca591ca7c09900047c76eb31f35e2ec72d"
+      ],
+      "output_sha256": [
+        "2756b897de376ac28325b5cf434d41c6b55c25a5624a9ea1f7dfa29317c1e567",
+        "9767b5c46c3754e419cde70897a1c53418d0289660eaeb2929c00a4f62a38b4a"
+      ],
+      "max_abs_t_integer": 524288,
+      "max_abs_z_integer": 262152,
+      "max_abs_delta_integer": 1048576
+    },
+    {
+      "wall_seconds": 0.2505839430004926,
+      "logs": [
+        {
+          "path": "results/bounded_adapter_gc_runs/near_domain_accumulators/party1.log",
+          "sha256": "24a342cd4de8469c30fc65575f3dd312211d055533154681411a91778b518ee8"
+        },
+        {
+          "path": "results/bounded_adapter_gc_runs/near_domain_accumulators/party2.log",
+          "sha256": "01e184c5c749d8221b2f1c839097e4eba0e5ecefb907bb209b1e6c986c9fbfab"
+        }
+      ],
+      "exact_intermediate_values_checked": 24,
+      "name": "near_domain_accumulators",
+      "mode": "shares",
+      "count": 8,
+      "all_correct": true,
+      "parties": [
+        {
+          "role": 1,
+          "count": 8,
+          "mode": "shares",
+          "and_gates_before_release": 1919080,
+          "upstream_hash_key_counter_delta": 3838160,
+          "halfgate_table_bytes_before_release": 61410560,
+          "setup_ms": 8.14772,
+          "input_ms": 19.0686,
+          "compute_ms": 75.01,
+          "release_ms": 0.102653,
+          "protocol_ms": 102.329,
+          "sent": 61994688,
+          "received": 799429,
+          "io_direction_changes": 5
+        },
+        {
+          "role": 2,
+          "count": 8,
+          "mode": "shares",
+          "and_gates_before_release": 1919080,
+          "upstream_hash_key_counter_delta": 3838160,
+          "halfgate_table_bytes_before_release": 61410560,
+          "setup_ms": 17.2803,
+          "input_ms": 9.99056,
+          "compute_ms": 74.9752,
+          "release_ms": 0.101622,
+          "protocol_ms": 102.348,
+          "sent": 799429,
+          "received": 61994688,
+          "io_direction_changes": 5
+        }
+      ],
+      "total_wire_bytes": 62794117,
+      "max_party_protocol_ms": 102.348,
+      "input_share_sha256": [
+        "a83c7fdfd7e4f75e7bda177e5e890e475f071194e31f8baa2842ac5209e7b84d",
+        "7699c7a5bf05cb3b232068c7d9224288e45cd2d0f0f0dfa91598099707e29169"
+      ],
+      "output_sha256": [
+        "3ceef890389dcf06b4d88eec31ba135defd8149ab6e7c6ed21a9696c049ba946",
+        "87bb815d468fed77c444d5e75ea3e4c461415f96fe7c428c110cb59a71dbcbed"
+      ],
+      "max_abs_t_integer": 14680064,
+      "max_abs_z_integer": 117440512,
+      "max_abs_delta_integer": 1048576
+    },
+    {
+      "wall_seconds": 0.5006728829994245,
+      "logs": [
+        {
+          "path": "results/bounded_adapter_gc_runs/ptb_201_shares/party1.log",
+          "sha256": "24a342cd4de8469c30fc65575f3dd312211d055533154681411a91778b518ee8"
+        },
+        {
+          "path": "results/bounded_adapter_gc_runs/ptb_201_shares/party2.log",
+          "sha256": "01e184c5c749d8221b2f1c839097e4eba0e5ecefb907bb209b1e6c986c9fbfab"
+        }
+      ],
+      "exact_intermediate_values_checked": 410,
+      "name": "ptb_201_shares",
+      "mode": "shares",
+      "count": 201,
+      "all_correct": true,
+      "parties": [
+        {
+          "role": 1,
+          "count": 201,
+          "mode": "shares",
+          "and_gates_before_release": 5701301,
+          "upstream_hash_key_counter_delta": 11402608,
+          "halfgate_table_bytes_before_release": 182441632,
+          "setup_ms": 8.25769,
+          "input_ms": 44.0404,
+          "compute_ms": 231.644,
+          "release_ms": 0.755222,
+          "protocol_ms": 284.698,
+          "sent": 188695328,
+          "received": 6304453,
+          "io_direction_changes": 5
+        },
+        {
+          "role": 2,
+          "count": 201,
+          "mode": "shares",
+          "and_gates_before_release": 5701301,
+          "upstream_hash_key_counter_delta": 11402608,
+          "halfgate_table_bytes_before_release": 182441632,
+          "setup_ms": 24.5635,
+          "input_ms": 28.0736,
+          "compute_ms": 231.689,
+          "release_ms": 0.699808,
+          "protocol_ms": 285.026,
+          "sent": 6304453,
+          "received": 188695328,
+          "io_direction_changes": 5
+        }
+      ],
+      "total_wire_bytes": 194999781,
+      "max_party_protocol_ms": 285.026,
+      "input_share_sha256": [
+        "49fc937686cd2aceced286f92a29e5fe1b84dcf82ef3e2e309c3539d6dc25282",
+        "032ecc44bc2b21e36a4a61fbbba1fe7f830a2208e5c8ec2d67c3fb672e2b3e13"
+      ],
+      "output_sha256": [
+        "58be962783900ced5f55b786e2fd11129f8fd2c18f3055bf21a0b549beca6c36",
+        "3175e61388ac5778fa20496cf2052f581b92164f46bcaffe8cf0dfc0804289f2"
+      ],
+      "max_abs_t_integer": 245994,
+      "max_abs_z_integer": 177035,
+      "max_abs_delta_integer": 1038969
+    },
+    {
+      "wall_seconds": 0.5006847539998489,
+      "logs": [
+        {
+          "path": "results/bounded_adapter_gc_runs/ptb_201_token/party1.log",
+          "sha256": "24a342cd4de8469c30fc65575f3dd312211d055533154681411a91778b518ee8"
+        },
+        {
+          "path": "results/bounded_adapter_gc_runs/ptb_201_token/party2.log",
+          "sha256": "01e184c5c749d8221b2f1c839097e4eba0e5ecefb907bb209b1e6c986c9fbfab"
+        }
+      ],
+      "expected_final_token": 898,
+      "name": "ptb_201_token",
+      "mode": "token",
+      "count": 201,
+      "all_correct": true,
+      "parties": [
+        {
+          "role": 1,
+          "count": 201,
+          "mode": "token",
+          "and_gates_before_release": 5701301,
+          "upstream_hash_key_counter_delta": 11402608,
+          "halfgate_table_bytes_before_release": 182441632,
+          "setup_ms": 8.25485,
+          "input_ms": 48.9104,
+          "compute_ms": 250.811,
+          "release_ms": 0.104367,
+          "protocol_ms": 308.081,
+          "sent": 188682240,
+          "received": 6304453,
+          "io_direction_changes": 5
+        },
+        {
+          "role": 2,
+          "count": 201,
+          "mode": "token",
+          "and_gates_before_release": 5701301,
+          "upstream_hash_key_counter_delta": 11402608,
+          "halfgate_table_bytes_before_release": 182441632,
+          "setup_ms": 25.5074,
+          "input_ms": 32.0146,
+          "compute_ms": 250.481,
+          "release_ms": 0.129123,
+          "protocol_ms": 308.132,
+          "sent": 6304453,
+          "received": 188682240,
+          "io_direction_changes": 5
+        }
+      ],
+      "total_wire_bytes": 194986693,
+      "max_party_protocol_ms": 308.132,
+      "input_share_sha256": [
+        "3dd296c5160c9538146a724d65c5431acc4ca0d31152923420b3e31e0611b8df",
+        "8a21fbed900bb67430ace2f0212d17d9c6fc22c26dc9e3bdd1df440189d9e0b5"
+      ],
+      "output_sha256": [
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "e39175fa786ac1bf674197873c91e3820954356db81c4db3da1a733ace9a30f2"
+      ],
+      "max_abs_t_integer": 245994,
+      "max_abs_z_integer": 177035,
+      "max_abs_delta_integer": 1038969
+    },
+    {
+      "wall_seconds": 0.5007981069993548,
+      "logs": [
+        {
+          "path": "results/bounded_adapter_gc_runs/wiki_201_shares/party1.log",
+          "sha256": "24a342cd4de8469c30fc65575f3dd312211d055533154681411a91778b518ee8"
+        },
+        {
+          "path": "results/bounded_adapter_gc_runs/wiki_201_shares/party2.log",
+          "sha256": "01e184c5c749d8221b2f1c839097e4eba0e5ecefb907bb209b1e6c986c9fbfab"
+        }
+      ],
+      "exact_intermediate_values_checked": 410,
+      "name": "wiki_201_shares",
+      "mode": "shares",
+      "count": 201,
+      "all_correct": true,
+      "parties": [
+        {
+          "role": 1,
+          "count": 201,
+          "mode": "shares",
+          "and_gates_before_release": 5701301,
+          "upstream_hash_key_counter_delta": 11402608,
+          "halfgate_table_bytes_before_release": 182441632,
+          "setup_ms": 8.03243,
+          "input_ms": 44.6185,
+          "compute_ms": 228.14,
+          "release_ms": 0.576455,
+          "protocol_ms": 281.368,
+          "sent": 188695328,
+          "received": 6304453,
+          "io_direction_changes": 5
+        },
+        {
+          "role": 2,
+          "count": 201,
+          "mode": "shares",
+          "and_gates_before_release": 5701301,
+          "upstream_hash_key_counter_delta": 11402608,
+          "halfgate_table_bytes_before_release": 182441632,
+          "setup_ms": 24.1046,
+          "input_ms": 28.8354,
+          "compute_ms": 227.863,
+          "release_ms": 0.843698,
+          "protocol_ms": 281.647,
+          "sent": 6304453,
+          "received": 188695328,
+          "io_direction_changes": 5
+        }
+      ],
+      "total_wire_bytes": 194999781,
+      "max_party_protocol_ms": 281.647,
+      "input_share_sha256": [
+        "1d63038f1789ec7a39e527475522f060eac39c384f4ac7ac58317c5f316900a4",
+        "e0013f8544418a5e25ae166371d6700b6caf679ea5fc4939135ca58cd3a2fd5d"
+      ],
+      "output_sha256": [
+        "f6835d1c5cabfa2c39ccad57d6b944f6b6ae33fa57d6ae3f45b330a4f86f55e9",
+        "5f0d900bde0b8998a6a15e607f3d15115035877c36a42f7b3fca7c72589479d8"
+      ],
+      "max_abs_t_integer": 423935,
+      "max_abs_z_integer": 319973,
+      "max_abs_delta_integer": 1048576
+    },
+    {
+      "wall_seconds": 0.5007287359994734,
+      "logs": [
+        {
+          "path": "results/bounded_adapter_gc_runs/wiki_201_token/party1.log",
+          "sha256": "24a342cd4de8469c30fc65575f3dd312211d055533154681411a91778b518ee8"
+        },
+        {
+          "path": "results/bounded_adapter_gc_runs/wiki_201_token/party2.log",
+          "sha256": "01e184c5c749d8221b2f1c839097e4eba0e5ecefb907bb209b1e6c986c9fbfab"
+        }
+      ],
+      "expected_final_token": 3938,
+      "name": "wiki_201_token",
+      "mode": "token",
+      "count": 201,
+      "all_correct": true,
+      "parties": [
+        {
+          "role": 1,
+          "count": 201,
+          "mode": "token",
+          "and_gates_before_release": 5701301,
+          "upstream_hash_key_counter_delta": 11402608,
+          "halfgate_table_bytes_before_release": 182441632,
+          "setup_ms": 8.2099,
+          "input_ms": 47.7265,
+          "compute_ms": 325.415,
+          "release_ms": 0.060504,
+          "protocol_ms": 381.412,
+          "sent": 188682240,
+          "received": 6304453,
+          "io_direction_changes": 5
+        },
+        {
+          "role": 2,
+          "count": 201,
+          "mode": "token",
+          "and_gates_before_release": 5701301,
+          "upstream_hash_key_counter_delta": 11402608,
+          "halfgate_table_bytes_before_release": 182441632,
+          "setup_ms": 25.7129,
+          "input_ms": 30.5782,
+          "compute_ms": 325.107,
+          "release_ms": 0.065353,
+          "protocol_ms": 381.464,
+          "sent": 6304453,
+          "received": 188682240,
+          "io_direction_changes": 5
+        }
+      ],
+      "total_wire_bytes": 194986693,
+      "max_party_protocol_ms": 381.464,
+      "input_share_sha256": [
+        "91044b262490804cdda6f9ca7ea7f6101e6db7ca531284c6a1d2b5baae2265dc",
+        "ee4b8f0f778a680e5a8065b6095573e6255754db3dbe9cfe8f82bc206ff53e0b"
+      ],
+      "output_sha256": [
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "4c3f4dfafd565de24b49f2567ed431e5a16dd5b471905cc780f04afca92461e3"
+      ],
+      "max_abs_t_integer": 423935,
+      "max_abs_z_integer": 319973,
+      "max_abs_delta_integer": 1048576
+    }
+  ],
+  "preregistration_sha256": "8febd74dd4cd81c7c750b75fac5c9b535b7c91d70544149805b4cf7b658438de",
+  "input_sha256": {
+    "experiments/bounded_adapter_gc.cpp": "3c6b8d47b889540ebc610c04c55a4ed69f79f992af366a6017c49a4491e6b7c1",
+    "experiments/build_bounded_adapter_gc.py": "978ace55d90b5f75d7644e013710b5ded8bde6e1cbf139e0a9d37c239ae1130a",
+    "experiments/run_bounded_adapter_gc.py": "7d0d4d7b7763364baca7fd35f62978f98ca7ebb5ac065003d55bea11fe20f613",
+    "experiments/bounded_adapter_fixed16.py": "af21fbed747d7fa15cb1fdda8a479e1d1290b5879147bfbff1955557b3d55a26",
+    "experiments/finite_descending_bernoulli.py": "f088b4a51bda87d520cdd210f31ffb574ffb3f1566d07b479eb2e03e9e2cefb3",
+    "experiments/run_fable_smallbatch_check.py": "e7ca72c566bd61a3564e3c28ff82d20b1ccb1fc77d45a3cb9c986ab519ebc0b2",
+    "results/bounded_adapter_gc_inputs.npz": "bc7f39ffd8c0ae6dc410038a97dc323aa07fbc28c5e8e48117e9f0bba0b8f729",
+    "results/bounded_adapter_gc_inputs_manifest.json": "4413549d2773ac5e167453b33e67fbaf0a4e221fe0f68bbbd00372502cbf5abb",
+    "results/bounded_output_adapter_weights.npz": "e89c3c6ee3163676249973519bd5499b5513d1f561a2a108c89b03ddfde984eb",
+    "results/bounded_adapter_fixed16_certificate.json": "baf7409d64a7e52edd51072c082fcb92b9ea3e60c80a1261c15ac08057332ebe",
+    "toolchain/bounded-sampler/bounded_adapter_gc": "cef52d580b6fba533ad187496597c2d302e6383fdac837a39e7d2198ba2c2936",
+    "toolchain/bounded-sampler/adapter_build_manifest.json": "d1d78bb2d99e17a0bf9024e8c25821ffc00393ca7655052c2dc0ca5da5d0ce43",
+    "third_party/FABLE/extern/EzPC/SCI/src/GC/halfgate_gen.h": "d6e15b7076bcf14409a54eb71ba9cc7ebc5bbde27e0c934711407f6b35df74ad",
+    "third_party/FABLE/extern/EzPC/SCI/src/GC/halfgate_gen.cpp": "462031b21e9a0b7cb3a03a1cd4a54d5ba074f3069425602b9653fd3aaf908a59",
+    "third_party/FABLE/extern/EzPC/SCI/src/GC/halfgate_eva.h": "9f6b2364a36c55174cfc5fa76a8732edfc0ed465b1ba388a3bfa4b57016c3b1a",
+    "third_party/FABLE/extern/EzPC/SCI/src/GC/halfgate_eva.cpp": "ce2e39266c84a17170dee8013586d3040ed3700e4971a2f3c3092064a711afa5",
+    "third_party/FABLE/extern/EzPC/SCI/src/GC/mitccrh.h": "4c2cede1fb065b582e2bf9a74f3b61975eda553b1e10b0ec15cd2a7d0f49cebc"
+  },
+  "limits": "Existing SCI passive GC with client-owned normalized input and server-owned B; opposite-owner row shares are supplied by a control harness, not produced by a connected private lookup. Exact int64 Python reference. Conformance mode releases only fresh XOR shares of8 t values and each z/delta, reconstructed after both parties exit; separate token mode releases only finaltoken/failure toBOB and nothing toALICE. Coins controlled/random in harness for conformance; not a standalone distribution experiment. Boundary/PWL and two reused real model contexts; no new blind quality, real alias integration, complete private sampler, speedup, joint security proof or novelty claim."
+}

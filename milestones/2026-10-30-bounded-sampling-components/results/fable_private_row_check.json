@@ -1,0 +1,230 @@
+{
+  "all_passed": true,
+  "upstream_smoke": [
+    {
+      "wall_seconds": 0.2504298660001041,
+      "logs": [
+        {
+          "path": "results/fable_private_row_check_runs/aes/party1.log",
+          "sha256": "5368c87eaf5ce2336e14b60d5e26a8d0562152ee0c06b81ec039b1eb6761fda4"
+        },
+        {
+          "path": "results/fable_private_row_check_runs/aes/party2.log",
+          "sha256": "39c63a389271d375280e9f989f7a390f4b9b411879864efff905fc30061037bd"
+        }
+      ],
+      "name": "aes",
+      "all_passed": true
+    },
+    {
+      "wall_seconds": 0.25049778299990066,
+      "logs": [
+        {
+          "path": "results/fable_private_row_check_runs/deduplication/party1.log",
+          "sha256": "589d6a4267fb3d5164f78814e2f81fe5b1d4e40961f4e7204c66dd664cc22700"
+        },
+        {
+          "path": "results/fable_private_row_check_runs/deduplication/party2.log",
+          "sha256": "7c44f4c35bac14754db3b582cd8d90d86c1fd368df99591022c0c4fc393b4e13"
+        }
+      ],
+      "name": "deduplication",
+      "all_passed": true
+    }
+  ],
+  "results": [
+    {
+      "wall_seconds": 7.503312045000257,
+      "logs": [
+        {
+          "path": "results/fable_private_row_check_runs/synthetic_wide/party1.log",
+          "sha256": "c6f7007ac58c3d71e888a575696824be21359468a0b36967329553e3f347d019"
+        },
+        {
+          "path": "results/fable_private_row_check_runs/synthetic_wide/party2.log",
+          "sha256": "eb8468cf395f118361089344e976b4c46727019048200d5df88985ab07007ecc"
+        }
+      ],
+      "name": "synthetic_wide",
+      "queries": 256,
+      "effective_sampler_queries": null,
+      "all_bytes_exact": true,
+      "all_correct": true,
+      "parties": [
+        {
+          "role": 1,
+          "queries": 256,
+          "row_bytes": 32,
+          "oprf": "AES128",
+          "threads": 4,
+          "connect_wait_ms": 0.714261,
+          "gc_setup_ms": 8.17515,
+          "prepare_ms": 204.504,
+          "input_ms": 7.78321,
+          "lookup_ms": 7139.12,
+          "share_release_ms": 2.30568,
+          "protocol_ms": 7361.89,
+          "sent": 3760889346,
+          "received": 124702726,
+          "gc_setup_sent": 64,
+          "gc_setup_received": 0,
+          "prepare_sent": 0,
+          "prepare_received": 340092,
+          "input_sent": 270976,
+          "input_received": 279750,
+          "lookup_sent": 3760552770,
+          "lookup_received": 124082884,
+          "release_sent": 65536,
+          "release_received": 0,
+          "io_direction_changes": 13
+        },
+        {
+          "role": 2,
+          "queries": 256,
+          "row_bytes": 32,
+          "oprf": "AES128",
+          "threads": 4,
+          "connect_wait_ms": 57.5224,
+          "gc_setup_ms": 56.7572,
+          "prepare_ms": 153.368,
+          "input_ms": 10.2697,
+          "lookup_ms": 7144.95,
+          "share_release_ms": 2.38679,
+          "protocol_ms": 7367.73,
+          "sent": 124702726,
+          "received": 3760889346,
+          "gc_setup_sent": 0,
+          "gc_setup_received": 64,
+          "prepare_sent": 340092,
+          "prepare_received": 0,
+          "input_sent": 279750,
+          "input_received": 270976,
+          "lookup_sent": 124082884,
+          "lookup_received": 3760552770,
+          "release_sent": 0,
+          "release_received": 65536,
+          "io_direction_changes": 13
+        }
+      ],
+      "total_wire_bytes": 3885592072,
+      "max_party_protocol_ms": 7367.73,
+      "table_sha256": "1e7e59cdf725bc8d396d50a5aa4c82f3a1d551754fa86f3b808d54401243b037",
+      "input_share_sha256": [
+        "8d617719e8447ee82a8107a34ad57c8c62bd905d327ef998d95a469f70af26ec",
+        "77b1ee142320125262a5d10a5d2c364225bc8ac57616a70ee3a1744ac050b6ca"
+      ],
+      "output_share_sha256": [
+        "b308900e4fc16dee0b54eebe462197d7e3bd530e7b11d5da5f96b4247a18fad6",
+        "736011190bfa49a1eeac655fd6577358eb2f3ee43c9758039b923873657859cd"
+      ]
+    },
+    {
+      "wall_seconds": 7.503313659000014,
+      "logs": [
+        {
+          "path": "results/fable_private_row_check_runs/frozen_A_191_plus65/party1.log",
+          "sha256": "0b6ee0f5d042eb2d1cb7f671afb797484dd34ae7e857d22cb9da574a0a13c6bb"
+        },
+        {
+          "path": "results/fable_private_row_check_runs/frozen_A_191_plus65/party2.log",
+          "sha256": "2d9eb630d3c0466f6d2cf48dae77bbd9047424c43bc1a49026628cd6ee640496"
+        }
+      ],
+      "name": "frozen_A_191_plus65",
+      "queries": 256,
+      "effective_sampler_queries": 191,
+      "all_bytes_exact": true,
+      "all_correct": true,
+      "parties": [
+        {
+          "role": 1,
+          "queries": 256,
+          "row_bytes": 32,
+          "oprf": "AES128",
+          "threads": 4,
+          "connect_wait_ms": 0.51553,
+          "gc_setup_ms": 6.39523,
+          "prepare_ms": 188.723,
+          "input_ms": 7.76071,
+          "lookup_ms": 7156.08,
+          "share_release_ms": 2.32559,
+          "protocol_ms": 7361.29,
+          "sent": 3760892872,
+          "received": 124703584,
+          "gc_setup_sent": 64,
+          "gc_setup_received": 0,
+          "prepare_sent": 0,
+          "prepare_received": 340146,
+          "input_sent": 270976,
+          "input_received": 279750,
+          "lookup_sent": 3760556296,
+          "lookup_received": 124083688,
+          "release_sent": 65536,
+          "release_received": 0,
+          "io_direction_changes": 13
+        },
+        {
+          "role": 2,
+          "queries": 256,
+          "row_bytes": 32,
+          "oprf": "AES128",
+          "threads": 4,
+          "connect_wait_ms": 45.9084,
+          "gc_setup_ms": 42.6773,
+          "prepare_ms": 150.145,
+          "input_ms": 10.006,
+          "lookup_ms": 7162.29,
+          "share_release_ms": 2.38278,
+          "protocol_ms": 7367.5,
+          "sent": 124703584,
+          "received": 3760892872,
+          "gc_setup_sent": 0,
+          "gc_setup_received": 64,
+          "prepare_sent": 340146,
+          "prepare_received": 0,
+          "input_sent": 279750,
+          "input_received": 270976,
+          "lookup_sent": 124083688,
+          "lookup_received": 3760556296,
+          "release_sent": 0,
+          "release_received": 65536,
+          "io_direction_changes": 13
+        }
+      ],
+      "total_wire_bytes": 3885596456,
+      "max_party_protocol_ms": 7367.5,
+      "table_sha256": "2ec8871e41759688e35443b5434db31bdb42eef9eaeca83de3f4e4aba44bc5a9",
+      "input_share_sha256": [
+        "fcbe0af32d01f9a1ae0e71fc4befadf4dfbc9aa461c85006e02308825ad0cdc2",
+        "8dbb141756f56334665c84647527b78869e271b89f3fdd38f4dda54687d60211"
+      ],
+      "output_share_sha256": [
+        "23ffce8ec786a37b64d7dc24d35379389403423a027e7157ed527fb145f3ba53",
+        "df9e2479ee19ac2d53201af337456dd5c40e8b7db3bb7c821aaef980e905394d"
+      ]
+    }
+  ],
+  "preregistration_sha256": "73ee3a6bd776d86394075977322daf5cfd5efef27a70aaf3d42b5bc883060854",
+  "source_sha256": {
+    "experiments/fable_private_row_harness.cpp": "ed3e3fdc49feb58e74db18e554648057bcb7a821115b718f41c27de36598c590",
+    "experiments/run_fable_private_row_check.py": "ea3f1998b3c3a2db9572b9a6f88b9fc05171997fa0477f8042ee11af3c724979",
+    "third_party/FABLE/CMakeLists.txt": "ef12b65282fbd6252a191e865feaf5495fa0ca37ffebfd5fd2b8d7c4523d8351",
+    "third_party/FABLE/src/GC/CMakeLists.txt": "af5597aaf20137e532c5fe0d5c91bab261778056b184832b0a35fbfe3f1e13a0",
+    "third_party/FABLE/src/GC/lookup.cpp": "d81d4de14b60b5391ceb7a163b5a64427c01781793f02a98e06f87fe639aa9ba",
+    "third_party/FABLE/src/GC/lookup.h": "93c8c040f25988d52f97b41b756f2ce9d2a4aec332c7cdc777e8f84b67e48d0c",
+    "third_party/FABLE/extern/BatchPIR/header/utils.h": "da499d63bf5352195cb13617fdf8b17f49efe3a250cca98d584ac6b92ca73743",
+    "third_party/FABLE/extern/BatchPIR/header/database_constants.h": "3c778a9e1cbf98d9978c53171bbb4f2be4db9426bac403ec278fc3604db07e23",
+    "third_party/FABLE/extern/BatchPIR/src/batchpirparams.cpp": "ce7923a110f5b68fcf9795495fdca58d1b3b4c5700aa7a90fd264f0dd95c908c",
+    "third_party/FABLE/extern/EzPC/SCI/src/utils/net_io_channel.h": "198a29a7743952926586f70dc4cd14fbb9b8c3dc87dfc8fe31383f9868b1d280",
+    "third_party/FABLE/test/test_aes.cpp": "c35d71ee9a33264a018ea4992e816d8fea147f421892f49d240aa2a3e9a12044",
+    "third_party/FABLE/test/test_deduplication.cpp": "3365c400f0370e9a51889b110a041cead283f80d77801a2e818ed07293aff1c4",
+    "third_party/FABLE/extern/BatchPIR/src/batchpirserver.cpp": "a8df9a4b5fc2c279642d163aafc158409d40dae1b68e6779f18132bef1ee55fd"
+  },
+  "binary_sha256": {
+    "private_row_harness": "ddf041b8386c390882679513533f95743f413c7fe68d25e0c2b5ba50a52b2825",
+    "aes": "1e7ae425eaf112f2525ce12267dcec52f3dbd25c70c931e48af717a256dc6518",
+    "deduplication": "bc040712a762f840919a2750b348cbba5c4580db8cc29a736d8d154fd7d29b88"
+  },
+  "adapter_weights_sha256": "e89c3c6ee3163676249973519bd5499b5513d1f561a2a108c89b03ddfde984eb",
+  "limits": "ActualupstreamFABLE withsharedinput andmaskedoutput wrapper. Bothpartybytecounts includeGCsetup, HEkeys, tableinitialization, secretinputfeeding, batchedlookup andXORsharerelease; excludesprocessspawn andclearinputfiletableloading. Fixedupstream8192buckets retained. Functionalfirstobservations only, notbalancedlatency orSOTA. SyntheticindicesnotrealLLMsamples; privateadapter arithmetic, aliasbatchintegration andfullrejection absent. Parentreconstructsonlyafterexit; workerreceives onlyownsharepath andserveronlytablepath. Standardupstreamprimitive notourinvention. Buildonlypatches documented, no parameters changedaftermeasurement."
+}

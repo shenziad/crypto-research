@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-10-30T06:47:13.187600+00:00",
+  "input_sha256": {
+    "experiments/bounded_accept_select.cpp": "d24e46a34d12193520fa09f34b2f95bdfc481afca06b57938bb39f1b620c1028",
+    "experiments/build_bounded_accept_select.py": "ad66bfd58470102434629bcaf3d38d0d8e511ba52ca538a06574e0dbc6e84556",
+    "experiments/run_bounded_accept_select.py": "94b2b83f467f67d13e07a53f6fab3ad9eb6fabd211408f5915f8b46167823823",
+    "experiments/finite_descending_bernoulli.py": "f088b4a51bda87d520cdd210f31ffb574ffb3f1566d07b479eb2e03e9e2cefb3",
+    "experiments/run_fable_smallbatch_check.py": "e7ca72c566bd61a3564e3c28ff82d20b1ccb1fc77d45a3cb9c986ab519ebc0b2",
+    "results/finite_descending_bernoulli_check.json": "8739c90b71cc0b67eb8f1cc718d29b2f0f2ba732ca7c6cd8930ad982dc4d71b4",
+    "toolchain/bounded-sampler/bounded_accept_select": "2960275817d11703cb694391dae79539dcf0ee09d5d55bc3c824fe6c92082915",
+    "toolchain/bounded-sampler/build_manifest.json": "e8bb2b80b4628ae18dbc2797c514f4b76b1f33e07eaf3cab2057c13fefb63719"
+  },
+  "cases": [
+    "positive_endpoint",
+    "negative_endpoint_overflow",
+    "both_factories_and_first_success",
+    "full201_early",
+    "full201_late",
+    "full201_all_fail",
+    "full201_joint_uniform"
+  ],
+  "profile": {
+    "precision": 44,
+    "delta_fraction": 20,
+    "draws_per_factory": 19,
+    "factories": 2,
+    "full_proposals": 201
+  },
+  "limits": "Actual existing SCI semi-honest GC on two local processes. Parent provides controlled or random coin values split by independent fresh XOR masks and inspects only after both exit, for functional conformance. Every child receives only its own input-share file. No in-protocol helper. Secret delta22 and index16 reconstructed inside GC, exact threshold computed inside, fixed2x19 descending chains, only finaltoken/failure65536 revealed toBOB, no output toALICE. Full201 early/late/failure/random must have same gate count and traffic. One run percase, no balanced timing/sidechannel/active security proof. No private adapter arithmetic or actual alias proposals connected; candidate arithmetic/sampler integration remains incomplete. Classical Bernoulli/firstsuccess methods, notnewprimitives."
+}

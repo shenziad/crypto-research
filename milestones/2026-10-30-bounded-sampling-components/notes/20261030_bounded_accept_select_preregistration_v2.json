@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-10-30T07:01:45.027701+00:00",
+  "input_sha256": {
+    "experiments/bounded_accept_select.cpp": "3ef99ded64ff5cfcd4b18a264516c71867a7e9dc0304836a2ed8733456a3b6a0",
+    "experiments/build_bounded_accept_select.py": "ad66bfd58470102434629bcaf3d38d0d8e511ba52ca538a06574e0dbc6e84556",
+    "experiments/run_bounded_accept_select.py": "134202ad7083b13bf5478eb7e74b75a619198f5423fd6298a40ccaa4e22a7452",
+    "experiments/finite_descending_bernoulli.py": "f088b4a51bda87d520cdd210f31ffb574ffb3f1566d07b479eb2e03e9e2cefb3",
+    "experiments/run_fable_smallbatch_check.py": "e7ca72c566bd61a3564e3c28ff82d20b1ccb1fc77d45a3cb9c986ab519ebc0b2",
+    "results/finite_descending_bernoulli_check.json": "8739c90b71cc0b67eb8f1cc718d29b2f0f2ba732ca7c6cd8930ad982dc4d71b4",
+    "toolchain/bounded-sampler/bounded_accept_select": "e9c4507a9157eade26c96eaf5d9817883c5adae197622b4af6d5f9d23ddc30ae",
+    "toolchain/bounded-sampler/build_manifest.json": "8058eb7b739d537ef5768cff6c29ab8761b002933ee50ad3fe2277757995fc00",
+    "third_party/FABLE/extern/EzPC/SCI/src/GC/halfgate_gen.h": "d6e15b7076bcf14409a54eb71ba9cc7ebc5bbde27e0c934711407f6b35df74ad",
+    "third_party/FABLE/extern/EzPC/SCI/src/GC/halfgate_gen.cpp": "462031b21e9a0b7cb3a03a1cd4a54d5ba074f3069425602b9653fd3aaf908a59",
+    "third_party/FABLE/extern/EzPC/SCI/src/GC/halfgate_eva.h": "9f6b2364a36c55174cfc5fa76a8732edfc0ed465b1ba388a3bfa4b57016c3b1a",
+    "third_party/FABLE/extern/EzPC/SCI/src/GC/halfgate_eva.cpp": "ce2e39266c84a17170dee8013586d3040ed3700e4971a2f3c3092064a711afa5",
+    "third_party/FABLE/extern/EzPC/SCI/src/GC/mitccrh.h": "4c2cede1fb065b582e2bf9a74f3b61975eda553b1e10b0ec15cd2a7d0f49cebc"
+  },
+  "cases": [
+    "positive_endpoint",
+    "negative_endpoint_overflow",
+    "both_factories_and_first_success",
+    "full201_early",
+    "full201_late",
+    "full201_all_fail",
+    "full201_joint_uniform"
+  ],
+  "profile": {
+    "precision": 44,
+    "delta_fraction": 20,
+    "draws_per_factory": 19,
+    "factories": 2,
+    "full_proposals": 201
+  },
+  "limits": "Actual existing SCI semi-honest GC on two local processes. Parent provides controlled or random coin values split by independent fresh XOR masks and inspects only after both exit, for functional conformance. Every child receives only its own input-share file. No in-protocol helper. Secret delta22 and index16 reconstructed inside GC, exact threshold computed inside, fixed2x19 descending chains, only finaltoken/failure65536 revealed toBOB, no output toALICE. Full201 early/late/failure/random must have same gate count and traffic. One run percase, no balanced timing/sidechannel/active security proof. No private adapter arithmetic or actual alias proposals connected; candidate arithmetic/sampler integration remains incomplete. Classical Bernoulli/firstsuccess methods, notnewprimitives.",
+  "previous_registration_sha256": "30ffb9ce8e8c5d7ae57c2aa392030673fd322b8a14f09da9872a6a8101f82988",
+  "correction": "Metrics only: SCI num_and() is rounded hashkey allocation counter, not exact AND gates. Exact gates=compute-stage halfgate table bytes/32; old records preserved in sources/checkpoints/20261030_gc_initial_counter_audit. Arithmetic/circuit/coins parameters unchanged; fresh full rerun."
+}

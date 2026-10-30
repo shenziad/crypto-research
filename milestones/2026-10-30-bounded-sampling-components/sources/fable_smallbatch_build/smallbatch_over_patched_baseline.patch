@@ -1,0 +1,162 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -6,47 +6,7 @@
+     LANGUAGES CXX
+ )
+ 
+-message (STATUS "Checking if patches are applied...")
+-
+-# Check if git is available
+-find_package(Git REQUIRED)
+-
+-execute_process(
+-    COMMAND git apply ${PROJECT_SOURCE_DIR}/cmake/ezpc.patch --reverse --check
+-    WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/extern/EzPC
+-    OUTPUT_QUIET
+-    ERROR_VARIABLE PATCH_APPLIED_ERR
+-)
+-if (PATCH_APPLIED_ERR)
+-    message(STATUS "Applying Patch on EzPC")
+-    execute_process(
+-        COMMAND git apply ${PROJECT_SOURCE_DIR}/cmake/ezpc.patch
+-        WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/extern/EzPC
+-        OUTPUT_QUIET
+-        ERROR_QUIET
+-        COMMAND_ERROR_IS_FATAL ANY
+-    )
+-    message(STATUS "Patch applied to EzPC. ")
+-endif()
+-
+-execute_process(
+-    COMMAND git apply ${PROJECT_SOURCE_DIR}/cmake/seal.patch --reverse --check
+-    WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/extern/EzPC/SCI/extern/SEAL
+-    OUTPUT_QUIET
+-    ERROR_VARIABLE PATCH_APPLIED_ERR
+-)
+-if (PATCH_APPLIED_ERR)
+-    message(STATUS "Applying Patch on SEAL")
+-    execute_process(
+-        COMMAND git apply ${PROJECT_SOURCE_DIR}/cmake/seal.patch
+-        WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/extern/EzPC/SCI/extern/SEAL
+-        OUTPUT_QUIET
+-        ERROR_QUIET
+-        COMMAND_ERROR_IS_FATAL ANY
+-    )
+-    message(STATUS "Patch applied to SEAL. ")
+-endif()
+-
++# Copied pinned baseline source, with recorded patches already applied.
+ add_subdirectory(extern)
+ 
+ # Write built executables and libraries to bin/ and lib/, respectively.
+--- a/extern/BatchPIR/header/database_constants.h
++++ b/extern/BatchPIR/header/database_constants.h
+@@ -28,7 +28,7 @@
+     constexpr int MaxBucketSize = [](){
+         switch (LUT_MAX_LOG_SIZE) {
+             case 16:
+-                return 74;
++                return 583; // ideal-hash global overflow tail below2^-54, N<=65791,B=512
+             case 20:
+                 return 556;
+             case 24:
+--- a/extern/BatchPIR/src/batchpirclient.cpp
++++ b/extern/BatchPIR/src/batchpirclient.cpp
+@@ -212,6 +212,7 @@
+     size_t num_servers = ceil(num_buckets * 1.0 / per_server_capacity);
+ 
+     vector<utils::EncodedDB> entries_list(num_buckets, utils::EncodedDB(w));
++    uint64_t smallbatch_unselected_zero_checks = 0;
+     for (int hash_idx = 0; hash_idx < w; hash_idx++)
+     {
+         auto& response = responses[hash_idx];
+@@ -226,6 +227,16 @@
+                 Plaintext pt;
+                 decryptor_->decrypt(response[slot_idx], pt);
+                 batch_encoder_->decode(pt, plain_entry);
++                for (size_t bucket_idx = 0; bucket_idx < num_buckets; ++bucket_idx) {
++                    size_t selected_subslot = bucket_to_position[bucket_idx][hash_idx] / subbucket_size;
++                    for (size_t sub = 0; sub < num_subbucket; ++sub) {
++                        if (sub != selected_subslot) {
++                            utils::check(plain_entry[bucket_idx*num_subbucket+sub] == 0,
++                                         "honest-query unselected subslot is nonzero");
++                            ++smallbatch_unselected_zero_checks;
++                        }
++                    }
++                }
+                 for (int bucket_idx = 0; bucket_idx < num_buckets; bucket_idx++) {
+                     size_t subbucket_idx = bucket_to_position[bucket_idx][hash_idx] / subbucket_size;
+                     str_entries[bucket_idx] += utils::datablock(plain_entry[bucket_idx * num_subbucket + subbucket_idx]).to_string().substr(utils::datablock_size-(end - start));
+@@ -279,6 +290,7 @@
+         }
+     }
+ 
++    std::cout << "SMALLBATCH_UNSELECTED_ZERO_CHECKS=" << smallbatch_unselected_zero_checks << std::endl;
+     return entries_list;
+ }
+ 
+--- a/extern/BatchPIR/src/batchpirparams.cpp
++++ b/extern/BatchPIR/src/batchpirparams.cpp
+@@ -64,7 +64,7 @@
+ }
+ 
+ size_t BatchPirParams::get_num_buckets() {
+-    return PolyDegree;
++    return 512; // fixed small-batch bucket count, sixteen packed subslots
+ }
+ 
+ size_t BatchPirParams::get_bucket_size() {
+--- a/extern/BatchPIR/src/batchpirserver.cpp
++++ b/extern/BatchPIR/src/batchpirserver.cpp
+@@ -206,6 +206,10 @@
+         }
+     }
+ 
++    size_t observed_max_load = 0;
++    for (const auto& bucket : insert_buffer) observed_max_load = std::max(observed_max_load, bucket.size());
++    utils::check(observed_max_load <= MaxBucketSize, "smallbatch capacity bound exceeded");
++    std::cout << "SMALLBATCH_MAX_LOAD=" << observed_max_load << std::endl;
+     position_to_key.resize(total_buckets);
+     #pragma omp parallel for if(parallel) num_threads(num_threads)
+     for (int bucket_idx = 0; bucket_idx < total_buckets; bucket_idx++) {
+--- a/extern/CMakeLists.txt
++++ b/extern/CMakeLists.txt
+@@ -1,13 +1,13 @@
+ set(SCI_PATH ${PROJECT_SOURCE_DIR}/extern/EzPC/SCI)
+ 
+-find_package(SEAL 3.3.2 EXACT QUIET PATHS ${PROJECT_SOURCE_DIR}/build NO_DEFAULT_PATH)
++find_package(SEAL 3.3.2 EXACT QUIET PATHS /media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/third_party/FABLE/build NO_DEFAULT_PATH)
+ if (NOT SEAL_FOUND)
+     message(STATUS "SEAL 3.3.2 was not found: clone and install SEAL locally")
+-    execute_process(COMMAND ${CMAKE_COMMAND} -DCMAKE_INSTALL_PREFIX=${PROJECT_SOURCE_DIR}/build .
++    execute_process(COMMAND ${CMAKE_COMMAND} -DCMAKE_INSTALL_PREFIX=/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/third_party/FABLE/build .
+             WORKING_DIRECTORY "${SCI_PATH}/extern/SEAL/native/src")
+     execute_process(COMMAND ${CMAKE_COMMAND} --build . --target install --parallel
+         WORKING_DIRECTORY "${SCI_PATH}/extern/SEAL/native/src")
+-    find_package(SEAL 3.3.2 EXACT REQUIRED PATHS "${PROJECT_SOURCE_DIR}/build/" NO_DEFAULT_PATH)
++    find_package(SEAL 3.3.2 EXACT REQUIRED PATHS "/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/third_party/FABLE/build/" NO_DEFAULT_PATH)
+ endif()
+ 
+ add_subdirectory(EzPC/SCI)
+\ No newline at end of file
+--- a/src/GC/CMakeLists.txt
++++ b/src/GC/CMakeLists.txt
+@@ -2,15 +2,15 @@
+ file(GLOB SOURCES "${PROJECT_SOURCE_DIR}/extern/BatchPIR/src/*.cpp")
+ list(REMOVE_ITEM SOURCES "${PROJECT_SOURCE_DIR}/extern/BatchPIR/src/main.cpp")
+ 
+-find_package(SEAL 4.1 QUIET PATHS "${PROJECT_SOURCE_DIR}/build/seal_4_1" NO_DEFAULT_PATH)
++find_package(SEAL 4.1 QUIET PATHS "/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/third_party/FABLE/build/seal_4_1" NO_DEFAULT_PATH)
+ 
+ if (NOT SEAL_FOUND)
+     message(STATUS "clone and install SEAL locally")
+-    execute_process(COMMAND ${CMAKE_COMMAND} -E env CC=/usr/bin/gcc CXX=/usr/bin/g++ ${CMAKE_COMMAND} -S . -B ${PROJECT_SOURCE_DIR}/extern/SEAL/build -DSEAL_USE_GAUSSIAN_NOISE=ON -DCMAKE_INSTALL_PREFIX=${PROJECT_SOURCE_DIR}/build/seal_4_1
++    execute_process(COMMAND ${CMAKE_COMMAND} -E env CC=/usr/bin/gcc CXX=/usr/bin/g++ ${CMAKE_COMMAND} -S . -B ${PROJECT_SOURCE_DIR}/extern/SEAL/build -DSEAL_USE_GAUSSIAN_NOISE=ON -DCMAKE_INSTALL_PREFIX=/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/third_party/FABLE/build/seal_4_1
+         WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}/extern/SEAL")
+     execute_process(COMMAND ${CMAKE_COMMAND} --build ./build --target install --parallel
+         WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}/extern/SEAL")
+-    find_package(SEAL 4.1 REQUIRED PATHS "${PROJECT_SOURCE_DIR}/build/seal_4_1" NO_DEFAULT_PATH)
++    find_package(SEAL 4.1 REQUIRED PATHS "/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/third_party/FABLE/build/seal_4_1" NO_DEFAULT_PATH)
+ endif()
+ 
+ find_package(OpenMP REQUIRED)

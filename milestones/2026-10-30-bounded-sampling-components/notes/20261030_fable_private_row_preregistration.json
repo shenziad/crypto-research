@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-10-30T05:54:46.698796+00:00",
+  "source_sha256": {
+    "experiments/fable_private_row_harness.cpp": "ed3e3fdc49feb58e74db18e554648057bcb7a821115b718f41c27de36598c590",
+    "experiments/run_fable_private_row_check.py": "43256abbdeca724c239afa679cc22297fb28e2e0e3f00d43defad53f41c22514",
+    "third_party/FABLE/CMakeLists.txt": "ef12b65282fbd6252a191e865feaf5495fa0ca37ffebfd5fd2b8d7c4523d8351",
+    "third_party/FABLE/src/GC/CMakeLists.txt": "af5597aaf20137e532c5fe0d5c91bab261778056b184832b0a35fbfe3f1e13a0",
+    "third_party/FABLE/src/GC/lookup.cpp": "d81d4de14b60b5391ceb7a163b5a64427c01781793f02a98e06f87fe639aa9ba",
+    "third_party/FABLE/src/GC/lookup.h": "93c8c040f25988d52f97b41b756f2ce9d2a4aec332c7cdc777e8f84b67e48d0c",
+    "third_party/FABLE/extern/BatchPIR/header/utils.h": "da499d63bf5352195cb13617fdf8b17f49efe3a250cca98d584ac6b92ca73743",
+    "third_party/FABLE/extern/BatchPIR/header/database_constants.h": "3c778a9e1cbf98d9978c53171bbb4f2be4db9426bac403ec278fc3604db07e23",
+    "third_party/FABLE/extern/BatchPIR/src/batchpirparams.cpp": "ce7923a110f5b68fcf9795495fdca58d1b3b4c5700aa7a90fd264f0dd95c908c",
+    "third_party/FABLE/extern/EzPC/SCI/src/utils/net_io_channel.h": "198a29a7743952926586f70dc4cd14fbb9b8c3dc87dfc8fe31383f9868b1d280",
+    "third_party/FABLE/test/test_aes.cpp": "c35d71ee9a33264a018ea4992e816d8fea147f421892f49d240aa2a3e9a12044",
+    "third_party/FABLE/test/test_deduplication.cpp": "3365c400f0370e9a51889b110a041cead283f80d77801a2e818ed07293aff1c4"
+  },
+  "binary_sha256": {
+    "private_row_harness": "7f6c470556876946f989f48ed627f2cf3146d83496384bd079cf8f13957d0603",
+    "aes": "1e7ae425eaf112f2525ce12267dcec52f3dbd25c70c931e48af717a256dc6518",
+    "deduplication": "bc040712a762f840919a2750b348cbba5c4580db8cc29a736d8d154fd7d29b88"
+  },
+  "adapter_weights_sha256": "e89c3c6ee3163676249973519bd5499b5513d1f561a2a108c89b03ddfde984eb",
+  "upstream_commit": "be6e73220e25af6d699c532b38e9526701a68280",
+  "parameters": {
+    "input_bits": 16,
+    "output_bits": 256,
+    "max_log_size": 16,
+    "oprf": "AES128",
+    "batch": 256,
+    "threads": 4
+  },
+  "cases": [
+    "synthetic full32byte table,256querieswith endpointsandduplicates",
+    "FrozenA IEEE32bytes,191querycontrols+65zeroindexpadding; no qsampling orarith"
+  ],
+  "timeout_seconds_per_pair": 600,
+  "limits": "ActualupstreamFABLE withsharedinput andmaskedoutput wrapper. Bothpartybytecounts includeGCsetup, HEkeys, tableinitialization, secretinputfeeding, batchedlookup andXORsharerelease; excludesprocessspawn andclearinputfiletableloading. Fixedupstream8192buckets retained. Functionalfirstobservations only, notbalancedlatency orSOTA. SyntheticindicesnotrealLLMsamples; privateadapter arithmetic, aliasbatchintegration andfullrejection absent. Parentreconstructsonlyafterexit; workerreceives onlyownsharepath andserveronlytablepath. Standardupstreamprimitive notourinvention. Buildonlypatches documented, no parameters changedaftermeasurement."
+}

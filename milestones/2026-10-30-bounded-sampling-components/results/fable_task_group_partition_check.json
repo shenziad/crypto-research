@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "public_schedules": 8192,
+  "nonempty_group_intervals": 1013644,
+  "small_failure_s": 119,
+  "patch": "activegroups=ceil(s/ceil(s/128)); allocateanditerateonlynonemptygroups; exactsamecolumns0..s-1once",
+  "source_sha256": "a8df9a4b5fc2c279642d163aafc158409d40dae1b68e6779f18132bef1ee55fd",
+  "limits": "Public task partition correctness only, not a crypto execution or security proof; originalfailedprotocolstate retained."
+}

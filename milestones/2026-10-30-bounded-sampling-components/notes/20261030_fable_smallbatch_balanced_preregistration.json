@@ -1,0 +1,39 @@
+{
+  "created_utc": "2026-10-30T06:43:37.412305+00:00",
+  "variants": {
+    "default8192": "third_party/FABLE",
+    "small512": "third_party/FABLE-smallbatch"
+  },
+  "orders": [
+    [
+      "default8192",
+      "small512"
+    ],
+    [
+      "small512",
+      "default8192"
+    ],
+    [
+      "default8192",
+      "small512"
+    ],
+    [
+      "small512",
+      "default8192"
+    ]
+  ],
+  "input_sha256": {
+    "experiments/fable_smallbatch_balanced.py": "c7163ad42081ca00f96ac3e25eb1ebafeb73d72aac05170d4c7bc455be423ef9",
+    "experiments/run_fable_smallbatch_check.py": "e7ca72c566bd61a3564e3c28ff82d20b1ccb1fc77d45a3cb9c986ab519ebc0b2",
+    "third_party/FABLE/build/bin/private_row_harness": "ddf041b8386c390882679513533f95743f413c7fe68d25e0c2b5ba50a52b2825",
+    "third_party/FABLE/build/bin/aes": "1e7ae425eaf112f2525ce12267dcec52f3dbd25c70c931e48af717a256dc6518",
+    "third_party/FABLE/build/bin/deduplication": "bc040712a762f840919a2750b348cbba5c4580db8cc29a736d8d154fd7d29b88",
+    "notes/20261030_fable_private_row_preregistration_v3.json": "73ee3a6bd776d86394075977322daf5cfd5efef27a70aaf3d42b5bc883060854",
+    "third_party/FABLE-smallbatch/build/bin/private_row_harness": "5ea8915c0148294d3069a7f25f5d18c16b61e02c5328f108b1284c30d9aee68f",
+    "notes/20261030_fable_smallbatch_preregistration.json": "4a433211ab534c97ad28fea13609f01902f3bd6bb99c4203645568bb22782378",
+    "results/fable_private_row_check_runs/frozen_A_191_plus65/owner_table.bin": "2ec8871e41759688e35443b5434db31bdb42eef9eaeca83de3f4e4aba44bc5a9",
+    "results/fable_private_row_check_runs/frozen_A_191_plus65/owner_index_shares.bin": "fcbe0af32d01f9a1ae0e71fc4befadf4dfbc9aa461c85006e02308825ad0cdc2",
+    "results/fable_private_row_check_runs/frozen_A_191_plus65/other_index_shares.bin": "8dbb141756f56334665c84647527b78869e271b89f3fdd38f4dda54687d60211"
+  },
+  "limits": "Four alternating paired runs, same table and256 control indices (191 effective +65 padding), fresh XOR masks/crypto each run. Local127.0.0.1 CPU4; no concurrent model quality job. Count full protocol including GC/keys/preparation/inputs/lookup/share output, excludes process launch/file reads. Small variant includes additional unselected-zero assertions. Only compares these two pinned builds; no direct-OT timing, WAN, upstream optimality or full sampler/newness claim."
+}

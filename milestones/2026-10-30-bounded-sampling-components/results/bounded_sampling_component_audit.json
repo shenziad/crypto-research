@@ -1,0 +1,48 @@
+{
+  "all_passed": true,
+  "input_file_hashes_checked": 46,
+  "private_input_records_parsed": 911,
+  "exact_bigint_intermediates": 1050,
+  "correct_token_only_runs": 2,
+  "concrete_domain_checks": [
+    {
+      "name": "signed_pwl_knots",
+      "quantized_input_l2": 8.0,
+      "max_abs_t_accumulator": 34359738368,
+      "range_certificate_passed": true
+    },
+    {
+      "name": "near_domain_accumulators",
+      "quantized_input_l2": 19.79898987322333,
+      "max_abs_t_accumulator": 962072674304,
+      "range_certificate_passed": true
+    },
+    {
+      "name": "ptb_201_shares",
+      "quantized_input_l2": 10.56039962644733,
+      "max_abs_t_accumulator": 16121461619,
+      "range_certificate_passed": true
+    },
+    {
+      "name": "ptb_201_token",
+      "quantized_input_l2": 10.56039962644733,
+      "max_abs_t_accumulator": 16121461619,
+      "range_certificate_passed": true
+    },
+    {
+      "name": "wiki_201_shares",
+      "quantized_input_l2": 12.410343404668744,
+      "max_abs_t_accumulator": 27782955574,
+      "range_certificate_passed": true
+    },
+    {
+      "name": "wiki_201_token",
+      "quantized_input_l2": 12.410343404668744,
+      "max_abs_t_accumulator": 27782955574,
+      "range_certificate_passed": true
+    }
+  ],
+  "exact_sampling_error_budget": 2.6430181366130744e-13,
+  "source_sha256": "451ef75b332ca805f0bb385950a9b8f33c56f2027d6518895ccf50b2936a04fb",
+  "limits": "Audit validates component records and exact private arithmetic references only. Does not establish fresh quality evidence, full protocol composition, implementation security, end-to-end speed or independent novelty."
+}

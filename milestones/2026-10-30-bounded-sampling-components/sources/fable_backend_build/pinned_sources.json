@@ -1,0 +1,37 @@
+{
+  "fable": {
+    "commit": "be6e73220e25af6d699c532b38e9526701a68280",
+    "patch": "sources/fable_backend_build/fable.patch",
+    "patch_sha256": "943bb29c31a37ce4b5b402c381eaaeb0795aa79fd80b0b0f01c158cb564ed90e"
+  },
+  "batchpir": {
+    "commit": "6d8899c614940fcb260e69fe0d379f5e98ba3083",
+    "patch": "sources/fable_backend_build/batchpir.patch",
+    "patch_sha256": "30711dd1e374ea605b71dd8989aaf4faefc60a2f3489775a2dc21e44618c8017"
+  },
+  "ezpc": {
+    "commit": "133464a87116be780c5ff1110a5b721eccb99c9d",
+    "patch": "sources/fable_backend_build/ezpc.patch",
+    "patch_sha256": "c276e027aa63f9f29df34ffd7a569ad71f29f61eb451bc63a1fc1904823c6a62"
+  },
+  "seal3": {
+    "commit": "1d5c8169aa5aca9deb75c4079e53ea8d5e94007d",
+    "patch": "sources/fable_backend_build/seal3.patch",
+    "patch_sha256": "39374f6aa65b1790286c16d0de6f0ab400c8ee6395b240b7ad860134bb0919ca"
+  },
+  "seal4": {
+    "commit": "206648d0e4634e5c61dcf9370676630268290b59",
+    "patch": "sources/fable_backend_build/seal4.patch",
+    "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "libote": {
+    "commit": "90dbd858cb47f1381fd9186f8436b14edc0f0dbe",
+    "patch": "sources/fable_backend_build/libote.patch",
+    "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "cryptotools": {
+    "commit": "0396ff3ce39ef894d397cbe1f6e9c46537764bda",
+    "patch": "sources/fable_backend_build/cryptotools.patch",
+    "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

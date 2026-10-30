@@ -1,0 +1,15 @@
+{
+  "base": "Apply sources/fable_backend_build pinned sources and patches first; this patch is relative to that built baseline, not pristine upstream.",
+  "changes": [
+    "CMakeLists.txt",
+    "extern/BatchPIR/header/database_constants.h",
+    "extern/BatchPIR/src/batchpirclient.cpp",
+    "extern/BatchPIR/src/batchpirparams.cpp",
+    "extern/BatchPIR/src/batchpirserver.cpp",
+    "extern/CMakeLists.txt",
+    "src/GC/CMakeLists.txt"
+  ],
+  "patch_sha256": "5747b309bc375225c12a9f2cc4e2a4d37a9bb21b985027697ceed099970e99e1",
+  "reg_sha256": "4a433211ab534c97ad28fea13609f01902f3bd6bb99c4203645568bb22782378",
+  "limits": "RootCMake paths reuse original SEAL build at local NEWSMY location; adapt locations for another machine. Not a clean-clone installer. Crypto/security parameters unchanged except declared publicbucket capacity/configuration; full implementation privacy proof not supplied."
+}

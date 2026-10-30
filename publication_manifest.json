@@ -1,9 +1,10 @@
 {
   "format_version": 2,
-  "updated_utc": "2026-10-30T00:34:30.090779+00:00",
+  "updated_utc": "2026-10-30T07:05:30.790164+00:00",
   "milestones": [
     "2026-10-29-exact-coarse",
-    "2026-10-30-private-sampling-screen"
+    "2026-10-30-private-sampling-screen",
+    "2026-10-30-bounded-sampling-components"
   ],
   "files": [
     {
@@ -18,8 +19,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2139,
-      "sha256": "90ce3707c8e0550e5836ca8e51e0f486c5342d78a55dde6d039bf71c74e554fc"
+      "bytes": 2380,
+      "sha256": "25df3d1f7ae772726e8e9e19964d90d8b49cb2cfa6d1521ab655f3716fd942c1"
     },
     {
       "path": "milestones/2026-10-29-exact-coarse/REPRODUCIBILITY.md",
@@ -685,6 +686,336 @@
       "path": "milestones/2026-10-29-exact-coarse/scripts/smoke_exact_coarse.py",
       "bytes": 1770,
       "sha256": "457c06aefc5b0cf32bc13a3f15c52b7fa928d6ec1f1d6ecd5053fac3fa859d10"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/README.md",
+      "bytes": 3328,
+      "sha256": "32d65c384cd56a2fb3cb18f45a728662f08f8d6edbd34849a3c974e66ab53c84"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/RESEARCH_SCOPE.md",
+      "bytes": 1918,
+      "sha256": "4e60f0752f700839c8986d794224e21892c06bb09867c6f2ca1607b2706abd7b"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/artifact_manifest.json",
+      "bytes": 11829,
+      "sha256": "ae9efe7dda8b77826f48497b622127ee534b8e73c1e695f0907db5257ebd6678"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/experiments/bounded_accept_select.cpp",
+      "bytes": 5902,
+      "sha256": "3ef99ded64ff5cfcd4b18a264516c71867a7e9dc0304836a2ed8733456a3b6a0"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/experiments/bounded_adapter_fixed16.py",
+      "bytes": 2126,
+      "sha256": "af21fbed747d7fa15cb1fdda8a479e1d1290b5879147bfbff1955557b3d55a26"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/experiments/bounded_adapter_fixed16_certificate.py",
+      "bytes": 4977,
+      "sha256": "7b6659cf622010d3dc61d6dcf464fa17f76316ee78e03aee6addc6ac8b6bfc2a"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/experiments/bounded_adapter_fixed16_quality.py",
+      "bytes": 5685,
+      "sha256": "1a3ab2991b2a464c8bff22fc8a558c1450365ace130228bb91f68b93cec9a135"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/experiments/bounded_adapter_gc.cpp",
+      "bytes": 8942,
+      "sha256": "3c6b8d47b889540ebc610c04c55a4ed69f79f992af366a6017c49a4491e6b7c1"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/experiments/bounded_output_adapter_holdout.py",
+      "bytes": 5301,
+      "sha256": "167081a6e210e3bbc26c81f138fc8b469d338eafb2ad0b12af3a6a972fc80d1a"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/experiments/bounded_output_adapter_pilot.py",
+      "bytes": 6993,
+      "sha256": "efa585d033626966448d5a37fef8a00431d079bfc722fe5b21f15ef5128b8e27"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/experiments/bounded_sampling_component_audit.py",
+      "bytes": 5142,
+      "sha256": "451ef75b332ca805f0bb385950a9b8f33c56f2027d6518895ccf50b2936a04fb"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/experiments/build_bounded_accept_select.py",
+      "bytes": 1533,
+      "sha256": "ad66bfd58470102434629bcaf3d38d0d8e511ba52ca538a06574e0dbc6e84556"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/experiments/build_bounded_adapter_gc.py",
+      "bytes": 1459,
+      "sha256": "978ace55d90b5f75d7644e013710b5ded8bde6e1cbf139e0a9d37c239ae1130a"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/experiments/capture_bounded_adapter_gc_inputs.py",
+      "bytes": 2622,
+      "sha256": "93e0859231f7ac3c7a628c0e153baebc0fe71755ece7a25bcb8597bbca5ab68c"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/experiments/fable_private_row_harness.cpp",
+      "bytes": 6171,
+      "sha256": "ed3e3fdc49feb58e74db18e554648057bcb7a821115b718f41c27de36598c590"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/experiments/fable_smallbatch_balanced.py",
+      "bytes": 3648,
+      "sha256": "c7163ad42081ca00f96ac3e25eb1ebafeb73d72aac05170d4c7bc455be423ef9"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/experiments/fable_smallbatch_selector_check.py",
+      "bytes": 3069,
+      "sha256": "290f676d3f79ae6f7cc89b22351cf236e7b5c41d7d09d5604023f17510613022"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/experiments/finite_descending_bernoulli.py",
+      "bytes": 1484,
+      "sha256": "f088b4a51bda87d520cdd210f31ffb574ffb3f1566d07b479eb2e03e9e2cefb3"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/experiments/finite_descending_bernoulli_check.py",
+      "bytes": 5776,
+      "sha256": "36a46465436d287f2989bc97d306e7304b416da7ea8c33c1fa0d493eef416447"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/experiments/run_bounded_accept_select.py",
+      "bytes": 5109,
+      "sha256": "134202ad7083b13bf5478eb7e74b75a619198f5423fd6298a40ccaa4e22a7452"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/experiments/run_bounded_adapter_gc.py",
+      "bytes": 5802,
+      "sha256": "7d0d4d7b7763364baca7fd35f62978f98ca7ebb5ac065003d55bea11fe20f613"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/experiments/run_fable_private_row_check.py",
+      "bytes": 6466,
+      "sha256": "ea3f1998b3c3a2db9572b9a6f88b9fc05171997fa0477f8042ee11af3c724979"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/experiments/run_fable_smallbatch_check.py",
+      "bytes": 6574,
+      "sha256": "e7ca72c566bd61a3564e3c28ff82d20b1ccb1fc77d45a3cb9c986ab519ebc0b2"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/models/Pythia-14M/download_manifest.json",
+      "bytes": 1554,
+      "sha256": "fd83a9b693f1dac6262f0c51bfe757db01e3085a44887430f9873d366f462884"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/notes/20261029_invariance_route_outcome.md",
+      "bytes": 3181,
+      "sha256": "fa466367c018db9dea8083f6998cece00b4553b00b7ee5fe163161fef7fee6cb"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/notes/20261030_bounded_accept_select_preregistration.json",
+      "bytes": 2188,
+      "sha256": "30ffb9ce8e8c5d7ae57c2aa392030673fd322b8a14f09da9872a6a8101f82988"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/notes/20261030_bounded_accept_select_preregistration_v2.json",
+      "bytes": 3247,
+      "sha256": "3e6030bd29af834f4f4fbc02c5a1a72c3930f386f323b5fadfc84afb5af75659"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/notes/20261030_bounded_adapter_fixed16_quality_preregistration.json",
+      "bytes": 1960,
+      "sha256": "2aec71ee1e620c9af40b5eaf44316169d3a92d369d8f46b111607343bd3a482b"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/notes/20261030_bounded_adapter_gc_preregistration.json",
+      "bytes": 2529,
+      "sha256": "6076dba568ab5df19b4e3617da5c22663a31161a4fef96a858cc68177b436371"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/notes/20261030_bounded_adapter_gc_preregistration_v2.json",
+      "bytes": 3588,
+      "sha256": "8febd74dd4cd81c7c750b75fac5c9b535b7c91d70544149805b4cf7b658438de"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/notes/20261030_bounded_output_adapter_candidate.md",
+      "bytes": 6384,
+      "sha256": "902365a1f66fe66675d7ea3c5e145c182ec5031b63f7a032fd16cd2f154ef8cf"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/notes/20261030_bounded_output_adapter_holdout_preregistration.json",
+      "bytes": 2092,
+      "sha256": "65e6564fc605970436b55a644ebb5d58bc1caf300f88f91a4e28bef74cb3219b"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/notes/20261030_bounded_output_adapter_preregistration.json",
+      "bytes": 2904,
+      "sha256": "e25d0be20def9c256d142a0c134543d7d48e13c56a6b72a1b4b8451e672c926f"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/notes/20261030_bounded_sampling_finite_components.md",
+      "bytes": 7405,
+      "sha256": "efb6f963d5d82c51cb7ad526e566798b94ad9cb898623eb5ace041035c5b7cc8"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/notes/20261030_fable_backend_actual_screen.md",
+      "bytes": 6385,
+      "sha256": "7b9c95575aaa0a694aaad550fa64e27dfdd3853f9983e8cdb5808f34a1f645e0"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/notes/20261030_fable_private_row_preregistration.json",
+      "bytes": 2980,
+      "sha256": "e8b2f9f2702358fcc6bb70f8be64282d6aff08fc42e8300ab8c23a0ab02727fb"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/notes/20261030_fable_private_row_preregistration_v2.json",
+      "bytes": 3291,
+      "sha256": "4d93e1f6002d13ef6a60baf9c463707db5fd8a07ab574cad62898cfee66dd9ce"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/notes/20261030_fable_private_row_preregistration_v3.json",
+      "bytes": 3503,
+      "sha256": "73ee3a6bd776d86394075977322daf5cfd5efef27a70aaf3d42b5bc883060854"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/notes/20261030_fable_smallbatch_balanced_preregistration.json",
+      "bytes": 2329,
+      "sha256": "d31c10abd41c2d90146ce6d5247d04ea119286d83b38f443dbc08406fbfb9533"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/notes/20261030_fable_smallbatch_preregistration.json",
+      "bytes": 6823,
+      "sha256": "4a433211ab534c97ad28fea13609f01902f3bd6bb99c4203645568bb22782378"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/notes/20261030_private_sampling_prior_audit.md",
+      "bytes": 2927,
+      "sha256": "21a1257b29261a69fb7c14026912a6f49d3803231075aafc3f8322edc9d0a1f4"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/results/bounded_accept_select.json",
+      "bytes": 20773,
+      "sha256": "1b832ecf7728eb79c0a28ffb2d6ffd8cd527a9b06bc84a1d63b636d08bc8e22b"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/results/bounded_adapter_fixed16_certificate.json",
+      "bytes": 3797,
+      "sha256": "baf7409d64a7e52edd51072c082fcb92b9ea3e60c80a1261c15ac08057332ebe"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/results/bounded_adapter_fixed16_quality.json",
+      "bytes": 15355,
+      "sha256": "9fca41cb18998c3a38553b99483f1f105f0bb474e26c702a0179c038104b1613"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/results/bounded_adapter_gc.json",
+      "bytes": 16239,
+      "sha256": "22ac4f546b6a5d855d44a6d2d1b3eac8bd419950d71e1b47505e78003ecf7013"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/results/bounded_adapter_gc_inputs_manifest.json",
+      "bytes": 727,
+      "sha256": "4413549d2773ac5e167453b33e67fbaf0a4e221fe0f68bbbd00372502cbf5abb"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/results/bounded_output_adapter_holdout.json",
+      "bytes": 23901,
+      "sha256": "27e67251494a8a5089b9000ba2008104db8b441500eaa0b23705d33f90210c12"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/results/bounded_output_adapter_pilot.json",
+      "bytes": 17472,
+      "sha256": "44086398a0396da4016e57b1dfe2d0464eb52426826922918e5147d5ad91b77e"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/results/bounded_sampling_component_audit.json",
+      "bytes": 1629,
+      "sha256": "4f3bc3bde7678b1e125de2240b43f7dd94cc5548fd43ac0afd198a55a054ad43"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/results/fable_private_row_check.json",
+      "bytes": 9519,
+      "sha256": "3e5892dd693a159c4c0d9a5e63f323577a428170d0e1b98c85021e24f315210d"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/results/fable_smallbatch_balanced.json",
+      "bytes": 20878,
+      "sha256": "333131bf541b4cdbbeac18a272cdd88aea3284a091e0e011e436c8c9fb2f9707"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/results/fable_smallbatch_private_row_check.json",
+      "bytes": 13336,
+      "sha256": "ec651baa465309ab36e11f9b64f860778a9e9feaced16d4cf988bb93b0208709"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/results/fable_smallbatch_selector_check.json",
+      "bytes": 1143,
+      "sha256": "642bc446735f546fe3a03540597a7ac9a1f26928b929da73c7295a08e9c26b43"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/results/fable_task_group_partition_check.json",
+      "bytes": 453,
+      "sha256": "11c7a7764e950e3109cacc1d8492e8e458957de2965be88b7355749d67b4e6da"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/results/finite_descending_bernoulli_check.json",
+      "bytes": 5434,
+      "sha256": "8739c90b71cc0b67eb8f1cc718d29b2f0f2ba732ca7c6cd8930ad982dc4d71b4"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/sources/fable_backend_build/batchpir.patch",
+      "bytes": 1925,
+      "sha256": "30711dd1e374ea605b71dd8989aaf4faefc60a2f3489775a2dc21e44618c8017"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/sources/fable_backend_build/cryptotools.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/sources/fable_backend_build/environment_explicit.txt",
+      "bytes": 5403,
+      "sha256": "ee21be77b0f2811481ad7650e311976d5ade4dcda200fdf89eb3e2208a700435"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/sources/fable_backend_build/ezpc.patch",
+      "bytes": 3982,
+      "sha256": "c276e027aa63f9f29df34ffd7a569ad71f29f61eb451bc63a1fc1904823c6a62"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/sources/fable_backend_build/fable.patch",
+      "bytes": 2729,
+      "sha256": "943bb29c31a37ce4b5b402c381eaaeb0795aa79fd80b0b0f01c158cb564ed90e"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/sources/fable_backend_build/libote.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/sources/fable_backend_build/pinned_sources.json",
+      "bytes": 1554,
+      "sha256": "c380f55aa2fcecb1c1cf65140ff2c942a492faeb8790e5a155128fcef48263dd"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/sources/fable_backend_build/seal3.patch",
+      "bytes": 285,
+      "sha256": "39374f6aa65b1790286c16d0de6f0ab400c8ee6395b240b7ad860134bb0919ca"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/sources/fable_backend_build/seal4.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/sources/fable_smallbatch_build/manifest.json",
+      "bytes": 899,
+      "sha256": "a916316d470adb6674bbc573bb384289aa6b97f7d68b0fa840bfc833c3404590"
+    },
+    {
+      "path": "milestones/2026-10-30-bounded-sampling-components/sources/fable_smallbatch_build/smallbatch_over_patched_baseline.patch",
+      "bytes": 7582,
+      "sha256": "5747b309bc375225c12a9f2cc4e2a4d37a9bb21b985027697ceed099970e99e1"
     },
     {
       "path": "milestones/2026-10-30-private-sampling-screen/README.md",

@@ -1,0 +1,88 @@
+diff --git a/SCI/cmake/SCIConfig.cmake b/SCI/cmake/SCIConfig.cmake
+index 59232b0..32061ba 100644
+--- a/SCI/cmake/SCIConfig.cmake
++++ b/SCI/cmake/SCIConfig.cmake
+@@ -34,8 +34,8 @@ find_dependency(GMP REQUIRED)
+ find_dependency(Threads REQUIRED)
+ 
+ set_and_check(INSTALL_DIR "${PACKAGE_PREFIX_DIR}")
+-find_dependency(Eigen3 REQUIRED PATHS "/Users/deevashwer/EzPC/SCI/build/../extern/eigen/build" NO_DEFAULT_PATH)
+-find_dependency(SEAL REQUIRED PATHS "/Users/deevashwer/EzPC/SCI/build" NO_DEFAULT_PATH)
++find_dependency(Eigen3 REQUIRED PATHS "/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/third_party/FABLE/extern/EzPC/SCI/build/../extern/eigen/build" NO_DEFAULT_PATH)
++find_dependency(SEAL REQUIRED PATHS "/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/third_party/FABLE/extern/EzPC/SCI/build" NO_DEFAULT_PATH)
+ find_dependency(OpenMP REQUIRED)
+ 
+ # Add the targets file
+diff --git a/SCI/extern/SEAL b/SCI/extern/SEAL
+--- a/SCI/extern/SEAL
++++ b/SCI/extern/SEAL
+@@ -1 +1 @@
+-Subproject commit 1d5c8169aa5aca9deb75c4079e53ea8d5e94007d
++Subproject commit 1d5c8169aa5aca9deb75c4079e53ea8d5e94007d-dirty
+diff --git a/SCI/src/LinearHE/CMakeLists.txt b/SCI/src/LinearHE/CMakeLists.txt
+index 37a518e..2b58827 100644
+--- a/SCI/src/LinearHE/CMakeLists.txt
++++ b/SCI/src/LinearHE/CMakeLists.txt
+@@ -13,7 +13,7 @@ if (NOT SEAL_FOUND)
+     endif ()
+     execute_process(COMMAND ${CMAKE_COMMAND} -DCMAKE_INSTALL_PREFIX=${PROJECT_SOURCE_DIR}/build .
+             WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}/extern/SEAL/native/src")
+-    execute_process(COMMAND ${CMAKE_COMMAND} --build . --target install
++    execute_process(COMMAND ${CMAKE_COMMAND} --build . --target install --parallel
+         WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}/extern/SEAL/native/src")
+     find_package(SEAL 3.3.2 EXACT REQUIRED PATHS "${PROJECT_SOURCE_DIR}/build/" NO_DEFAULT_PATH)
+ endif()
+diff --git a/SCI/src/cleartext_library_float.h b/SCI/src/cleartext_library_float.h
+index 37007ee..e76ae88 100644
+--- a/SCI/src/cleartext_library_float.h
++++ b/SCI/src/cleartext_library_float.h
+@@ -22,6 +22,7 @@ SOFTWARE.
+ #ifndef LIBRARY_CLEARTEXT_FLOAT_H__
+ #define LIBRARY_CLEARTEXT_FLOAT_H__
+ 
++#include <cstdint>
+ #include <vector>
+ #include <math.h>
+ #include <cstdlib>
+diff --git a/SCI/src/utils/CMakeLists.txt b/SCI/src/utils/CMakeLists.txt
+index 225bfc4..57d0168 100644
+--- a/SCI/src/utils/CMakeLists.txt
++++ b/SCI/src/utils/CMakeLists.txt
+@@ -9,7 +9,7 @@ add_library(SCI-utils INTERFACE)
+ 
+ target_compile_options(SCI-utils
+     INTERFACE
+-    "-pthread;-maes;-msse4.1;-mavx;-mavx2;-faligned-new;-std=c++17;-O3;-Wno-parentheses-equality;-Wno-deprecated-declarations;-Wno-macro-redefined")
++    "-pthread;-maes;-msse4.1;-mavx;-mavx2;-faligned-new;-std=c++20;-O3;-Wno-parentheses-equality;-Wno-deprecated-declarations;-Wno-macro-redefined")
+ #     "-pthread;-Wall;-maes;-msse4.1;-mavx;-mavx2;-faligned-new;-std=c++17;-w;-g;-ggdb;-O0")
+ 
+ if(USE_RANDOM_DEVICE)
+diff --git a/SCI/src/utils/net_io_channel.h b/SCI/src/utils/net_io_channel.h
+index e4b47c7..ce6ddc6 100644
+--- a/SCI/src/utils/net_io_channel.h
++++ b/SCI/src/utils/net_io_channel.h
+@@ -58,6 +58,7 @@ public:
+   string addr;
+   int port;
+   uint64_t counter = 0;
++  uint64_t received_counter = 0;
+   uint64_t num_rounds = 0;
+   bool FBF_mode;
+   LastCall last_call = LastCall::None;
+@@ -72,7 +73,7 @@ public:
+       memset(&serv, 0, sizeof(serv));
+       serv.sin_family = AF_INET;
+       serv.sin_addr.s_addr =
+-          htonl(INADDR_ANY);       /* set our address to any interface */
++          htonl(INADDR_LOOPBACK);       /* set our address to any interface */
+       serv.sin_port = htons(port); /* set the server port number */
+       mysocket = socket(AF_INET, SOCK_STREAM, 0);
+       int reuse = 1;
+@@ -182,6 +183,7 @@ public:
+   }
+ 
+   void recv_data(void *data, int len) {
++    received_counter += len;
+     if (last_call != LastCall::Recv) {
+       num_rounds++;
+       last_call = LastCall::Recv;

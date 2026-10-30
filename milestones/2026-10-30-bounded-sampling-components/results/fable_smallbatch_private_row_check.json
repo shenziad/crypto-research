@@ -1,0 +1,261 @@
+{
+  "all_passed": true,
+  "upstream_smoke_inherited": [
+    {
+      "wall_seconds": 0.2504298660001041,
+      "logs": [
+        {
+          "path": "results/fable_private_row_check_runs/aes/party1.log",
+          "sha256": "5368c87eaf5ce2336e14b60d5e26a8d0562152ee0c06b81ec039b1eb6761fda4"
+        },
+        {
+          "path": "results/fable_private_row_check_runs/aes/party2.log",
+          "sha256": "39c63a389271d375280e9f989f7a390f4b9b411879864efff905fc30061037bd"
+        }
+      ],
+      "name": "aes",
+      "all_passed": true
+    },
+    {
+      "wall_seconds": 0.25049778299990066,
+      "logs": [
+        {
+          "path": "results/fable_private_row_check_runs/deduplication/party1.log",
+          "sha256": "589d6a4267fb3d5164f78814e2f81fe5b1d4e40961f4e7204c66dd664cc22700"
+        },
+        {
+          "path": "results/fable_private_row_check_runs/deduplication/party2.log",
+          "sha256": "7c44f4c35bac14754db3b582cd8d90d86c1fd368df99591022c0c4fc393b4e13"
+        }
+      ],
+      "name": "deduplication",
+      "all_passed": true
+    }
+  ],
+  "results": [
+    {
+      "wall_seconds": 1.7512302310005907,
+      "logs": [
+        {
+          "path": "results/fable_smallbatch_private_row_check_runs/synthetic_wide/party1.log",
+          "sha256": "7e72e1456f670ecb441ae3819ef58256b07611ee7937f87de3686bbd46e61fbe"
+        },
+        {
+          "path": "results/fable_smallbatch_private_row_check_runs/synthetic_wide/party2.log",
+          "sha256": "e5beca39482c19f50d09555c5fa5ffd349352cbf4919eecf10330e7a2db8bcee"
+        }
+      ],
+      "name": "synthetic_wide",
+      "queries": 256,
+      "effective_sampler_queries": null,
+      "all_bytes_exact": true,
+      "all_correct": true,
+      "parties": [
+        {
+          "role": 1,
+          "queries": 256,
+          "row_bytes": 32,
+          "oprf": "AES128",
+          "threads": 4,
+          "connect_wait_ms": 0.545984,
+          "gc_setup_ms": 5.48059,
+          "prepare_ms": 251.074,
+          "input_ms": 10.9621,
+          "lookup_ms": 1374.6,
+          "share_release_ms": 2.28103,
+          "protocol_ms": 1644.4,
+          "sent": 297427471,
+          "received": 15378247,
+          "gc_setup_sent": 64,
+          "gc_setup_received": 0,
+          "prepare_sent": 0,
+          "prepare_received": 340135,
+          "input_sent": 270976,
+          "input_received": 279750,
+          "lookup_sent": 297090895,
+          "lookup_received": 14758362,
+          "release_sent": 65536,
+          "release_received": 0,
+          "io_direction_changes": 13
+        },
+        {
+          "role": 2,
+          "queries": 256,
+          "row_bytes": 32,
+          "oprf": "AES128",
+          "threads": 4,
+          "connect_wait_ms": 80.5028,
+          "gc_setup_ms": 50.1779,
+          "prepare_ms": 203.025,
+          "input_ms": 14.1963,
+          "lookup_ms": 1375.85,
+          "share_release_ms": 2.28464,
+          "protocol_ms": 1645.53,
+          "sent": 15378247,
+          "received": 297427471,
+          "gc_setup_sent": 0,
+          "gc_setup_received": 64,
+          "prepare_sent": 340135,
+          "prepare_received": 0,
+          "input_sent": 279750,
+          "input_received": 270976,
+          "lookup_sent": 14758362,
+          "lookup_received": 297090895,
+          "release_sent": 0,
+          "release_received": 65536,
+          "io_direction_changes": 13
+        }
+      ],
+      "total_wire_bytes": 312805718,
+      "max_party_protocol_ms": 1645.53,
+      "table_sha256": "1e7e59cdf725bc8d396d50a5aa4c82f3a1d551754fa86f3b808d54401243b037",
+      "input_share_sha256": [
+        "52e6ba69a41df99b96d73a4b55fab7d5beec737e66bd8fc885f719a6734e25bb",
+        "c2ffcebbdf3d346a4e7ae0d9351664b9bbe25d1d68e22de194701e288f4cf9f9"
+      ],
+      "output_share_sha256": [
+        "213da519d0fe55ca9981d22602f01e259336a9573767e7fed6148976d1426e25",
+        "ecf757ac28addb209f73c0c63ef8358c7bb6f9f47e0006005b4ce05779cb07de"
+      ],
+      "unselected_plaintext_slots_checked_zero": 345600,
+      "observed_max_bucket_load": 439,
+      "matched_baseline_input": true
+    },
+    {
+      "wall_seconds": 1.7510219360001429,
+      "logs": [
+        {
+          "path": "results/fable_smallbatch_private_row_check_runs/frozen_A_191_plus65/party1.log",
+          "sha256": "1df80e4d2ea897015853caf448826016d37d77e6ccbab59b7bb45e675afd298f"
+        },
+        {
+          "path": "results/fable_smallbatch_private_row_check_runs/frozen_A_191_plus65/party2.log",
+          "sha256": "6c147a7ac64cdddc5835b731afbc01a1b566317e6a3a0815f37f0103fd492988"
+        }
+      ],
+      "name": "frozen_A_191_plus65",
+      "queries": 256,
+      "effective_sampler_queries": 191,
+      "all_bytes_exact": true,
+      "all_correct": true,
+      "parties": [
+        {
+          "role": 1,
+          "queries": 256,
+          "row_bytes": 32,
+          "oprf": "AES128",
+          "threads": 4,
+          "connect_wait_ms": 0.05368,
+          "gc_setup_ms": 7.36632,
+          "prepare_ms": 207.374,
+          "input_ms": 7.64529,
+          "lookup_ms": 1338.32,
+          "share_release_ms": 2.27005,
+          "protocol_ms": 1562.98,
+          "sent": 297426497,
+          "received": 15378316,
+          "gc_setup_sent": 64,
+          "gc_setup_received": 0,
+          "prepare_sent": 0,
+          "prepare_received": 340036,
+          "input_sent": 270976,
+          "input_received": 279750,
+          "lookup_sent": 297089921,
+          "lookup_received": 14758530,
+          "release_sent": 65536,
+          "release_received": 0,
+          "io_direction_changes": 13
+        },
+        {
+          "role": 2,
+          "queries": 256,
+          "row_bytes": 32,
+          "oprf": "AES128",
+          "threads": 4,
+          "connect_wait_ms": 43.7505,
+          "gc_setup_ms": 60.3405,
+          "prepare_ms": 152.031,
+          "input_ms": 9.92763,
+          "lookup_ms": 1339.47,
+          "share_release_ms": 2.32231,
+          "protocol_ms": 1564.09,
+          "sent": 15378316,
+          "received": 297426497,
+          "gc_setup_sent": 0,
+          "gc_setup_received": 64,
+          "prepare_sent": 340036,
+          "prepare_received": 0,
+          "input_sent": 279750,
+          "input_received": 270976,
+          "lookup_sent": 14758530,
+          "lookup_received": 297089921,
+          "release_sent": 0,
+          "release_received": 65536,
+          "io_direction_changes": 13
+        }
+      ],
+      "total_wire_bytes": 312804813,
+      "max_party_protocol_ms": 1564.09,
+      "table_sha256": "2ec8871e41759688e35443b5434db31bdb42eef9eaeca83de3f4e4aba44bc5a9",
+      "input_share_sha256": [
+        "308ca4bd6d47d001363091171c1160e31513e635c098f55fb45034e9a04c952a",
+        "466565fb073555f8026a882dfe8a99f6912a9bac82718cef4b093c3d0fe08afe"
+      ],
+      "output_share_sha256": [
+        "4e04f897c97d65bc65e9a99afc081c8b05c45ec7db2e028491031c20c84906f1",
+        "0321b6096d83edff339859b69a6be45334ae013627886e219abc7f689a3c3704"
+      ],
+      "unselected_plaintext_slots_checked_zero": 345600,
+      "observed_max_bucket_load": 448,
+      "matched_baseline_input": true
+    }
+  ],
+  "preregistration_sha256": "4a433211ab534c97ad28fea13609f01902f3bd6bb99c4203645568bb22782378",
+  "source_sha256": {
+    "experiments/fable_private_row_harness.cpp": "ed3e3fdc49feb58e74db18e554648057bcb7a821115b718f41c27de36598c590",
+    "experiments/fable_smallbatch_selector_check.py": "290f676d3f79ae6f7cc89b22351cf236e7b5c41d7d09d5604023f17510613022",
+    "experiments/run_fable_smallbatch_check.py": "e7ca72c566bd61a3564e3c28ff82d20b1ccb1fc77d45a3cb9c986ab519ebc0b2",
+    "third_party/FABLE-smallbatch/CMakeLists.txt": "50529357bb63e4c93af7469c52175b4cd0a15db67af7e5c653b889defecc09a7",
+    "third_party/FABLE-smallbatch/extern/BatchPIR/header/LowMC.h": "17a8437155ddc9f0109543f92af3f5a5a77fe2416f55d373b6789ceaab3a0648",
+    "third_party/FABLE-smallbatch/extern/BatchPIR/header/batchpirclient.h": "604d3738407c7bfb16fadfa97ddafdf6457cc535828f9777d605e03028d05d9b",
+    "third_party/FABLE-smallbatch/extern/BatchPIR/header/batchpirparams.h": "73e43d43b4d13d80f563b255a8b7e9f59f1f356e148f4e2bba60494293d03c7e",
+    "third_party/FABLE-smallbatch/extern/BatchPIR/header/batchpirserver.h": "6de095409acb911b2523d6d26f42583ebe5df93430e87b15f72e9577704a6dd4",
+    "third_party/FABLE-smallbatch/extern/BatchPIR/header/client.h": "8ede1b4c63eef44b3f1b14cf0017eb1398fc776251c4f044031f86b7a212833b",
+    "third_party/FABLE-smallbatch/extern/BatchPIR/header/database_constants.h": "512dbdae58047f8cd527007d14f27a42846e357b6a5e95554f4b5d289ad28fdc",
+    "third_party/FABLE-smallbatch/extern/BatchPIR/header/pirparams.h": "442f6ae0cf94629769eb38d216065b6bf12944f1a248e1450b8a5c12edf95f7b",
+    "third_party/FABLE-smallbatch/extern/BatchPIR/header/server.h": "41b4bda1b1b36f79baea7d22bf42714208e40b635ab023553661d08cfe81441e",
+    "third_party/FABLE-smallbatch/extern/BatchPIR/header/utils.h": "da499d63bf5352195cb13617fdf8b17f49efe3a250cca98d584ac6b92ca73743",
+    "third_party/FABLE-smallbatch/extern/BatchPIR/src/LowMC.cpp": "9e86142ea37a7f68cc395f91808a9c054f32183b3644ef65f04ccb51b30143ca",
+    "third_party/FABLE-smallbatch/extern/BatchPIR/src/batchpirclient.cpp": "4de1f5307fc769cfcd45d48ebd808e88cb908aaaf8bfa9339cf3e65838dbd180",
+    "third_party/FABLE-smallbatch/extern/BatchPIR/src/batchpirparams.cpp": "49c9d7d7f357ace59bdde5ce971b4880a39ee7a22c9834d0ccfb2d9b20484005",
+    "third_party/FABLE-smallbatch/extern/BatchPIR/src/batchpirserver.cpp": "155d63f1fdb22acb2aaba08e263706959d4e6fd36847435a91dc3fc0d49e7b9e",
+    "third_party/FABLE-smallbatch/extern/BatchPIR/src/client.cpp": "af332a6bf71ee397ec47e98197cc2efc61f7b340fd6010bf5f53761298c9285d",
+    "third_party/FABLE-smallbatch/extern/BatchPIR/src/main.cpp": "da32be6674f22c72e56e06ab531444126d1d01555dcf85e682b6d4dc8b00185c",
+    "third_party/FABLE-smallbatch/extern/BatchPIR/src/pirparams.cpp": "a0735c3607fae7d24b16ec603cd808eecb42a78007a60d50ee08edb8b31f09bc",
+    "third_party/FABLE-smallbatch/extern/BatchPIR/src/server.cpp": "21d9b183f6bec0b262b1532644fcd23cd8812973db1e9426526f0b00504c2653",
+    "third_party/FABLE-smallbatch/extern/BatchPIR/src/utils.cpp": "5cbd63d7f6b3ed0f175f24a4d21193f95213c062babe7778324b638a6c1cefce",
+    "third_party/FABLE-smallbatch/extern/CMakeLists.txt": "1c9c0cc9e7ae8e55e6de7f2bc41f6ad61c9fedc6be278593f05c4ef12a7c816a",
+    "third_party/FABLE-smallbatch/extern/EzPC/SCI/src/utils/net_io_channel.h": "198a29a7743952926586f70dc4cd14fbb9b8c3dc87dfc8fe31383f9868b1d280",
+    "third_party/FABLE-smallbatch/src/GC/CMakeLists.txt": "52dc9be8c56b01f772cfbd88b529b66777605a18c6af30f7c3fe3407327cfce7",
+    "third_party/FABLE-smallbatch/src/GC/aes.cpp": "405cb86602d9ade3a32d893042ff7fa6006d26f84796c89ad92f820b19bc50ae",
+    "third_party/FABLE-smallbatch/src/GC/aes.h": "a6f4580ac256eb33d831603105fb13348b753cd754253952ad42bf49a801b8b4",
+    "third_party/FABLE-smallbatch/src/GC/custom_types.h": "a53e0561bdd0851eee8f66dcd0ffc53abc5a6f66fb941a7b2d0f3ad69d9cd1c5",
+    "third_party/FABLE-smallbatch/src/GC/deduplicate.cpp": "3db30f660d9dc8de17bd7d497b69d6634da3b5f783dd4888c319342f15885e51",
+    "third_party/FABLE-smallbatch/src/GC/deduplicate.h": "90f5097dcef97c7f3315aee0ae5b0dc617a369895be876122de9ac11bf314877",
+    "third_party/FABLE-smallbatch/src/GC/lookup.cpp": "d81d4de14b60b5391ceb7a163b5a64427c01781793f02a98e06f87fe639aa9ba",
+    "third_party/FABLE-smallbatch/src/GC/lookup.h": "93c8c040f25988d52f97b41b756f2ce9d2a4aec332c7cdc777e8f84b67e48d0c",
+    "third_party/FABLE-smallbatch/src/GC/lowmc.cpp": "2fce9a3c965991cea86c8bfaabdb5b9600722de762ffe959a0da0f83468f6959",
+    "third_party/FABLE-smallbatch/src/GC/lowmc.h": "51a30a0b70a27ca12a8d0851bf15b931c3bed9eebdd90432fc37a40f7faa40f4",
+    "third_party/FABLE-smallbatch/src/GC/orcompact.cpp": "7033eb28b14053cf716aeb79a5fc2f2d19763cb5e301e71dda4b8dbe375bb4fe",
+    "third_party/FABLE-smallbatch/src/GC/orcompact.h": "3308e84fc6242bae816bb5b326c730f25492a61be105f6714562473742cf9d58",
+    "third_party/FABLE-smallbatch/src/GC/sort.cpp": "8309228c6f8cea8da76445ffc81af7ecdf91a7b09f248db47871bb50ad55a381",
+    "third_party/FABLE-smallbatch/src/GC/sort.h": "55ca32bb80a480a950d0f77c0c62bde6509b0e8aa2c4f79cd5d5570893690dcd",
+    "third_party/FABLE-smallbatch/src/GC/subcube_query.cpp": "cc50583f8de6bc2a832dbe036aad0cf8122020c0d0e1927600d0c3c7567018e5",
+    "third_party/FABLE-smallbatch/src/GC/subcube_query.h": "a90d6097759383f4db8fff843a57400094cd2ff91ca7111fc47109b7be0b8170"
+  },
+  "binary_sha256": {
+    "private_row_harness": "5ea8915c0148294d3069a7f25f5d18c16b61e02c5328f108b1284c30d9aee68f"
+  },
+  "adapter_weights_sha256": "e89c3c6ee3163676249973519bd5499b5513d1f561a2a108c89b03ddfde984eb",
+  "limits": "SameupstreamFABLEalgorithm withfixed512buckets andideal-hash capacitybound; no newcryptoprimitive. Noextraunselecteddataperbucket byconstantweightselectorlaw; everyhonestqueryunselectedplaintextslotcheckedzero inactualFHE. PreserveAES128, privateindices, privatewideLUT, XORonlyoutputs, duplicatehandling andallkeys/setup/table/masktraffic. Public capacitycertificate assumesuniformindependenthashes, not a fullconcrete std::hash orcuckoofailureproof. No safetyorprivacyrelaxation intended; formalimplementationsecurity remainsunproven. No adapterarithmetic/aliasbatch/fullrejection/fullLLM orCCFclaim. Onefunctionalmeasurementpercase; balancedtimingfollowup onlyifpositive."
+}

@@ -1,0 +1,65 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 0e9fdc7..b04c971 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -79,3 +79,9 @@ find_package(libOTe REQUIRED)
+ 
+ add_subdirectory(src)
+ add_subdirectory(test)
++
++# Local same-function private-row harness; upstream crypto algorithms unchanged.
++add_executable(private_row_harness ${PROJECT_SOURCE_DIR}/../../experiments/fable_private_row_harness.cpp)
++target_link_libraries(private_row_harness fable-GC)
++
++target_compile_definitions(private_row_harness PRIVATE LUT_INPUT_SIZE=${LUT_INPUT_SIZE} LUT_OUTPUT_SIZE=${LUT_OUTPUT_SIZE} LUT_MAX_LOG_SIZE=${LUT_MAX_LOG_SIZE})
+diff --git a/extern/BatchPIR b/extern/BatchPIR
+--- a/extern/BatchPIR
++++ b/extern/BatchPIR
+@@ -1 +1 @@
+-Subproject commit 6d8899c614940fcb260e69fe0d379f5e98ba3083
++Subproject commit 6d8899c614940fcb260e69fe0d379f5e98ba3083-dirty
+diff --git a/extern/EzPC b/extern/EzPC
+--- a/extern/EzPC
++++ b/extern/EzPC
+@@ -1 +1 @@
+-Subproject commit 133464a87116be780c5ff1110a5b721eccb99c9d
++Subproject commit 133464a87116be780c5ff1110a5b721eccb99c9d-dirty
+diff --git a/src/GC/CMakeLists.txt b/src/GC/CMakeLists.txt
+index cb6e5ca..06ac014 100755
+--- a/src/GC/CMakeLists.txt
++++ b/src/GC/CMakeLists.txt
+@@ -6,7 +6,7 @@ find_package(SEAL 4.1 QUIET PATHS "${PROJECT_SOURCE_DIR}/build/seal_4_1" NO_DEFA
+ 
+ if (NOT SEAL_FOUND)
+     message(STATUS "clone and install SEAL locally")
+-    execute_process(COMMAND ${CMAKE_COMMAND} -E env CC=clang CXX=clang++ ${CMAKE_COMMAND} -S . -B ${PROJECT_SOURCE_DIR}/extern/SEAL/build -DSEAL_USE_GAUSSIAN_NOISE=ON -DCMAKE_INSTALL_PREFIX=${PROJECT_SOURCE_DIR}/build/seal_4_1
++    execute_process(COMMAND ${CMAKE_COMMAND} -E env CC=/usr/bin/gcc CXX=/usr/bin/g++ ${CMAKE_COMMAND} -S . -B ${PROJECT_SOURCE_DIR}/extern/SEAL/build -DSEAL_USE_GAUSSIAN_NOISE=ON -DCMAKE_INSTALL_PREFIX=${PROJECT_SOURCE_DIR}/build/seal_4_1
+         WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}/extern/SEAL")
+     execute_process(COMMAND ${CMAKE_COMMAND} --build ./build --target install --parallel
+         WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}/extern/SEAL")
+diff --git a/test/test_aes.cpp b/test/test_aes.cpp
+index fa6c435..83a5962 100644
+--- a/test/test_aes.cpp
++++ b/test/test_aes.cpp
+@@ -5,7 +5,7 @@
+ #include <emmintrin.h>
+ #include <iostream>
+ #include <chrono>
+-#include <fmt/core.h>
++#include <fmt/format.h>
+ #include <cryptoTools/Crypto/AES.h>
+ 
+ using namespace sci;
+diff --git a/test/test_deduplication.cpp b/test/test_deduplication.cpp
+index 38acee1..4e5835c 100644
+--- a/test/test_deduplication.cpp
++++ b/test/test_deduplication.cpp
+@@ -6,7 +6,7 @@
+ #include <iostream>
+ #include <chrono>
+ #include <set>
+-#include <fmt/core.h>
++#include <fmt/format.h>
+ 
+ using namespace sci;
+ using std::cout, std::endl;

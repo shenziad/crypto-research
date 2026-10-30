@@ -1,0 +1,19 @@
+{
+  "cells": [
+    {
+      "corpus": "ptb",
+      "offset": 0,
+      "position": 64
+    },
+    {
+      "corpus": "wiki",
+      "offset": 196608,
+      "position": 64
+    }
+  ],
+  "capture_sha256": "bc7f39ffd8c0ae6dc410038a97dc323aa07fbc28c5e8e48117e9f0bba0b8f729",
+  "source_sha256": "93e0859231f7ac3c7a628c0e153baebc0fe71755ece7a25bcb8597bbca5ab68c",
+  "model_sha256": "116a02532db461f91386a5b20f942ff2c8d4de7341e21b55caafc3d7b25f49a1",
+  "weights_sha256": "e89c3c6ee3163676249973519bd5499b5513d1f561a2a108c89b03ddfde984eb",
+  "limits": "Public-backbone inputs and proposal distributions from two previously evaluated contexts. Functional controls only; no new blind quality evidence, retraining, private score or sampler."
+}

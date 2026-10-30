@@ -1,0 +1,392 @@
+{
+  "status": "completed",
+  "conformance_checks_passed": true,
+  "all_quality_gates_passed": true,
+  "summary": {
+    "ptb": {
+      "positions": 2048,
+      "fp32_gain_nll": 0.2666003267504049,
+      "finite_gain_nll": 0.26689008508120615,
+      "gain_retained": 1.001086864124786,
+      "quality_gate_passed": true,
+      "max_abs_delta_error_vs_float64": 0.006078490004766346,
+      "max_input_scaled_l2": 12.917021504534105,
+      "mean_distribution_tv": 0.0006105814504452587,
+      "max_distribution_tv": 0.0018693102878715314
+    },
+    "wiki": {
+      "positions": 1024,
+      "fp32_gain_nll": 0.0981070781993374,
+      "finite_gain_nll": 0.09822907703340622,
+      "gain_retained": 1.0012435273408198,
+      "quality_gate_passed": true,
+      "max_abs_delta_error_vs_float64": 0.006071130659608515,
+      "max_input_scaled_l2": 12.732177787030405,
+      "mean_distribution_tv": 0.0005893160778331608,
+      "max_distribution_tv": 0.0016111418120931384
+    }
+  },
+  "records": [
+    {
+      "corpus": "ptb",
+      "offset": 0,
+      "positions": 256,
+      "base_nll": 6.123292406502381,
+      "fp32_adapter_nll": 5.863030673957235,
+      "float64_adapter_nll": 5.863030672196414,
+      "finite_adapter_nll": 5.863011632599619,
+      "max_abs_delta_error_vs_float64": 0.006063056898604202,
+      "max_abs_fp32_delta_error_vs_float64": 1.715396922286061e-07,
+      "max_input_scaled_l2": 12.621203761924189,
+      "mean_distribution_tv": 0.0006208418954294283,
+      "max_distribution_tv": 0.001486759274710126,
+      "max_abs_finite_delta": 1.0,
+      "integer_range_observed": {
+        "max_abs_input_integer": 396008,
+        "max_abs_t_accumulator": 33959031419,
+        "max_abs_t_integer": 518174,
+        "max_abs_z_accumulator": 27007246474,
+        "max_abs_z_integer": 412098
+      }
+    },
+    {
+      "corpus": "ptb",
+      "offset": 1024,
+      "positions": 256,
+      "base_nll": 5.604277067975751,
+      "fp32_adapter_nll": 5.401714330410224,
+      "float64_adapter_nll": 5.401714328927851,
+      "finite_adapter_nll": 5.4015069737453185,
+      "max_abs_delta_error_vs_float64": 0.006064986592004051,
+      "max_abs_fp32_delta_error_vs_float64": 1.934784751300711e-07,
+      "max_input_scaled_l2": 12.638736545153296,
+      "mean_distribution_tv": 0.0006663692476473792,
+      "max_distribution_tv": 0.0014350990515324792,
+      "max_abs_finite_delta": 1.0,
+      "integer_range_observed": {
+        "max_abs_input_integer": 464941,
+        "max_abs_t_accumulator": 34414491128,
+        "max_abs_t_integer": 525124,
+        "max_abs_z_accumulator": 28574846418,
+        "max_abs_z_integer": 436018
+      }
+    },
+    {
+      "corpus": "ptb",
+      "offset": 2048,
+      "positions": 256,
+      "base_nll": 5.78045838783714,
+      "fp32_adapter_nll": 5.482541446791862,
+      "float64_adapter_nll": 5.482541445691803,
+      "finite_adapter_nll": 5.481994435775269,
+      "max_abs_delta_error_vs_float64": 0.0060687038728248766,
+      "max_abs_fp32_delta_error_vs_float64": 1.892635067002324e-07,
+      "max_input_scaled_l2": 12.70473623671832,
+      "mean_distribution_tv": 0.0005859370593113155,
+      "max_distribution_tv": 0.0016461012167927572,
+      "max_abs_finite_delta": 1.0,
+      "integer_range_observed": {
+        "max_abs_input_integer": 427399,
+        "max_abs_t_accumulator": 33208851745,
+        "max_abs_t_integer": 506727,
+        "max_abs_z_accumulator": 27864697293,
+        "max_abs_z_integer": 425182
+      }
+    },
+    {
+      "corpus": "ptb",
+      "offset": 3072,
+      "positions": 256,
+      "base_nll": 4.932580095127806,
+      "fp32_adapter_nll": 4.573135037059557,
+      "float64_adapter_nll": 4.573135038253621,
+      "finite_adapter_nll": 4.572923712452546,
+      "max_abs_delta_error_vs_float64": 0.00607702894070572,
+      "max_abs_fp32_delta_error_vs_float64": 1.7935270379965118e-07,
+      "max_input_scaled_l2": 12.672916381095977,
+      "mean_distribution_tv": 0.0005609559925894825,
+      "max_distribution_tv": 0.0016965757299837588,
+      "max_abs_finite_delta": 1.0,
+      "integer_range_observed": {
+        "max_abs_input_integer": 447945,
+        "max_abs_t_accumulator": 34715644279,
+        "max_abs_t_integer": 529719,
+        "max_abs_z_accumulator": 28540011843,
+        "max_abs_z_integer": 435487
+      }
+    },
+    {
+      "corpus": "ptb",
+      "offset": 4096,
+      "positions": 256,
+      "base_nll": 6.08212738716316,
+      "fp32_adapter_nll": 5.792042874882736,
+      "float64_adapter_nll": 5.792042877121234,
+      "finite_adapter_nll": 5.7917801010671015,
+      "max_abs_delta_error_vs_float64": 0.0060640572597632225,
+      "max_abs_fp32_delta_error_vs_float64": 2.0640193321153077e-07,
+      "max_input_scaled_l2": 12.917021504534105,
+      "mean_distribution_tv": 0.000639891556698586,
+      "max_distribution_tv": 0.0018693102878715314,
+      "max_abs_finite_delta": 1.0,
+      "integer_range_observed": {
+        "max_abs_input_integer": 413847,
+        "max_abs_t_accumulator": 33376715408,
+        "max_abs_t_integer": 509289,
+        "max_abs_z_accumulator": 27176282100,
+        "max_abs_z_integer": 414678
+      }
+    },
+    {
+      "corpus": "ptb",
+      "offset": 5120,
+      "positions": 256,
+      "base_nll": 5.152492665965314,
+      "fp32_adapter_nll": 4.903849236444671,
+      "float64_adapter_nll": 4.903849237433395,
+      "finite_adapter_nll": 4.903427352803307,
+      "max_abs_delta_error_vs_float64": 0.006045385998611819,
+      "max_abs_fp32_delta_error_vs_float64": 1.8846823685025882e-07,
+      "max_input_scaled_l2": 12.509147301602964,
+      "mean_distribution_tv": 0.0005755681049401998,
+      "max_distribution_tv": 0.0015820806274092765,
+      "max_abs_finite_delta": 1.0,
+      "integer_range_observed": {
+        "max_abs_input_integer": 455958,
+        "max_abs_t_accumulator": 32621433266,
+        "max_abs_t_integer": 497764,
+        "max_abs_z_accumulator": 28508005403,
+        "max_abs_z_integer": 434998
+      }
+    },
+    {
+      "corpus": "ptb",
+      "offset": 6144,
+      "positions": 256,
+      "base_nll": 4.915498305064708,
+      "fp32_adapter_nll": 4.634442346955092,
+      "float64_adapter_nll": 4.634442349204091,
+      "finite_adapter_nll": 4.634253954380693,
+      "max_abs_delta_error_vs_float64": 0.006077814876305987,
+      "max_abs_fp32_delta_error_vs_float64": 1.7719677858352156e-07,
+      "max_input_scaled_l2": 12.620431648203768,
+      "mean_distribution_tv": 0.000521692178564837,
+      "max_distribution_tv": 0.0017102692809498623,
+      "max_abs_finite_delta": 1.0,
+      "integer_range_observed": {
+        "max_abs_input_integer": 446221,
+        "max_abs_t_accumulator": 37629514156,
+        "max_abs_t_integer": 574181,
+        "max_abs_z_accumulator": 27977190884,
+        "max_abs_z_integer": 426899
+      }
+    },
+    {
+      "corpus": "ptb",
+      "offset": 7168,
+      "positions": 256,
+      "base_nll": 4.986024848595115,
+      "fp32_adapter_nll": 4.793192603726756,
+      "float64_adapter_nll": 4.793192604959366,
+      "finite_adapter_nll": 4.792732320757872,
+      "max_abs_delta_error_vs_float64": 0.006078490004766346,
+      "max_abs_fp32_delta_error_vs_float64": 1.9597590683595456e-07,
+      "max_input_scaled_l2": 12.590021499344044,
+      "mean_distribution_tv": 0.0007133955683808411,
+      "max_distribution_tv": 0.0018280087459036033,
+      "max_abs_finite_delta": 1.0,
+      "integer_range_observed": {
+        "max_abs_input_integer": 406827,
+        "max_abs_t_accumulator": 34268925559,
+        "max_abs_t_integer": 522903,
+        "max_abs_z_accumulator": 28016406489,
+        "max_abs_z_integer": 427497
+      }
+    },
+    {
+      "corpus": "wiki",
+      "offset": 196608,
+      "positions": 128,
+      "base_nll": 5.643657855889153,
+      "fp32_adapter_nll": 5.530660077264011,
+      "float64_adapter_nll": 5.530660078979977,
+      "finite_adapter_nll": 5.5307247519295775,
+      "max_abs_delta_error_vs_float64": 0.006051077352265288,
+      "max_abs_fp32_delta_error_vs_float64": 2.493702103700812e-07,
+      "max_input_scaled_l2": 12.429660282239933,
+      "mean_distribution_tv": 0.0006707437903669697,
+      "max_distribution_tv": 0.0016111418120931384,
+      "max_abs_finite_delta": 1.0,
+      "integer_range_observed": {
+        "max_abs_input_integer": 437407,
+        "max_abs_t_accumulator": 29707470060,
+        "max_abs_t_integer": 453301,
+        "max_abs_z_accumulator": 27650096753,
+        "max_abs_z_integer": 421907
+      }
+    },
+    {
+      "corpus": "wiki",
+      "offset": 197120,
+      "positions": 128,
+      "base_nll": 6.384660717654372,
+      "fp32_adapter_nll": 6.33056187212351,
+      "float64_adapter_nll": 6.330561874693215,
+      "finite_adapter_nll": 6.330428145386474,
+      "max_abs_delta_error_vs_float64": 0.006044852906664233,
+      "max_abs_fp32_delta_error_vs_float64": 2.049057695741041e-07,
+      "max_input_scaled_l2": 12.46502098731993,
+      "mean_distribution_tv": 0.0007414430776213489,
+      "max_distribution_tv": 0.0015295838396091979,
+      "max_abs_finite_delta": 1.0,
+      "integer_range_observed": {
+        "max_abs_input_integer": 418352,
+        "max_abs_t_accumulator": 32144967309,
+        "max_abs_t_integer": 490494,
+        "max_abs_z_accumulator": 25761639535,
+        "max_abs_z_integer": 393092
+      }
+    },
+    {
+      "corpus": "wiki",
+      "offset": 197632,
+      "positions": 128,
+      "base_nll": 5.251961870175233,
+      "fp32_adapter_nll": 5.212885655760823,
+      "float64_adapter_nll": 5.212885656015199,
+      "finite_adapter_nll": 5.2125454697980285,
+      "max_abs_delta_error_vs_float64": 0.0060432143182403975,
+      "max_abs_fp32_delta_error_vs_float64": 2.261462405117598e-07,
+      "max_input_scaled_l2": 12.461708658347343,
+      "mean_distribution_tv": 0.00045164390804860213,
+      "max_distribution_tv": 0.001322813103470468,
+      "max_abs_finite_delta": 1.0,
+      "integer_range_observed": {
+        "max_abs_input_integer": 449664,
+        "max_abs_t_accumulator": 36212053198,
+        "max_abs_t_integer": 552553,
+        "max_abs_z_accumulator": 28883830393,
+        "max_abs_z_integer": 440733
+      }
+    },
+    {
+      "corpus": "wiki",
+      "offset": 198144,
+      "positions": 128,
+      "base_nll": 5.358110631957919,
+      "fp32_adapter_nll": 5.205925669466081,
+      "float64_adapter_nll": 5.205925669827618,
+      "finite_adapter_nll": 5.2058075926964165,
+      "max_abs_delta_error_vs_float64": 0.006043543232439164,
+      "max_abs_fp32_delta_error_vs_float64": 2.0104601461401472e-07,
+      "max_input_scaled_l2": 12.732177787030405,
+      "mean_distribution_tv": 0.0005202851060915491,
+      "max_distribution_tv": 0.00142128859161366,
+      "max_abs_finite_delta": 1.0,
+      "integer_range_observed": {
+        "max_abs_input_integer": 432940,
+        "max_abs_t_accumulator": 31735905311,
+        "max_abs_t_integer": 484252,
+        "max_abs_z_accumulator": 26302089242,
+        "max_abs_z_integer": 401339
+      }
+    },
+    {
+      "corpus": "wiki",
+      "offset": 198656,
+      "positions": 128,
+      "base_nll": 5.641610343331891,
+      "fp32_adapter_nll": 5.594481609406372,
+      "float64_adapter_nll": 5.594481608155322,
+      "finite_adapter_nll": 5.594290722900009,
+      "max_abs_delta_error_vs_float64": 0.006069112408393917,
+      "max_abs_fp32_delta_error_vs_float64": 2.043179612165602e-07,
+      "max_input_scaled_l2": 12.545127473223634,
+      "mean_distribution_tv": 0.0005478198188211081,
+      "max_distribution_tv": 0.00143912617102958,
+      "max_abs_finite_delta": 1.0,
+      "integer_range_observed": {
+        "max_abs_input_integer": 446812,
+        "max_abs_t_accumulator": 32186141688,
+        "max_abs_t_integer": 491122,
+        "max_abs_z_accumulator": 27112542149,
+        "max_abs_z_integer": 413705
+      }
+    },
+    {
+      "corpus": "wiki",
+      "offset": 199168,
+      "positions": 128,
+      "base_nll": 5.069513532323546,
+      "fp32_adapter_nll": 4.899323923031241,
+      "float64_adapter_nll": 4.89932392316093,
+      "finite_adapter_nll": 4.89920833426604,
+      "max_abs_delta_error_vs_float64": 0.0060632818536004995,
+      "max_abs_fp32_delta_error_vs_float64": 2.0998511018888166e-07,
+      "max_input_scaled_l2": 12.525708910643216,
+      "mean_distribution_tv": 0.0005747413931104771,
+      "max_distribution_tv": 0.0012884943468612592,
+      "max_abs_finite_delta": 1.0,
+      "integer_range_observed": {
+        "max_abs_input_integer": 438381,
+        "max_abs_t_accumulator": 33676767064,
+        "max_abs_t_integer": 513867,
+        "max_abs_z_accumulator": 27240037136,
+        "max_abs_z_integer": 415650
+      }
+    },
+    {
+      "corpus": "wiki",
+      "offset": 199680,
+      "positions": 128,
+      "base_nll": 5.550193307277203,
+      "fp32_adapter_nll": 5.489524674173384,
+      "float64_adapter_nll": 5.489524671059861,
+      "finite_adapter_nll": 5.489514002468807,
+      "max_abs_delta_error_vs_float64": 0.006066069883604808,
+      "max_abs_fp32_delta_error_vs_float64": 2.00708476838507e-07,
+      "max_input_scaled_l2": 12.47516685346001,
+      "mean_distribution_tv": 0.0006655221822252505,
+      "max_distribution_tv": 0.0015308273048665014,
+      "max_abs_finite_delta": 1.0,
+      "integer_range_observed": {
+        "max_abs_input_integer": 424073,
+        "max_abs_t_accumulator": 30954642940,
+        "max_abs_t_integer": 472331,
+        "max_abs_z_accumulator": 26772933641,
+        "max_abs_z_integer": 408523
+      }
+    },
+    {
+      "corpus": "wiki",
+      "offset": 200192,
+      "positions": 128,
+      "base_nll": 5.244975394338793,
+      "fp32_adapter_nll": 5.096463546127987,
+      "float64_adapter_nll": 5.096463547351092,
+      "finite_adapter_nll": 5.096332017235509,
+      "max_abs_delta_error_vs_float64": 0.006071130659608515,
+      "max_abs_fp32_delta_error_vs_float64": 1.796095621120486e-07,
+      "max_input_scaled_l2": 12.476240234219299,
+      "mean_distribution_tv": 0.0005423293463799807,
+      "max_distribution_tv": 0.0011304273547894422,
+      "max_abs_finite_delta": 1.0,
+      "integer_range_observed": {
+        "max_abs_input_integer": 463964,
+        "max_abs_t_accumulator": 33781979566,
+        "max_abs_t_integer": 515473,
+        "max_abs_z_accumulator": 28815114123,
+        "max_abs_z_integer": 439684
+      }
+    }
+  ],
+  "preregistration_sha256": "2aec71ee1e620c9af40b5eaf44316169d3a92d369d8f46b111607343bd3a482b",
+  "input_sha256": {
+    "experiments/bounded_adapter_fixed16_quality.py": "1a3ab2991b2a464c8bff22fc8a558c1450365ace130228bb91f68b93cec9a135",
+    "experiments/bounded_adapter_fixed16.py": "af21fbed747d7fa15cb1fdda8a479e1d1290b5879147bfbff1955557b3d55a26",
+    "results/bounded_adapter_fixed16_certificate.json": "baf7409d64a7e52edd51072c082fcb92b9ea3e60c80a1261c15ac08057332ebe",
+    "results/bounded_output_adapter_weights.npz": "e89c3c6ee3163676249973519bd5499b5513d1f561a2a108c89b03ddfde984eb",
+    "models/Pythia-14M/model.safetensors": "116a02532db461f91386a5b20f942ff2c8d4de7341e21b55caafc3d7b25f49a1"
+  },
+  "limits": "Public Pythia14M FP32 CUDA backbone and logits. Integer adapter is evaluated openly for conformance; no private arithmetic, acceptance, end-to-end latency or novelty claim. Empirical checks apply to reused windows; analytical error certificate is conditional on the declared real input domain. Supporting finite realization of bounded private sampling, not a dedicated quantization research direction."
+}

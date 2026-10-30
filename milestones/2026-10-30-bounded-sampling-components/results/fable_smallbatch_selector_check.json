@@ -1,0 +1,18 @@
+{
+  "all_passed": true,
+  "public_selector_cells": 5442773,
+  "lemma": "Each query code bit is zero outside its chosen subslot. Every column code has the same positive Hamming weight. Its product selector is one iff both the subslot and code equal the chosen ones. Thus a bucket contributes at most one data item; all other subslots have zero plaintext selectors.",
+  "capacity": {
+    "max_table_entries": 65791,
+    "buckets": 512,
+    "replicas": 3,
+    "ideal_mean_load": "385.494140625",
+    "overflow_threshold": 584,
+    "load_capacity": 583,
+    "log_union_bound_upper": "-37.83480978427188391181468650909479397868984566020387000274363448896707943494341",
+    "log_budget_margin_upper": "-0.404862034034837203284151950353259302612838404750086280226913976323823848579894",
+    "failure_budget": "2^-54",
+    "assumption": "Ideal independent uniform hash placements; no standalone concrete std::hash/OPRF/cuckoo insertion failure theorem."
+  },
+  "limits": "Public selector law only, not actual FHE, full simulation, malicious queries or a complete failure-budget proof. Tests of actual unselected decrypted slots are still required."
+}
