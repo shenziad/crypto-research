@@ -1,0 +1,47 @@
+{
+  "all_passed": true,
+  "native": {
+    "all_passed": true,
+    "graphs": 280894,
+    "prefixes": 1214286,
+    "infeasible_prefixes": 6318,
+    "map_ranks": 245520,
+    "chain_moves": 1024,
+    "boundary_random_cases": 6192,
+    "fullsize_ids": 262399,
+    "server_placements": 787197,
+    "max_bucket_load": 453,
+    "server_buckets": 2048,
+    "query_count": 256,
+    "elapsed_seconds": 0.227579
+  },
+  "all_fullsize_mappings_independently_checked": 524798,
+  "fixed_public_AES_key_hex": "17efd1eb2b20bf61ffb24f32d44bd7e0",
+  "AES_domain_definition": "AES(key, LE128(id + domain*2^127)); domains0,1; id<2^19",
+  "native_and_reference_wall_seconds": 12.843219380999471,
+  "created_utc": "2026-10-30T16:57:51.321167+00:00",
+  "completed_utc": "2026-10-30T16:59:18.992779+00:00",
+  "stage_wall_upper_seconds": 87.671612,
+  "maximum_wall_seconds": 1800,
+  "two_party_pairs": 0,
+  "fullsize_fixed_key_tables": 1,
+  "retries": 0,
+  "source_and_fixture_sha256": {
+    "notes/20261031_private_lut_placement_preregistration.json": "3decaec6239a5fe7397d929a06fbb50e8575133b80095ce7f24db7889616259d",
+    "experiments/private_lut_placement.h": "85f803819c692bcd18b6c37c31a2c02e6c54d6191843b9e4f2ade939f0e8da07",
+    "experiments/private_lut_placement_check.cpp": "2af1b4200bef0535bc6a45859bc36fb4586cee0f588e7da4b19509559b8fb92e",
+    "experiments/run_private_lut_placement_check.py": "8adc107d71e3380030ebe1f2edcfefcf3ff26cf01435fc9a3402f6ded36fd4ed",
+    "toolchain/bounded-sampler/private_lut_placement_check": "c2d7f25919d9cc1bca91ef7d2f3c29f702da8cb9ba7ef433369cf1533b3b5604",
+    "results/private_lut_placement_check_runs/tags.bin": "7bc95e0c68946f75d2b7571a4287667a72f7f5320fb2d6aacc25539be377bb36",
+    "results/private_lut_placement_check_runs/mapped.bin": "97c227ada1a8b697cabc72775875942f3a645f6924173cd03e42c259d4613bc4",
+    "results/private_lut_placement_check_runs/native_metrics.json": "0bc1b256d6e80608a44125384839dbe5d4b429c53595f364346e1a9328402cd5",
+    "results/private_lut_placement_check_runs/cases.bin": "34e5fccb0f06bc0d57bc87a3f7a9b2983289411856b6030f734873e411e462a9",
+    "results/private_lut_placement_check_runs/case_maps.bin": "b2e84ef032a82972ba424222af61a352402673d12b186a994489cb12162b62d7"
+  },
+  "limits": "Standalone construction correctness only; not FABLE integration, not OPRF/AES-in-GC conformance, not full BFV/security/performance certification. Fixed public test key is not a deployment key. No attacks, no seed search, no model changes.",
+  "_publication": {
+    "original_local_json_sha256": "822df764af39a38588a25d63790ef386e54af4460a83f52f5a1fef87b1680606",
+    "summary_only": true,
+    "omitted": "Nested verified_files/files/logs/audit_file_sha256 maps omitted; local originals frozen. Public deterministic fixture hashes and public source hashes retained."
+  }
+}

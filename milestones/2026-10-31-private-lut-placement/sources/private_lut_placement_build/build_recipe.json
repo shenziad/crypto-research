@@ -1,0 +1,40 @@
+{
+  "standalone_cpp": [
+    "/usr/bin/g++",
+    "-std=c++17",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "experiments/private_lut_placement_check.cpp",
+    "-o",
+    "toolchain/bounded-sampler/private_lut_placement_check"
+  ],
+  "python_environment": "envs/torch-cpu/bin/python (NumPy1.26.4,cryptography)",
+  "run_placement": [
+    "envs/torch-cpu/bin/python",
+    "experiments/run_private_lut_placement_check.py"
+  ],
+  "BFV_CMakeLists": "cmake_minimum_required(VERSION 3.15)\nproject(bfv_profile_audit LANGUAGES CXX)\nset(CMAKE_CXX_STANDARD 17)\nfind_package(SEAL 4.1 REQUIRED)\nadd_executable(bfv_profile_audit /ABSOLUTE/ROOT/experiments/bfv_profile_parameters.cpp)\ntarget_link_libraries(bfv_profile_audit PRIVATE SEAL::seal)\n",
+  "BFV_configure": [
+    "envs/fable-build/bin/cmake",
+    "-S",
+    "toolchain/bfv-profile-audit",
+    "-B",
+    "toolchain/bfv-profile-audit/build",
+    "-DCMAKE_CXX_COMPILER=/usr/bin/g++",
+    "-DSEAL_DIR=/ABSOLUTE/ROOT/third_party/FABLE/build/seal_4_1/lib/cmake/SEAL-4.1"
+  ],
+  "BFV_build": [
+    "envs/fable-build/bin/cmake",
+    "--build",
+    "toolchain/bfv-profile-audit/build",
+    "--parallel",
+    "2"
+  ],
+  "BFV_run": [
+    "envs/torch-cpu/bin/python",
+    "experiments/audit_bfv_flooding_obligations.py"
+  ],
+  "limits": "Read only public SEAL parameters. First compile attempt missing optionalBoostheader failed before execution; replacedBoost with native modulus lists and Python exact integers; successfulbuild used no newdependency. Preserve toolchain/bfv-profile-audit/build.log originalfailure. Not clean-clone installer; frozen existingSEAL dependency from prior manifest."
+}

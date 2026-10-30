@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-10-30T16:57:51.321167+00:00",
+  "maximum_wall_seconds": 1800,
+  "maximum_two_party_pairs": 0,
+  "maximum_fullsize_fixed_key_tables": 1,
+  "fullsize_unique_ids": 262399,
+  "buckets": 2048,
+  "position_slots": 4096,
+  "load_cap": 600,
+  "query_count": 256,
+  "seed": 20261031,
+  "goals": [
+    "Exhaustively compare matching feasibility against independent Hall subset enumeration for all unordered distinct3 adjacency graphs at (m,n)=(4,1..5),(5,1..5),(6,1..4). Stop each graph after first infeasible prefix.",
+    "Exhaust balanced-map ranks m=3..32; test128bit boundary/random tags against independent Python rank-deletion reference.",
+    "Long deterministic augmenting-path correctness case, no random failure search.",
+    "One fixed public AES test key, two separated inputs id and id+2^127, N262399; compare every C++ map with independent Python reference; all2048 server placements plus one fixed256query placement.",
+    "Record current BFV smudging proof obligations and exact response dimensions, without treating correctness experiments as security."
+  ],
+  "success": "Exact agreement with independent references; complete matching valid; fixed-key maxload<=600; no resampling/retries. Failed empirical load condition is recorded, does not disprove analytic bound.",
+  "limits": "Standalone construction correctness only; not FABLE integration, not OPRF/AES-in-GC conformance, not full BFV/security/performance certification. Fixed public test key is not a deployment key. No attacks, no seed search, no model changes.",
+  "input_sha256": {
+    "experiments/private_lut_placement.h": "85f803819c692bcd18b6c37c31a2c02e6c54d6191843b9e4f2ade939f0e8da07",
+    "experiments/cuckoo_hall_bound_certificate.py": "e3851c5348a61a610d881ca2a067bb9dfceaa0b1b05956ee14b76933bd326f13",
+    "results/cuckoo_hall_candidate_certificate.json": "3d5b8927845de96edf77bf747293069f6d6ea1a35638b34294f86122e14be867",
+    "third_party/FABLE-qwen18/extern/BatchPIR/header/utils.h": "da499d63bf5352195cb13617fdf8b17f49efe3a250cca98d584ac6b92ca73743",
+    "third_party/FABLE-qwen18/extern/BatchPIR/src/utils.cpp": "5cbd63d7f6b3ed0f175f24a4d21193f95213c062babe7778324b638a6c1cefce",
+    "third_party/FABLE/extern/SEAL/build/native/src/seal/util/config.h": "66335a074307407ef2026a9f384f5891e4fdf80c56fffcafaee3f446f00ea0d3"
+  }
+}

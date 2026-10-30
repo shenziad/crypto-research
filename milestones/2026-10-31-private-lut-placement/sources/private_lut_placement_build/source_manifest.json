@@ -1,0 +1,10 @@
+{
+  "experiments/private_lut_placement.h": "85f803819c692bcd18b6c37c31a2c02e6c54d6191843b9e4f2ade939f0e8da07",
+  "experiments/private_lut_placement_check.cpp": "2af1b4200bef0535bc6a45859bc36fb4586cee0f588e7da4b19509559b8fb92e",
+  "experiments/run_private_lut_placement_check.py": "8adc107d71e3380030ebe1f2edcfefcf3ff26cf01435fc9a3402f6ded36fd4ed",
+  "experiments/bfv_profile_parameters.cpp": "aa46955de38856193e4e92b0f74bf9e1aef62b489c1219e161ad499d16f3b019",
+  "experiments/audit_bfv_flooding_obligations.py": "41a75b4e369db5e9cb52520521e7cb59a5f847bef3be201d8436ff4b2336cf2b",
+  "notes/20261031_private_lut_placement_preregistration.json": "3decaec6239a5fe7397d929a06fbb50e8575133b80095ce7f24db7889616259d",
+  "results/private_lut_placement_check.json": "822df764af39a38588a25d63790ef386e54af4460a83f52f5a1fef87b1680606",
+  "results/bfv_flooding_obligations.json": "0cc1c9ed050acd835e066427d6e2d385965e3db889491722ee8e6aef9dbb20be"
+}

@@ -1,0 +1,22 @@
+{
+  "all_passed": true,
+  "stage_closed": true,
+  "created_utc": "2026-10-30T16:57:51.321167+00:00",
+  "completed_utc": "2026-10-30T17:03:44.180900+00:00",
+  "stage_wall_upper_seconds": 352.859733,
+  "maximum_wall_seconds": 1800,
+  "two_party_pairs": 0,
+  "fullsize_fixed_key_tables": 1,
+  "no_retries": true,
+  "verified_file_count": 26,
+  "checkpoint": "sources/checkpoints/20261031_private_lut_placement_v1",
+  "checkpoint_files": 14,
+  "full_backend_certified": false,
+  "next": "BFVuniformresidual/wholeciphertextsimulation proof first; later isolatedFABLEintegration and rebenchmark; keepallpositivequality/costevidence.",
+  "limits": "Standaloneconstructioncorrectnessandconditionalnoise-arithmeticstage; stagewallincludesimplementation/build/independentreference/sourceaudit/outcome note; publicationexcluded. No actualFABLEvariantchanged.",
+  "_publication": {
+    "original_local_json_sha256": "59b8a3f00729c79b8c14a376b10dd5d0b5b7f0625a8d7c93c88d4351e5fb4dfb",
+    "summary_only": true,
+    "omitted": "Nested verified_files/files/logs/audit_file_sha256 maps omitted; local originals frozen. Public deterministic fixture hashes and public source hashes retained."
+  }
+}

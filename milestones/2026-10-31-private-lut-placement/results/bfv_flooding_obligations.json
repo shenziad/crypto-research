@@ -1,0 +1,105 @@
+{
+  "all_conditional_arithmetic_checks_passed": true,
+  "full_backend_certified": false,
+  "profiles": [
+    {
+      "name": "measured_qwen18",
+      "n": 8192,
+      "plain_bits": 20,
+      "plain_modulus": 1032193,
+      "noise_bits": 69,
+      "key_moduli": [
+        35184371417089,
+        35184371613697,
+        1125899906826241
+      ],
+      "first_moduli": [
+        35184371417089,
+        35184371613697
+      ],
+      "last_moduli": [
+        35184371417089
+      ],
+      "SEAL_tc128_parameters_accepted": true,
+      "key_q": "1393796529455364850678140928450877209853953",
+      "first_q": "1237939998933198301572268033",
+      "last_q": "35184371417089",
+      "first_q_bits": 90,
+      "key_q_bits": 140,
+      "joint_two_LUT_response_ciphertexts": 42,
+      "flood_interval": "[-2^68,2^68-1]",
+      "flood_width": "590295810358705651712",
+      "conditional_40bit_translated_noise_residual_cap": "780",
+      "conditional_40bit_translated_noise_cap_bits": 10,
+      "conditional_pre_switch_correctness_residual_cap": "304517079437476731005",
+      "conditional_modswitch_algebra_positive_margin_at_B40": true,
+      "modswitch_steps": 1,
+      "all_dimensions_source_checked": true
+    },
+    {
+      "name": "upstream_case20_reference",
+      "n": 8192,
+      "plain_bits": 18,
+      "plain_modulus": 163841,
+      "noise_bits": 149,
+      "key_moduli": [
+        70368743489537,
+        1099510890497,
+        1099511480321,
+        70368743587841,
+        70368743669761
+      ],
+      "first_moduli": [
+        70368743489537,
+        1099510890497,
+        1099511480321,
+        70368743587841
+      ],
+      "last_moduli": [
+        70368743489537
+      ],
+      "SEAL_tc128_parameters_accepted": true,
+      "key_q": "421248817020876923455914570651606184130034259933413114377097658369",
+      "first_q": "5986305780841968107536284525929313868219744585187329",
+      "last_q": "70368743489537",
+      "first_q_bits": 172,
+      "key_q_bits": 218,
+      "joint_two_LUT_response_ciphertexts": 45,
+      "flood_interval": "[-2^148,2^148-1]",
+      "flood_width": "713623846352979940529142984724747568191373312",
+      "conditional_40bit_translated_noise_residual_cap": "880312916825159306594932781",
+      "conditional_40bit_translated_noise_cap_bits": 90,
+      "conditional_pre_switch_correctness_residual_cap": "17911832008568214064550537442303899823303391062",
+      "conditional_modswitch_algebra_positive_margin_at_B40": true,
+      "modswitch_steps": 3,
+      "all_dimensions_source_checked": true
+    }
+  ],
+  "created_utc": "2026-10-30T17:01:52.416449+00:00",
+  "source_sha256": {
+    "experiments/audit_bfv_flooding_obligations.py": "41a75b4e369db5e9cb52520521e7cb59a5f847bef3be201d8436ff4b2336cf2b",
+    "experiments/bfv_profile_parameters.cpp": "aa46955de38856193e4e92b0f74bf9e1aef62b489c1219e161ad499d16f3b019",
+    "toolchain/bfv-profile-audit/build/bfv_profile_audit": "d38a70caa011b64ee01dc924464d97af32e90e1bea303945d48cbe19f2dd4ba4",
+    "third_party/FABLE-qwen18/extern/BatchPIR/header/utils.h": "da499d63bf5352195cb13617fdf8b17f49efe3a250cca98d584ac6b92ca73743",
+    "third_party/FABLE-qwen18/extern/BatchPIR/src/utils.cpp": "5cbd63d7f6b3ed0f175f24a4d21193f95213c062babe7778324b638a6c1cefce",
+    "third_party/FABLE-qwen18/extern/BatchPIR/src/batchpirserver.cpp": "155d63f1fdb22acb2aaba08e263706959d4e6fd36847435a91dc3fc0d49e7b9e",
+    "third_party/FABLE-qwen18/extern/BatchPIR/src/batchpirclient.cpp": "4de1f5307fc769cfcd45d48ebd808e88cb908aaaf8bfa9339cf3e65838dbd180",
+    "third_party/FABLE/extern/SEAL/build/native/src/seal/util/config.h": "66335a074307407ef2026a9f384f5891e4fdf80c56fffcafaee3f446f00ea0d3",
+    "third_party/FABLE/extern/SEAL/native/src/seal/util/rlwe.cpp": "93eedac214990633c3ef3795ca151fd67d5b26702d9462e04db8da5b6df20b3c",
+    "third_party/FABLE/extern/SEAL/native/src/seal/util/scalingvariant.cpp": "eb3561eaa95fb82914c02182a54197bf846a225100acbe14e6b5d7a91e87b731",
+    "third_party/FABLE/extern/SEAL/native/src/seal/evaluator.cpp": "9e2832ec05f0c5e5de6900c44c1d84d7c5d1c00efe2ec3f4a5ff874583cd56d2",
+    "third_party/FABLE/extern/SEAL/native/src/seal/util/rns.cpp": "09462da1fd914f3afca8bfcaf82e221e7950af2d9a6b3143e8f65bffa279e288"
+  },
+  "obligations": [
+    "Prove a uniform pre-flood response residual bound for all valid query/table/pad values, including SEAL BFV multiplication, RNS basis rounding and relinearization. No suchbound is supplied here.",
+    "Prove the whole returned ciphertext distribution is simulatable, not just a translated coefficient-noise box; account for all ciphertext components and fresh rerandomization ifrequired.",
+    "Verify actual modswitch implementation matches conditional nearest-rounding algebra; include coefficient degree, allciphertexts and allcalls in composition.",
+    "Separately account for encryption, AES/GC/OT computational assumptions, OPRF consistency, pads, failure semantics and local sidechannel model."
+  ],
+  "limits": "SEAL tc128 acceptance concerns its configured parameter table only; not circuitprivacy certification. B40 values are conditional sufficient caps, not observed noise, not measured leakage, not a proof of insecurity, and not certified feasible circuit bounds. Upstreamcase20 is a comparison only, not adopted or certified. No old performance number is assigned to it.",
+  "_publication": {
+    "original_local_json_sha256": "0cc1c9ed050acd835e066427d6e2d385965e3db889491722ee8e6aef9dbb20be",
+    "summary_only": true,
+    "omitted": "Nested verified_files/files/logs/audit_file_sha256 maps omitted; local originals frozen. Public deterministic fixture hashes and public source hashes retained."
+  }
+}
