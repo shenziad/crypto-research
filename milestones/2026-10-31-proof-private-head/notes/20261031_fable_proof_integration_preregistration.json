@@ -1,0 +1,59 @@
+{
+  "created_utc": "2026-10-31T04:06:19.067046+00:00",
+  "maximum_wall_seconds": 3600,
+  "maximum_native_two_party_pairs": 12,
+  "variants": [
+    64,
+    144
+  ],
+  "fixed_inputs": [
+    "ptb_test",
+    "wiki_test"
+  ],
+  "parameters": {
+    "input_bits": 18,
+    "query_count": 256,
+    "original_table_rows": 262144,
+    "virtual_rows": 255,
+    "covered_ids": "0..262143 union262145..262399",
+    "buckets": 2048,
+    "load_cap": 600,
+    "position_slots": 4096,
+    "AES_domains": 2,
+    "BFV_coeff_bits": [
+      46,
+      40,
+      40,
+      46,
+      46
+    ],
+    "BFV_plain_bits": 18,
+    "flood_bits": 149,
+    "fresh_publickey_zero_per_response": true
+  },
+  "goals": [
+    "Isolatedsourcecopiesonly; frozenoldbackends/performanceremainunchanged.",
+    "Useactualshareddual-domainAESGCfunction; independentAESreferenceforfixedboundaryIDs includingvirtualIDs.",
+    "Completematchingwithbalancedmapsusingverifiedownmodule, no500walk/retries. CoverallvirtualIDs explicitlybeforeprivatePIR.",
+    "Two nativeprivate-row controls withheavyduplicates/highIDs, oneperpayloadwidth; receiveronlyhasownindexshare, nofulltable.",
+    "Two frozenQwenlogicalfullchains, onepercorpus,4nativepairs each; independentafterexit auditallhandoffs/scores/E31/token. Recordnewcostasdiagnostic, nooldbenchmarkcomparisonclaim.",
+    "Auditsubroutineinputdomain/outputshares/pads/failures/sourcehashes; do notclaimfullsecurityornewnessfromtestsuccess."
+  ],
+  "native_plan": {
+    "dual_domain_AES": 1,
+    "private_row_controls": 2,
+    "fullchain_native_pairs": 8,
+    "spare_for_one_predefined_boundary_control": 1
+  },
+  "limits": "No attacks, seedsearch, parametersearch, retraining orprecisionchange. Noautomaticarchiveforlatencytargetmiss; stablecommunicationorqualitypositivesretainedperuserpolicy. Anyfailure/timeoutreservedandrecorded,noblindrestart. Buildfailuresarenotnativepairs. CompleteFLUTjointsecurityandindependentcontributionremainrequired.",
+  "input_sha256": {
+    "experiments/private_lut_placement.h": "85f803819c692bcd18b6c37c31a2c02e6c54d6191843b9e4f2ade939f0e8da07",
+    "experiments/fable_private_row_qwen_packed.cpp": "8e7cbc82885ceb668057ecf1feba2c2595fccfa1de02162a56de976a6327a81f",
+    "experiments/qwen_packed_sampling_worker.py": "814d620678c469722bae335079aefd286d01a66d06014a15b5223256d09f63ef",
+    "experiments/run_qwen_packed_sampling.py": "9d72f8e4a2ab9935c05ce9c015b84f60aab30e538d7166284285f2031179f134",
+    "results/bfv_response_bound_certificate.json": "897a0e2ddfe718032f9fa1548ccd0587339b11f2d76dbd527cc3c937a7d0c063",
+    "results/cuckoo_hall_candidate_certificate.json": "3d5b8927845de96edf77bf747293069f6d6ea1a35638b34294f86122e14be867",
+    "results/bounded_adapter_qwen_frozen_captures.npz": "7259d4a612ccb78cc89897eab8a1997bb709a2cdcce3428d8d1db565f9ae0f34",
+    "results/bounded_adapter_qwen_transfer_weights.npz": "45a25759dd41c0c634d9b67ca438173b01ec2cf741b01125f6031a38a3ab7efe"
+  }
+}

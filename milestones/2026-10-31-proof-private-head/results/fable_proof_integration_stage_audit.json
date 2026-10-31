@@ -1,0 +1,34 @@
+{
+  "all_passed": true,
+  "stage_closed": true,
+  "native_pairs": 11,
+  "maximum_native_pairs": 12,
+  "native_pair_failures": 0,
+  "native_pair_retries": 0,
+  "stage_wall_upper_seconds": 948.065233,
+  "maximum_wall_seconds": 3600,
+  "completed_utc": "2026-10-31T04:22:07.132279+00:00",
+  "verified_file_count": 192,
+  "checkpoint": "sources/checkpoints/20261031_fable_proof_integration_v1",
+  "checkpoint_files": 21,
+  "two_corpus_fullchains_replayed": true,
+  "full_system_certified": false,
+  "diagnostic_cost": [
+    {
+      "corpus": "ptb_test",
+      "total_wire_bytes": 981313195,
+      "whole_pair_wall_ms": 35263.96402599994
+    },
+    {
+      "corpus": "wiki_test",
+      "total_wire_bytes": 981309789,
+      "whole_pair_wall_ms": 37015.120253000074
+    }
+  ],
+  "limits": "ActualFABLE-derivedcandidateintegrated,functioncorrect; jointsimulationdraftnotfullyindependentlyverified; costisone-shotdiagnostic,nopairedbenchmarkclaim. ExistingQwenmodel/oldbackendsunchanged.",
+  "_publication": {
+    "original_local_json_sha256": "66fe91f70797da58ab27a997b28d7a5157b709ceecdb59e7a92ff081c0e72676",
+    "summary_only": true,
+    "omitted": "Nestedfiles/verified_files/audit_file_sha256/logs maps; rawshares,coins,tokens andbinaries notpublished. Localoriginalsfrozen."
+  }
+}

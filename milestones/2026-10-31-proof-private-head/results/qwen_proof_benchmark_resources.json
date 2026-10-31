@@ -1,0 +1,82 @@
+[
+  {
+    "created_utc": "2026-10-31T04:29:03.037170+00:00",
+    "meminfo": "MemTotal:       32002056 kB\nMemFree:        15282524 kB\nMemAvailable:   22850524 kB\nBuffers:          178096 kB\nCached:          8155464 kB\nSwapCached:            0 kB\nActive:          8653252 kB\nInactive:        4796864 kB\nActive(anon):    5664576 kB\nInactive(anon):        0 kB\nActive(file):    2988676 kB\nInactive(file):  4796864 kB\nUnevictable:         120 kB\nMlocked:             120 kB\nSwapTotal:       8388604 kB\nSwapFree:        8388604 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              4160 kB\nWriteback:             0 kB\nAnonPages:       5115492 kB\nMapped:          2327752 kB\nShmem:            838584 kB\nKReclaimable:     241544 kB\nSlab:             660312 kB\nSReclaimable:     241544 kB\nSUnreclaim:       418768 kB\nKernelStack:       39136 kB\nPageTables:        80176 kB\nSecPageTables:      5304 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    24389632 kB\nCommitted_AS:   24484724 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:      164648 kB\nVmallocChunk:          0 kB\nPercpu:            38528 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:     32768 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:     83968 kB\nFilePmdMapped:      2048 kB\nCmaTotal:              0 kB\nCmaFree:               0 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:     2384292 kB\nDirectMap2M:    16674816 kB\nDirectMap1G:    14680064 kB\n",
+    "pressure_memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=213\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=211\n",
+    "pressure_cpu": "some avg10=0.28 avg60=0.38 avg300=0.29 total=8586558\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+    "native_processes": [
+      {
+        "pid": "15912",
+        "Name": "private_row_har",
+        "VmRSS": "250340 kB",
+        "VmSwap": "0 kB",
+        "Threads": "1",
+        "Cpus_allowed_list": "0-31"
+      },
+      {
+        "pid": "15920",
+        "Name": "private_row_har",
+        "VmRSS": "684804 kB",
+        "VmSwap": "0 kB",
+        "Threads": "4",
+        "Cpus_allowed_list": "0-31"
+      }
+    ]
+  },
+  {
+    "created_utc": "2026-10-31T04:31:47.804004+00:00",
+    "frequencies_khz": {
+      "cpu21": 1480856,
+      "cpu11": 544438,
+      "cpu9": 544373,
+      "cpu7": 544417,
+      "cpu28": 545777,
+      "cpu18": 544025,
+      "cpu5": 544427,
+      "cpu26": 544187,
+      "cpu16": 544300,
+      "cpu3": 544422,
+      "cpu24": 544350,
+      "cpu14": 544324,
+      "cpu1": 544426,
+      "cpu22": 544210,
+      "cpu12": 544386,
+      "cpu30": 1480856,
+      "cpu20": 1480856,
+      "cpu10": 544330,
+      "cpu8": 544381,
+      "cpu29": 1480856,
+      "cpu19": 1480856,
+      "cpu6": 544286,
+      "cpu27": 1480856,
+      "cpu17": 544014,
+      "cpu4": 544432,
+      "cpu25": 1480856,
+      "cpu15": 544406,
+      "cpu2": 544273,
+      "cpu23": 544207,
+      "cpu13": 544408,
+      "cpu0": 544311,
+      "cpu31": 544436
+    },
+    "native_processes": [
+      {
+        "pid": "16102",
+        "Name": "private_row_har",
+        "State": "R (running)",
+        "VmRSS": "1027780 kB",
+        "VmSwap": "0 kB",
+        "Threads": "4"
+      },
+      {
+        "pid": "16103",
+        "Name": "private_row_har",
+        "State": "S (sleeping)",
+        "VmRSS": "250364 kB",
+        "VmSwap": "0 kB",
+        "Threads": "1"
+      }
+    ],
+    "pressure_memory": "some avg10=0.00 avg60=0.00 avg300=0.00 total=213\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=211\n"
+  }
+]

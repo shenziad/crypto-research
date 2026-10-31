@@ -1,0 +1,65 @@
+{
+  "all_passed": true,
+  "retrospective": true,
+  "summary": {
+    "dense": {
+      "observations": 4,
+      "median_total_wire_bytes": 3504947076.0,
+      "median_whole_pair_wall_ms": 113973.61143350007,
+      "median_participant_elapsed_ms": 113584.5
+    },
+    "proof": {
+      "observations": 4,
+      "median_total_wire_bytes": 981310983.0,
+      "median_whole_pair_wall_ms": 62123.322377000135,
+      "median_participant_elapsed_ms": 61955.96663749995
+    }
+  },
+  "communication_reduction_percent": 72.00211695864135,
+  "primary_median_wall_reduction_percent": 45.49324041271861,
+  "wall_ranges": {
+    "dense": {
+      "min_ms": 29932.020428999975,
+      "max_ms": 202320.0946400002
+    },
+    "proof": {
+      "min_ms": 49153.11817599991,
+      "max_ms": 302292.7562340001
+    }
+  },
+  "paired_wall_ratios_descriptive": [
+    {
+      "repetition": 0,
+      "proof_over_dense_wall": 1.6421583799394095
+    },
+    {
+      "repetition": 1,
+      "proof_over_dense_wall": 0.4358260702262009
+    },
+    {
+      "repetition": 2,
+      "proof_over_dense_wall": 1.4941311527749481
+    },
+    {
+      "repetition": 3,
+      "proof_over_dense_wall": 0.6542214351777385
+    }
+  ],
+  "classification": "communication_positive_wall_unstable_no_general_speedup_claim",
+  "complete_benchmark_runs_replayed": 8,
+  "benchmark_native_pairs": 20,
+  "native_failures": 0,
+  "native_retries": 0,
+  "registered_files_verified": 367,
+  "stage_wall_upper_seconds": 1050.664629,
+  "maximum_wall_seconds": 1800,
+  "result_sha256": "9b83a04db5596b2adb5d38b4a7d100de70bda0be8e0b3adddbbe195934a9a607",
+  "preregistration_sha256": "1241494e08058a238f0cb16ad7b21fceab82f763d1ac86896be0a72756a72823",
+  "source_sha256": "a1ffdf426785d9b4a3cd9ca8aa30e4e13bd6e935b6dace2ed3a19d03228d4cba",
+  "limits": "All8runsretained; resourcesnapshotsrecordCPUaround0.54..1.48GHz duringpartofrunandzeromemorypressure. Causalitynotestablished; noexclusiveCPU/controlledfrequencyclaim. Mediansandrangesaredescriptive; no discardedoutliers/significancetest/WAN/SOTAclaim. Securityfromseparateassumptions/proofdraft,notcosttests.",
+  "_publication": {
+    "original_local_json_sha256": "c95ab5c20af333913137ce7e7470495ebead63e6a04efb19ee9a5e82bee791f7",
+    "summary_only": true,
+    "omitted": "Nestedfiles/verified_files/audit_file_sha256/logs maps; rawshares,coins,tokens andbinaries notpublished. Localoriginalsfrozen."
+  }
+}

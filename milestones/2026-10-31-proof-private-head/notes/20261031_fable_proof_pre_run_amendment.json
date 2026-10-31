@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-10-31T04:15:20.272737+00:00",
+  "native_pairs_launched": 0,
+  "budget_unchanged": true,
+  "parameters_and_finite_function_unchanged": true,
+  "changes": [
+    "EveryemptyPIRcellencodesfullymaskedout-of-domain sentinel524287/value0usingtheexistingindependentbucket/hashpads. This ensures deterministicIDselection and uniformselectedmaskedrecordsincludingemptycells. Cachedperbucketlimbsarepurelocalencoding.",
+    "SharedAEShelperownsitscipheronstack; resetunusedlegacyAESpointertonullptrbeforelegacycleanup.",
+    "PrivateSCICMakeconfigurationrootsavoidsharedconfigureoutputcollision."
+  ],
+  "source_changes": [
+    {
+      "width": 64,
+      "server_sha256": "e7f4b2f790fc66ebb9bc5d70f329bfe00eb58ab95b3107a9bb9a7739df9f5b2b",
+      "lookup_sha256": "ebad70ac8c691914d33f6bde35aae8e9e31e73a30515bdf31d80d20584221e7a"
+    },
+    {
+      "width": 144,
+      "server_sha256": "e7f4b2f790fc66ebb9bc5d70f329bfe00eb58ab95b3107a9bb9a7739df9f5b2b",
+      "lookup_sha256": "ebad70ac8c691914d33f6bde35aae8e9e31e73a30515bdf31d80d20584221e7a"
+    }
+  ],
+  "limits": "Constructivecorrectness/simulationclosurebeforetests; no attacks/no empiricalfailureorparametersearch. Oldbackendsunchanged."
+}

@@ -1,0 +1,47 @@
+{
+  "stage_closed": true,
+  "native_pairs_reserved": 11,
+  "events": [
+    {
+      "label": "control:dual_domain_AES",
+      "pairs": 1,
+      "reserved_utc": "2026-10-31T04:16:12.110939+00:00",
+      "completed_utc": "2026-10-31T04:16:12.643283+00:00",
+      "success": true
+    },
+    {
+      "label": "control:LUT64",
+      "pairs": 1,
+      "reserved_utc": "2026-10-31T04:16:12.721356+00:00",
+      "completed_utc": "2026-10-31T04:16:27.977754+00:00",
+      "success": true
+    },
+    {
+      "label": "control:LUT144",
+      "pairs": 1,
+      "reserved_utc": "2026-10-31T04:16:27.989021+00:00",
+      "completed_utc": "2026-10-31T04:16:46.996657+00:00",
+      "success": true
+    },
+    {
+      "label": "complete_rejection:ptb_test",
+      "pairs": 4,
+      "reserved_utc": "2026-10-31T04:17:57.006813+00:00",
+      "completed_utc": "2026-10-31T04:18:32.370371+00:00",
+      "success": true
+    },
+    {
+      "label": "complete_rejection:wiki_test",
+      "pairs": 4,
+      "reserved_utc": "2026-10-31T04:18:32.820335+00:00",
+      "completed_utc": "2026-10-31T04:19:09.883177+00:00",
+      "success": true
+    }
+  ],
+  "completed_utc": "2026-10-31T04:22:07.132279+00:00",
+  "_publication": {
+    "original_local_json_sha256": "47bfd35bfc907f558905a47508be95c3b8411c1873770e5c9cec0ec4fc2e21e1",
+    "summary_only": true,
+    "omitted": "Nestedfiles/verified_files/audit_file_sha256/logs maps; rawshares,coins,tokens andbinaries notpublished. Localoriginalsfrozen."
+  }
+}

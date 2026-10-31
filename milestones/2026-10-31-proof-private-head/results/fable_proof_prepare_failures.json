@@ -1,0 +1,13 @@
+[
+  {
+    "attempt": 1,
+    "reason": "Guardexpected3identicalconstructorformsbutpinnedsourcehas2castforms+1typedform; correctedexplicitformsbeforeanybuild/nativeprocess.",
+    "preserved_partial_source": "third_party/FABLE-qwen-proof-64-prepare-failed-v1",
+    "native_pairs": 0
+  },
+  {
+    "attempt": 2,
+    "reason": "ParallelconfigurewrotethesameSCIConfig.cmakeinsharedsymlinkedSCIsource;64configurefailed,144built. NowprivateSCI CMake/cmakeconfigurationrootswithsharedreadonlysrc/extern; reconfiguresequentially. No nativepairlaunched.",
+    "native_pairs": 0
+  }
+]

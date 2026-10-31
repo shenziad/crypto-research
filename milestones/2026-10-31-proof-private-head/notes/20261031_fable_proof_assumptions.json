@@ -1,0 +1,24 @@
+{
+  "status": "explicit_assumption_register_not_a_security_certificate",
+  "scope": "Single finite private-output-head invocation, static semi-honest, message-transcript model; all children/files of one logical role belong to that role. Post-exit auditor is outside the online protocol.",
+  "validated_software_invariants": [
+    "Fixed complete real+virtual ID domain; fresh separated AES domains; balanced triple maps; complete BFS matching.",
+    "Every selected PIR cell has a full independent bucket/hash mask, including masked out-of-domain sentinel cells.",
+    "Fresh BFV public-key zero per response,149bit uniform c0 flood, pinned172bit data-level coefficient modulus.",
+    "Every original output row receives an independent fresh final XOR pad after duplicate expansion."
+  ],
+  "computational_assumptions": [
+    "SCI static-semi-honest GC/OT security for the actual compiled circuits, with sequential composition.",
+    "SEAL BFV IND-CPA and evaluation-key security at the pinned concrete parameters and honest ephemeral key generation.",
+    "Rerandomization uses the appropriate seeded-RLWE distribution: the receiver may retain its original key-generation randomness, including any seed used to expand the public mask. Auxiliary keys/query state must not contain the independent fresh rerandomizer secret/error. This needs an explicit reduction/model, not an inference from parameter-table acceptance.",
+    "AES PRP security and the actual libraries' entropy/PRNG assumptions; uniform coefficients/pads in the mathematical hybrids model ideal streams."
+  ],
+  "input_contract": "The finite head's public coordinate/norm/rank bounds are those of results/qwen_bounded_head_range_certificate.json; valid frozen model/activation inputs only. No malicious input-validation protocol or general private-backbone provenance claim.",
+  "statistical_terms": "Keep Hall/capacity/map/PRP-switching events, BFV response simulation, rejection-tail failure and finite model approximation separately identifiable. The single-invocation bounds do not automatically give the same bound for arbitrary-length autoregressive conversations; account for repeated calls explicitly.",
+  "unmodeled": [
+    "Local runtime/microarchitectural/system side channels, malicious deviations, OS isolation on the shared research computer.",
+    "Adaptive reuse of an AES key across private query batches; implementation uses fresh keys.",
+    "Unbounded generation length with unchanged total statistical budget."
+  ],
+  "remaining": "Independently verify joint simulators, seeded-RLWE/key-generator randomness treatment, abort coupling and full software correspondence; establish independent system contribution and representative task utility. Native tests alone do not discharge these assumptions."
+}

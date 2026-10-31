@@ -1,0 +1,64 @@
+{
+  "64": {
+    "commands": [
+      [
+        "/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/envs/fable-build/bin/cmake",
+        "-S",
+        "/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/third_party/FABLE-qwen-proof-64",
+        "-B",
+        "/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/third_party/FABLE-qwen-proof-64/build",
+        "-DCMAKE_CXX_COMPILER=/usr/bin/g++",
+        "-DCMAKE_C_COMPILER=/usr/bin/gcc",
+        "-DFMT_DIR=/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/envs/fable-build/lib/cmake/fmt",
+        "-DlibOTe_DIR=/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/toolchain/fable-prefix/lib/cmake/libOTe",
+        "-DLUT_INPUT_SIZE=18",
+        "-DLUT_MAX_LOG_SIZE=18",
+        "-DLUT_OUTPUT_SIZE=64"
+      ],
+      [
+        "/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/envs/fable-build/bin/cmake",
+        "--build",
+        "/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/third_party/FABLE-qwen-proof-64/build",
+        "--target",
+        "private_row_harness",
+        "dual_domain_aes_control",
+        "--parallel",
+        "4"
+      ]
+    ],
+    "build_passed": true,
+    "configuration": "privateSCI CMake/cmake roots; sharedread-onlysource/dependencies",
+    "private_SCI": "extern/EzPC/SCI"
+  },
+  "144": {
+    "commands": [
+      [
+        "/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/envs/fable-build/bin/cmake",
+        "-S",
+        "/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/third_party/FABLE-qwen-proof-144",
+        "-B",
+        "/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/third_party/FABLE-qwen-proof-144/build",
+        "-DCMAKE_CXX_COMPILER=/usr/bin/g++",
+        "-DCMAKE_C_COMPILER=/usr/bin/gcc",
+        "-DFMT_DIR=/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/envs/fable-build/lib/cmake/fmt",
+        "-DlibOTe_DIR=/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/toolchain/fable-prefix/lib/cmake/libOTe",
+        "-DLUT_INPUT_SIZE=18",
+        "-DLUT_MAX_LOG_SIZE=18",
+        "-DLUT_OUTPUT_SIZE=144"
+      ],
+      [
+        "/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/envs/fable-build/bin/cmake",
+        "--build",
+        "/media/shenziad/NEWSMY/ai_exploration/llm_crypto_exploration_20261028/third_party/FABLE-qwen-proof-144/build",
+        "--target",
+        "private_row_harness",
+        "dual_domain_aes_control",
+        "--parallel",
+        "4"
+      ]
+    ],
+    "build_passed": true,
+    "configuration": "privateSCI CMake/cmake roots; sharedread-onlysource/dependencies",
+    "private_SCI": "extern/EzPC/SCI"
+  }
+}

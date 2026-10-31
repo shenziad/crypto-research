@@ -18,6 +18,7 @@
 | 2026-10-31 | [Qwen精确字段编码与完整三路径对照](milestones/2026-10-31-qwen-exact-packing/README.md) | 同一有限函数；当前编码路径较密集通信少72.13%、墙钟少65.07%；安全候选界尚待实现 |
 | 2026-10-31 | [私有LUT放置部件与BFV证明义务审查](milestones/2026-10-31-private-lut-placement/README.md) | 28万图/52万映射独立核验；BFV残差与完整密文模拟仍待证明，继续完善 |
 | 2026-10-31 | [BFV响应均匀界与原生检查](milestones/2026-10-31-bfv-response-proof/README.md) | 87位保守残差界、六例1024列/49152槽正确；真实两方集成/系统组合与代价待验证 |
+| 2026-10-31 | [证明候选私有head：实际功能与同期成本](milestones/2026-10-31-proof-private-head/README.md) | 两语料功能＋四组同期复测通过；通信少72.00%，墙钟波动，不宣称稳定加速；安全组合继续核验 |
 
 [实验汇总JSON](milestones/2026-10-29-exact-coarse/results/exact_coarse_comparison_report.json) · [受限证明草稿](milestones/2026-10-29-exact-coarse/notes/20261029_exact_coarse_joint_view.md) · [复现范围与CPU smoke](milestones/2026-10-29-exact-coarse/REPRODUCIBILITY.md)
 

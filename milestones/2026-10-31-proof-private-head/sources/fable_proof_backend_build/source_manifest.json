@@ -1,0 +1,40 @@
+{
+  "64": {
+    "base": "third_party/FABLE-qwen18-64",
+    "variant": "third_party/FABLE-qwen-proof-64",
+    "changed_source_sha256": {
+      "CMakeLists.txt": "f540cd4a93352125afc1170ffb1af37907049431a18bc426e97864653d86ef3f",
+      "extern/BatchPIR/header/batchpirserver.h": "beec490a25ebf5cb1eb3809a95bef33ec89e9416d9b99203159360ef839bf611",
+      "extern/BatchPIR/header/database_constants.h": "a80e5191f71c27077b48095fc3c99d838b5445d694f56c6508b5d77b1c6e656d",
+      "extern/BatchPIR/header/private_lut_placement.h": "85f803819c692bcd18b6c37c31a2c02e6c54d6191843b9e4f2ade939f0e8da07",
+      "extern/BatchPIR/header/utils.h": "f7887e8f54a298dba0ee0924ce3d0641d1bd48fedf8e47f9adc5d99d0c2c1d44",
+      "extern/BatchPIR/src/batchpirclient.cpp": "ae040b40b18d229bbf29eaa16f68941a211a6f253dd8d57a4c8f413bb47d224b",
+      "extern/BatchPIR/src/batchpirparams.cpp": "93dd1c88994e2d9cb694bdfd8b11f939e59a5f3c2fd58bd2e9a166a3c54b9e76",
+      "extern/BatchPIR/src/batchpirserver.cpp": "e7f4b2f790fc66ebb9bc5d70f329bfe00eb58ab95b3107a9bb9a7739df9f5b2b",
+      "extern/BatchPIR/src/utils.cpp": "ef86a238148bed4864ac40c9bf2308b8cdab47e5a3048a9ae1a0f281f607abf6",
+      "src/GC/fable_dual_domain_aes.h": "f218c5e722f9f8a51abcc1c7d966bad35981e2c42deb821e352ebdac1cc94db4",
+      "src/GC/lookup.cpp": "ebad70ac8c691914d33f6bde35aae8e9e31e73a30515bdf31d80d20584221e7a"
+    },
+    "patch_sha256": "72303e0e23d7c72d9e91f76be62e65c4062372fad91fe1fbe72fd61ef57a2362",
+    "build_private_SCI_configuration": true
+  },
+  "144": {
+    "base": "third_party/FABLE-qwen18-144",
+    "variant": "third_party/FABLE-qwen-proof-144",
+    "changed_source_sha256": {
+      "CMakeLists.txt": "f540cd4a93352125afc1170ffb1af37907049431a18bc426e97864653d86ef3f",
+      "extern/BatchPIR/header/batchpirserver.h": "beec490a25ebf5cb1eb3809a95bef33ec89e9416d9b99203159360ef839bf611",
+      "extern/BatchPIR/header/database_constants.h": "a80e5191f71c27077b48095fc3c99d838b5445d694f56c6508b5d77b1c6e656d",
+      "extern/BatchPIR/header/private_lut_placement.h": "85f803819c692bcd18b6c37c31a2c02e6c54d6191843b9e4f2ade939f0e8da07",
+      "extern/BatchPIR/header/utils.h": "f7887e8f54a298dba0ee0924ce3d0641d1bd48fedf8e47f9adc5d99d0c2c1d44",
+      "extern/BatchPIR/src/batchpirclient.cpp": "ae040b40b18d229bbf29eaa16f68941a211a6f253dd8d57a4c8f413bb47d224b",
+      "extern/BatchPIR/src/batchpirparams.cpp": "93dd1c88994e2d9cb694bdfd8b11f939e59a5f3c2fd58bd2e9a166a3c54b9e76",
+      "extern/BatchPIR/src/batchpirserver.cpp": "e7f4b2f790fc66ebb9bc5d70f329bfe00eb58ab95b3107a9bb9a7739df9f5b2b",
+      "extern/BatchPIR/src/utils.cpp": "ef86a238148bed4864ac40c9bf2308b8cdab47e5a3048a9ae1a0f281f607abf6",
+      "src/GC/fable_dual_domain_aes.h": "f218c5e722f9f8a51abcc1c7d966bad35981e2c42deb821e352ebdac1cc94db4",
+      "src/GC/lookup.cpp": "ebad70ac8c691914d33f6bde35aae8e9e31e73a30515bdf31d80d20584221e7a"
+    },
+    "patch_sha256": "72303e0e23d7c72d9e91f76be62e65c4062372fad91fe1fbe72fd61ef57a2362",
+    "build_private_SCI_configuration": true
+  }
+}

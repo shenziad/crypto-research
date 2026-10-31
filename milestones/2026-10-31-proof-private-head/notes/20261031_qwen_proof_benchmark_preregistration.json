@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-10-31T04:23:34.401820+00:00",
+  "maximum_wall_seconds": 1800,
+  "maximum_native_two_party_pairs": 20,
+  "orders": [
+    [
+      "dense",
+      "proof"
+    ],
+    [
+      "proof",
+      "dense"
+    ],
+    [
+      "proof",
+      "dense"
+    ],
+    [
+      "dense",
+      "proof"
+    ]
+  ],
+  "observations_per_variant": 4,
+  "primary": [
+    "aggregateallchannels/applicationwirebytes",
+    "wholepairwall100mspoll"
+  ],
+  "profile": "samefrozenPTB896/151936 input,F16/F20/E31/p44/K201; proofbackendfixedM4096/218bitHE/149bitflood/publiczero/dualAES/fullmatching/virtualIDs/maskedsentinel",
+  "scope": "Allfreshkeys/setup/OT/LUTs/localPythonhandoffs counted. Publicbackbone/captureprep excluded; denseqmassprecompiledoutside, proofaliaslocalcompileinside asoldconservativeconvention. Everyrow/E31/tokenauditedafterexit. CPUthreadsettingsunchanged,4FABLEthreads; noaffinity/exclusiveCPUclaim. DesktopFirefox/Codexactive; nootherownresearchjobconcurrent. NotWAN/SOTA/globaloptimalityclaim.",
+  "decision": "Measuretradeoff, notnewqualitygate. Communicationpositivewithlocalslowdownisretainedforboundedfollowup; noarchivejustbecausewalltargetmisses. No parameter/seed/model/precisionsearch.",
+  "input_sha256": {
+    "experiments/qwen_proof_matched_benchmark.py": "f0be91a60d6646766234c83e57b07c26df4f7af8f73f96d65c569a8f59bc7772",
+    "experiments/qwen_proof_benchmark_budget.py": "6147a1cafe4398c7d1d94187232bab5d5acfe487f7d2292f53faaba2cf102b6a",
+    "experiments/qwen_proof_sampling_worker.py": "acd011cbf1c6a47e22c0352a31634134da4549584553c47bd1933c52e849bd73",
+    "experiments/run_qwen_proof_sampling.py": "492804fe8472d87eb56fa6e962857dc2d41c040ea8d94511b638bd0af9479bdf",
+    "sources/fable_proof_backend_build/ready_manifest.json": "a4b3e5867ff27e9d1e87725bcc750ef028ec37bbd6b85eee843d602e2a2e4a31",
+    "results/qwen_proof_sampling_runs/ptb_test/client_initial.npz": "3b7b0dfada413a4a9d968059a1a92f5dadea309318584a690e296921eca0c741",
+    "results/qwen_proof_sampling_runs/ptb_test/server_initial.npz": "aac181739c21f3c6f8af42fb4460c367f24da3dcff75710d975a69f9d330d074",
+    "results/sci_exp31_finite_certificate.json": "8a7d19e0b0e48803cf784cea459372eb7d663f673573cfbfe0bbed542057e1ce",
+    "toolchain/bounded-sampler/qwen_dense_cdf31": "995405538c8107ccb3976a3f8be54bf5519494effd885ff24b0e95440b00547a",
+    "toolchain/bounded-sampler/qwen_alias_batch": "4581d89068618068a9b726c7c6125c2e7fabb603a69aa4651735adfe63ee2538",
+    "toolchain/bounded-sampler/qwen_selected_exp31": "380d96a376c05ad97a313a38889a13f3d81578ecfdbc451a2fd1ebc47a074c4d"
+  },
+  "limits": "Prospectivematched8completeprotocolruns,20nativepairs; nosecurityclaimfrombenchmarks. Conditionaljointsecuritydraft/separatefinitefunctionerrorsremainexplicit. Preserveallruns/failures,noautomaticretries."
+}

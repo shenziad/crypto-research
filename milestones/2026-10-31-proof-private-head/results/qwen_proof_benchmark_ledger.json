@@ -1,0 +1,70 @@
+{
+  "stage_closed": true,
+  "native_pairs_reserved": 20,
+  "events": [
+    {
+      "label": "balanced:0_dense",
+      "pairs": 1,
+      "reserved_utc": "2026-10-31T04:23:35.139899+00:00",
+      "completed_utc": "2026-10-31T04:24:05.358359+00:00",
+      "success": true
+    },
+    {
+      "label": "balanced:0_proof",
+      "pairs": 4,
+      "reserved_utc": "2026-10-31T04:24:05.363003+00:00",
+      "completed_utc": "2026-10-31T04:24:54.565844+00:00",
+      "success": true
+    },
+    {
+      "label": "balanced:1_proof",
+      "pairs": 4,
+      "reserved_utc": "2026-10-31T04:24:54.569836+00:00",
+      "completed_utc": "2026-10-31T04:25:44.271713+00:00",
+      "success": true
+    },
+    {
+      "label": "balanced:1_dense",
+      "pairs": 1,
+      "reserved_utc": "2026-10-31T04:25:44.275589+00:00",
+      "completed_utc": "2026-10-31T04:27:38.508276+00:00",
+      "success": true
+    },
+    {
+      "label": "balanced:2_proof",
+      "pairs": 4,
+      "reserved_utc": "2026-10-31T04:27:38.514105+00:00",
+      "completed_utc": "2026-10-31T04:32:41.243131+00:00",
+      "success": true
+    },
+    {
+      "label": "balanced:2_dense",
+      "pairs": 1,
+      "reserved_utc": "2026-10-31T04:32:41.275676+00:00",
+      "completed_utc": "2026-10-31T04:36:06.130696+00:00",
+      "success": true
+    },
+    {
+      "label": "balanced:3_dense",
+      "pairs": 1,
+      "reserved_utc": "2026-10-31T04:36:06.166182+00:00",
+      "completed_utc": "2026-10-31T04:38:00.489168+00:00",
+      "success": true
+    },
+    {
+      "label": "balanced:3_proof",
+      "pairs": 4,
+      "reserved_utc": "2026-10-31T04:38:00.493233+00:00",
+      "completed_utc": "2026-10-31T04:39:15.137702+00:00",
+      "success": true
+    }
+  ],
+  "actual_native_pairs": 20,
+  "completed_utc": "2026-10-31T04:41:05.066449+00:00",
+  "stage_wall_upper_seconds": 1050.664629,
+  "_publication": {
+    "original_local_json_sha256": "7de5024e3403732a9425dcb1aee8db9fcabf2ec0896ab8a9f22c9a64d93fb660",
+    "summary_only": true,
+    "omitted": "Nestedfiles/verified_files/audit_file_sha256/logs maps; rawshares,coins,tokens andbinaries notpublished. Localoriginalsfrozen."
+  }
+}
