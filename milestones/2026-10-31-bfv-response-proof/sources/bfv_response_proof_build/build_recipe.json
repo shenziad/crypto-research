@@ -1,0 +1,13 @@
+{
+  "configure_and_build": "experiments/run_bfv_response_pipeline_check.py writes CMakeLists/findSEAL4.1 andlinks only the frozen pre-existing BatchPIR utils.cpp.o, SEAL::seal andfmt12; commands retainedin toolchain/bfv-response-pipeline/build_commands.json.",
+  "linked_frozen_utils_object": "third_party/FABLE-qwen18-64/build/src/GC/CMakeFiles/fable-GC.dir/__/__/extern/BatchPIR/src/utils.cpp.o",
+  "linked_frozen_utils_object_sha256": "460ab514bea4f37232f8ec2fae6e725cbdd47969afacac23271d06fe2ee73668",
+  "SEAL_source_commit": "206648d0e4634e5c61dcf9370676630268290b59",
+  "primary_thesis_manifest": "sources/primary_BFV_20261031/manifest.json",
+  "initial_build_failures": [
+    "FullFABLEarchivepulledGCdependencies; initial_link_failure.log",
+    "Relativeutilsobjectpathwasincorrectlytreatedasalinker-library; relative_object_link_failure.log"
+  ],
+  "native_runs": "Exactlysixafterbuildsuccess; no circuitreruns/noisefits/seedorparametersearch.",
+  "limitations": "ExistingpinnedSEAL/compiledutilsobjectdependencyrequired. Notcleancloneinstaller. Rawpublicsyntheticfixtures/binaries/thirdpartyPDFremainNEWSMY. Oldbackendunchanged."
+}

@@ -1,0 +1,17 @@
+{
+  "status": "terminal_build_link_failure_and_registered_wall_expired_on_resume",
+  "original_created_utc": "2026-10-30T17:11:50.683327+00:00",
+  "observed_utc": "2026-10-31T03:52:51.810497+00:00",
+  "wall_seconds_to_resume": 38461.12717,
+  "maximum_wall_seconds": 3600,
+  "native_circuits_launched": 0,
+  "two_party_pairs": 0,
+  "failed_log": "toolchain/bfv-response-pipeline/initial_link_failure.log",
+  "failed_log_sha256": "ef72c3668d89d24fbadd21b7faca7f4ff4b163d1fea4011a205ee552aef41284",
+  "limits": "Do not count originalstage aspassedwithintime. No nativecircuit executed; no randomness/testcase was rerun orselected.",
+  "_publication": {
+    "original_local_json_sha256": "5db0f999074c8eb23cf43dd2a97966d6180d16c6643cf79f8ea011a9ccc52f5d",
+    "summary_only": true,
+    "omissions": "Nestedfiles/verified_files/logs/audit_file_sha256 maps removed. Alltestfixturesarepublicsynthetic; retainedsourceandimplementationhashes contain no protocolsecrets."
+  }
+}

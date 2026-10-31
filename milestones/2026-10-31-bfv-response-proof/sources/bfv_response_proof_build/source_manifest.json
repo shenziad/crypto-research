@@ -1,0 +1,11 @@
+{
+  "experiments/bfv_response_pipeline_check.cpp": "f7912c5a9280caa40a344c181ca597c4291b34a0d10629ccb0c9f2514643467e",
+  "experiments/run_bfv_response_pipeline_check.py": "60f04ed0b96d63fdaa827c43635f538d7bf40b107f38b102c8a9def0dbc6432e",
+  "experiments/bfv_response_bound_certificate.py": "10e2ec91eb65b2d758c68320015eac6c415eda626b6c336ff317f25d712a8d53",
+  "notes/20261031_bfv_response_proof_preregistration.json": "2cdad44d65f14b890ce19cbea99d0edc46b997b9c2c559acdb747562c63029fe",
+  "notes/20261031_bfv_response_proof_continuation.json": "c7158594c0f420f39538e734a42cf290b71b967ab54a4c7e661e2b8281077b98",
+  "notes/20261031_bfv_response_uniform_bound.md": "c89f0d36f74874e45c37515d09741abe9428c95930485ece993733ee84f13ca9",
+  "results/bfv_response_initial_attempt.json": "5db0f999074c8eb23cf43dd2a97966d6180d16c6643cf79f8ea011a9ccc52f5d",
+  "results/bfv_response_pipeline_check.json": "7eb7d5e134de3f82eea7b88a65578d1d4b6e3a1bf57499549e1590d7462da487",
+  "results/bfv_response_bound_certificate.json": "897a0e2ddfe718032f9fa1548ccd0587339b11f2d76dbd527cc3c937a7d0c063"
+}

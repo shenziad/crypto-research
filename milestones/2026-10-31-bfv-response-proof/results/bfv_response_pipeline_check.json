@@ -1,0 +1,154 @@
+{
+  "all_passed": true,
+  "results": [
+    {
+      "all_passed": true,
+      "case": 0,
+      "columns": 1024,
+      "slots_checked": 8192,
+      "m": 46,
+      "noise_bits": 149,
+      "fresh_publickey_zero": true,
+      "base_B": [
+        2305843009212694529,
+        2305843009212399617,
+        2305843009211662337,
+        2305843009211596801
+      ],
+      "m_sk": 2305843009213317121,
+      "m_tilde": 4294967296,
+      "elapsed_seconds": 12.4235,
+      "independent_Python_expected_passed": true
+    },
+    {
+      "all_passed": true,
+      "case": 1,
+      "columns": 1024,
+      "slots_checked": 8192,
+      "m": 46,
+      "noise_bits": 149,
+      "fresh_publickey_zero": true,
+      "base_B": [
+        2305843009212694529,
+        2305843009212399617,
+        2305843009211662337,
+        2305843009211596801
+      ],
+      "m_sk": 2305843009213317121,
+      "m_tilde": 4294967296,
+      "elapsed_seconds": 12.2129,
+      "independent_Python_expected_passed": true
+    },
+    {
+      "all_passed": true,
+      "case": 2,
+      "columns": 1024,
+      "slots_checked": 8192,
+      "m": 46,
+      "noise_bits": 149,
+      "fresh_publickey_zero": true,
+      "base_B": [
+        2305843009212694529,
+        2305843009212399617,
+        2305843009211662337,
+        2305843009211596801
+      ],
+      "m_sk": 2305843009213317121,
+      "m_tilde": 4294967296,
+      "elapsed_seconds": 12.3513,
+      "independent_Python_expected_passed": true
+    },
+    {
+      "all_passed": true,
+      "case": 3,
+      "columns": 1024,
+      "slots_checked": 8192,
+      "m": 46,
+      "noise_bits": 149,
+      "fresh_publickey_zero": true,
+      "base_B": [
+        2305843009212694529,
+        2305843009212399617,
+        2305843009211662337,
+        2305843009211596801
+      ],
+      "m_sk": 2305843009213317121,
+      "m_tilde": 4294967296,
+      "elapsed_seconds": 12.6963,
+      "independent_Python_expected_passed": true
+    },
+    {
+      "all_passed": true,
+      "case": 4,
+      "columns": 1024,
+      "slots_checked": 8192,
+      "m": 46,
+      "noise_bits": 149,
+      "fresh_publickey_zero": true,
+      "base_B": [
+        2305843009212694529,
+        2305843009212399617,
+        2305843009211662337,
+        2305843009211596801
+      ],
+      "m_sk": 2305843009213317121,
+      "m_tilde": 4294967296,
+      "elapsed_seconds": 13.175,
+      "independent_Python_expected_passed": true
+    },
+    {
+      "all_passed": true,
+      "case": 5,
+      "columns": 1024,
+      "slots_checked": 8192,
+      "m": 46,
+      "noise_bits": 149,
+      "fresh_publickey_zero": true,
+      "base_B": [
+        2305843009212694529,
+        2305843009212399617,
+        2305843009211662337,
+        2305843009211596801
+      ],
+      "m_sk": 2305843009213317121,
+      "m_tilde": 4294967296,
+      "elapsed_seconds": 13.1225,
+      "independent_Python_expected_passed": true
+    }
+  ],
+  "full_column_circuits": 6,
+  "total_decoded_slots_checked": 49152,
+  "two_party_pairs": 0,
+  "created_utc": "2026-10-31T03:52:51.810497+00:00",
+  "original_created_utc": "2026-10-30T17:11:50.683327+00:00",
+  "completed_utc": "2026-10-31T03:54:25.749770+00:00",
+  "native_checks_completion_wall_upper_seconds": 93.939273,
+  "maximum_stage_wall_seconds": 3600,
+  "implementation_sha256": {
+    "experiments/run_bfv_response_pipeline_check.py": "60f04ed0b96d63fdaa827c43635f538d7bf40b107f38b102c8a9def0dbc6432e",
+    "experiments/bfv_response_pipeline_check.cpp": "f7912c5a9280caa40a344c181ca597c4291b34a0d10629ccb0c9f2514643467e",
+    "toolchain/bfv-response-pipeline/build/bfv_response": "97d3162cb0bb246d1f8c881a9f4ecd65ef81584257fada31ab0e47f42eed48e8",
+    "toolchain/bfv-response-pipeline/CMakeLists.txt": "2577a5dcf604cd6e51d5fe5184d6f5d384fa40427ce9369aa2b1f42f16d07b2e",
+    "third_party/FABLE-qwen18-64/build/lib/libfable-GC.a": "871929421146b46fdfa19193feeedf91191df61108875b9e39b43017a282870e",
+    "third_party/FABLE-qwen18-64/build/src/GC/CMakeFiles/fable-GC.dir/__/__/extern/BatchPIR/src/utils.cpp.o": "460ab514bea4f37232f8ec2fae6e725cbdd47969afacac23271d06fe2ee73668"
+  },
+  "source_sha256": {
+    "third_party/FABLE/extern/SEAL/native/src/seal/evaluator.cpp": "9e2832ec05f0c5e5de6900c44c1d84d7c5d1c00efe2ec3f4a5ff874583cd56d2",
+    "third_party/FABLE/extern/SEAL/native/src/seal/keygenerator.cpp": "be678f60ad5093ed43dcb17bfffd43811d26c9f5511046edfb19556bfc33bb99",
+    "third_party/FABLE/extern/SEAL/native/src/seal/encryptor.cpp": "2fb326c0526adb937093f40af52f92651bef8a865fb013faf631de169216036d",
+    "third_party/FABLE/extern/SEAL/native/src/seal/util/rns.cpp": "09462da1fd914f3afca8bfcaf82e221e7950af2d9a6b3143e8f65bffa279e288",
+    "third_party/FABLE/extern/SEAL/native/src/seal/util/rlwe.cpp": "93eedac214990633c3ef3795ca151fd67d5b26702d9462e04db8da5b6df20b3c",
+    "third_party/FABLE/extern/SEAL/native/src/seal/util/scalingvariant.cpp": "eb3561eaa95fb82914c02182a54197bf846a225100acbe14e6b5d7a91e87b731",
+    "third_party/FABLE/extern/SEAL/native/src/seal/util/clipnormal.h": "f14ccdb7e1ca194e1a45cf0adf52decbe14e0592b97d3cabf43248d723c293e5",
+    "third_party/FABLE/extern/SEAL/build/native/src/seal/util/config.h": "66335a074307407ef2026a9f384f5891e4fdf80c56fffcafaee3f446f00ea0d3",
+    "third_party/FABLE-qwen18-64/extern/BatchPIR/src/utils.cpp": "5cbd63d7f6b3ed0f175f24a4d21193f95213c062babe7778324b638a6c1cefce",
+    "third_party/FABLE-qwen18-64/build/lib/libfable-GC.a": "871929421146b46fdfa19193feeedf91191df61108875b9e39b43017a282870e",
+    "results/bfv_flooding_obligations.json": "0cc1c9ed050acd835e066427d6e2d385965e3db889491722ee8e6aef9dbb20be"
+  },
+  "limits": "Constructiveproofaudit/nativecorrectness only. NotfullFABLEintegration, notendtoendbenchmark, notnewcryptoprimitive/CCFclaim. No seed/parameter searches. Preserveoldpositiveevidence andallfailures. Nativecorrectness doesnotprove residualbounds orsecurity. Freshpublickeyzero/218bitconfigurationnotadoptedbyoldbackend; nocostcomparison.",
+  "_publication": {
+    "original_local_json_sha256": "7eb7d5e134de3f82eea7b88a65578d1d4b6e3a1bf57499549e1590d7462da487",
+    "summary_only": true,
+    "omissions": "Nestedfiles/verified_files/logs/audit_file_sha256 maps removed. Alltestfixturesarepublicsynthetic; retainedsourceandimplementationhashes contain no protocolsecrets."
+  }
+}

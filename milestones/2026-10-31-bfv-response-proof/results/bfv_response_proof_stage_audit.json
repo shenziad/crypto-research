@@ -1,0 +1,26 @@
+{
+  "all_passed": true,
+  "stage_closed": true,
+  "continuation_wall_upper_seconds": 389.354248,
+  "continuation_budget_seconds": 3600,
+  "original_attempt_expired": true,
+  "original_attempt_not_counted_as_budget_pass": true,
+  "original_native_circuits": 0,
+  "continuation_native_circuits": 6,
+  "native_circuit_retries": 0,
+  "total_slots_checked": 49152,
+  "verified_file_count": 40,
+  "checkpoint": "sources/checkpoints/20261031_bfv_response_proof_v1",
+  "checkpoint_files": 11,
+  "created_utc": "2026-10-31T03:52:51.810497+00:00",
+  "completed_utc": "2026-10-31T03:59:21.164745+00:00",
+  "backend_integrated": false,
+  "full_system_certified": false,
+  "statistical_response_TV_upper": 1.5231601431934213e-13,
+  "limits": "Uniformcoefficient-bound/proofdraftpluspublicnativecorrectness; wholeLUToutputsharesimulation/actualFABLEintegration/costremain. CertificateisnotamachinecheckedC++proof. Publicationexcludedfromstagewall.",
+  "_publication": {
+    "original_local_json_sha256": "0c9fc24ad1c5161bf2fedc9fd89ea159504b2ab971944165a6f44b043cb48f98",
+    "summary_only": true,
+    "omissions": "Nestedfiles/verified_files/logs/audit_file_sha256 maps removed. Alltestfixturesarepublicsynthetic; retainedsourceandimplementationhashes contain no protocolsecrets."
+  }
+}

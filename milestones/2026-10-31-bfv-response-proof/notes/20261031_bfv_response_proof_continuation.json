@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-10-31T03:52:51.810497+00:00",
+  "maximum_wall_seconds": 3600,
+  "maximum_full_column_circuits": 6,
+  "maximum_two_party_pairs": 0,
+  "one_continuation_only": true,
+  "original_registration": "notes/20261031_bfv_response_proof_preregistration.json",
+  "reason": "Resumeafteroriginalwallwindowexpired; originalbuildlinkfailureand0executedcircuits retained. Completeunexecutedfixed6casesafterlinkingonlyfrozenupstreamutilsobject, notfullGCarchive. No cryptoalgorithm/parameter/seed search.",
+  "frozen_utils_object": "third_party/FABLE-qwen18-64/build/src/GC/CMakeFiles/fable-GC.dir/__/__/extern/BatchPIR/src/utils.cpp.o",
+  "frozen_utils_object_sha256": "460ab514bea4f37232f8ec2fae6e725cbdd47969afacac23271d06fe2ee73668"
+}
