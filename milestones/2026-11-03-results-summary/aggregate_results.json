@@ -1,0 +1,82 @@
+{
+  "date": "2026-11-03",
+  "status": "research_checkpoint_not_finished_paper",
+  "bounded_sampling": {
+    "native_pairs_completed": 172,
+    "complete_head_calls": 48,
+    "actual_autoregressive_private_calls": 32,
+    "actual_private_session_seconds": 747.1051201970004,
+    "actual_private_session_sampling_wire_bytes": 49250077847,
+    "EOS_observed": false,
+    "output_truncated": true,
+    "dummy_branch_exercised": false,
+    "32call_binary_version": "boundary4; device5 only controls andmatched singlecontext cost",
+    "device5_cost": {
+      "dense80": {
+        "observations": 2,
+        "median_wire_bytes": 3506580093.0,
+        "median_with_prepare_ms": 31861.01321300066
+      },
+      "device5": {
+        "observations": 2,
+        "median_wire_bytes": 1539064455.5,
+        "median_with_prepare_ms": 25888.231706499937
+      }
+    },
+    "cost_observations_each": 2
+  },
+  "content_evaluation": {
+    "scope": "Posthoc eight-schema-slot rules, two variants, not human factuality/officialSER. Humanreference80 has0/5 ruleerrors respectively. One truncated actual-private sample notqualitycomparison.",
+    "human_reference_check": {
+      "upstream_core": {
+        "rows": 80,
+        "errors": 0
+      },
+      "occurrence_count_repair": {
+        "rows": 80,
+        "errors": 5
+      }
+    },
+    "sampled_rule_error_per_attribute": {
+      "actual_private/boundary4_B1/sample/occurrence_count_repair": 1.1666666666666667,
+      "actual_private/boundary4_B1/sample/upstream_core": 0.3333333333333333,
+      "finite/B1_finite/sample/occurrence_count_repair": 0.575,
+      "finite/B1_finite/sample/upstream_core": 0.3875,
+      "finite/base_finite/sample/occurrence_count_repair": 0.675,
+      "finite/base_finite/sample/upstream_core": 0.425,
+      "float/B1_20261103031/sample/occurrence_count_repair": 0.75625,
+      "float/B1_20261103031/sample/upstream_core": 0.4125,
+      "float/B1_20261103032/sample/occurrence_count_repair": 0.51875,
+      "float/B1_20261103032/sample/upstream_core": 0.3375,
+      "float/base/sample/occurrence_count_repair": 0.675,
+      "float/base/sample/upstream_core": 0.4625,
+      "float/linear_20261103031/sample/occurrence_count_repair": 0.45625,
+      "float/linear_20261103031/sample/upstream_core": 0.2625,
+      "float/linear_20261103032/sample/occurrence_count_repair": 0.475,
+      "float/linear_20261103032/sample/upstream_core": 0.3125
+    }
+  },
+  "MoE": {
+    "synthetic_metered_sessions": 18,
+    "real_quantized_crop_private_router_sessions": 12,
+    "all_function_checks_passed": true,
+    "strong_STC_bytes": 364123384,
+    "same_q_STC_bytes": 366065676,
+    "hybrid_bytes": 411202584,
+    "hybrid_vs_sameq_increase_percent": 12.33027594753242
+  },
+  "C10": {
+    "status": "paused_by_user",
+    "new_experiments": 0,
+    "running_jobs": 0,
+    "negative_results_preserved": true
+  },
+  "limitations": [
+    "Complete joint implementation security proof and independent novelty evaluation remain open.",
+    "32-call output truncated; content fidelity is not established and bounded head does not consistently beat linear head.",
+    "device5 only controls and matched single-context comparisons; no32-call revalidation on that binary.",
+    "MoE real quantized crop uses uniform coefficients and trusted dealer; not full softmax MoE or full-model/WAN result.",
+    "Raw transcripts, private inputs/outputs, protocol implementation, local paths, model/data assets and key material are not included."
+  ],
+  "active_experiment_jobs": 0
+}
