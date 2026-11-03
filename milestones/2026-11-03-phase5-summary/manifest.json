@@ -1,0 +1,15 @@
+{
+  "scope": "Aggregate results only; no source orraw private data.",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "c59086d926d5a4cfc81038b07ff23994eb0c33b97e3873dd2d16aaaaa062fb20",
+      "bytes": 1767
+    },
+    {
+      "path": "aggregate_results.json",
+      "sha256": "325c0f64c67f994732a4eadbf32c0517fd1a38e2f68d46456ac45d826c07cd3f",
+      "bytes": 4262
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-03",
+  "scope": "Aggregate public-benchmark checkpoint only. No implementation, per-party or per-step records, prompts, token/text outputs, model/data assets, local paths, keys, shares or random tapes.",
+  "bounded_sampling": {
+    "new_native_pairs": 44,
+    "cumulative_with_phase4_native_pairs": 216,
+    "new_complete_head_calls": 12,
+    "actual_task_autoregressive_private_calls_still": 32,
+    "new_synthetic_fixed_schedule_private_calls": 6,
+    "new_isolated_build_independent_AES_outputs_checked": 2048,
+    "new_isolated_cost_two_observations_each": {
+      "dense80": {
+        "observations": 2,
+        "median_wire_bytes": 3506580093.0,
+        "median_with_prepare_ms": 31851.49709849793
+      },
+      "tmmo5": {
+        "observations": 2,
+        "median_wire_bytes": 1539064956.5,
+        "median_with_prepare_ms": 27261.81198500126
+      }
+    },
+    "security_status": "Concrete construction correspondence improved; complete joint implementation/OT/RLWE/entropy proof andindependent novelty remain open. New isolated build has controls/matched contexts, not32-call task rerun."
+  },
+  "content_diagnosis": {
+    "scope": "Frozen32-reference posthoc diagnosis,1010target positions; no training ornewqualityholdout. Centralcontinuations fromsamebad32tokenprefix are notprivatecalls orfresh qualitycomparison.",
+    "overall_NLL": {
+      "base": 1.6456634875491265,
+      "B1_20261103031": 1.5248934536995427,
+      "B1_20261103032": 1.5377174859974474,
+      "linear_20261103031": 1.4875732433420634,
+      "linear_20261103032": 1.4833982643961656
+    },
+    "named_target_positions": 198,
+    "named_target_NLL": {
+      "base": 0.2604347823181093,
+      "B1_20261103031": 0.27298975871338055,
+      "B1_20261103032": 0.27084969281884225,
+      "linear_20261103031": 0.2241497339485274,
+      "linear_20261103032": 0.2368247530920852
+    },
+    "named_positions_box_upper_below_half": 6,
+    "conclusion": "Bothbounded seeds improve overallNLL butworsen named-tokenNLL vsbase. Centralrecovery eventuallyEOS, contenterrors remain. Mostnamed positions notatnecessarybox limit; no universal impossibilityclaim."
+  },
+  "MoE": {
+    "new_real_quantized_crop_sessions": 60,
+    "new_synthetic_controls": 13,
+    "all_output_checks_passed": true,
+    "two_batches_each_two_observations": [
+      {
+        "batch": "A",
+        "strong_same_disclosure_bytes": 319142546,
+        "strong_lower_disclosure_bytes": 317200254,
+        "candidate_bytes": 298116666,
+        "reduction_vs_same_disclosure_percent": 6.588240979941295,
+        "reduction_vs_lower_disclosure_percent": 6.016258738557001
+      },
+      {
+        "batch": "B",
+        "strong_same_disclosure_bytes": 319142546,
+        "strong_lower_disclosure_bytes": 317200254,
+        "candidate_bytes": 310994746,
+        "reduction_vs_same_disclosure_percent": 2.5530284514306056,
+        "reduction_vs_lower_disclosure_percent": 1.956337651608564
+      }
+    ],
+    "negative_boundary": {
+      "raw_candidate_bytes": 323872916,
+      "strong_same_disclosure_bytes": 319142546,
+      "candidate_with_public_fallback_bytes": 319142546,
+      "scope": "Legal repeated-input boundary, notnatural qualitybenchmark. Fallback matches same-disclosure strongbaseline, stillcosts morethan lower-disclosure baseline."
+    },
+    "posthoc_workload_table_estimate": {
+      "batches_described": 512,
+      "private_executions_added": 0,
+      "mean_candidate_bytes": 304052656.0,
+      "strong_same_disclosure_bytes": 319142546,
+      "estimated_reduction_percent": 4.728260205080903,
+      "scope": "Whole existing publicasset, indexed measuredbyte table; not512private protocol runs/newqualityholdout orlatency evidence."
+    },
+    "limits": "Cropped realweights, uniformcoefficients andtrusteddealer. Notfullsoftmax MoE/fullmodel/WAN/securityproof ornewprimitive. Earliernegative prototypes retained. Fullshape currentcache exceeds existingRAMbudget; streaming needed beforefullrun."
+  },
+  "C10": {
+    "status": "paused_by_user",
+    "new_experiments": 0,
+    "data_deleted": false
+  },
+  "active_research_experiment_jobs": 0,
+  "detailed_source_upload": "Not retried; still awaits explicit public-disclosure authorization after earlier automatic approval denials."
+}
