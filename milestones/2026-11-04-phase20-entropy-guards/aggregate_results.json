@@ -1,0 +1,81 @@
+{
+  "stage": 20,
+  "UTC": "2026-11-04T06:47:57.247236+00:00",
+  "status": "guarded_research_profile_active",
+  "new_model_training": 0,
+  "new_task_generation": 0,
+  "backends": 5,
+  "checked_linked_BN_return_sites": 19,
+  "recompiled_configured_commands": 128,
+  "all_configured_commands_use_random_device": true,
+  "crypto_archives_unchanged_after_constructor_guard_upgrade": true,
+  "earlier_native_fault_cases": {
+    "initial": 25,
+    "late_OS_addendum": 6,
+    "total": 31,
+    "scope": "same rebuilt crypto archives before constructor-only guard upgrade; not all rerun on final images"
+  },
+  "normal_module_and_OS_recovery_checks": 7,
+  "earlier_whole_wrapper_fault_checks": 2,
+  "earlier_filepath_redaction_checks": 2,
+  "final_images": {
+    "BN_fault_and_nondumpability_attestations": 5,
+    "normal_whole_regressions": [
+      {
+        "kind": "candidate",
+        "seconds": 31.87010179000208,
+        "total_wire_bytes": 1539063616,
+        "all_correct": true
+      },
+      {
+        "kind": "dense",
+        "seconds": 66.0679829260007,
+        "total_wire_bytes": 3508012338,
+        "all_correct": true
+      }
+    ],
+    "public_abort_probe_no_kernel_core_flag": true,
+    "RSS_monitor_readable": true
+  },
+  "python_frontend": {
+    "injected_cases": 1,
+    "observed_fail_stop_and_redaction": true,
+    "original_harness_failed": true,
+    "posthoc_reason": "healthy peer may start a native and wait; no client native or final output; owned peer cancelled",
+    "no_rerun": true
+  },
+  "preserved_negative_results": [
+    "whole dense at legacy 180-second native timeout did not finish; cause unestablished",
+    "initial late-OS injection selector did not trigger; not counted as a fault success",
+    "intermediate RLIMIT_CORE-only core-disabled wording overbroad for host pipe handler; superseded with PR_SET_DUMPABLE inside every native",
+    "extra Python probe original harness had an overstrict no-native-on-either-party assertion; behavioral log audit explicitly posthoc"
+  ],
+  "availability_policy": {
+    "native_timeout_seconds": 600,
+    "whole_deadline_seconds": 720,
+    "threads_per_BLAS_library": 1,
+    "GPU": false
+  },
+  "research_claims": {
+    "full_joint_security_proven": false,
+    "natural_operational_failure_probability_estimated": false,
+    "independently_validated_unique_private_adaptation_task": false,
+    "current_known_proposal_attack_demonstrated": false,
+    "known_visible_proposal_counterexample_retained": true,
+    "new_latency_or_general_speedup_claim": false,
+    "sealed_task_tests_opened": false
+  },
+  "open_security_obligations": [
+    "known-secret-key full-ciphertext circuit privacy",
+    "actual-error seeded RLWE with auxiliary state and concrete hardness",
+    "reactive GC/OT composition and shared AES128/AES256 model",
+    "operational failure-schedule distribution and transcript-prefix simulation",
+    "uncovered internal RNG and allocation/EC errors; silent entropy bias; deployment/timing"
+  ],
+  "task_value_decision": "Narrow to functional/cost/engineering evidence conditional on a useful legal bounded head. Current task is replaceable by strong public/template controls; no new prompt/seed/head sweep.",
+  "paused": [
+    "MoE new full-size research",
+    "C10 all new experiments"
+  ],
+  "publication_scope": "Aggregate summary only; detailed sources, party records and weights remain local pending explicit public authorization."
+}

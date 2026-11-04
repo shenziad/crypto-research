@@ -1,0 +1,16 @@
+{
+  "stage": 20,
+  "scope": "authorized safe aggregate summary only",
+  "files": {
+    "README.md": "8c63197f472bce6e5a94b33e241f7b4599ac2cc1dbfa940d494699ad2e89ff5f",
+    "aggregate_results.json": "3ab2d6af863d88ad33e551d15a69f2ed5d0f86b56088523956e4e92b5351576d"
+  },
+  "excluded": [
+    "detailed implementation source",
+    "fault injection source",
+    "per-party records",
+    "weights",
+    "datasets",
+    "private paths and credentials"
+  ]
+}
