@@ -1,0 +1,8 @@
+{
+  "timestamp_UTC": "2026-11-04T03:56:44.405313+00:00",
+  "scope": "Safeaggregatecheckpoint,not source export",
+  "files": {
+    "README.md": "f7504031c5d1ff991e636c1c0e8b861d62a858f0f30f754a05295de09adb6e6f",
+    "aggregate_results.json": "6413893e47277dc9f4dbe5218ec779dfea20f713f68e910171d4d90b02bf817c"
+  }
+}
