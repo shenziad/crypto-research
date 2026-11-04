@@ -1,0 +1,12 @@
+{
+  "stage": 17,
+  "scope": "authorized aggregate-only research summary",
+  "files": {
+    "README.md": "271d55a843f8e2f15d59503359ec5ebf52aa65e5c18faa79a98dc53a3de83dbd",
+    "aggregate_results.json": "648b039d01af421fbd4100ece3dc9982e0bdc69bb8a92b74e80389936caf69ce"
+  },
+  "private_records_publicly_uploaded": false,
+  "source_publicly_uploaded": false,
+  "heldout_tests_evaluated": false,
+  "previous_commit": "dbf198310b9d6770976b4b43603ed50aa02f47c5"
+}

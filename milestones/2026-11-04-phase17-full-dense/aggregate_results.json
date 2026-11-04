@@ -1,0 +1,204 @@
+{
+  "stage": 17,
+  "status": "completed",
+  "controls_passed": 6,
+  "full_pairs_passed": 8,
+  "vocabulary": 151936,
+  "hidden": 896,
+  "rank": 8,
+  "K": 244,
+  "q_mass_bits": 62,
+  "E31_bits": 31,
+  "dense_uniform_bits": 93,
+  "comparison": [
+    {
+      "fixture": "train_first",
+      "pairs_per_protocol": 2,
+      "candidate": {
+        "wire_bytes": 1539066258,
+        "wire_bytes_per_pair": [
+          1539064399,
+          1539068117
+        ],
+        "wire_bytes_range": [
+          1539064399,
+          1539068117
+        ],
+        "whole_with_prepare_ms": [
+          26214.5594600006,
+          26414.574532000188
+        ],
+        "mean_whole_with_prepare_ms": 26314.566996000394,
+        "party_local_prepare_ms": [
+          [
+            356.3875100007863,
+            40.01675399922533
+          ],
+          [
+            364.53754299873253,
+            39.84521199890878
+          ]
+        ],
+        "failures": 0,
+        "stage_wire_bytes": {
+          "proposal": 714895855.5,
+          "row": 815003672.5,
+          "arithmetic": 9166730
+        }
+      },
+      "dense": {
+        "wire_bytes": 3508012338,
+        "wire_bytes_per_pair": [
+          3508012338,
+          3508012338
+        ],
+        "wire_bytes_range": [
+          3508012338,
+          3508012338
+        ],
+        "whole_with_prepare_ms": [
+          31427.283545001046,
+          31631.11019900134
+        ],
+        "mean_whole_with_prepare_ms": 31529.196872001194,
+        "party_local_prepare_ms": [
+          [
+            38.60332899967034,
+            195.7740029993147
+          ],
+          [
+            39.64583000015409,
+            202.44889899913687
+          ]
+        ],
+        "failures": 0,
+        "stage_wire_bytes": {
+          "setup": 457906,
+          "Bx": 1506880,
+          "floor_bridge": 563357,
+          "A_t": 130392262,
+          "PWL_E31_weight_CDF_release": 3375091933
+        },
+        "cdf_breakdown_bytes": {
+          "weight_products": 672101760,
+          "weight_lift_prefix": 355810656,
+          "first_success_share": 2417541,
+          "cdf_comparisons": 269645490,
+          "private_release": 547270
+        }
+      },
+      "candidate_wire_reduction_fraction": 0.5612711388360003
+    },
+    {
+      "fixture": "point_zero",
+      "pairs_per_protocol": 2,
+      "candidate": {
+        "wire_bytes": 1539065292.5,
+        "wire_bytes_per_pair": [
+          1539067216,
+          1539063369
+        ],
+        "wire_bytes_range": [
+          1539063369,
+          1539067216
+        ],
+        "whole_with_prepare_ms": [
+          26220.032355000512,
+          26214.593769998828
+        ],
+        "mean_whole_with_prepare_ms": 26217.31306249967,
+        "party_local_prepare_ms": [
+          [
+            222.07428899855586,
+            66.31005000053847
+          ],
+          [
+            196.77931600017473,
+            39.61158600031922
+          ]
+        ],
+        "failures": 0,
+        "stage_wire_bytes": {
+          "proposal": 714896212.5,
+          "row": 815002350,
+          "arithmetic": 9166730
+        }
+      },
+      "dense": {
+        "wire_bytes": 3508012338,
+        "wire_bytes_per_pair": [
+          3508012338,
+          3508012338
+        ],
+        "wire_bytes_range": [
+          3508012338,
+          3508012338
+        ],
+        "whole_with_prepare_ms": [
+          31636.919722999664,
+          31634.003772000142
+        ],
+        "mean_whole_with_prepare_ms": 31635.461747499903,
+        "party_local_prepare_ms": [
+          [
+            38.0115450006997,
+            195.19316700097988
+          ],
+          [
+            39.058304000718636,
+            199.57463500031736
+          ]
+        ],
+        "failures": 0,
+        "stage_wire_bytes": {
+          "setup": 457906,
+          "Bx": 1506880,
+          "floor_bridge": 563357,
+          "A_t": 130392262,
+          "PWL_E31_weight_CDF_release": 3375091933
+        },
+        "cdf_breakdown_bytes": {
+          "weight_products": 672101760,
+          "weight_lift_prefix": 355810656,
+          "first_success_share": 2417541,
+          "cdf_comparisons": 269645490,
+          "private_release": 547270
+        }
+      },
+      "candidate_wire_reduction_fraction": 0.5612714140630825
+    }
+  ],
+  "execution": {
+    "returncode": 0,
+    "budget_violation": null,
+    "elapsed_seconds": 277.5498822510017,
+    "sampled_peak_owned_tree_RSS_bytes": 4516995072,
+    "peak_observed_processes": 5,
+    "samples": 1268,
+    "new_owned_disk_bytes": 200386240,
+    "caps": {
+      "seconds": 1200,
+      "rss_mib": 10500,
+      "disk_mib": 1024
+    },
+    "scope": "Fresh process tree incl separately-sessioned workers; PIDs/starttimes retained across reparenting. Sampled RSS sum double-counts shared pages, short-lived peaks may be missed. Only observed owned PIDs managed."
+  },
+  "offline_fixture": {
+    "source": "first fixed private training MR; not development/test",
+    "fixture_offline_seconds": 2.8399423230002867,
+    "includes_model_load_forward_head_quantization": true,
+    "hidden_norm": 30.058923342370587,
+    "eos": 151643
+  },
+  "semantic_gate": "still failed; independent tests sealed; no new quality generations",
+  "proof_status": "ideal finite output law proved; actual component security and complete joint simulation remain conditional",
+  "secondary": "MoE/C10 paused",
+  "limits": [
+    "same client token-or-FAIL/server empty output contract, subject to unresolved full-view security",
+    "single-call private head and full vocabulary; not full autoregressive generation",
+    "two repetitions; timings descriptive only",
+    "loopback only; WAN endpoints absent",
+    "all fresh native crypto setup charged, cached raw model quantization/public prefill separate",
+    "no source/raw-party/weights public upload"
+  ]
+}
