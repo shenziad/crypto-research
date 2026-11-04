@@ -1,0 +1,161 @@
+{
+  "timestamp_UTC": "2026-11-04T04:21:35.347433+00:00",
+  "status": "semantic_development_gate_failed_core_function_controls_passed",
+  "entity_provenance": "Names/places supplied in clientMR,not server-derived private facts. Client-local constraints need no public release of values; actual sample-only implementation privacy remains conditional. Coverage comes from public constraint policy.",
+  "semantic_audit": {
+    "scope": "Single-assistant,method-label-blinded conservative development audit,not independenthuman groundtruth.0strictpasses is a rubric result,not a universal model-quality theorem. Uncertainty and full evidence retained.",
+    "rubric_committed_before_blind_text_review": true,
+    "method_labels_opened_after_annotation_commit": true,
+    "canonical_development_inputs": 5,
+    "separately_reported_conflicting_inputs": 3,
+    "audited_outputs": 25,
+    "summary": {
+      "B1_ce_20261103031": {
+        "strict_pass": 0,
+        "all_required_slots_correct": 0,
+        "contradiction_case": 0,
+        "uncertain_case": 4,
+        "omission_case": 2,
+        "unsupported_case": 3,
+        "cases": 5,
+        "slot_counts": {
+          "correct": 21,
+          "uncertain": 6,
+          "omitted": 2
+        }
+      },
+      "B1_ce_20261103032": {
+        "strict_pass": 0,
+        "all_required_slots_correct": 0,
+        "contradiction_case": 1,
+        "uncertain_case": 4,
+        "omission_case": 2,
+        "unsupported_case": 4,
+        "cases": 5,
+        "slot_counts": {
+          "correct": 18,
+          "omitted": 4,
+          "uncertain": 6,
+          "contradicted": 1
+        }
+      },
+      "linear_ce_20261103031": {
+        "strict_pass": 0,
+        "all_required_slots_correct": 1,
+        "contradiction_case": 3,
+        "uncertain_case": 3,
+        "omission_case": 1,
+        "unsupported_case": 4,
+        "cases": 5,
+        "slot_counts": {
+          "correct": 21,
+          "contradicted": 3,
+          "uncertain": 4,
+          "omitted": 1
+        }
+      },
+      "linear_ce_20261103032": {
+        "strict_pass": 0,
+        "all_required_slots_correct": 1,
+        "contradiction_case": 2,
+        "uncertain_case": 2,
+        "omission_case": 3,
+        "unsupported_case": 2,
+        "cases": 5,
+        "slot_counts": {
+          "contradicted": 2,
+          "omitted": 5,
+          "uncertain": 7,
+          "correct": 15
+        }
+      },
+      "public": {
+        "strict_pass": 0,
+        "all_required_slots_correct": 1,
+        "contradiction_case": 1,
+        "uncertain_case": 2,
+        "omission_case": 3,
+        "unsupported_case": 4,
+        "cases": 5,
+        "slot_counts": {
+          "correct": 18,
+          "contradicted": 2,
+          "uncertain": 4,
+          "omitted": 5
+        }
+      }
+    },
+    "gates": {
+      "each_B1_strict_not_below_public": true,
+      "pooled_B1_strict_margin_at_least_point1": false,
+      "pooled_B1_within_point1_of_linear": true,
+      "each_B1_badfact_case_rate_not_above_public": true
+    },
+    "gate1_passed": false,
+    "uncertain_policy": "Not a strictpass; unsupported means not licensed by input,not necessarily externallyfalse.",
+    "decision": "Stop candidate without relaxing rubric. Strongpublic1.5B stage notstarted; independenttestnot evaluated."
+  },
+  "independent_test": {
+    "inputs": 8,
+    "committed_before_development_audit": true,
+    "commitment_sha256": "17ccc4054db14a6f0775483bb7ed0b74b77c7af093af2707b8063a67091f3568",
+    "evaluated": false,
+    "earlier_reserved_test_still_unevaluated": true
+  },
+  "protocol_core": {
+    "status": "independent_20pair_native_core_audit_passed",
+    "precomputed_weight_entries": 8,
+    "pairs": 20,
+    "all_outputs_match_integer_oracle": true,
+    "server_outputs_empty": true,
+    "exact_FK_core_bytes": 2501861,
+    "normalized80_core_bytes": 1611493,
+    "failure_outputs": "2 deliberately forced all-reject cases in exactFK mode;not an empiricalfailureestimate.",
+    "target_function": "Dense slack-interval construction exactly matches fixedK token/FAIL law under ideal uniform draws; one CDFscan aftersecretfirstsuccess.",
+    "math_cases": 135,
+    "enumerated_outcome_sequences": 1755,
+    "limits": "Legacy normalized80 and exactFK have differentfailurecontracts;bytescompare contractoverhead only. Timings10differentfixtures not repeatedbalanced latencybenchmark.",
+    "fullhead_weightformation_integration": false,
+    "actual_vocabulary_integration": false,
+    "actualmodelgeneration_calls": 0,
+    "execution_seconds": 2.4386869220015797,
+    "resource_violation": null,
+    "preparation_failure": "Copy lost executable permission;0nativepairs ran,originalfailure retained. Same source/fixtures after permission correction."
+  },
+  "security_and_cost_remaining": "Complete jointHE/GCOT simulation, actualerrorRLWE/knownkeyauxstate,shareboundaryintegration,RNGfailure,timing/serialization and fullvocabularysamefunction costs remain unresolved. No fullsecurity orspeedupclaim.",
+  "EDEN": {
+    "public_DOI_metadata_status": "metadata_read",
+    "verified_title": [
+      "EDEN: Efficient Decoding Methods for Language Models on Encrypted Data"
+    ],
+    "verified_authors": [
+      {
+        "given": "Tara",
+        "family": "Patel"
+      },
+      {
+        "given": "Padmini",
+        "family": "Saroj"
+      },
+      {
+        "given": null,
+        "family": "Brad Wilmange"
+      }
+    ],
+    "registered_type": "posted-content",
+    "registered_date": {
+      "date-parts": [
+        [
+          2025,
+          9,
+          29
+        ]
+      ]
+    },
+    "fulltext_reviewed": false,
+    "scope": "Metadata confirmsidentityonly. PriorPDFaccessfailure preserved,no bypass/retry. Cannotassertoverlap/disjointness/novelty."
+  },
+  "MoE": "No newfullsize experiments",
+  "C10": "stopped",
+  "publication": "Safeaggregateonly,no source,weights,rawtexts,partyrecordsorparameterexport."
+}
