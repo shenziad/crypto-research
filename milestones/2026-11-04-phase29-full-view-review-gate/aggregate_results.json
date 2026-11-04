@@ -1,0 +1,82 @@
+{
+  "stage": 29,
+  "date": "2026-11-04",
+  "default": "phase26-cot-20261104 unchanged",
+  "full_security_proof": false,
+  "security_bits_estimated": null,
+  "private_adapter_utility_established": false,
+  "novelty_independently_confirmed": false,
+  "full_response_source_correction": {
+    "unused_buckets_have_default_onehot_retrieval": true,
+    "complete_decryption_contains_masked_default_records": true,
+    "later_GC_input_projects_unused_buckets_to_zero": true,
+    "wrong_zero_filled_simulator_toy_gap": "3/4",
+    "generic_gap": "1-2^(-record_bits) under ideal masks/correct decryption",
+    "source_loop_fixture_pass": true,
+    "exact_joint_view_instances": 1024,
+    "private_record_pairs": 16,
+    "actual_protocol_attack_claimed": false
+  },
+  "response_reduction": {
+    "explicit_raw_RLWE_embedding_and_full_pair_games": true,
+    "retains_known_client_key_and_query_tape": true,
+    "actual_rounding_serialization_and_lengths_included": true,
+    "suffix_simulation_before_posterior_witness_required": true,
+    "self_audited_and_conditional": true,
+    "independent_review_complete": false,
+    "nominal_ideal_ring_decoding_margin_pass": true,
+    "nominal_noise_bound_exact": {
+      "numerator": "10634148682903183788132358428147884037",
+      "denominator": "79228162463536354343480279041"
+    },
+    "decoding_threshold_exact": {
+      "numerator": "281474976186367",
+      "denominator": "131074"
+    }
+  },
+  "known_key_bad_hybrid": {
+    "toy_encryptions": 1542,
+    "gap": "1",
+    "scope": "invalid own-query Enc0 shortcut under our known-key view, not a protocol attack"
+  },
+  "limited_alternative_design": {
+    "implemented": false,
+    "GC_only_indexed_GOT_ROGC_budget_bytes": 526211977,
+    "conditional_full_bytes_old_non_GC_basis": 1573919745,
+    "conditional_full_increase_percent": 2.26462658605685,
+    "arithmetic_OT_replacement_excluded": true,
+    "DG_full_integration_excluded": true,
+    "latency_measured": false,
+    "fullV_allGC_rejected": true
+  },
+  "parameter_gate": {
+    "Sage_missing_in_configured_environments": true,
+    "three_pinned_primary_methods_require_Sage": true,
+    "actual_default_error_model_unresolved": true,
+    "software_installed": false
+  },
+  "primary_literature": {
+    "FABLE": "private LUT/shared query and output/masking/flooding are prior work; reviewed construction/security sections do not certify our changes",
+    "TCC2022": "oblivious sampling/rejection prior; restricted product promise cannot be imported unchanged",
+    "MARILL": "public backbone/private adaptation/token-only output prior",
+    "CiC_OLE_2026": "publisher abstract and metadata only; full PDF403, exact theorem/cost unverified"
+  },
+  "decision": "independent review or explicit narrow hybrid-model scope before further automatic experiments; current evidence does not establish CCF B+ readiness",
+  "remaining": [
+    "actual GC/OT/prefix joint-model theorem",
+    "default exact-law hardness and ring/auxiliary mapping",
+    "operational timing/abort leakage",
+    "independent task utility and novelty",
+    "approved estimator environment",
+    "cross-machine endpoints"
+  ],
+  "resources": {
+    "new_private_sessions": 0,
+    "GPU_used": false,
+    "training": false,
+    "sealed_tests_opened": false
+  },
+  "MoE": "paused",
+  "C10": "paused",
+  "publication": "safe aggregate only; detailed sources/proof notes/raw records not exported"
+}

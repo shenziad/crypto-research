@@ -1,0 +1,17 @@
+{
+  "scope": "3 safe aggregate files only",
+  "content_sha256": {
+    "README.md": "c0b3ff18af48d75b11ce54f59caa849a707b52fd95fc1018e6725027ed2d8306",
+    "aggregate_results.json": "6d9e70ecbf52cb6c9ce50b79f1902b4d4d323f7a44afe8f18a99c673fd617d9b"
+  },
+  "excluded": [
+    "source/patches",
+    "detailed proof and review notes",
+    "party inputs/views/logs",
+    "keys, weights or datasets",
+    "private filesystem paths"
+  ],
+  "old_negative_results_preserved": true,
+  "default_unchanged": true,
+  "source_publication_pending": true
+}
