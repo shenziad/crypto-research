@@ -1,0 +1,8 @@
+{
+  "timestamp_UTC": "2026-11-04T03:18:58.994348+00:00",
+  "scope": "Aggregate completed confirmation only",
+  "files": {
+    "README.md": "677bcdb11c2308548312847c614c5b9bce5157cd112a4b5e3d4418a83d585b67",
+    "aggregate_results.json": "651182f9a23b3a2d938950614b673dd0d6d2efec072e2f461de6cb51a27a00b6"
+  }
+}

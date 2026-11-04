@@ -1,0 +1,722 @@
+{
+  "timestamp_UTC": "2026-11-04T03:18:58.994348+00:00",
+  "status": "complete_independent_check_passed",
+  "distinct_generation_inputs": 16,
+  "generation_rows": 160,
+  "teacher_inputs": 48,
+  "teacher_rows": 240,
+  "summary": {
+    "base@flat": {
+      "teacher_NLL": 1.8012586103193564,
+      "teacher_named_NLL": 0.24811706661465627,
+      "named_present": 22,
+      "named_required": 31,
+      "named_complete": 7,
+      "EOS_count": 3,
+      "failure_count": 0,
+      "demo_contamination_cases": 0,
+      "ROUGE_L": 0.24640987786363477,
+      "nonEOS_special_ID_count": 0,
+      "rule_errors_per_attribute": {
+        "upstream_core": 0.375,
+        "occurrence_count_repair": 0.5192307692307693
+      }
+    },
+    "B1_ce_20261103031@flat": {
+      "teacher_NLL": 1.677028362353778,
+      "teacher_named_NLL": 0.26651298201633644,
+      "named_present": 20,
+      "named_required": 31,
+      "named_complete": 6,
+      "EOS_count": 8,
+      "failure_count": 0,
+      "demo_contamination_cases": 0,
+      "ROUGE_L": 0.2782312567233325,
+      "nonEOS_special_ID_count": 0,
+      "rule_errors_per_attribute": {
+        "upstream_core": 0.4326923076923077,
+        "occurrence_count_repair": 0.6346153846153846
+      }
+    },
+    "linear_ce_20261103031@flat": {
+      "teacher_NLL": 1.647876128356638,
+      "teacher_named_NLL": 0.24443387119642512,
+      "named_present": 28,
+      "named_required": 31,
+      "named_complete": 13,
+      "EOS_count": 10,
+      "failure_count": 0,
+      "demo_contamination_cases": 0,
+      "ROUGE_L": 0.3340545192721307,
+      "nonEOS_special_ID_count": 0,
+      "rule_errors_per_attribute": {
+        "upstream_core": 0.25961538461538464,
+        "occurrence_count_repair": 0.5192307692307693
+      }
+    },
+    "B1_ce_20261103032@flat": {
+      "teacher_NLL": 1.6775453130583438,
+      "teacher_named_NLL": 0.2630830989991188,
+      "named_present": 21,
+      "named_required": 31,
+      "named_complete": 7,
+      "EOS_count": 5,
+      "failure_count": 0,
+      "demo_contamination_cases": 0,
+      "ROUGE_L": 0.23992377127690256,
+      "nonEOS_special_ID_count": 0,
+      "rule_errors_per_attribute": {
+        "upstream_core": 0.4326923076923077,
+        "occurrence_count_repair": 0.6153846153846154
+      }
+    },
+    "linear_ce_20261103032@flat": {
+      "teacher_NLL": 1.641769183858073,
+      "teacher_named_NLL": 0.24375217859495785,
+      "named_present": 25,
+      "named_required": 31,
+      "named_complete": 10,
+      "EOS_count": 11,
+      "failure_count": 0,
+      "demo_contamination_cases": 0,
+      "ROUGE_L": 0.328942052415569,
+      "nonEOS_special_ID_count": 0,
+      "rule_errors_per_attribute": {
+        "upstream_core": 0.28846153846153844,
+        "occurrence_count_repair": 0.4519230769230769
+      }
+    },
+    "base@fewshot2": {
+      "teacher_NLL": 1.6378998035702756,
+      "teacher_named_NLL": 0.23308632998103215,
+      "named_present": 19,
+      "named_required": 31,
+      "named_complete": 5,
+      "EOS_count": 8,
+      "failure_count": 0,
+      "demo_contamination_cases": 1,
+      "ROUGE_L": 0.30507130373761443,
+      "nonEOS_special_ID_count": 0,
+      "rule_errors_per_attribute": {
+        "upstream_core": 0.4423076923076923,
+        "occurrence_count_repair": 0.625
+      }
+    },
+    "B1_ce_20261103031@fewshot2": {
+      "teacher_NLL": 1.584287206743445,
+      "teacher_named_NLL": 0.23677354033857725,
+      "named_present": 24,
+      "named_required": 31,
+      "named_complete": 10,
+      "EOS_count": 15,
+      "failure_count": 0,
+      "demo_contamination_cases": 0,
+      "ROUGE_L": 0.3482560923920667,
+      "nonEOS_special_ID_count": 0,
+      "rule_errors_per_attribute": {
+        "upstream_core": 0.3076923076923077,
+        "occurrence_count_repair": 0.4230769230769231
+      }
+    },
+    "linear_ce_20261103031@fewshot2": {
+      "teacher_NLL": 1.5740787160746854,
+      "teacher_named_NLL": 0.20881047414484713,
+      "named_present": 23,
+      "named_required": 31,
+      "named_complete": 8,
+      "EOS_count": 16,
+      "failure_count": 0,
+      "demo_contamination_cases": 0,
+      "ROUGE_L": 0.35053244560100527,
+      "nonEOS_special_ID_count": 0,
+      "rule_errors_per_attribute": {
+        "upstream_core": 0.25,
+        "occurrence_count_repair": 0.3557692307692308
+      }
+    },
+    "B1_ce_20261103032@fewshot2": {
+      "teacher_NLL": 1.5929452232253571,
+      "teacher_named_NLL": 0.2368615232197666,
+      "named_present": 19,
+      "named_required": 31,
+      "named_complete": 7,
+      "EOS_count": 14,
+      "failure_count": 0,
+      "demo_contamination_cases": 1,
+      "ROUGE_L": 0.2972888058962516,
+      "nonEOS_special_ID_count": 0,
+      "rule_errors_per_attribute": {
+        "upstream_core": 0.4807692307692308,
+        "occurrence_count_repair": 0.6346153846153846
+      }
+    },
+    "linear_ce_20261103032@fewshot2": {
+      "teacher_NLL": 1.581741293886375,
+      "teacher_named_NLL": 0.20595220168023973,
+      "named_present": 24,
+      "named_required": 31,
+      "named_complete": 10,
+      "EOS_count": 13,
+      "failure_count": 0,
+      "demo_contamination_cases": 0,
+      "ROUGE_L": 0.29951990617459606,
+      "nonEOS_special_ID_count": 0,
+      "rule_errors_per_attribute": {
+        "upstream_core": 0.22115384615384615,
+        "occurrence_count_repair": 0.3269230769230769
+      }
+    }
+  },
+  "contrasts": {
+    "public_prompt": {
+      "named_recall": {
+        "difference": -0.09677419354838712,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.28125,
+          0.09375
+        ]
+      },
+      "named_complete": {
+        "difference": -0.125,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.4375,
+          0.1875
+        ]
+      },
+      "EOS": {
+        "difference": 0.3125,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.0,
+          0.625
+        ]
+      },
+      "ROUGE_L": {
+        "difference": 0.058661425873979656,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.0024790112123592844,
+          0.12237087450924014
+        ]
+      },
+      "failure": {
+        "difference": 0.0,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.0,
+          0.0
+        ]
+      },
+      "demo_contamination": {
+        "difference": 0.0625,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.0,
+          0.1875
+        ]
+      },
+      "rule_upstream_core": {
+        "difference": 0.06730769230769229,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.04807692307692307,
+          0.18627450980392157
+        ]
+      },
+      "rule_occurrence_count_repair": {
+        "difference": 0.10576923076923073,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.02173913043478265,
+          0.24489795918367346
+        ]
+      }
+    },
+    "B1_ce_private_vs_public_flat": {
+      "named_recall": {
+        "difference": -0.048387096774193616,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.17741935483870963,
+          0.08064516129032251
+        ]
+      },
+      "named_complete": {
+        "difference": -0.03125,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.25,
+          0.1875
+        ]
+      },
+      "EOS": {
+        "difference": 0.21875,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.0,
+          0.4375
+        ]
+      },
+      "ROUGE_L": {
+        "difference": 0.012667636136482752,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.029632544875053894,
+          0.04240576097047802
+        ]
+      },
+      "failure": {
+        "difference": 0.0,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.0,
+          0.0
+        ]
+      },
+      "demo_contamination": {
+        "difference": 0.0,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.0,
+          0.0
+        ]
+      },
+      "rule_upstream_core": {
+        "difference": 0.05769230769230771,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.004854368932038833,
+          0.12376237623762376
+        ]
+      },
+      "rule_occurrence_count_repair": {
+        "difference": 0.10576923076923073,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.00925713557594285,
+          0.2134831460674157
+        ]
+      }
+    },
+    "linear_ce_private_vs_public_flat": {
+      "named_recall": {
+        "difference": 0.14516129032258052,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.016129032258064502,
+          0.29032258064516137
+        ]
+      },
+      "named_complete": {
+        "difference": 0.28125,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.03125,
+          0.5625
+        ]
+      },
+      "EOS": {
+        "difference": 0.46875,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.28125,
+          0.65625
+        ]
+      },
+      "ROUGE_L": {
+        "difference": 0.08508840798021511,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.04509167981993699,
+          0.12425387271866924
+        ]
+      },
+      "failure": {
+        "difference": 0.0,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.0,
+          0.0
+        ]
+      },
+      "demo_contamination": {
+        "difference": 0.0,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.0,
+          0.0
+        ]
+      },
+      "rule_upstream_core": {
+        "difference": -0.10096153846153844,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.2,
+          0.009615384615384637
+        ]
+      },
+      "rule_occurrence_count_repair": {
+        "difference": -0.033653846153846145,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.16972693439501468,
+          0.11764705882352938
+        ]
+      }
+    },
+    "bounded_minus_linear_flat": {
+      "named_recall": {
+        "difference": -0.19354838709677413,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.328125,
+          -0.046875
+        ]
+      },
+      "named_complete": {
+        "difference": -0.3125,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.5625,
+          -0.03125
+        ]
+      },
+      "EOS": {
+        "difference": -0.25,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.46875,
+          -0.03125
+        ]
+      },
+      "ROUGE_L": {
+        "difference": -0.07242077184373236,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.11382066481869706,
+          -0.033263360496017746
+        ]
+      },
+      "failure": {
+        "difference": 0.0,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.0,
+          0.0
+        ]
+      },
+      "demo_contamination": {
+        "difference": 0.0,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.0,
+          0.0
+        ]
+      },
+      "rule_upstream_core": {
+        "difference": 0.15865384615384615,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.050000000000000044,
+          0.25652173913043474
+        ]
+      },
+      "rule_occurrence_count_repair": {
+        "difference": 0.13942307692307687,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.005049242424242352,
+          0.2727272727272727
+        ]
+      }
+    },
+    "B1_ce_private_vs_public_fewshot2": {
+      "named_recall": {
+        "difference": 0.08064516129032262,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.09375,
+          0.265625
+        ]
+      },
+      "named_complete": {
+        "difference": 0.21875,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.0,
+          0.4375
+        ]
+      },
+      "EOS": {
+        "difference": 0.40625,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.15625,
+          0.65625
+        ]
+      },
+      "ROUGE_L": {
+        "difference": 0.017701145406544716,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.016257568003831265,
+          0.04901164869790778
+        ]
+      },
+      "failure": {
+        "difference": 0.0,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.0,
+          0.0
+        ]
+      },
+      "demo_contamination": {
+        "difference": -0.03125,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.09375,
+          0.0
+        ]
+      },
+      "rule_upstream_core": {
+        "difference": -0.04807692307692302,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.1834862385321101,
+          0.10576923076923078
+        ]
+      },
+      "rule_occurrence_count_repair": {
+        "difference": -0.09615384615384615,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.231489898989899,
+          0.06731039325842676
+        ]
+      }
+    },
+    "linear_ce_private_vs_public_fewshot2": {
+      "named_recall": {
+        "difference": 0.14516129032258063,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.03125,
+          0.265625
+        ]
+      },
+      "named_complete": {
+        "difference": 0.25,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.0625,
+          0.4375
+        ]
+      },
+      "EOS": {
+        "difference": 0.40625,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.125,
+          0.6875
+        ]
+      },
+      "ROUGE_L": {
+        "difference": 0.019954872150186265,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.031535439282720734,
+          0.07081787736725526
+        ]
+      },
+      "failure": {
+        "difference": 0.0,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.0,
+          0.0
+        ]
+      },
+      "demo_contamination": {
+        "difference": -0.0625,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.1875,
+          0.0
+        ]
+      },
+      "rule_upstream_core": {
+        "difference": -0.20673076923076922,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.32673267326732675,
+          -0.0789473684210526
+        ]
+      },
+      "rule_occurrence_count_repair": {
+        "difference": -0.28365384615384615,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.41904761904761906,
+          -0.14215407754010714
+        ]
+      }
+    },
+    "bounded_minus_linear_fewshot2": {
+      "named_recall": {
+        "difference": -0.06451612903225801,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.20967741935483875,
+          0.06666666666666665
+        ]
+      },
+      "named_complete": {
+        "difference": -0.03125,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.1875,
+          0.15625
+        ]
+      },
+      "EOS": {
+        "difference": 0.0,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.125,
+          0.125
+        ]
+      },
+      "ROUGE_L": {
+        "difference": -0.0022537267436415487,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.04250736373249599,
+          0.03663307252853484
+        ]
+      },
+      "failure": {
+        "difference": 0.0,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.0,
+          0.0
+        ]
+      },
+      "demo_contamination": {
+        "difference": 0.03125,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.0,
+          0.09375
+        ]
+      },
+      "rule_upstream_core": {
+        "difference": 0.1586538461538462,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.0495495495495496,
+          0.2755102040816326
+        ]
+      },
+      "rule_occurrence_count_repair": {
+        "difference": 0.1875,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.0663716814159292,
+          0.32184598806365994
+        ]
+      }
+    },
+    "bounded_prompt_effect": {
+      "named_recall": {
+        "difference": 0.032258064516129115,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.16129032258064524,
+          0.21666666666666667
+        ]
+      },
+      "named_complete": {
+        "difference": 0.125,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.1875,
+          0.4375
+        ]
+      },
+      "EOS": {
+        "difference": 0.5,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.34375,
+          0.65625
+        ]
+      },
+      "ROUGE_L": {
+        "difference": 0.06369493514404162,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.02912280995113279,
+          0.09642288892756992
+        ]
+      },
+      "failure": {
+        "difference": 0.0,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.0,
+          0.0
+        ]
+      },
+      "demo_contamination": {
+        "difference": 0.03125,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.0,
+          0.09375
+        ]
+      },
+      "rule_upstream_core": {
+        "difference": -0.038461538461538436,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.15454545454545454,
+          0.09782608695652162
+        ]
+      },
+      "rule_occurrence_count_repair": {
+        "difference": -0.09615384615384615,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.22857748184019377,
+          0.06499999999999995
+        ]
+      }
+    },
+    "bounded_private_increment_prompt_DID": {
+      "named_recall": {
+        "difference": 0.12903225806451624,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.109375,
+          0.35192652329748453
+        ]
+      },
+      "named_complete": {
+        "difference": 0.25,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.15625,
+          0.59375
+        ]
+      },
+      "EOS": {
+        "difference": 0.1875,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.125,
+          0.5
+        ]
+      },
+      "ROUGE_L": {
+        "difference": 0.005033509270061964,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.04983349756689232,
+          0.06674074202553226
+        ]
+      },
+      "failure": {
+        "difference": 0.0,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          0.0,
+          0.0
+        ]
+      },
+      "demo_contamination": {
+        "difference": -0.03125,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.09375,
+          0.0
+        ]
+      },
+      "rule_upstream_core": {
+        "difference": -0.10576923076923073,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.2619105409153953,
+          0.06770833333333331
+        ]
+      },
+      "rule_occurrence_count_repair": {
+        "difference": -0.20192307692307687,
+        "paired_MR_cluster_bootstrap_95percentile": [
+          -0.3616071428571428,
+          -0.005263157894736856
+        ]
+      }
+    }
+  },
+  "uncertainty": "20k paired MR cluster resamples; both seeds retained within cluster. Exploratory percentile intervals, no multiplicity correction or confirmatory p-values;16 distinct inputs, not32 independent inputs. Literal name/near only, slot metrics heuristic. Central doubleCDF finite-weight law, not native execution.",
+  "generation_seconds": 904.1886174589999,
+  "resource_note": "Original terminal watchdog disappeared; reattached watchdog observed process exit with result completed, no limit termination. Monitoring gap prevents whole-run peak/exit-code certification.",
+  "interpretation": [
+    "Public two-shot diagnostic coverage improvement did not replicate on untouched inputs.",
+    "Bounded same-prompt private adaptation improves EOS rate in this small paired sample, but literal name/place coverage gain remains uncertain and seed-sensitive.",
+    "Bounded-minus-linear few-shot coverage interval includes zero; this is not equivalence or proof of no quality loss.",
+    "Both bounded few-shot heads worsen teacher-forced named-token NLL relative to same-prompt public baseline despite lower overall NLL.",
+    "Keep all negative results and contamination cases. No new native private trace justified by a demonstrated factuality repair."
+  ],
+  "security_status": "Conditional range/flood/full-ciphertext/stopping lemmas only; actual-sampler RLWE, auxiliary state, full GC/OT/software correspondence and independent review remain unresolved.",
+  "MoE": "Additional full-size hybrid runs paused after exact31.67percent cost deficit decomposition; no capacity scan.",
+  "C10": "stopped",
+  "publication": "Safe aggregate results only; no source, weights, raw text, party records or parameter export.",
+  "posthoc_teacher_diagnostic": {
+    "status": "completed_posthoc_diagnostic",
+    "teacher_rows_replayed": 240,
+    "exact_loss_replay_passed": true,
+    "scope": "Posthoc same teacher inputs, conditional teacher trajectory, not causal explanation of free-running coverage or new independent test.",
+    "EOS_raw_abs_above_bound_count_per_bounded_head": 48,
+    "EOS_teacher_positions_per_bounded_head": 48,
+    "bounded_named_teacher_NLL_fewshot": [
+      0.23677354033857725,
+      0.2368615232197666
+    ],
+    "public_named_teacher_NLL_fewshot": 0.23308632998103215,
+    "interpretation": "Termination and other-token improvements can coexist with worse named-token NLL. Raw correction signs are not probabilities; comparing independently trained linear/bounded heads does not isolate a clipping causal effect. No further EOS-exception or weight sweep is justified."
+  }
+}
