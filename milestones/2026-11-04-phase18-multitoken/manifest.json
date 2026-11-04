@@ -1,0 +1,13 @@
+{
+  "stage": 18,
+  "scope": "authorized aggregate-only research summary",
+  "files": {
+    "README.md": "f8acf2e3f126cc9225e0867edd778266caaec757702d11fee45e3a611e4165e6",
+    "aggregate_results.json": "1619a43b22bf234c1591ad96655bdbab6a993187f0e46d96f5181be848de23bf"
+  },
+  "private_records_publicly_uploaded": false,
+  "source_publicly_uploaded": false,
+  "weights_publicly_uploaded": false,
+  "heldout_tests_evaluated": false,
+  "previous_commit": "15c1e783762cdb628ead83352b751273b7f4d3bb"
+}

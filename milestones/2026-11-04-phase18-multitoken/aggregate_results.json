@@ -1,0 +1,263 @@
+{
+  "stage": 18,
+  "status": "completed",
+  "native_calls": 16,
+  "all_six_sessions_passed": true,
+  "sessions": [
+    {
+      "name": "adaptive_candidate",
+      "protocol": "candidate",
+      "scenario": "adaptive",
+      "T": 4,
+      "all_correct": true,
+      "total_wire_bytes": 6156262451,
+      "whole_session_seconds": 111.40829421600029,
+      "online_schedule_seconds": 108.79209305599943,
+      "party_startup_seconds": [
+        2.512018628000078,
+        2.546470502000375
+      ],
+      "model_forward_calls": 4,
+      "visible_tokens": 4,
+      "dummy_calls": 0,
+      "EOS_seen": false,
+      "FAIL_seen": false,
+      "stage_wire_bytes": {
+        "proposal": 2859588250,
+        "row": 3260007281,
+        "arithmetic": 36666920
+      },
+      "per_call_wire_bytes": [
+        1539062934,
+        1539063380,
+        1539069376,
+        1539066761
+      ],
+      "GC_contexts": 28,
+      "GC_tweak_keys": 114948576,
+      "per_party_frontend_prepare_seconds": [
+        3.252578645997346,
+        3.437997293076478e-06
+      ]
+    },
+    {
+      "name": "adaptive_dense",
+      "protocol": "dense",
+      "scenario": "adaptive",
+      "T": 4,
+      "all_correct": true,
+      "total_wire_bytes": 14032049352,
+      "whole_session_seconds": 134.69757690000006,
+      "online_schedule_seconds": 132.091116571999,
+      "party_startup_seconds": [
+        2.6216460050000023,
+        2.6050005470006
+      ],
+      "model_forward_calls": 4,
+      "visible_tokens": 4,
+      "dummy_calls": 0,
+      "EOS_seen": false,
+      "FAIL_seen": false,
+      "stage_wire_bytes": {
+        "setup": 1831624,
+        "Bx": 6027520,
+        "floor_bridge": 2253428,
+        "A_t": 521569048,
+        "PWL_E31_weight_CDF_release": 13500367732
+      },
+      "per_call_wire_bytes": [
+        3508012338,
+        3508012338,
+        3508012338,
+        3508012338
+      ],
+      "GC_contexts": 12,
+      "GC_tweak_keys": 380704,
+      "per_party_frontend_prepare_seconds": [
+        3.397995886998615,
+        3.7970003177179024e-06
+      ]
+    },
+    {
+      "name": "EOS_dense",
+      "protocol": "dense",
+      "scenario": "EOS",
+      "T": 2,
+      "all_correct": true,
+      "total_wire_bytes": 7016024676,
+      "whole_session_seconds": 68.43629472500106,
+      "online_schedule_seconds": 65.83141080799942,
+      "party_startup_seconds": [
+        2.5431592659988382,
+        2.607989706999433
+      ],
+      "model_forward_calls": 2,
+      "visible_tokens": 0,
+      "dummy_calls": 1,
+      "EOS_seen": true,
+      "FAIL_seen": false,
+      "stage_wire_bytes": {
+        "setup": 915812,
+        "Bx": 3013760,
+        "floor_bridge": 1126714,
+        "A_t": 260784524,
+        "PWL_E31_weight_CDF_release": 6750183866
+      },
+      "per_call_wire_bytes": [
+        3508012338,
+        3508012338
+      ],
+      "GC_contexts": 6,
+      "GC_tweak_keys": 190352,
+      "per_party_frontend_prepare_seconds": [
+        1.5794987280005444,
+        5.359999704523943e-06
+      ]
+    },
+    {
+      "name": "EOS_candidate",
+      "protocol": "candidate",
+      "scenario": "EOS",
+      "T": 2,
+      "all_correct": true,
+      "total_wire_bytes": 3078128655,
+      "whole_session_seconds": 57.583478276997994,
+      "online_schedule_seconds": 54.97749126600138,
+      "party_startup_seconds": [
+        2.5902858619992912,
+        2.637939202999405
+      ],
+      "model_forward_calls": 2,
+      "visible_tokens": 0,
+      "dummy_calls": 1,
+      "EOS_seen": true,
+      "FAIL_seen": false,
+      "stage_wire_bytes": {
+        "proposal": 1429791796,
+        "row": 1630003399,
+        "arithmetic": 18333460
+      },
+      "per_call_wire_bytes": [
+        1539063794,
+        1539064861
+      ],
+      "GC_contexts": 14,
+      "GC_tweak_keys": 57474288,
+      "per_party_frontend_prepare_seconds": [
+        1.611701489000552,
+        6.451999070122838e-06
+      ]
+    },
+    {
+      "name": "FAIL_candidate",
+      "protocol": "candidate",
+      "scenario": "FAIL",
+      "T": 2,
+      "all_correct": true,
+      "total_wire_bytes": 3078129425,
+      "whole_session_seconds": 57.22252561099958,
+      "online_schedule_seconds": 54.607511964997684,
+      "party_startup_seconds": [
+        2.5987311040007626,
+        2.6056780839971907
+      ],
+      "model_forward_calls": 2,
+      "visible_tokens": 0,
+      "dummy_calls": 1,
+      "EOS_seen": false,
+      "FAIL_seen": true,
+      "stage_wire_bytes": {
+        "proposal": 1429795342,
+        "row": 1630000623,
+        "arithmetic": 18333460
+      },
+      "per_call_wire_bytes": [
+        1539065882,
+        1539063543
+      ],
+      "GC_contexts": 14,
+      "GC_tweak_keys": 57474288,
+      "per_party_frontend_prepare_seconds": [
+        1.5971006580039102,
+        5.931000487180427e-06
+      ]
+    },
+    {
+      "name": "FAIL_dense",
+      "protocol": "dense",
+      "scenario": "FAIL",
+      "T": 2,
+      "all_correct": true,
+      "total_wire_bytes": 7016024676,
+      "whole_session_seconds": 68.59481458699884,
+      "online_schedule_seconds": 65.99029566299942,
+      "party_startup_seconds": [
+        2.604524434002087,
+        2.6073815200034005
+      ],
+      "model_forward_calls": 2,
+      "visible_tokens": 0,
+      "dummy_calls": 1,
+      "EOS_seen": false,
+      "FAIL_seen": true,
+      "stage_wire_bytes": {
+        "setup": 915812,
+        "Bx": 3013760,
+        "floor_bridge": 1126714,
+        "A_t": 260784524,
+        "PWL_E31_weight_CDF_release": 6750183866
+      },
+      "per_call_wire_bytes": [
+        3508012338,
+        3508012338
+      ],
+      "GC_contexts": 6,
+      "GC_tweak_keys": 190352,
+      "per_party_frontend_prepare_seconds": [
+        1.6054938699999184,
+        6.85499981045723e-06
+      ]
+    }
+  ],
+  "adaptive_traffic_reduction_fraction": 0.5612713227720694,
+  "execution": {
+    "returncode": 0,
+    "budget_violation": null,
+    "elapsed_seconds": 507.6471585070012,
+    "sampled_peak_owned_tree_RSS_bytes": 7196471296,
+    "peak_observed_processes": 7,
+    "samples": 2313,
+    "new_owned_disk_bytes": 420386712,
+    "caps": {
+      "seconds": 1200,
+      "rss_mib": 10500,
+      "disk_mib": 768
+    },
+    "scope": "Fresh process tree incl separately-sessioned workers; PIDs/starttimes retained across reparenting. Sampled RSS sum double-counts shared pages, short-lived peaks may be missed. Only observed owned PIDs managed."
+  },
+  "component_usage": {
+    "GC_contexts": 80,
+    "GC_tweak_keys": 230658560,
+    "source_derived_base_OT_transfers": 102400,
+    "base_OT_count_basis": "source-derived setup counts; GC contexts/keys checked against native logs and alias AND metadata; not a direct runtime base-OT counter or total AES query count",
+    "candidate_RLWE_source_counts": {
+      "calls": 8,
+      "symmetric_queries": 24576,
+      "public_keys": 16,
+      "response_Enc0": 408
+    }
+  },
+  "scope": "Complete private head/full vocabulary in fixed public T schedules; client-private token/FAIL/EOS state and same-shape backbone dummies; main coins fresh, correctness controls predeclared.",
+  "quality": "No semantic quality experiment; four-token prefixes do not establish value. Failed stage16 gate retained; tests sealed.",
+  "security": "Ideal adaptive finite-law induction and conditional same-A small-secret auxiliary-state lemma documented; full actual joint proof/concrete hardness/deployment leakage unresolved.",
+  "limitations": [
+    "one adaptive trajectory per protocol; histories differ under fresh coins",
+    "single host loopback, no WAN endpoint",
+    "full table/preprocessing and native setup refreshed each call; common frozen raw model/head cache and startup separated",
+    "control EOS/FAIL joint coins are known correctness fixtures, not natural event-frequency samples",
+    "public progress timing and compressed local files are not a constant-time proof",
+    "unchecked BN_rand_range return remains in frozen backend",
+    "detailed source and party records not publicly uploaded"
+  ],
+  "secondary": "MoE/C10 paused"
+}
