@@ -1,0 +1,213 @@
+{
+  "checkpoint_date": "2026-11-04",
+  "status": "research resumed; primary private64 running; full-shape MoE not run",
+  "bounded_fidelity": {
+    "dataset": "public cleaned E2E restaurant description",
+    "new_test_MRs": 48,
+    "sampled_MRs": 16,
+    "seeds": 2,
+    "training_updates": 64,
+    "train_MRs": 128,
+    "test_head_selection": "none; native head and MR fixed before training",
+    "results": {
+      "base": {
+        "test_NLL": 1.7706364348676789,
+        "test_named_NLL": 0.17428491907146187,
+        "sample_examples": 16,
+        "named_recall": 0.53125,
+        "named_complete_count": 3,
+        "EOS_count": 1,
+        "failure_count": 0,
+        "ROUGE_L": 0.22183524632591944,
+        "rule_error_per_attribute": {
+          "upstream_core": 0.49038461538461536,
+          "occurrence_count_repair": 0.6538461538461539
+        }
+      },
+      "B1_ce_20261103031": {
+        "test_NLL": 1.6306998041748515,
+        "test_named_NLL": 0.1932394537274632,
+        "sample_examples": 16,
+        "named_recall": 0.6875,
+        "named_complete_count": 7,
+        "EOS_count": 8,
+        "failure_count": 0,
+        "ROUGE_L": 0.30909856565951915,
+        "rule_error_per_attribute": {
+          "upstream_core": 0.375,
+          "occurrence_count_repair": 0.6826923076923077
+        }
+      },
+      "B1_named2_20261103031": {
+        "test_NLL": 1.6397305132045699,
+        "test_named_NLL": 0.1786938972830353,
+        "sample_examples": 16,
+        "named_recall": 0.65625,
+        "named_complete_count": 7,
+        "EOS_count": 7,
+        "failure_count": 0,
+        "ROUGE_L": 0.3070233558267522,
+        "rule_error_per_attribute": {
+          "upstream_core": 0.40384615384615385,
+          "occurrence_count_repair": 0.6442307692307693
+        }
+      },
+      "linear_ce_20261103031": {
+        "test_NLL": 1.5854565385028514,
+        "test_named_NLL": 0.158849822326422,
+        "sample_examples": 16,
+        "named_recall": 0.875,
+        "named_complete_count": 12,
+        "EOS_count": 13,
+        "failure_count": 0,
+        "ROUGE_L": 0.3572734265301094,
+        "rule_error_per_attribute": {
+          "upstream_core": 0.3269230769230769,
+          "occurrence_count_repair": 0.5576923076923077
+        }
+      },
+      "linear_named2_20261103031": {
+        "test_NLL": 1.585836164980444,
+        "test_named_NLL": 0.1442992932923486,
+        "sample_examples": 16,
+        "named_recall": 0.875,
+        "named_complete_count": 12,
+        "EOS_count": 13,
+        "failure_count": 0,
+        "ROUGE_L": 0.3585815561468248,
+        "rule_error_per_attribute": {
+          "upstream_core": 0.3076923076923077,
+          "occurrence_count_repair": 0.5
+        }
+      },
+      "B1_ce_20261103032": {
+        "test_NLL": 1.6380068538624386,
+        "test_named_NLL": 0.19509519135471262,
+        "sample_examples": 16,
+        "named_recall": 0.625,
+        "named_complete_count": 6,
+        "EOS_count": 8,
+        "failure_count": 0,
+        "ROUGE_L": 0.31833875580431437,
+        "rule_error_per_attribute": {
+          "upstream_core": 0.3942307692307692,
+          "occurrence_count_repair": 0.6538461538461539
+        }
+      },
+      "B1_named2_20261103032": {
+        "test_NLL": 1.6400265552402065,
+        "test_named_NLL": 0.17965851981129857,
+        "sample_examples": 16,
+        "named_recall": 0.59375,
+        "named_complete_count": 6,
+        "EOS_count": 9,
+        "failure_count": 0,
+        "ROUGE_L": 0.30667142407341175,
+        "rule_error_per_attribute": {
+          "upstream_core": 0.375,
+          "occurrence_count_repair": 0.5480769230769231
+        }
+      },
+      "linear_ce_20261103032": {
+        "test_NLL": 1.5851434291699535,
+        "test_named_NLL": 0.15924320571297998,
+        "sample_examples": 16,
+        "named_recall": 0.84375,
+        "named_complete_count": 11,
+        "EOS_count": 13,
+        "failure_count": 0,
+        "ROUGE_L": 0.3644083675657446,
+        "rule_error_per_attribute": {
+          "upstream_core": 0.3076923076923077,
+          "occurrence_count_repair": 0.5769230769230769
+        }
+      },
+      "linear_named2_20261103032": {
+        "test_NLL": 1.5890298101648732,
+        "test_named_NLL": 0.15396150578816795,
+        "sample_examples": 16,
+        "named_recall": 0.84375,
+        "named_complete_count": 11,
+        "EOS_count": 14,
+        "failure_count": 0,
+        "ROUGE_L": 0.36725993726787254,
+        "rule_error_per_attribute": {
+          "upstream_core": 0.2980769230769231,
+          "occurrence_count_repair": 0.46153846153846156
+        }
+      }
+    },
+    "interpretation": "The proposed named/EOS weighted repair is not established: both bounded weighted heads remain worse than the public base at named-token NLL; named recall is lower than corresponding bounded CE heads. Unbounded linear comparators remain stronger. Diagnostic regex metrics are not ground-truth factuality."
+  },
+  "private_validation": {
+    "planned_fixed_calls": 64,
+    "completed_public_steps_at_checkpoint": 10,
+    "after_exit_audit": "pending; no live party-private artifact inspection",
+    "fresh_dense_snapshots_planned": 4,
+    "termination": "fixed calls including EOS/failure dummies",
+    "result_claim": "not completed yet; no private quality or full-security theorem claim"
+  },
+  "MoE": {
+    "matched_synthetic_case_pairs_each_version": 10,
+    "matched_real_case_pairs_each_version": 15,
+    "versions": 2,
+    "all_completed_pairs_correct": true,
+    "v1_negative": "Streaming increased communication by repeatedly sending masks for unchanged operands; results preserved.",
+    "v2_mechanism": "Identical-operand cache reuse across aligned weight tiles, applied equally to all strong baselines; fresh material for changed operands.",
+    "v2_rows": [
+      {
+        "D": 128,
+        "H": 128,
+        "pattern": "actual",
+        "q": 32,
+        "candidate_bytes": 298209549,
+        "best_same_q_bytes": 319363621,
+        "best_full_hidden_bytes": 317421329,
+        "saving_vs_same_q": 0.06623820187710106,
+        "saving_vs_full_hidden": 0.06052454023970144
+      },
+      {
+        "D": 128,
+        "H": 128,
+        "pattern": "repeated",
+        "q": 64,
+        "candidate_bytes": 319363621,
+        "best_same_q_bytes": 319363621,
+        "best_full_hidden_bytes": 317421329,
+        "saving_vs_same_q": 0.0,
+        "saving_vs_full_hidden": -0.006118971293198827
+      },
+      {
+        "D": 256,
+        "H": 128,
+        "pattern": "actual",
+        "q": 32,
+        "candidate_bytes": 432759878,
+        "best_same_q_bytes": 460594406,
+        "best_full_hidden_bytes": 458652114,
+        "saving_vs_same_q": 0.060431754353525546,
+        "saving_vs_full_hidden": 0.056452887078593084
+      }
+    ],
+    "scope": "Actual Q4/S16 expert crops, private finite integer top8 router, uniform gate coefficients; local passive ideal dealer; not full MoE, full quality or HE-SOTA.",
+    "full_shape": "Not run; resource pilot required before starting."
+  },
+  "security": {
+    "status": "conditional reduction and source correspondence; not a complete proof",
+    "reviewed_areas": [
+      "known-secret-key response ciphertext privacy",
+      "public-seed and auxiliary-state assumptions",
+      "whole proposal/acceptance views",
+      "GC/OT sequential boundaries and cross-call randomness",
+      "failure symbol and fixed multi-token schedule"
+    ],
+    "open": [
+      "independent cryptographic review",
+      "concrete RLWE and complete OT/GC advantages",
+      "serialization and implementation correspondence",
+      "entropy and deployment timing/side channels"
+    ]
+  },
+  "C10": "paused; no new experiments",
+  "publication_scope": "Safe aggregate summary only; no detailed source, party records, model weights, raw data or local paths."
+}
