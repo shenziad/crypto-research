@@ -1,0 +1,60 @@
+{
+  "stage": 21,
+  "status": "completed_before_pause_resumed_for_summary_sync",
+  "frozen_backend": "phase20-entropy-20261104-guarded",
+  "new_protocol_sessions": 0,
+  "new_training": 0,
+  "GPU_used": false,
+  "conditional_full_phase_bound": {
+    "all_plaintext_lift_residues_checked": 65537,
+    "maximum_exact_lift_error": {
+      "numerator": "32769",
+      "denominator": "65537",
+      "approximate": 0.5000076292781177
+    },
+    "linear_response_bound": {
+      "numerator": "2817498546177",
+      "denominator": "1",
+      "approximate": 2817498546177.0
+    },
+    "key_to_data_enczero_bound": {
+      "numerator": "9008297558892583",
+      "denominator": "2199022960642",
+      "approximate": 4096.500000283139
+    },
+    "complete_preflood_integer_bound": 2817498550274,
+    "old_conservative_preflood_cap": 4506279720865812,
+    "old_ledger_retained": true,
+    "scope": "conditional source-level arithmetic; ideal independent random tapes and specified ring operations, not full ciphertext/GC simulation"
+  },
+  "public_exact_checks": {
+    "linear_phase_cases": 5625,
+    "linear_phase_max_residual": 7,
+    "both_component_switch_cases": 525,
+    "raw_share_programming_cases": 49,
+    "not_concrete_security_tests": true
+  },
+  "actual_SEAL_version": "4.1.1",
+  "actual_key_modulus_bits": 184,
+  "actual_data_modulus_bits": 144,
+  "library_tc128_threshold_bits": 218,
+  "library_parameter_check_is_full_security_proof": false,
+  "shared_secret_query_ring_pairs_per_lookup": 1537,
+  "fresh_secret_response_ring_pairs_per_sampler_call": 51,
+  "compiled_encryptors_call_normal_not_CBD": true,
+  "actual_error_hardness_estimated": false,
+  "full_joint_simulator_instantiated": false,
+  "validated_unique_private_task": false,
+  "sealed_tests_accessed": false,
+  "negative_record": "Initial public-only parameter-probe compile failed because zstd library directory was omitted. Explicit library directory fixed the build; original failure retained.",
+  "remaining": [
+    "full masked plaintext/GC consistency",
+    "reactive GC/OT under a common primitive model",
+    "concrete actual-error RLWE for both sample regimes",
+    "operational/deployment leakage",
+    "independent real-task utility"
+  ],
+  "MoE": "paused",
+  "C10": "paused",
+  "publication": "authorized aggregate only; detailed sources/party records/weights remain local"
+}

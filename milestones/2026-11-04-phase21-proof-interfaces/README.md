@@ -1,0 +1,11 @@
+# Stage21: conditional full-phase bridge and explicit proof obligations
+
+The guarded stage20 implementation remains frozen. This stage performed public-only source, parameter and exact-arithmetic work, without new protocol sessions, GPU use, training or sealed-test access.
+
+A source-level derivation bounds the entire linear BFV response phase, including plaintext lifting and both-component key-to-data rounding. The conditional integer cap2,817,498,550,274 fits within the old4,506,279,720,865,812 cap. All old flood parameters, ledgers and negative results remain unchanged. The actual plaintext lift has maximum error32769/65537, slightly above1/2; the derivation safely uses a bound below1. This is a conditional algebra/source bridge, not a complete ciphertext/GC simulator or compiler verification. Exact public checks covered all65537 lift residues plus5625 linear-phase,525 switch and49 share-programming toy cases; finite checks are not the universal proof.
+
+The proof interfaces distinguish query secrecy (1537 ring pairs sharing one ternary secret per lookup, with mixed public/data moduli) from known-key response privacy (51 pairs using fresh ephemeral secrets per sampler call, after phase flooding). The pinned SEAL archive calls the normal sampler in both encryptors, not CBD. Error support, a continuous-normal proxy and the library tc128 parameter check are not concrete hardness estimates. The initial parameter-probe link failure remains recorded; only the explicit library search path was corrected.
+
+The remaining gaps are full masked-plaintext consistency with downstream GC, reactive GC/OT simulation under one shared primitive model, actual-error RLWE assessment and operational/deployment observables. The known visible-proposal counterexample remains distinct from the current hidden-proposal implementation. No full security or new speedup claim is made.
+
+No private-adaptation task has yet demonstrated independent utility beyond strong public/template controls. A pre-registered low-cost capability filter and baseline requirements were saved; no task/prompt/seed sweep was run. The research may be narrowed to a rigorously specified protocol contribution if its proof and novelty survive review. MoE and C10 remain paused. Detailed sources, party records and weights are not included here.

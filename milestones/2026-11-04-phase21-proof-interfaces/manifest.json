@@ -1,0 +1,14 @@
+{
+  "stage": 21,
+  "scope": "authorized aggregate summary only",
+  "sha256": {
+    "README.md": "4a37315c4e9ef3329cfa278d548cf25cc84df54d9f2a9e1f71e6d69bff26e49c",
+    "aggregate_results.json": "e661c8e9d00267d456420f5ab7a9d1e1027d3b546e7465523789b9189e25feb5"
+  },
+  "excluded": [
+    "detailed sources",
+    "party records",
+    "weights",
+    "datasets"
+  ]
+}
