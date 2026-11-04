@@ -1,0 +1,21 @@
+{
+  "stage": 27,
+  "scope": "authorized aggregate only",
+  "files": {
+    "aggregate_results.json": {
+      "bytes": 3082,
+      "sha256": "d7da7be45407ab3df714e11ba09a5bf90220946d4e28b3b508047738f0d81cc8"
+    },
+    "README.md": {
+      "bytes": 3401,
+      "sha256": "47cab3741ba73d1f463c0374bbe137d76c48e4836d0843903764225fffc0e822"
+    }
+  },
+  "excluded": [
+    "detailed source/proof notes",
+    "patch",
+    "party records",
+    "weights",
+    "keys"
+  ]
+}

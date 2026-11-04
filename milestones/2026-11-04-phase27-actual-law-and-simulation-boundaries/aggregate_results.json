@@ -1,0 +1,86 @@
+{
+  "stage": 27,
+  "default": "phase26-cot-20261104 unchanged",
+  "error_law": {
+    "coefficients_replayed": 1048576,
+    "RNS_limb_matches": 4194304,
+    "source_conversion": "clipped floating normal truncated toward zero",
+    "nominal_sigma": 3.2,
+    "empirical_sd": 2.828341747129972,
+    "empirical_zero_mass": 0.24476146697998047,
+    "continuous_truncate_reference_sd": 2.828301561431657,
+    "not_exact_binary64_PMF_or_iid_proof": true,
+    "no_hardness_bits": true
+  },
+  "finite_models": {
+    "known_key_cipher": {
+      "q": 257,
+      "t": 2,
+      "s": 2,
+      "flood_length": 64,
+      "all_decrypt_plaintext0": true,
+      "correlated_full_cipher_TV": "1",
+      "phase_TV": "1/64",
+      "c0_marginal_TV": "1/64",
+      "c1_marginal_TV": "0",
+      "independent_flood_full_cipher_TV": "1/64",
+      "not_actual_protocol_attack": true
+    },
+    "half_gate_ideal_view": {
+      "label_bits": 2,
+      "fixed_selected_label_and_input_cases": 64,
+      "observable_view_instances": 16384,
+      "every_normalized_view_matches_uniform_table_simulator": true,
+      "only_active_hash_values_in_view": true,
+      "no_inactive_oracle_queries_tested": true,
+      "no_real_GC_OT_security_claim": true
+    },
+    "coarse_polar_dependence": [
+      {
+        "grid_bits": 4,
+        "accepted_grid_pairs": 194,
+        "exact_joint_to_product_TV": "2332/9409",
+        "P00": "5/97",
+        "P0_product": "576/9409",
+        "actual_binary64_dependence_not_quantified": true
+      },
+      {
+        "grid_bits": 6,
+        "accepted_grid_pairs": 3206,
+        "exact_joint_to_product_TV": "115307/2569609",
+        "P00": "83/1603",
+        "P0_product": "150544/2569609",
+        "actual_binary64_dependence_not_quantified": true
+      }
+    ]
+  },
+  "ROM_input_label_argument": {
+    "status": "conditional proof sketch for review",
+    "public_seed_retained": true,
+    "requires": "independent domain-separated ROM,ideal chosenCOT,fresh hiddenDelta,unique tweaks,correct I/O",
+    "default_AES_IKNP_common_model_closed": false
+  },
+  "known_key_source": "Fresh flood-generator call graph checked in both active variants; computational/auxiliary-view independence still conditional",
+  "hypothetical_seed_preserving_variant": {
+    "conditional_full_bytes": 1660142470,
+    "conditional_increase_percent": 7.866903832637351,
+    "curve_scalar_multiplications": 4482738,
+    "implemented_or_full_validated": false,
+    "walltime_claim": false
+  },
+  "literature_access": {
+    "CRYPTO2016_GSW_circuit_privacy": "publisher full text checked; not BFV drop-in",
+    "TinyLabels": "metadata/abstract checked; full PDF403 and not retried",
+    "HAL": "access challenge retained; not bypassed"
+  },
+  "application": "not established; old strong-baseline/semantic failures retained, no new trained candidate",
+  "constraints": {
+    "software_installed": false,
+    "GPU_used": false,
+    "full_sampler_rerun": false,
+    "sealed_tests_opened": false,
+    "MoE": "paused",
+    "C10": "paused"
+  },
+  "publication": "authorized aggregate only; detailed export not retried"
+}
