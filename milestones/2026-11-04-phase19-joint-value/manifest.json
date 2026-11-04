@@ -1,0 +1,14 @@
+{
+  "stage": 19,
+  "scope": "authorized aggregate-only summary",
+  "files": {
+    "README.md": "991cbeb673ca5caa75fc54a95e127ddeffc587cd5b388328de42e8d72b446a32",
+    "aggregate_results.json": "998751ee49be3a6c42ff53db21a915d60354b42a65348b97b269b18e42a46896"
+  },
+  "source_uploaded": false,
+  "raw_outputs_uploaded": false,
+  "party_records_uploaded": false,
+  "weights_uploaded": false,
+  "tests_evaluated": false,
+  "previous_commit": "88ee3132bae300a0c46a73e3f8a60e594e0e0d19"
+}

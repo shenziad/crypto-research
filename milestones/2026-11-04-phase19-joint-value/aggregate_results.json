@@ -1,0 +1,418 @@
+{
+  "stage": 19,
+  "status": "completed_checkpoint",
+  "new_private_protocol_calls": 0,
+  "new_training_updates": 0,
+  "security": {
+    "known_proposal_binary_FIXED_FAIL": {
+      "K": 3,
+      "a_models": [
+        "1",
+        "1/4"
+      ],
+      "ideal_Y_or_FAIL_TV": "27/64",
+      "real_X1_and_Y_or_FAIL_TV": "75/128",
+      "minimum_max_simulator_error": "21/256",
+      "interpretation": "Data processing forbids a common perfect simulator; no need to drop FAIL or condition on success. Current actual proposals are hidden, so this is a necessary-condition test, not an actual attack."
+    },
+    "known_proposal_actual_finite_q": {
+      "scope": "Actual fixed finite q/x calibration fixture and legal constant-correction head construction; hypothetical known-X1 view only",
+      "K": 244,
+      "proposal_collision_probability": 0.36951198266619584,
+      "constant_acceptance_a": 0.36787944100797176,
+      "real_joint_TV": 0.39854443795481986,
+      "ideal_token_FAIL_TV": 2.484158934606339e-49,
+      "minimum_max_simulator_error": 0.19927221897740993,
+      "formula_real_TV": "(1-a)*(1-c)+c*(1-a)^K, c=sum q_i^2",
+      "formula_max_error_lower_bound": "(1-c)*((1-a)-(1-a)^K)/2",
+      "current_protocol_affected": false,
+      "reason": "Actual proposal is hidden from generation onward; this disallows a client-local-proposal shortcut under sample-only leakage. This functional counterexample is not evidence of broken current HE/GC.",
+      "legal_model_construction_verified_locally": true
+    },
+    "masked_onehot_layout": {
+      "single_or_zero_selection_cases_checked": 12,
+      "all_onehot_layout_marginals_DB_independent": true,
+      "malicious_two_selection_counterexample": {
+        "DBs": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "same_first_record": true,
+        "selection": [
+          1,
+          1
+        ],
+        "TV": 1,
+        "interpretation": "Reusing a record mask under two same-bucket linear selections invalidates the onehot lemma. This is outside current passive honest-query scope, not an attack on its honest implementation."
+      },
+      "proof_scope": "Exact finite illustration supports the displayed XOR-mask/onehot lemma; full known-sk ciphertext/GC composition remains separate."
+    },
+    "known_sk_ciphertext": {
+      "same_decoded_message": 0,
+      "residuals": [
+        0,
+        1
+      ],
+      "c1_marginal_uniform_both": true,
+      "full_ciphertext_TV_without_flood": "1",
+      "full_ciphertext_TV_width64_flood": "1/64",
+      "interpretation": "Uniform c1 alone does not hide phase residuals, even when decoding agrees. Not an attack on the flooded actual scheme."
+    },
+    "entropy": {
+      "original_failure_caught": false,
+      "isolated_checked_overlay_failure_caught": true,
+      "normal_draw_checks_per_build": 16,
+      "frozen_native_BN_rand_range_unchecked_call_sites": 6,
+      "full_backend_fix_integrated": false,
+      "natural_entropy_failure_observed": false
+    },
+    "joint_simulation": "Concrete ideal interfaces, full-layout/sharing sublemmas, conditional computational assumptions and operational ABORT distinct from rejection FAIL documented locally; complete proof and concrete RLWE hardness remain open."
+  },
+  "deployment": {
+    "compressed_fixture_bytes": {
+      "full": 1166952,
+      "point": 1644
+    },
+    "compression_mean_ms": {
+      "full": 25.140749200363643,
+      "point": 2.789829399989685
+    },
+    "alias_timing_distinguisher_established": false,
+    "checked_paths_world_readability_established": false,
+    "limits": "Ancestor traversal blocks others in checked paths; ACL/group/mount and network timing not audited. Local filesystem view excluded from current abstract security model."
+  },
+  "quality": {
+    "status": "completed_nonindependent_development_screen",
+    "summary": {
+      "public_1.5": {
+        "cases": 8,
+        "strict_pass": 1,
+        "correct_slots": 63,
+        "required_slots": 64,
+        "omission_cases": 0,
+        "contradiction_cases": 1,
+        "uncertain_cases": 0,
+        "unrequested_material_cases": 7,
+        "EOS": 1,
+        "FAIL": 0,
+        "strict_plus_EOS": 1,
+        "token_counts": [
+          64,
+          64,
+          64,
+          64,
+          42,
+          64,
+          64,
+          64
+        ]
+      },
+      "B1_20261103031": {
+        "cases": 8,
+        "strict_pass": 7,
+        "correct_slots": 63,
+        "required_slots": 64,
+        "omission_cases": 0,
+        "contradiction_cases": 0,
+        "uncertain_cases": 1,
+        "unrequested_material_cases": 0,
+        "EOS": 8,
+        "FAIL": 0,
+        "strict_plus_EOS": 7,
+        "token_counts": [
+          41,
+          49,
+          42,
+          46,
+          42,
+          44,
+          48,
+          45
+        ]
+      },
+      "linear_20261103032": {
+        "cases": 8,
+        "strict_pass": 8,
+        "correct_slots": 64,
+        "required_slots": 64,
+        "omission_cases": 0,
+        "contradiction_cases": 0,
+        "uncertain_cases": 0,
+        "unrequested_material_cases": 0,
+        "EOS": 8,
+        "FAIL": 0,
+        "strict_plus_EOS": 8,
+        "token_counts": [
+          43,
+          49,
+          42,
+          46,
+          42,
+          44,
+          44,
+          42
+        ]
+      },
+      "B1_20261103032": {
+        "cases": 8,
+        "strict_pass": 6,
+        "correct_slots": 63,
+        "required_slots": 64,
+        "omission_cases": 0,
+        "contradiction_cases": 0,
+        "uncertain_cases": 1,
+        "unrequested_material_cases": 1,
+        "EOS": 7,
+        "FAIL": 0,
+        "strict_plus_EOS": 6,
+        "token_counts": [
+          42,
+          49,
+          42,
+          46,
+          42,
+          43,
+          48,
+          64
+        ]
+      },
+      "linear_20261103031": {
+        "cases": 8,
+        "strict_pass": 7,
+        "correct_slots": 63,
+        "required_slots": 64,
+        "omission_cases": 1,
+        "contradiction_cases": 0,
+        "uncertain_cases": 0,
+        "unrequested_material_cases": 0,
+        "EOS": 8,
+        "FAIL": 0,
+        "strict_plus_EOS": 7,
+        "token_counts": [
+          40,
+          49,
+          42,
+          46,
+          42,
+          44,
+          44,
+          42
+        ]
+      },
+      "public_renderer": {
+        "cases": 8,
+        "strict_pass": 8,
+        "correct_slots": 64,
+        "required_slots": 64,
+        "omission_cases": 0,
+        "contradiction_cases": 0,
+        "uncertain_cases": 0,
+        "unrequested_material_cases": 0,
+        "EOS": 8,
+        "FAIL": 0,
+        "strict_plus_EOS": 8,
+        "token_counts": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "public_0.5": {
+        "cases": 8,
+        "strict_pass": 2,
+        "correct_slots": 63,
+        "required_slots": 64,
+        "omission_cases": 0,
+        "contradiction_cases": 0,
+        "uncertain_cases": 1,
+        "unrequested_material_cases": 5,
+        "EOS": 3,
+        "FAIL": 0,
+        "strict_plus_EOS": 2,
+        "token_counts": [
+          64,
+          64,
+          64,
+          64,
+          42,
+          51,
+          44,
+          64
+        ]
+      }
+    },
+    "annotation_independent": false,
+    "review_packet_sha256": "31bd33c58630048557d7f8aa6f46ae56c43517b389c5f2ff640cc62ffc7a8b38",
+    "labels_sha256": "b6791791ce7f36a78b047bf1117e856b3f792a491b3866415a986bc0c4f28700",
+    "unbounded_addendum_before_text_read": true,
+    "selection": "8new canonical full8 input MRs from original train file, excluded128private training; no old test file read",
+    "prior_semantic_gate": "still failed, unchanged",
+    "task_value": "Not established: public deterministic renderer supplies all required relations within64tokens; larger public model and unbounded controls retained; additional independent fluency/style/application criterion required.",
+    "native_quality_gate": "not passed; no new native calls or training",
+    "sealed_test_evaluated": false,
+    "pointwise_support_oracle": {
+      "contexts": 16,
+      "all_exact": true,
+      "first_context_active_rows": [
+        151936,
+        151936,
+        151936,
+        151936,
+        151936,
+        151936,
+        151936,
+        151936,
+        151936,
+        151936,
+        151936,
+        151936,
+        151936,
+        151936,
+        151936,
+        151936
+      ],
+      "scope": "Central support-aware reference only, not a new private gather implementation or private timing result"
+    },
+    "support_size_ranges": {
+      "public_0.5": [
+        143247,
+        151936
+      ],
+      "B1_20261103031": [
+        144738,
+        151936
+      ],
+      "B1_20261103032": [
+        143247,
+        151936
+      ],
+      "public_1.5": [
+        136111,
+        151936
+      ],
+      "linear_20261103031": [
+        149592,
+        151936
+      ],
+      "linear_20261103032": [
+        149569,
+        151936
+      ]
+    },
+    "budget": {
+      "primary": {
+        "returncode": 0,
+        "budget_violation": null,
+        "elapsed_seconds": 483.14195562700115,
+        "sampled_peak_owned_tree_RSS_bytes": 9839984640,
+        "peak_observed_processes": 2,
+        "samples": 2220,
+        "new_owned_disk_bytes": 82160,
+        "caps": {
+          "seconds": 1800,
+          "rss_mib": 10000,
+          "disk_mib": 128
+        },
+        "scope": "Fresh process tree incl separately-sessioned workers; PIDs/starttimes retained across reparenting. Sampled RSS sum double-counts shared pages, short-lived peaks may be missed. Only observed owned PIDs managed."
+      },
+      "linear_addendum": {
+        "returncode": 0,
+        "budget_violation": null,
+        "elapsed_seconds": 154.58718023500114,
+        "sampled_peak_owned_tree_RSS_bytes": 3723911168,
+        "peak_observed_processes": 1,
+        "samples": 708,
+        "new_owned_disk_bytes": 34027,
+        "caps": {
+          "seconds": 900,
+          "rss_mib": 6000,
+          "disk_mib": 128
+        },
+        "scope": "Fresh process tree incl separately-sessioned workers; PIDs/starttimes retained across reparenting. Sampled RSS sum double-counts shared pages, short-lived peaks may be missed. Only observed owned PIDs managed."
+      }
+    },
+    "limits": [
+      "Single-assistant blinded labels are not independent reliable gold; uncertain cases are failed strict passes.",
+      "Only8development MRs; one sampling seed; no population superiority claim.",
+      "Clean templated public prompt differs from the prompt used to train existing private heads; shift is documented.",
+      "Unbounded linear target differs from B1; it is a quality comparator, not samefunction private cost baseline.",
+      "Appended unrequested attribute records are not claimed externally false or necessarily about the target venue.",
+      "Public1.5B is a larger local base model, not a claim of strongest available instruction model."
+    ]
+  },
+  "posthoc_format_negative_control": {
+    "scope": "Posthoc negative/control diagnostic after committed blinded labels, not a preregistered candidate or changed primary score/gate",
+    "UTC": "2026-11-04T05:27:47.902485+00:00",
+    "rule": "Extract description before first literal newline-Attributes: delimiter already in the public demonstration format, identically for all methods; no model rerun",
+    "primary_scores_unchanged": true,
+    "labels_sha256": "b6791791ce7f36a78b047bf1117e856b3f792a491b3866415a986bc0c4f28700",
+    "all13_unrequested_material_annotations_are_attribute_record_suffixes": true,
+    "summary": {
+      "public_1.5": {
+        "cases": 8,
+        "raw_strict_pass": 1,
+        "posthoc_description_prefix_fact_pass": 7,
+        "delimiter_continuations": 7
+      },
+      "B1_20261103031": {
+        "cases": 8,
+        "raw_strict_pass": 7,
+        "posthoc_description_prefix_fact_pass": 7,
+        "delimiter_continuations": 0
+      },
+      "linear_20261103032": {
+        "cases": 8,
+        "raw_strict_pass": 8,
+        "posthoc_description_prefix_fact_pass": 8,
+        "delimiter_continuations": 0
+      },
+      "B1_20261103032": {
+        "cases": 8,
+        "raw_strict_pass": 6,
+        "posthoc_description_prefix_fact_pass": 7,
+        "delimiter_continuations": 1
+      },
+      "linear_20261103031": {
+        "cases": 8,
+        "raw_strict_pass": 7,
+        "posthoc_description_prefix_fact_pass": 7,
+        "delimiter_continuations": 0
+      },
+      "public_renderer": {
+        "cases": 8,
+        "raw_strict_pass": 8,
+        "posthoc_description_prefix_fact_pass": 8,
+        "delimiter_continuations": 0
+      },
+      "public_0.5": {
+        "cases": 8,
+        "raw_strict_pass": 2,
+        "posthoc_description_prefix_fact_pass": 7,
+        "delimiter_continuations": 5
+      }
+    },
+    "limits": [
+      "Derived from the same non-independent assistant slot labels; no new independent adjudication.",
+      "No native runtime/traffic saving claimed: fixed T dummy policy would require caller contract alignment.",
+      "This diagnostic cannot pass or rewrite any failed preregistered gate.",
+      "No claim of a tuned stopping policy result or a fix to incorrect/uncertain target facts."
+    ]
+  },
+  "independent_semantic_review_available": false,
+  "old_test_sets_evaluated": false,
+  "old_semantic_rejection_unchanged": true,
+  "secondary": "MoE/C10 paused; no new jobs",
+  "KV_cache_coordination": "All model jobs ended before current resource check; no further high-load job started. GPU not allocated by this research.",
+  "public_disclosure": "Aggregate-only; detailed source, prompts, outputs, party records and weights remain local; prior detailed-publication approval still pending."
+}
