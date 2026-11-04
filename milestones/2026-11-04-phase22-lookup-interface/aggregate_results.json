@@ -1,0 +1,51 @@
+{
+  "stage": 22,
+  "UTC": "2026-11-04T09:18:28.941768+00:00",
+  "status": "resumed_research_checkpoint",
+  "frozen_backend": "phase20-entropy-20261104-guarded",
+  "stage21_upload_verified": "7b84bd12cd16846b0a805562307a6c52a7f3ead8",
+  "new_native_protocol_sessions": 0,
+  "new_model_or_training_runs": 0,
+  "GPU_used": false,
+  "ideal_boundary_check": {
+    "secret_table_query_inputs": 16,
+    "joint_view_cells_per_input": 196608,
+    "enumerated_views": 3145728,
+    "exact_TV_between_listed_tuples": 0,
+    "seconds": 0.8115445320000845,
+    "peak_RSS_KiB": 12540,
+    "scope": "ordered tags/checkpoint shares/masked records/output shares in registered ideal model; not full native transcript"
+  },
+  "lookup_proof_progress": [
+    "explicit posterior-mask witness for whole layout and suffix GC interface",
+    "different hybrid order for corrupted database owner versus querier",
+    "actual closed-GC/reimport source boundaries identified",
+    "honest output/share correlation retained through ideal functionality"
+  ],
+  "concrete_joint_security_proven": false,
+  "remaining_assumptions": [
+    "full private-output GC/OT auxiliary-input simulation in one shared primitive model",
+    "hidden dual-domain tag interface and all PRG replacements",
+    "complete known-key ciphertext and query-privacy bridges",
+    "uniform placement/correctness/operational-event bounds and deployment scope"
+  ],
+  "finite_capability_filter": {
+    "Emin": 290630307,
+    "Emax": 2147483648,
+    "K": 244,
+    "previous_certificate_and_current_math_source_match": true,
+    "toy_threshold_cases": 49,
+    "toy_tapes_per_case": 256,
+    "mass_near_1e_4_event_emission_upper_bound": 0.0007384338222819907,
+    "FAIL_at_event_maximizing_extremes": 3.804089400526042e-16,
+    "scope": "next-token necessary upper bound; no measured task utility; FAIL retained"
+  },
+  "new_validated_private_adaptation_task": false,
+  "sealed_tests_accessed": false,
+  "novelty_certified": false,
+  "prior_art_boundary": "Public/private model split, token-only output, oblivious proposals and padded rejection have precedents. EDEN/full Tyche and concrete composition comparisons remain incomplete.",
+  "old_parameters_ledgers_negative_results_preserved": true,
+  "MoE": "paused",
+  "C10": "paused",
+  "publication_scope": "authorized aggregate only; sources/party records/weights stay local"
+}
