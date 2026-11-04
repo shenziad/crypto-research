@@ -1,0 +1,395 @@
+{
+  "checkpoint_UTC": "2026-11-04T02:32:36.750136+00:00",
+  "bounded_sampling": {
+    "status": "completed",
+    "private_calls": 64,
+    "native_pairs": 260,
+    "dense_snapshots": 4,
+    "dense_snapshot_steps": [
+      0,
+      15,
+      31,
+      63
+    ],
+    "all_native_audits_correct": true,
+    "all_dense_intermediates_CDF_correct": true,
+    "actual_output_tokens": 38,
+    "EOS_seen": true,
+    "private_rejection_failure_seen": false,
+    "dummy_calls": 25,
+    "model_forward_calls": 64,
+    "server_token_outputs_all_empty": true,
+    "wire_bytes": 98500203075,
+    "mean_wire_bytes_per_fixed_call": 1539065673.046875,
+    "wire_bytes_per_visible_token": 2592110607.236842,
+    "active_call_wire_bytes": 60023570371,
+    "dummy_call_wire_bytes": 38476632704,
+    "dense_bytes_per_snapshot": [
+      3506580093,
+      3506580093,
+      3506580093,
+      3506580093
+    ],
+    "mean_byte_reduction_vs_dense_snapshots": 0.5610921090554212,
+    "whole_session_seconds": 1768.991379987,
+    "whole_run_including_audits_seconds": 1904.1271515760004,
+    "sampled_peak_RSS_bytes": 7555248128,
+    "new_disk_bytes": 753016090,
+    "quality_single_sample": {
+      "named_required": 2,
+      "named_present": 0,
+      "ROUGE_L": 0.1875,
+      "rules_errors": {
+        "upstream_core": 4,
+        "occurrence_count_repair": 4
+      }
+    },
+    "scope": "64 fixed real/dummy calls,38visible tokens+EOS+25dummy. Sample correctness is not representative factuality or fullsecurity. Dense has stronger accuracy within commonconditional errorbudget; finiteK hasprivate failure symbol, exact outputlaws differ. Bytes count all samplingstages. Timings exploratory andnot isolated/replicated, withsome concurrentindependentCPUqualitywork; noWAN/speedupclaim. T512 statisticalledger not a512call nativeexperiment."
+  },
+  "failed_first_attempt": {
+    "completed_head_calls": 55,
+    "all55_correct": true,
+    "completed_native_pairs": 221,
+    "failed_partial_lookup_function_checked": true,
+    "sampling_wire_bytes": 84648576529,
+    "extra_failed_lookup_wire_bytes": 713025561,
+    "failure": "call56localbindcollision; noresourceviolation; originalrecords retained andnot counted64success"
+  },
+  "quality": {
+    "phase6_generations": 144,
+    "posthoc_EOS_generations": 96,
+    "matched_trained_EOS_generations": 96,
+    "matched_trained_heads": 2,
+    "updates_each": 64,
+    "summary": {
+      "B1_named2_20261103031": {
+        "teacher_NLL": 1.5473340139903002,
+        "teacher_named_NLL": 0.2907712989769281,
+        "EOS_count": 8,
+        "failure_count": 0,
+        "named_recall": 0.71875,
+        "named_complete": 8,
+        "ROUGE_L": 0.25307859143585065,
+        "rules": {
+          "upstream_core": 0.46,
+          "occurrence_count_repair": 0.74
+        }
+      },
+      "EOS8_named2_20261103031": {
+        "teacher_NLL": 1.5449793586370262,
+        "teacher_named_NLL": 0.2842474147678684,
+        "EOS_count": 10,
+        "failure_count": 0,
+        "named_recall": 0.6875,
+        "named_complete": 6,
+        "ROUGE_L": 0.28323621860087045,
+        "rules": {
+          "upstream_core": 0.41,
+          "occurrence_count_repair": 0.58
+        }
+      },
+      "linear_named2_20261103031": {
+        "teacher_NLL": 1.4897379788789753,
+        "teacher_named_NLL": 0.24256932519907212,
+        "EOS_count": 12,
+        "failure_count": 0,
+        "named_recall": 0.8125,
+        "named_complete": 10,
+        "ROUGE_L": 0.35812623033389807,
+        "rules": {
+          "upstream_core": 0.31,
+          "occurrence_count_repair": 0.46
+        }
+      },
+      "B1_named2_20261103032": {
+        "teacher_NLL": 1.5456864956207232,
+        "teacher_named_NLL": 0.28572208784928627,
+        "EOS_count": 10,
+        "failure_count": 0,
+        "named_recall": 0.71875,
+        "named_complete": 9,
+        "ROUGE_L": 0.24158184750433598,
+        "rules": {
+          "upstream_core": 0.48,
+          "occurrence_count_repair": 0.63
+        }
+      },
+      "EOS8_named2_20261103032": {
+        "teacher_NLL": 1.5375494503822822,
+        "teacher_named_NLL": 0.2843835237874756,
+        "EOS_count": 14,
+        "failure_count": 0,
+        "named_recall": 0.625,
+        "named_complete": 5,
+        "ROUGE_L": 0.3003872428743042,
+        "rules": {
+          "upstream_core": 0.51,
+          "occurrence_count_repair": 0.55
+        }
+      },
+      "linear_named2_20261103032": {
+        "teacher_NLL": 1.5008892370276392,
+        "teacher_named_NLL": 0.24958364935271396,
+        "EOS_count": 12,
+        "failure_count": 0,
+        "named_recall": 0.78125,
+        "named_complete": 10,
+        "ROUGE_L": 0.3721094331117226,
+        "rules": {
+          "upstream_core": 0.3,
+          "occurrence_count_repair": 0.45
+        }
+      }
+    },
+    "uncertainty": {
+      "MR_clusters": 16,
+      "seeds_per_cluster": 2,
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 20261104041,
+      "scope": "Exploratory paired cluster bootstrap over16MRs, keeping both seeds and methods paired. Descriptive intervals, no confirmatory pvalues or multiplicity-adjusted claims; two seeds are not32independentMRs. Teacher NLL remains descriptive because onlytwo-MR aggregate rows saved.",
+      "rows": [
+        {
+          "comparator": "B1_named2",
+          "metric": "EOS",
+          "EOS8_minus_comparator": 0.1875,
+          "cluster_percentile95": [
+            0.0,
+            0.375
+          ]
+        },
+        {
+          "comparator": "B1_named2",
+          "metric": "named_recall",
+          "EOS8_minus_comparator": -0.0625,
+          "cluster_percentile95": [
+            -0.171875,
+            0.046875
+          ]
+        },
+        {
+          "comparator": "B1_named2",
+          "metric": "named_complete",
+          "EOS8_minus_comparator": -0.1875,
+          "cluster_percentile95": [
+            -0.375,
+            0.0
+          ]
+        },
+        {
+          "comparator": "B1_named2",
+          "metric": "ROUGE_L",
+          "EOS8_minus_comparator": 0.044481511267494014,
+          "cluster_percentile95": [
+            0.012845010202966602,
+            0.07693673076806458
+          ]
+        },
+        {
+          "comparator": "B1_named2",
+          "metric": "upstream_core_errors",
+          "EOS8_minus_comparator": -0.01,
+          "cluster_percentile95": [
+            -0.0913978494623656,
+            0.07211538461538461
+          ]
+        },
+        {
+          "comparator": "B1_named2",
+          "metric": "occurrence_count_repair_errors",
+          "EOS8_minus_comparator": -0.12,
+          "cluster_percentile95": [
+            -0.24456810823311748,
+            0.009711117456691206
+          ]
+        },
+        {
+          "comparator": "linear_named2",
+          "metric": "EOS",
+          "EOS8_minus_comparator": 0.0,
+          "cluster_percentile95": [
+            -0.15625,
+            0.1875
+          ]
+        },
+        {
+          "comparator": "linear_named2",
+          "metric": "named_recall",
+          "EOS8_minus_comparator": -0.140625,
+          "cluster_percentile95": [
+            -0.296875,
+            0.03125
+          ]
+        },
+        {
+          "comparator": "linear_named2",
+          "metric": "named_complete",
+          "EOS8_minus_comparator": -0.28125,
+          "cluster_percentile95": [
+            -0.53125,
+            0.0
+          ]
+        },
+        {
+          "comparator": "linear_named2",
+          "metric": "ROUGE_L",
+          "EOS8_minus_comparator": -0.07330610098522303,
+          "cluster_percentile95": [
+            -0.1130356421379605,
+            -0.03371133604733991
+          ]
+        },
+        {
+          "comparator": "linear_named2",
+          "metric": "upstream_core_errors",
+          "EOS8_minus_comparator": 0.155,
+          "cluster_percentile95": [
+            0.05102040816326531,
+            0.2590909090909091
+          ]
+        },
+        {
+          "comparator": "linear_named2",
+          "metric": "occurrence_count_repair_errors",
+          "EOS8_minus_comparator": 0.11,
+          "cluster_percentile95": [
+            -0.029411764705882353,
+            0.24489795918367346
+          ]
+        }
+      ]
+    },
+    "interpretation": "EOS/ROUGE improvement doesnot establishfactrepair; namedrecallpointestimatesworse inbothseeds andlinearheadstronger. Sparseexception/otherfutureprotocolnotimplemented."
+  },
+  "MoE": {
+    "full_dimensions": {
+      "N": 64,
+      "B": 8,
+      "topk": 8,
+      "D": 2048,
+      "H": 1024
+    },
+    "completed_variants": 7,
+    "all_correct": true,
+    "rows": [
+      {
+        "variant": "all_full",
+        "correct": true,
+        "total_bytes": 15042880648,
+        "padding_or_released_q": 64,
+        "reference_q": null,
+        "wall_seconds_observation": 95.01689297600024,
+        "sampled_peak_RSS_bytes": 1207046144
+      },
+      {
+        "variant": "hybrid_public_q_fallback",
+        "correct": true,
+        "total_bytes": 19253760902,
+        "padding_or_released_q": 48,
+        "reference_q": null,
+        "wall_seconds_observation": 154.54609840800003,
+        "sampled_peak_RSS_bytes": 1153220608
+      },
+      {
+        "variant": "select_q",
+        "correct": true,
+        "total_bytes": 20818411582,
+        "padding_or_released_q": 48,
+        "reference_q": null,
+        "wall_seconds_observation": 194.88080807200004,
+        "sampled_peak_RSS_bytes": 1361149952
+      },
+      {
+        "variant": "all_q",
+        "correct": true,
+        "total_bytes": 15044822940,
+        "padding_or_released_q": 48,
+        "reference_q": null,
+        "wall_seconds_observation": 80.6790350479996,
+        "sampled_peak_RSS_bytes": 1209479168
+      },
+      {
+        "variant": "select_full",
+        "correct": true,
+        "total_bytes": 20816469290,
+        "padding_or_released_q": 64,
+        "reference_q": null,
+        "wall_seconds_observation": 197.05960639600016,
+        "sampled_peak_RSS_bytes": 1364692992
+      },
+      {
+        "variant": "fullpad_capacityB",
+        "correct": true,
+        "total_bytes": 14620377630,
+        "padding_or_released_q": 0,
+        "reference_q": null,
+        "wall_seconds_observation": 55.41535695899984,
+        "sampled_peak_RSS_bytes": 1051152384
+      },
+      {
+        "variant": "fullpad_capacityB_matching_reference_q",
+        "correct": true,
+        "total_bytes": 14622319922,
+        "padding_or_released_q": 0,
+        "reference_q": 48,
+        "wall_seconds_observation": 55.402824072999465,
+        "sampled_peak_RSS_bytes": 1039298560
+      }
+    ],
+    "hybrid_extra_vs_strict_same_q": 0.31673776833673073,
+    "hybrid_extra_vs_full_hidden": 0.31691269468256555,
+    "same_q_release_extra_bytes": 1942292,
+    "fullpad_capacity_rule": "capacity=B, guaranteed upperbound underdistinct topkperinput, no capacitysweep",
+    "fullpad_no_extra_route_leakage": true,
+    "fullpad_sameq_reference_released": 48,
+    "crop_correction": [
+      {
+        "D": 128,
+        "H": 128,
+        "pattern": "actual",
+        "hybrid_bytes": 298209549,
+        "fullhidden_fullpad_bytes": 289913503,
+        "hybrid_extra_fraction": 0.028615590216230835
+      },
+      {
+        "D": 128,
+        "H": 128,
+        "pattern": "repeated",
+        "hybrid_bytes": 319363621,
+        "fullhidden_fullpad_bytes": 289913503,
+        "hybrid_extra_fraction": 0.1015824295703811
+      },
+      {
+        "D": 256,
+        "H": 128,
+        "pattern": "actual",
+        "hybrid_bytes": 432759878,
+        "fullhidden_fullpad_bytes": 408233480,
+        "hybrid_extra_fraction": 0.06007933989147585
+      }
+    ],
+    "conclusion": "Earlier6%-6.6%crop advantage only held against incomplete select/alllinear baselinefamily. Afteradding conventional capacityB fullpadding, no testedcrop/full communicationadvantage remains. Retainalloriginalmeasurements andwithdrawpositivegaininterpretation; do notcapacitysweep.",
+    "scope": "Exact originaldim Q4/S16 experts plus finiteprivateintegerrouter, uniformcoefficientfixtures, passive idealdealer. Not fullmodelsoftmax/PPL, maliciousprivacy,HE-SOTA orWAN. Bytes include input/online/dealer requests+responses+Connectionframes; benchmarkaudit pipes/localfiles/TCPIP overheadexcluded. One observationperfullvariant; latencynot stableestimate.",
+    "caps": {
+      "rss_sum_mib": 4096,
+      "all_runs_under_cap": true
+    },
+    "sampled_max_RSS_bytes": 1364692992
+  },
+  "C10": "paused;zero newexperiments",
+  "security": {
+    "status": "conditional,not fullproof",
+    "progress": [
+      "actual sampler/build andentropy hypotheses reviewed",
+      "officialNSF secure-sampling fulltext checked",
+      "GC/OT composition andcross-key conditions refined"
+    ],
+    "open": [
+      "independent actualdistributionRLWE estimate",
+      "completeOT/GC/software simulation",
+      "independentreview anddeployment/crosshost validation"
+    ],
+    "venue_outcome_established": false
+  },
+  "correction": "Earliercrop communicationadvantage disappearsafterincluding conventionalfullpadding strongerbaseline; preserve earliermeasurements andwithdrawgaininterpretation.",
+  "publication_scope": "safeaggregateonly; no detailedsource/parameters,partyrecords,weights,rawdata orlocalpaths"
+}

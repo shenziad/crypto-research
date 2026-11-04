@@ -1,0 +1,11 @@
+# Completed research checkpoint — 2026-11-04
+
+This checkpoint updates the earlier crop-gain interpretation: adding a conventional full-capacity padded baseline removes the tested MoE communication advantage. Earlier measurements and all failures remain preserved.
+
+The corrected bounded-head run completed all 64 fixed private calls and four dense snapshots; every audit passed. It produced 38 visible tokens, EOS, then 25 dummy calls while continuing all 64 public-backbone forwards. Sampling traffic was 98.50 GB. Each dense snapshot used 3.50658 GB; the per-call byte reduction was about 56.1% within the stated conditional error contract. Finite-K and dense exact output laws differ, timings are exploratory, and 512 calls were not executed. The first attempt failed during call 56 due to a local bind collision; its 55 correct completed calls and partial lookup costs are retained separately.
+
+The private sample omitted both required name/location values (0/2). A posthoc EOS transformation hurt content. Matched EOS-exception training on fresh tests improved termination/ROUGE but did not establish factuality repair; linear comparators remained stronger. Paired uncertainty keeps MR and seed dependence intact. No new exception protocol was implemented privately.
+
+Seven original-dimension MoE variants passed one identical independent reference under the 4 GiB monitored cap (observed peak about 1.27 GiB). The hybrid used 19.25 GB, versus 14.62 GB for a strictly matching-q padded baseline: **31.67% more traffic**. The fully hidden padded baseline also used about 14.62 GB. The capacity was the analytic batch-size bound, with no capacity sweep. Earlier crop gains do not survive this stronger baseline. Scope remains quantized experts plus finite integer router/uniform coefficients with a passive ideal dealer, not whole-model quality or external SOTA.
+
+Security remains conditional. Actual sampler, entropy, known-key response views and GC/OT hypotheses were reviewed more precisely; this is not a full implementation-security theorem or an established venue result. C10 remains paused. Only safe aggregate findings are published; detailed source and party records remain local pending explicit disclosure authorization.
