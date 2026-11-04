@@ -1,0 +1,16 @@
+{
+  "stage": 23,
+  "scope": "authorized aggregate summary only",
+  "sha256": {
+    "README.md": "da75afb519d7bc5ec1836ac0721005acd1f6af04238c1495e7ba6a8ae2ec9f6d",
+    "aggregate_results.json": "444ea030e69ccf5e86390300ec059cd63af3686c1317ea7b86c81aeb92a158f0"
+  },
+  "excluded": [
+    "implementation/proof source",
+    "patches",
+    "per-party logs",
+    "private paths",
+    "weights",
+    "datasets"
+  ]
+}

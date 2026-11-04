@@ -1,0 +1,61 @@
+{
+  "stage": 23,
+  "UTC": "2026-11-04T10:07:17.875274+00:00",
+  "status": "validated_guarded_definedness_fixes_used_for_research",
+  "current_profile": "phase23-defined-20261104",
+  "prior_guarded_baseline_preserved": true,
+  "source_changes": [
+    "KKOT two sender partial-batch CCRF counts",
+    "pack/unpack legal-width mask construction"
+  ],
+  "public_seed_model_finding": "GC shared_prg seed is transmitted and its stream must remain consistent with it. Replacing it by independent hidden-seed ideal randomness is invalid; no actual protocol attack demonstrated.",
+  "label_lemmas": "Alice and buffered-COT input label equations and conditional pre-garbling Delta entropy in ideal COT, not concrete privacy proofs",
+  "common_model_open": "Party-known streams, COT/CRH/CCRF and Boolean/host AES tag consistency still need a joint instantiation argument",
+  "source_issue_evidence": {
+    "tail": "first short source batch can read uninitialized suffix keys; later partial batch can reuse stale keys; linked source/caller evidence and public extracted-method probe, no live secret-heap exploit trace",
+    "packing": "Original pack and unpack separately trigger O0 UBSan at legal width33; no existing O3 exploit/failure asserted",
+    "original_expected_UBSan_failures": 2,
+    "isolated_candidate_legal_width_roundtrips": 5,
+    "combined_tail_and_packing_UBSan_module_cases": 39,
+    "module_probe_has_no_OT_network_or_private_data": true,
+    "full_UB_freedom_claim": false
+  },
+  "integration": {
+    "SCI_headers_changed": 2,
+    "compiled_units_random_device_checked": 128,
+    "linked_BN_checks": 19,
+    "guard_fault_attestations": 5,
+    "complete_regressions": [
+      {
+        "kind": "candidate",
+        "seconds": 32.37727909200021,
+        "total_wire_bytes": 1539065655,
+        "all_correct": true
+      },
+      {
+        "kind": "dense",
+        "seconds": 61.571607280000535,
+        "total_wire_bytes": 3508012338,
+        "all_correct": true
+      }
+    ],
+    "build_seconds": 137.88432861799993,
+    "build_sampled_tree_RSS_bytes": 1286610944,
+    "validation_seconds": 104.35824800899991,
+    "validation_sampled_tree_RSS_bytes": 4472246272,
+    "budget_violations": null,
+    "GPU_used": false,
+    "purpose": "functional/engineering regression after source changes, not new performance campaign"
+  },
+  "old_parameters_ledgers_failures_retained": true,
+  "new_end_to_end_speedup_claim": false,
+  "new_quality_or_training_run": false,
+  "sealed_test_access": false,
+  "validated_unique_private_task": false,
+  "full_joint_proof": false,
+  "novelty_certified": false,
+  "MoE": "paused",
+  "C10": "paused",
+  "public_scope": "authorized aggregate only; detailed sources, per-party logs and weights remain local",
+  "retained_harness_failure": "Initial UBSan harness compile used nonexistent convenience helper; exact failed source/log retained, only spelling corrected before execution"
+}
