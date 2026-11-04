@@ -1,0 +1,68 @@
+{
+  "timestamp_UTC": "2026-11-04T03:06:44.067434+00:00",
+  "bounded_sampling": {
+    "pilot_seen_MRs": 8,
+    "public_flat": {
+      "named_present": 9,
+      "named_required": 16,
+      "named_complete": 1,
+      "EOS_count": 0,
+      "demo_contamination_cases": 0,
+      "ROUGE_L": 0.20318226359438804,
+      "teacher_NLL": 1.5462058188529788,
+      "rule_errors_per_attribute": {
+        "upstream_core": 0.37735849056603776,
+        "occurrence_count_repair": 0.6037735849056604
+      }
+    },
+    "public_two_shot": {
+      "named_present": 12,
+      "named_required": 16,
+      "named_complete": 4,
+      "EOS_count": 2,
+      "demo_contamination_cases": 0,
+      "ROUGE_L": 0.3002128926925675,
+      "teacher_NLL": 1.3959332901703032,
+      "rule_errors_per_attribute": {
+        "upstream_core": 0.32075471698113206,
+        "occurrence_count_repair": 0.6226415094339622
+      }
+    },
+    "preregistered_gate_passed": true,
+    "warning": "Public prompt mechanism diagnostic, not private-adapter improvement or confirmation.",
+    "new_heads": 4,
+    "completed_updates_per_head": 64,
+    "training_seconds": 179.61279342700072,
+    "training_peak_sampled_RSS_bytes": 3344760832,
+    "training_budget_violation": null,
+    "failed_first_train_attempt": "Selection field KeyError before first update; corrected without changing selection/objective; failure preserved.",
+    "fresh_confirmation_teacher_MRs": 48,
+    "teacher_evaluation_rows_completed": 240,
+    "planned_generation_rows": 160,
+    "generation_rows_saved_at_checkpoint": 32,
+    "quality_status": "central_finite_weight_sampling",
+    "quality_claim": "Pending complete paired same-prompt public and linear baselines; no new native calls.",
+    "monitoring": "Original watchdog disappeared for unknown reason; same owned process continues with reattached watchdog. Preattachment monitoring gap retained, no whole-run peak claim."
+  },
+  "security": {
+    "new_deliverables": [
+      "Exact legal-domain Q16 range certificate",
+      "Uniform flood translation bound matched to frozen certificate",
+      "Conditional adaptive stopping lemma with failure symbol",
+      "Conditional known-key full-ciphertext bridge with explicit auxiliary-state and rounding hypotheses",
+      "576 scalar toy-ring joint-view algebra checks passed"
+    ],
+    "claim": "Conditional lemmas and source interfaces only. Actual-sampler RLWE estimate, full GC/OT joint assumptions, complete ciphertext/serialization software correspondence and independent review remain open."
+  },
+  "MoE": {
+    "candidate_bytes": 19253760902,
+    "same_q_strong_baseline_bytes": 14622319922,
+    "overhead_fraction": 0.31673776833673073,
+    "down_stage_extra_bytes": 4766225608,
+    "dispatch_plus_inverse_saved_bytes": 134786840,
+    "reconciled_total_extra_bytes": 4631440980,
+    "decision": "Pause additional full-size hybrid runs; no capacity scans. Shared fixed-model caching remains an unmeasured common optimization, not evidence of hybrid advantage."
+  },
+  "C10": "stopped",
+  "publication": "Aggregate summary only; no source, parameters, weights, raw text, or party records. Detailed export still awaiting explicit authorization."
+}
