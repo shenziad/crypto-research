@@ -1,0 +1,120 @@
+{
+  "stage": 25,
+  "default": "phase23-defined-20261104 unchanged",
+  "new_default_definedness_gap": true,
+  "full_alternative_sampler_executed": false,
+  "costs": {
+    "candidate_total": {
+      "A_bits": 913288,
+      "B_bits": 896442,
+      "B_feed_calls": 528,
+      "AND": 14368572,
+      "BOB_output_bits": 208406,
+      "current_GC_modeled_bytes": 491357887,
+      "alternative_GC_modeled_bytes": 627047198,
+      "alternative_curve_scalar_multiplications": 4482738,
+      "alternative_SHA256_calls_GC_both_parties": 86211432,
+      "measured_default_total_bytes": 1539065655,
+      "unchanged_nonGC_modeled_bytes": 1047707768,
+      "conditional_alternative_full_bytes": 1674754966,
+      "full_alternative_executed": false,
+      "walltime_estimate": null
+    },
+    "dense_total": {
+      "A_bits": 23452,
+      "B_bits": 23243,
+      "B_feed_calls": 10,
+      "AND": 47588,
+      "BOB_output_bits": 336,
+      "current_GC_modeled_bytes": 3528168,
+      "alternative_GC_modeled_bytes": 5850516,
+      "alternative_curve_scalar_multiplications": 116225,
+      "alternative_SHA256_calls_GC_both_parties": 285528,
+      "measured_default_total_bytes": 3508012338,
+      "unchanged_nonGC_modeled_bytes": 3504484170,
+      "conditional_alternative_full_bytes": 3510334686,
+      "full_alternative_executed": false,
+      "walltime_estimate": null
+    }
+  },
+  "alias_fullK_component": {
+    "K": 244,
+    "input_fixture": "one fixed public synthetic share set, both threshold branches",
+    "sessions": [
+      {
+        "mode": "current_fixed",
+        "seconds": 0.10147963799954596,
+        "peak_pair_RSS_bytes": 2613248,
+        "outputs244_match_clear_reference": true,
+        "and_gates": 15616,
+        "total_bytes": 1870701
+      },
+      {
+        "mode": "rom",
+        "seconds": 3.5083171030000813,
+        "peak_pair_RSS_bytes": 75149312,
+        "outputs244_match_clear_reference": true,
+        "and_gates": 15616,
+        "total_bytes": 6994129
+      }
+    ],
+    "both_byte_models_exact": true,
+    "n_per_backend": 1,
+    "not_generalized_timing": true
+  },
+  "COT_tail": {
+    "public_fixture_lengths": [
+      1,
+      1024,
+      16384,
+      20008,
+      22882,
+      28160,
+      34892
+    ],
+    "poisons": 2,
+    "all_valid_outputs_and_wire_counts_equal": true,
+    "isolated_valid_count_fix_only": true,
+    "not_exploit_or_sanitizer_proof": true,
+    "default_not_fixed_yet": true
+  },
+  "CBD_encryptor": {
+    "normal": {
+      "slots": 8192,
+      "asymmetric_plus_symmetric_evaluation_roundtrip": true,
+      "serialization_none_bytes": 262257,
+      "noise_budget": 72,
+      "CBD_site_calls": 0,
+      "ephemeral_keys_not_exported": true,
+      "not_security_estimate": true
+    },
+    "cbd": {
+      "slots": 8192,
+      "asymmetric_plus_symmetric_evaluation_roundtrip": true,
+      "serialization_none_bytes": 262257,
+      "noise_budget": 72,
+      "CBD_site_calls": 4,
+      "ephemeral_keys_not_exported": true,
+      "not_security_estimate": true
+    }
+  },
+  "security_estimate": {
+    "executed": false,
+    "software_installed": false,
+    "Sage_in_configured_PATH": null,
+    "Sage_module_in_system_python": false,
+    "credible_methods": "pinned Lattice Estimator and published HE toolkit; reviewed actual-law/sample model required",
+    "published_guidance_table": "n8192 ternary classical category128 log modulus214 under stated heuristic; not our security certification"
+  },
+  "claims": {
+    "joint_simulator": "unclosed",
+    "private_adapter_task_value": "not established",
+    "sealed_tests": "unopened",
+    "CCFB_outcome": "not established",
+    "MoE": "paused",
+    "C10": "paused",
+    "GPU_used": false
+  },
+  "preserved_harness_failure": "multi-translation-unit dependency-file overwrite; separate circuit preprocessing audit passed; no session repeated",
+  "publication": "aggregate only; detailed export not retried"
+}
