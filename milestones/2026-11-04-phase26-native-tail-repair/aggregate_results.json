@@ -1,0 +1,81 @@
+{
+  "stage": 26,
+  "active_research_backend": "phase26-cot-20261104",
+  "implementation_repair_only": true,
+  "cryptographic_construction_parameters_and_precision_changed": false,
+  "source_changed_files": 1,
+  "sender_hash_calls_repaired": 5,
+  "native_backends_rebuilt": 5,
+  "old_and_interim_builds_preserved": true,
+  "primary_COT": {
+    "remainders": 1024,
+    "prefix_blocks": [
+      0,
+      1,
+      16
+    ],
+    "length_cases": 3072,
+    "method_invocations": 12288,
+    "valid_output_and_wire_equivalence": true
+  },
+  "five_sender_receiver_methods": {
+    "all_tail_cases": 10240,
+    "extra_cases": 176,
+    "optimized_ASan_UBSan_pass": true,
+    "public_fixture_LSan_pass": true,
+    "initial_protected_LSan_failure_preserved": true,
+    "no_full_native_MSan_or_leak_freedom_claim": true
+  },
+  "native_faults": {
+    "cases": 25,
+    "all_target_failures_no_final_output": true,
+    "preconnect_owned_peer_cancellations": 2,
+    "native_BN_return_check_sites": 19,
+    "native_and_worker_runtime_guards_retained": true
+  },
+  "whole_repaired_regressions": [
+    {
+      "kind": "candidate",
+      "all_correct": true,
+      "seconds": 38.47741918800057,
+      "total_wire_bytes": 1539062885
+    },
+    {
+      "kind": "dense",
+      "all_correct": true,
+      "seconds": 63.296240518999184,
+      "total_wire_bytes": 3508012338
+    }
+  ],
+  "resources": {
+    "peak_owned_RSS_bytes": 4472729600,
+    "minimum_MemAvailable_bytes": 21928460288,
+    "boundary_events": [],
+    "CPUs": [
+      22,
+      23
+    ],
+    "nice": 15,
+    "GPU_used": false,
+    "KV_modified": false
+  },
+  "claims": {
+    "exploitable_leakage_established": false,
+    "whole_crypto_security_proved": false,
+    "new_performance_claim": false,
+    "application_value_established": false,
+    "GC_CBD_alternatives_adopted": false,
+    "software_installed": false,
+    "sealed_tests_opened": false
+  },
+  "remaining": [
+    "full GC/OT/common-AES joint simulator",
+    "actual-law RLWE and known-key full-cipher/GC consistency",
+    "reviewed estimator model and Sage availability",
+    "independent private-adapter utility",
+    "memory and failure paths beyond stated coverage"
+  ],
+  "MoE": "paused",
+  "C10": "paused",
+  "publication": "aggregate only; detailed export not retried"
+}
