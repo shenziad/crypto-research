@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-04",
+  "scope": "safe aggregate only",
+  "files": {
+    "README.md": {
+      "sha256": "86afd01925d2aedba2d1800d83027b00549b09ce2f5dd061547c58ffe232d7fd",
+      "bytes": 1563
+    },
+    "aggregate_results.json": {
+      "sha256": "524d0399e0041c056d75d5173cb249828d01beb4399eff1ae7f5d05c478888a3",
+      "bytes": 11991
+    }
+  }
+}

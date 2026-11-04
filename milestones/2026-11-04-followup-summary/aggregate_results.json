@@ -1,0 +1,353 @@
+{
+  "checkpoint_UTC": "2026-11-04T01:49:51.203475+00:00",
+  "primary_first_attempt": {
+    "status": "failed_execution_prefix_audited",
+    "completed_head_calls": 55,
+    "all55_correct_after_exit": true,
+    "completed_native_pairs_including_partial_lookup": 221,
+    "failure": "Local listening-port bind collision during call56;64-call schedule anddense snapshots not completed. Exact portoccupier not captured.",
+    "resource_limit_violation": false,
+    "sampling_wire_bytes_55_complete": 84648576529,
+    "extra_completed_lookup_wire_bytes_failed_attempt": 713025561,
+    "EOS_count": 0,
+    "do_not_reinterpret_as64success": true
+  },
+  "primary_corrected_attempt": {
+    "status": "parties_running",
+    "public_steps_completed_at_checkpoint": 52,
+    "whole_session_audit": "pending",
+    "change": "One isolated fresh-randomness rerun after previousprocesses exited; allpubliclistening endpoints distinct andoutsideephemeralrange; samefunction/head/MR, no output-based retries.",
+    "planned_calls": 64,
+    "planned_dense_snapshots": 4
+  },
+  "EOS_posthoc_transformation": {
+    "new_teacher_MRs": 32,
+    "new_generation_MRs": 16,
+    "seeds": 2,
+    "generations": 96,
+    "status": "failed factuality repair",
+    "results": {
+      "B1_named2_20261103031": {
+        "teacher_NLL": 1.6233903739953748,
+        "teacher_named_NLL": 0.19042239392142368,
+        "EOS_count": 6,
+        "failure_count": 0,
+        "named_recall": 0.75,
+        "named_complete": 8,
+        "ROUGE_L": 0.26741037175974974,
+        "rules": {
+          "upstream_core": 0.4020618556701031,
+          "occurrence_count_repair": 0.6185567010309279
+        }
+      },
+      "EOS8_named2_20261103031": {
+        "teacher_NLL": 1.8520276258971011,
+        "teacher_named_NLL": 0.25764931280861697,
+        "EOS_count": 15,
+        "failure_count": 0,
+        "named_recall": 0.34375,
+        "named_complete": 2,
+        "ROUGE_L": 0.16043211819140613,
+        "rules": {
+          "upstream_core": 0.7010309278350515,
+          "occurrence_count_repair": 0.7422680412371134
+        }
+      },
+      "linear_named2_20261103031": {
+        "teacher_NLL": 1.5549913898468681,
+        "teacher_named_NLL": 0.15081018421485132,
+        "EOS_count": 12,
+        "failure_count": 0,
+        "named_recall": 0.6875,
+        "named_complete": 7,
+        "ROUGE_L": 0.3342438832315624,
+        "rules": {
+          "upstream_core": 0.41237113402061853,
+          "occurrence_count_repair": 0.5876288659793815
+        }
+      },
+      "B1_named2_20261103032": {
+        "teacher_NLL": 1.6283105512876452,
+        "teacher_named_NLL": 0.1909834800583887,
+        "EOS_count": 9,
+        "failure_count": 0,
+        "named_recall": 0.6875,
+        "named_complete": 7,
+        "ROUGE_L": 0.26273809536586035,
+        "rules": {
+          "upstream_core": 0.4845360824742268,
+          "occurrence_count_repair": 0.7938144329896907
+        }
+      },
+      "EOS8_named2_20261103032": {
+        "teacher_NLL": 1.8689466698166095,
+        "teacher_named_NLL": 0.28567096701096284,
+        "EOS_count": 16,
+        "failure_count": 0,
+        "named_recall": 0.28125,
+        "named_complete": 2,
+        "ROUGE_L": 0.16800489074348274,
+        "rules": {
+          "upstream_core": 0.7628865979381443,
+          "occurrence_count_repair": 0.7731958762886598
+        }
+      },
+      "linear_named2_20261103032": {
+        "teacher_NLL": 1.561426914283983,
+        "teacher_named_NLL": 0.15882006330338655,
+        "EOS_count": 12,
+        "failure_count": 0,
+        "named_recall": 0.65625,
+        "named_complete": 6,
+        "ROUGE_L": 0.2765259178589585,
+        "rules": {
+          "upstream_core": 0.4639175257731959,
+          "occurrence_count_repair": 0.5773195876288659
+        }
+      }
+    },
+    "interpretation": "EOS increases15/16and16/16 butnamedrecallcollapses; retained andnot implemented privately."
+  },
+  "EOS_matched_retraining": {
+    "training_updates_per_head": 64,
+    "new_heads": 2,
+    "matched_frozen_comparators": "bounded named2 andlinear named2, identical initialization/constraints/objective; no testselection",
+    "new_teacher_MRs": 32,
+    "new_generation_MRs": 16,
+    "generations": 96,
+    "results": {
+      "B1_named2_20261103031": {
+        "teacher_NLL": 1.5473340139903002,
+        "teacher_named_NLL": 0.2907712989769281,
+        "EOS_count": 8,
+        "failure_count": 0,
+        "named_recall": 0.71875,
+        "named_complete": 8,
+        "ROUGE_L": 0.25307859143585065,
+        "rules": {
+          "upstream_core": 0.46,
+          "occurrence_count_repair": 0.74
+        }
+      },
+      "EOS8_named2_20261103031": {
+        "teacher_NLL": 1.5449793586370262,
+        "teacher_named_NLL": 0.2842474147678684,
+        "EOS_count": 10,
+        "failure_count": 0,
+        "named_recall": 0.6875,
+        "named_complete": 6,
+        "ROUGE_L": 0.28323621860087045,
+        "rules": {
+          "upstream_core": 0.41,
+          "occurrence_count_repair": 0.58
+        }
+      },
+      "linear_named2_20261103031": {
+        "teacher_NLL": 1.4897379788789753,
+        "teacher_named_NLL": 0.24256932519907212,
+        "EOS_count": 12,
+        "failure_count": 0,
+        "named_recall": 0.8125,
+        "named_complete": 10,
+        "ROUGE_L": 0.35812623033389807,
+        "rules": {
+          "upstream_core": 0.31,
+          "occurrence_count_repair": 0.46
+        }
+      },
+      "B1_named2_20261103032": {
+        "teacher_NLL": 1.5456864956207232,
+        "teacher_named_NLL": 0.28572208784928627,
+        "EOS_count": 10,
+        "failure_count": 0,
+        "named_recall": 0.71875,
+        "named_complete": 9,
+        "ROUGE_L": 0.24158184750433598,
+        "rules": {
+          "upstream_core": 0.48,
+          "occurrence_count_repair": 0.63
+        }
+      },
+      "EOS8_named2_20261103032": {
+        "teacher_NLL": 1.5375494503822822,
+        "teacher_named_NLL": 0.2843835237874756,
+        "EOS_count": 14,
+        "failure_count": 0,
+        "named_recall": 0.625,
+        "named_complete": 5,
+        "ROUGE_L": 0.3003872428743042,
+        "rules": {
+          "upstream_core": 0.51,
+          "occurrence_count_repair": 0.55
+        }
+      },
+      "linear_named2_20261103032": {
+        "teacher_NLL": 1.5008892370276392,
+        "teacher_named_NLL": 0.24958364935271396,
+        "EOS_count": 12,
+        "failure_count": 0,
+        "named_recall": 0.78125,
+        "named_complete": 10,
+        "ROUGE_L": 0.3721094331117226,
+        "rules": {
+          "upstream_core": 0.3,
+          "occurrence_count_repair": 0.45
+        }
+      }
+    },
+    "paired_uncertainty": {
+      "source_result_sha256": "c2ebc4cd911234209a14ffcc3a723a79937e133afda3e420782a495002eed784",
+      "MR_clusters": 16,
+      "seeds_per_cluster": 2,
+      "bootstrap_resamples": 20000,
+      "bootstrap_seed": 20261104041,
+      "scope": "Exploratory paired cluster bootstrap over16MRs, keeping both seeds and methods paired. Descriptive intervals, no confirmatory pvalues or multiplicity-adjusted claims; two seeds are not32independentMRs. Teacher NLL remains descriptive because onlytwo-MR aggregate rows saved.",
+      "rows": [
+        {
+          "comparator": "B1_named2",
+          "metric": "EOS",
+          "EOS8_minus_comparator": 0.1875,
+          "cluster_percentile95": [
+            0.0,
+            0.375
+          ]
+        },
+        {
+          "comparator": "B1_named2",
+          "metric": "named_recall",
+          "EOS8_minus_comparator": -0.0625,
+          "cluster_percentile95": [
+            -0.171875,
+            0.046875
+          ]
+        },
+        {
+          "comparator": "B1_named2",
+          "metric": "named_complete",
+          "EOS8_minus_comparator": -0.1875,
+          "cluster_percentile95": [
+            -0.375,
+            0.0
+          ]
+        },
+        {
+          "comparator": "B1_named2",
+          "metric": "ROUGE_L",
+          "EOS8_minus_comparator": 0.044481511267494014,
+          "cluster_percentile95": [
+            0.012845010202966602,
+            0.07693673076806458
+          ]
+        },
+        {
+          "comparator": "B1_named2",
+          "metric": "upstream_core_errors",
+          "EOS8_minus_comparator": -0.01,
+          "cluster_percentile95": [
+            -0.0913978494623656,
+            0.07211538461538461
+          ]
+        },
+        {
+          "comparator": "B1_named2",
+          "metric": "occurrence_count_repair_errors",
+          "EOS8_minus_comparator": -0.12,
+          "cluster_percentile95": [
+            -0.24456810823311748,
+            0.009711117456691206
+          ]
+        },
+        {
+          "comparator": "linear_named2",
+          "metric": "EOS",
+          "EOS8_minus_comparator": 0.0,
+          "cluster_percentile95": [
+            -0.15625,
+            0.1875
+          ]
+        },
+        {
+          "comparator": "linear_named2",
+          "metric": "named_recall",
+          "EOS8_minus_comparator": -0.140625,
+          "cluster_percentile95": [
+            -0.296875,
+            0.03125
+          ]
+        },
+        {
+          "comparator": "linear_named2",
+          "metric": "named_complete",
+          "EOS8_minus_comparator": -0.28125,
+          "cluster_percentile95": [
+            -0.53125,
+            0.0
+          ]
+        },
+        {
+          "comparator": "linear_named2",
+          "metric": "ROUGE_L",
+          "EOS8_minus_comparator": -0.07330610098522303,
+          "cluster_percentile95": [
+            -0.1130356421379605,
+            -0.03371133604733991
+          ]
+        },
+        {
+          "comparator": "linear_named2",
+          "metric": "upstream_core_errors",
+          "EOS8_minus_comparator": 0.155,
+          "cluster_percentile95": [
+            0.05102040816326531,
+            0.2590909090909091
+          ]
+        },
+        {
+          "comparator": "linear_named2",
+          "metric": "occurrence_count_repair_errors",
+          "EOS8_minus_comparator": 0.11,
+          "cluster_percentile95": [
+            -0.029411764705882353,
+            0.24489795918367346
+          ]
+        }
+      ]
+    },
+    "interpretation": "Mixed: EOS/ROUGE improve vsbounded, namedrecallpointestimatesdecline forbothseeds; linear remains stronger. Small paired16MRstudy, diagnosticrulemetrics andcentralCDFapproximation; no convincingfactualityrepair or new privateimplementation claim.",
+    "implementation_failure": "Autograd inplace setup error beforeupdate1 retained; equivalentnoninplace fix derivativechecked, scientificsettingsunchanged."
+  },
+  "MoE_compact_strongbaseline_audit": {
+    "actual_crop": "N64,top8,D128/H128; originalquantization; samerouter/outputfunction and leakcontract",
+    "all_correct": true,
+    "rows": [
+      {
+        "variant": "compact_selected_full",
+        "total_bytes": 495904899,
+        "comparison_expanded_selected_bytes": 317593450,
+        "q": 64
+      },
+      {
+        "variant": "compact_selected_q",
+        "total_bytes": 497847191,
+        "comparison_expanded_selected_bytes": 319535742,
+        "q": 32
+      }
+    ],
+    "interpretation": "DirectcompactQ4/S16 selecteddown losesonthiscrop; no fullshape extrapolation. Fullstream resourcepilot andfive matchedvariants remain prepared butnotstarted."
+  },
+  "security": {
+    "status": "conditional,not completeproof",
+    "progress": [
+      "Actualnoise andentropy-source assumptions refined andboundtosource/build evidence",
+      "OfficialNSF copy ofSecureSamplingWithSublinearCommunication obtained; complete-proposal-view andproductpromise boundaries checked",
+      "OT/GC andknown-skresponse privacy obligations remain explicit"
+    ],
+    "open": [
+      "independent actual-distribution RLWE estimate andcryptographic review",
+      "complete OT/GC/serialization correspondence",
+      "sidechannels andcrosshost validation"
+    ]
+  },
+  "C10": "paused;zero new experiments",
+  "publication_scope": "Aggregate findings only; no source,modelweights,partyrecords,rawdata orlocalpaths."
+}
