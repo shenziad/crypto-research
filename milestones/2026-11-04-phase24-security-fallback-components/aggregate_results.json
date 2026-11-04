@@ -1,0 +1,54 @@
+{
+  "stage": 24,
+  "default": "phase23-defined-20261104 unchanged",
+  "isolated_alternatives_only": true,
+  "GC_component": {
+    "registered_pairs": 8,
+    "backends": 2,
+    "normal_sessions": 16,
+    "all_clear_outputs_match": true,
+    "client_only_output": true,
+    "first_BN_failure_role_probes": 2,
+    "both_parties_failed_without_result": true,
+    "hash_serialization_independent_reference": true,
+    "counter_guard": true,
+    "tiny_session_bytes": {
+      "current": 546677,
+      "alternative": 2089
+    },
+    "performance_inference": "fixed tiny circuit, current OT buffer setup versus eight direct base OTs; no full sampler/amortized advantage claim",
+    "construction_scope": "fresh input labels, domain-separated SHA256-truncated128 ROM half-gates and direct actual NP base OT",
+    "security_status": "conditional component argument; no complete implementation proof"
+  },
+  "CBD_component": {
+    "eta": 21,
+    "variance": "21/2",
+    "exact_ideal_byte_law": "binom(42,21+k)/2^42 for -21<=k<=21",
+    "public_probe_coefficients": 8192,
+    "RNS_limb_matches": 32768,
+    "source_phase_cap_ceiling": 3023656980482,
+    "retained_old_ledger_cap": 4506279720865812,
+    "default_error_sampler_changed": false,
+    "hardness_estimate_executed": false,
+    "estimator_blocker": "Sage absent; structured sample interpretation also needs review"
+  },
+  "remaining_gaps": [
+    "default seeded-label/chosen-COT/common-AES joint instantiation",
+    "actual-law shared-secret and fresh-secret RLWE assumptions",
+    "known-key full-cipher plus GC consistency",
+    "independent implementation/proof review",
+    "unique private-adapter application advantage not established"
+  ],
+  "negative_and_harness_records_preserved": [
+    "unavailable optional link library",
+    "nonexistent local zero helper",
+    "one-byte hash fixture padding error",
+    "fault harness marker assertion; successful first fault not repeated"
+  ],
+  "no_sealed_test_access": true,
+  "no_full_sampler_or_model_rerun": true,
+  "MoE": "paused",
+  "C10": "paused",
+  "KV": "GPU job detected and not modified; phase24 uses no GPU",
+  "publication_scope": "aggregate only; no detailed source/patches/party data/weights"
+}

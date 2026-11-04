@@ -1,0 +1,22 @@
+{
+  "stage": 24,
+  "files": {
+    "README.md": {
+      "bytes": 3144,
+      "sha256": "27b8940fd190165f0c155d9bad655944a602a61c6ed3495bbce474c4cd4d4b74"
+    },
+    "aggregate_results.json": {
+      "bytes": 2208,
+      "sha256": "06436ae5c8ebc1d4a2d3ccbd3dd83fa0409746369626254c2adf94e03cc629be"
+    }
+  },
+  "scope": "authorized aggregate only",
+  "excluded": [
+    "detailed source",
+    "patches",
+    "party transcripts",
+    "weights",
+    "raw data"
+  ],
+  "default_unchanged": true
+}

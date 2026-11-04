@@ -1,0 +1,15 @@
+# Phase 24 — checked fallback components and proof boundaries
+
+The validated default remains **phase23-defined-20261104**. Two isolated alternatives now have reproducible local component evidence: fresh-label, domain-separated SHA-ROM half-gates with direct NP base OT; and SEAL CBD21 with an exact ideal-byte probability law. Neither is installed in the full sampler.
+
+The same eight fixed public input pairs passed under both GC backends (16 sessions), with client-only output matching the clear reference. Two role-specific first-BN failure checks closed both sides without a result. Hash serialization and counter exhaustion were checked. A direct 8192-coefficient CBD replay matched all 32768 RNS limbs. CBD's variance is 10.5, not 3.2 squared; its derived source residual cap fits inside the old retained flooding cap. This is implementation/algebra evidence, not computational-security evidence.
+
+The GC tiny-session byte counts are dominated by current buffered setup versus eight direct OTs. They do not establish full-head or amortized gains. Direct base OT scales with evaluator input bits and explicit garbler labels also cost bytes. Full alternative sampler integration requires a prior cost gate.
+
+The source/theorem map identifies a conditional random-oracle route through [CRYPTO 2020 half-gates Theorems 1 and 6](https://link.springer.com/content/pdf/10.1007/978-3-030-56880-1_28.pdf), with fresh-label, tweak, entropy, OT and common-model obligations stated separately. It is not a claim that SHA256 is proven to instantiate the oracle or that the current public-seed label scheme is certified. [IKNP's original paper](https://mit6875.github.io/PAPERS/extendingOT.pdf) supplies a different specified ideal-base-OT/oracle protocol; actual COT/AES composition still needs a bridge.
+
+Known-key full-cipher privacy remains conditional on fresh masks, actual RLWE distributions and consistent subsequent GC simulation. Exact CBD law does not prove RLWE hardness, and the default still uses its previous error sampler. Sage is absent and no hardness bits are reported. See [Lattice Estimator's CBD definition](https://lattice-estimator.readthedocs.io/en/latest/_apidoc/estimator.nd/estimator.nd.CenteredBinomial.html); upstream preparation pinned `malb/lattice-estimator` at `423eb7bce2d08f98b3eff655c2d344fcc9c91445`.
+
+No new model/task sweep or sealed-test access occurred. Earlier failed semantic/public-baseline gates remain negative; unique private-adapter task value is not established. A narrower protocol contribution remains a research direction, not an accepted-result claim. MoE/C10 remain paused. KV's GPU work was not altered; these probes used no GPU. Initial fixture/build/harness failures are retained locally, including the already completed first failure probe, which was not repeated.
+
+Only aggregate research information is published here. Detailed source, patches, weights and party logs remain local pending explicit public-export authorization. Next gates are independent proof/source review, actual-circuit fallback cost counts and a reviewed actual-law estimator run, rather than another parameter sweep.
