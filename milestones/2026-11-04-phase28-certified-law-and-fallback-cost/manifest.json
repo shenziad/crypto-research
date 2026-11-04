@@ -1,0 +1,25 @@
+{
+  "publication_scope": "3 approved aggregate files only",
+  "excluded": [
+    "source code and patches",
+    "per-party inputs/views and logs",
+    "weights, datasets and keys",
+    "private filesystem paths"
+  ],
+  "content_sha256": {
+    "README.md": "cd27e873911e326cf69b97f4c3cfd6c8752ef73874738bde0d5cd1db44b94f02",
+    "aggregate_results.json": "6c2a4215ef877dc39901883201cec8ffa3494f4154325fd500073b37fa3fe0dd"
+  },
+  "local_support": [
+    "dg_certificate.json",
+    "dg_results.json",
+    "allgc_pair_results.json",
+    "allgc_extra_results.json",
+    "allgc_full_cost.json",
+    "source_assumption_audit.json",
+    "estimator_path.md",
+    "default_GC_OT_and_flood.md"
+  ],
+  "default_unchanged": true,
+  "raw_support_not_exported": true
+}

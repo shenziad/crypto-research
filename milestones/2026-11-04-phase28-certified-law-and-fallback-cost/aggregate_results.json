@@ -1,0 +1,103 @@
+{
+  "stage": 28,
+  "date": "2026-11-04",
+  "default": "phase26-cot-20261104 unchanged",
+  "active_hash_checks": 16,
+  "new_security_bits": null,
+  "full_security_proof": false,
+  "private_adapter_utility_established": false,
+  "official_estimator_pins": [
+    {
+      "url": "https://api.github.com/repos/malb/lattice-estimator/git/ref/heads/main",
+      "commit": "423eb7bce2d08f98b3eff655c2d344fcc9c91445"
+    },
+    {
+      "url": "https://api.github.com/repos/Crypto-TII/fastparameterselection/git/ref/heads/master",
+      "commit": "4f0f5d96a2a395b7b967c9bd0418de2e2ea33869"
+    },
+    {
+      "url": "https://api.github.com/repos/gong-cr/FHE-Security-Guidelines/git/ref/heads/main",
+      "commit": "63cdebab744f7482599aa6b9fdc89c30bdbb1a66"
+    }
+  ],
+  "estimator_status": {
+    "executed": false,
+    "Sage_available": false,
+    "default_error_model_applicable": false,
+    "alternative_DG_model_path_requires_review": true
+  },
+  "isolated_DG": {
+    "sigma": "16/5",
+    "support": [
+      -64,
+      64
+    ],
+    "uniform_bits": 192,
+    "rational_enclosure_bits": 384,
+    "single_coefficient_TV_bound": {
+      "numerator": "31742227328426018981164725306249007492941669760311937679570381291140809616935057062391023723119793234096430852466276225684199914329115478590316432062433799532598334167090918081",
+      "denominator": "1556634298814855369336070875152304835441282422065812234307396286235121166648154577162472802968403882801869474483054125916062419149618845107661747660389932468288729932868376146915854245432875997354646059442486165250418393745574592512"
+    },
+    "prospective_2^40_draw_TV_bound": {
+      "numerator": "31742227328426018981164725306249007492941669760311937679570381291140809616935057062391023723119793234096430852466276225684199914329115478590316432062433799532598334167090918081",
+      "denominator": "1415750647370128144153632888585257056039410983490426801206373316958998808921164324749472873889684599636775123583951541073531570100038920925418776878714136244788032793502112460297079674485645225426784290395959183343091712"
+    },
+    "current_protocol_draw_cap_not_audited": true,
+    "native_replay_coefficients": 1048576,
+    "RNS_checks": 4194304,
+    "native_boundary_checks": 243,
+    "BFV_slots": 8192,
+    "BFV_roundtrip": true,
+    "redirected_sampler_calls": 4,
+    "ciphertext_uncompressed_bytes": 262257,
+    "full_protocol_not_integrated": true
+  },
+  "allGC_reference": {
+    "shape": {
+      "d": 8,
+      "r": 2,
+      "V": 4,
+      "K": 244
+    },
+    "actual_native_pairs": 6,
+    "all_passed": true,
+    "small_pair_wire_bytes": 12086981,
+    "cases": [
+      "fresh",
+      "first",
+      "late",
+      "FAIL",
+      "Z_equals_D",
+      "last_nonzero_prefix"
+    ],
+    "correctness_only_control_coins_except_fresh": true,
+    "full_V": 151936,
+    "full_V_AND_source_extrapolation": 8231968640,
+    "full_V_wire_source_extrapolation": 265410080189,
+    "full_V_executed": false,
+    "full_V_latency_measured": false,
+    "affine_V3_check": true,
+    "practical_full_V_gate": "rejected on projected cost; no full-size run",
+    "security_review_complete": false
+  },
+  "remaining": [
+    "default exact error law/hardness bridge",
+    "mixed-modulus query and repeated-A response auxiliary mapping",
+    "real AES/GC/IKNP common-model proof",
+    "known-key full-cipher/full-M with later GC simulator",
+    "independent task utility and novelty evidence",
+    "cross-machine endpoints"
+  ],
+  "source_audit_files": 17,
+  "factory_overrides_found": 0,
+  "resources": {
+    "single_CPU": 23,
+    "GPU_used": false,
+    "software_installed": false,
+    "model_training": false,
+    "peak_memory_measured": false
+  },
+  "MoE": "paused",
+  "C10": "paused",
+  "publication": "aggregate only; no detailed source or party records"
+}
