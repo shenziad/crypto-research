@@ -1,0 +1,139 @@
+{
+  "timestamp_UTC": "2026-11-04T03:30:33.747577+00:00",
+  "status": "completed_screen_rejected",
+  "scope": "One preregistered entity-NLL feasibility projection with matched frozen/public/linear baselines, training/development only. No additional model training, generation or private protocol calls.",
+  "training_inputs": 128,
+  "development_inputs": 32,
+  "sealed_independent_test_inputs": 64,
+  "sealed_test_commitment_sha256": "3bd2368d43fef05c609c7eab94aeae4adc009a0ff6fe93c8b9590ca69fe25433",
+  "sealed_test_evaluated": false,
+  "selected_projection_multipliers": [
+    1,
+    1
+  ],
+  "projected_heads_bitwise_unchanged": true,
+  "training_public_entity_risk": {
+    "NLL": {
+      "name": 0.26952427015524527,
+      "near": 0.2379986155189568
+    },
+    "positions": {
+      "name": 357,
+      "near": 172
+    }
+  },
+  "training_trials": [
+    {
+      "head": "B1_ce_20261103031",
+      "alpha": 1,
+      "feasible": true,
+      "NLL": {
+        "name": 0.25794889434479373,
+        "near": 0.23132923891050228
+      },
+      "positions": {
+        "name": 357,
+        "near": 172
+      }
+    },
+    {
+      "head": "B1_ce_20261103032",
+      "alpha": 1,
+      "feasible": true,
+      "NLL": {
+        "name": 0.25761798970333477,
+        "near": 0.23342987998190123
+      },
+      "positions": {
+        "name": 357,
+        "near": 172
+      }
+    }
+  ],
+  "development_teacher_summary": {
+    "public": {
+      "total_NLL": 1.3878997173866414,
+      "name_NLL": 0.2125324036907435,
+      "near_NLL": 0.08106403668913782,
+      "EOS_NLL": 0.9920614294424277
+    },
+    "B1_ce_20261103031": {
+      "total_NLL": 1.3272986735647903,
+      "name_NLL": 0.21620652578414462,
+      "near_NLL": 0.08101703427548522,
+      "EOS_NLL": 0.44792249781959126
+    },
+    "linear_ce_20261103031": {
+      "total_NLL": 1.3115237254519818,
+      "name_NLL": 0.16772382278025336,
+      "near_NLL": 0.07956489163869893,
+      "EOS_NLL": 0.43417189862578165
+    },
+    "guard_B1_20261103031": {
+      "total_NLL": 1.3272986735647903,
+      "name_NLL": 0.21620652578414462,
+      "near_NLL": 0.08101703427548522,
+      "EOS_NLL": 0.44792249781959126
+    },
+    "B1_ce_20261103032": {
+      "total_NLL": 1.3325707944628924,
+      "name_NLL": 0.21665254362580416,
+      "near_NLL": 0.08176924236922214,
+      "EOS_NLL": 0.4413801183109164
+    },
+    "linear_ce_20261103032": {
+      "total_NLL": 1.3229562204115528,
+      "name_NLL": 0.16785102292336662,
+      "near_NLL": 0.0854273538100132,
+      "EOS_NLL": 0.4955895395285132
+    },
+    "guard_B1_20261103032": {
+      "total_NLL": 1.3325707944628924,
+      "name_NLL": 0.21665254362580416,
+      "near_NLL": 0.08176924236922214,
+      "EOS_NLL": 0.4413801183109164
+    }
+  },
+  "failed_gates": [
+    {
+      "head": "guard_B1_20261103031",
+      "group": "name",
+      "NLL_delta": 0.003674122093401122,
+      "maximum_allowed_delta": 0.0001
+    },
+    {
+      "head": "guard_B1_20261103032",
+      "group": "name",
+      "NLL_delta": 0.004120139935060663,
+      "maximum_allowed_delta": 0.0001
+    },
+    {
+      "head": "guard_B1_20261103032",
+      "group": "near",
+      "NLL_delta": 0.0007052056800843226,
+      "maximum_allowed_delta": 0.0001
+    }
+  ],
+  "decision": "Reject candidate, no further alpha/seed/prompt/threshold change on this development set; do not open test.",
+  "runtime_seconds": 196.42879079799968,
+  "sampled_peak_RSS_bytes": 3540135936,
+  "resource_violation": null,
+  "security_correspondence": {
+    "installed_rounding_helper_native_checks": {
+      "status": "passed",
+      "levels": 3,
+      "component_batches_per_level": 16,
+      "coefficient_cases": 393216,
+      "residue_checks": 786432,
+      "both_components": true,
+      "scope": "Installed archive RNSTool balanced rounding, generative oracle z=P*Y+r with arbitrary CRT Y. Deterministic synthetic coefficients, not response privacy or hardness."
+    },
+    "source_control_flow": "BFV asymmetric zero encryption iterates over both components; installed archive relocation checked.",
+    "conditional_phase_rounding_lemma": "Each component has absolute coefficient rounding error below1/2; the phase contribution includes the second error convolved with the ternary secret. The frozen conservative error ledger remains unchanged.",
+    "claim_limit": "Sub-lemma/source evidence only, not actual-error RLWE hardness, complete Encryptor/compiler equivalence or joint FLUT/GC/OT security.",
+    "preparation_failures": "Missing Boost headers and optional zstd link library retained; test uses independent generative CRT oracle and existing installed archive, no new dependency or library modification."
+  },
+  "MoE": "No additional full-size experiments",
+  "C10": "stopped",
+  "publication": "Safe aggregate only; detailed source, weights, raw records and parameter export remain local."
+}
